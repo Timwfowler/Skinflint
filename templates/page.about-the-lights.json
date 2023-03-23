@@ -1,0 +1,303 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "365a217e-3808-473a-b193-abca73fbeeaf": {
+      "type": "section-two-image-scrub",
+      "settings": {
+        "flush": true,
+        "flush_bottom": false,
+        "before_image": "shopify:\/\/shop_images\/old_efe279bb-4d79-45db-b148-50b8db4884ae.png",
+        "after_image": "shopify:\/\/shop_images\/new_32ddbad6-2d62-40f8-b638-5c593d10739f.png"
+      }
+    },
+    "b11a81de-4b89-483d-8008-30271bda8c03": {
+      "type": "section-text-and-image",
+      "settings": {
+        "flush": true,
+        "flush_bottom": false,
+        "layout": "right",
+        "image": "shopify:\/\/shop_images\/about-lights_assembly.jpg",
+        "title": "Vintage lighting, for modern use",
+        "subheading": "<p>To us, reclaiming a vintage light means keeping the essence of the original light fitting intact, but that you can rely on it to work perfectly, and safely, every day. So we restore and use as many of the original components, except the bulb holders, wiring and suspension chains, as we can – and we often preserve the visible signs of age that hint at the light’s first story: where, when and how it was originally made and used.<\/p>",
+        "link": "#",
+        "link_text": "Shop all vintage lights",
+        "link_2": "",
+        "link_text_2": ""
+      }
+    },
+    "36911d92-4147-4ac5-8874-4f73baf536e1": {
+      "type": "section-text-and-image",
+      "settings": {
+        "flush": true,
+        "flush_bottom": false,
+        "layout": "left",
+        "image": "shopify:\/\/shop_images\/about-lights_light-part.jpg",
+        "title": "Salvaging",
+        "subheading": "<p>At skinflint, we’re always searching for disused lighting with a classic, industrial quality. Often, we find lights on sourcing trips to former Eastern Bloc countries, but we also keep a watch for redevelopments and demolitions closer to home. Gaining access to the former Pirelli warehouse or Cockenzie Power Station, for example, meant we could salvage dozens of vintage lights that might otherwise have been lost.<\/p><p><\/p><p>Meanwhile, many of our maritime bulkhead lights are reclaimed from vast shipbreakers’ yards on the shores of the Arabian Sea.<\/p>",
+        "link": "",
+        "link_text": "",
+        "link_2": "",
+        "link_text_2": ""
+      }
+    },
+    "75c7aa17-1779-4377-a858-a7051e388cb4": {
+      "type": "section-text-and-image",
+      "settings": {
+        "flush": true,
+        "flush_bottom": false,
+        "layout": "right",
+        "image": "shopify:\/\/shop_images\/about-lights_LIA.jpg",
+        "title": "Restoring and rewiring",
+        "subheading": "<p>With the reclaimed lights safely in our UK warehouse, the meticulous process of restoration begins. As a proud member of the <a href=\"https:\/\/www.skinflintdesign.com\/faqs\/certifications\">UK Lighting Industry Association (LIA)<\/a> we are independently audited, approved and verified at every stage to ensure that all of our lights are expertly restored to modern standards for faultless functionality.<\/p>",
+        "link": "",
+        "link_text": "",
+        "link_2": "",
+        "link_text_2": ""
+      }
+    },
+    "b841d60e-8fd7-4a84-ada8-60438d90700d": {
+      "type": "section-slideshow-image",
+      "blocks": {
+        "template--16761764872508__b841d60e-8fd7-4a84-ada8-60438d90700d-1667288543b9b22114-0": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "image": "shopify:\/\/shop_images\/about-lights_workshop.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--16761764872508__b841d60e-8fd7-4a84-ada8-60438d90700d-1667288543b9b22114-0"
+      ],
+      "settings": {
+        "flush": true,
+        "flush_bottom": false,
+        "full_width": false,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "0c68dc5d-843a-4b20-bd68-639d6ab86ab7": {
+      "type": "section-rich-text",
+      "blocks": {
+        "template--16761764872508__0c68dc5d-843a-4b20-bd68-639d6ab86ab7-1666938452cfa08ee7-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Workshop culture"
+          }
+        },
+        "template--16761764872508__0c68dc5d-843a-4b20-bd68-639d6ab86ab7-1666938452cfa08ee7-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Elsewhere on the restoration journey of our vintage lights, we gently disassemble each light fitting into its individual parts, letting us spot any flaws and plan how best to bring it up to modern-day standards.<\/p><p><\/p><p>Then our local experts patiently restore each component by hand. Typically, this might mean:<\/p><p><\/p><p><strong>Soda-blasting<\/strong><\/p><p>an environmentally friendly way to remove old paint<\/p><p><\/p><p><strong>Polishing<\/strong><\/p><p>to restore and replenish a fittings surface<\/p><p><\/p><p><strong>Lacquering<\/strong><\/p><p>to protect the light’s surfaces from further deterioration<\/p><p><\/p><p><strong>Rewiring<\/strong><\/p><p>so the light works perfectly, every time<\/p><p><\/p><p>Finally, we reassemble the light with brand new electrical components and list it here – along with as much information as we can provide on its origins and history.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16761764872508__0c68dc5d-843a-4b20-bd68-639d6ab86ab7-1666938452cfa08ee7-0",
+        "template--16761764872508__0c68dc5d-843a-4b20-bd68-639d6ab86ab7-1666938452cfa08ee7-1"
+      ],
+      "settings": {
+        "flush": false,
+        "flush_bottom": false,
+        "align_text": "left",
+        "narrow_column": true
+      }
+    },
+    "85f45888-8aea-48c4-800b-ceea32929c5b": {
+      "type": "section-slideshow-image",
+      "blocks": {
+        "template--16761764872508__85f45888-8aea-48c4-800b-ceea32929c5b-16669384556e9843c0-0": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "image": "shopify:\/\/shop_images\/about-lights_antomy-diagram.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--16761764872508__85f45888-8aea-48c4-800b-ceea32929c5b-16669384556e9843c0-0"
+      ],
+      "settings": {
+        "flush": false,
+        "flush_bottom": false,
+        "full_width": false,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "14e99d66-bace-4a05-bd64-0a1cc8871571": {
+      "type": "section-split-text",
+      "blocks": {
+        "template--16761764872508__14e99d66-bace-4a05-bd64-0a1cc8871571-1666938587079c6abe-0": {
+          "type": "text_block",
+          "settings": {
+            "title": "",
+            "text": "<p><strong>1. Power.<\/strong><\/p><p>New power cable is supplied in a range of colours to complement each individual light. Custom lengths can be supplied to align with your project needs.<\/p><p><\/p><p><strong>2. Suspension.<\/strong><\/p><p>New suspension chain or wire is provided in a length and finish to suit each light and installation.<\/p><p><\/p><p><strong>3. Gallery.<\/strong><\/p><p>This area houses the lamp holder, and is often constructed in aluminium, steel or Bakelite. It is usually an interesting detail and element of the light’s design.<\/p><p><\/p><p><strong>4. Process.<\/strong><\/p><p>Any degraded components are fully restored by our workshop; this may include polishing aluminium or removing oxidation from steel. We then seal ferrous metals to prevent any further ageing.<\/p>"
+          }
+        },
+        "template--16761764872508__14e99d66-bace-4a05-bd64-0a1cc8871571-1666938587079c6abe-1": {
+          "type": "text_block",
+          "settings": {
+            "title": "",
+            "text": "<p><strong>5. Materials.<\/strong><\/p><p>Many of our lights were originally designed and manufactured before the age of planned obsolescence. Each one was built to last, and we restore them all under the same guiding principle.<\/p><p><\/p><p><strong>6. Lighting.<\/strong><\/p><p>Our comprehensive range of lights were originally designed to create an array of different lighting effects, from directional down-lighting to an ambient glow.<\/p><p><\/p><p><strong>7. Heritage.<\/strong><\/p><p>All our lights have lived long, industrious lives, and will show signs of age. We retain this, to highlight each light’s individual story.<\/p><p>Finally, we reassemble the light with brand new electrical components and list it here – along with as much information as we can provide on its origins and history.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16761764872508__14e99d66-bace-4a05-bd64-0a1cc8871571-1666938587079c6abe-0",
+        "template--16761764872508__14e99d66-bace-4a05-bd64-0a1cc8871571-1666938587079c6abe-1"
+      ],
+      "settings": {
+        "flush": false,
+        "flush_bottom": true,
+        "remove_borders": true,
+        "title": "",
+        "align_text": "left",
+        "desktop_columns_per_row": 2,
+        "button_label": "",
+        "button_link": "",
+        "button_label_two": "",
+        "button_link_two": "",
+        "show_link": true
+      }
+    },
+    "d0a4753e-a731-43b6-bfd0-55647936c363": {
+      "type": "section-lifestyle-grid",
+      "blocks": {
+        "f21eb90c-5f15-431c-9e32-8bbcb0863cc3": {
+          "type": "collection",
+          "settings": {
+            "item_width": true,
+            "image": "shopify:\/\/shop_images\/about-lights_manufacture-logo.jpg",
+            "top_subheading": "",
+            "title": "",
+            "heading_type": "h2",
+            "text_color": "#ffffff",
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "button_style": "primary",
+            "button_icon": "false",
+            "link_2": "",
+            "link_text_2": "",
+            "button_style_2": "primary",
+            "button_icon_2": "false",
+            "text_align": "vertical-bottom horizontal-left"
+          }
+        },
+        "a116b4cc-2a70-43fc-bbbe-9ba8017eb463": {
+          "type": "collection",
+          "settings": {
+            "item_width": true,
+            "image": "shopify:\/\/shop_images\/about-lights_antomy-light.jpg",
+            "top_subheading": "",
+            "title": "",
+            "heading_type": "h2",
+            "text_color": "#ffffff",
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "button_style": "primary",
+            "button_icon": "false",
+            "link_2": "",
+            "link_text_2": "",
+            "button_style_2": "primary",
+            "button_icon_2": "false",
+            "text_align": "vertical-bottom horizontal-left"
+          }
+        }
+      },
+      "block_order": [
+        "f21eb90c-5f15-431c-9e32-8bbcb0863cc3",
+        "a116b4cc-2a70-43fc-bbbe-9ba8017eb463"
+      ],
+      "settings": {
+        "flush": false,
+        "flush_bottom": false,
+        "full_width": false
+      }
+    },
+    "1cf9c401-d4fd-4b1f-aa92-0b1b537a3a05": {
+      "type": "section-split-text",
+      "blocks": {
+        "template--16761764872508__1cf9c401-d4fd-4b1f-aa92-0b1b537a3a05-1667005869f4050c88-0": {
+          "type": "text_block",
+          "settings": {
+            "title": "",
+            "text": "<p><strong>8. Manufacturer.<\/strong><\/p><p>Many of our lights feature their original vintage manufacturer’s branding. Some are cast or embossed onto the surfaces, while others still retain their labels or transfers. You can read more about the <a href=\"https:\/\/www.skinflintdesign.com\/blog\/lighting_history\/a-history-of-vintage-british-lighting-brands\">original manufacturers here.<\/a><\/p><p><\/p><p><\/p><p><\/p><p><\/p><p><strong>9. Light bulbs.<\/strong><\/p><p>Bringing vintage lights back into use is not the only way we try to help the environment. All our lights are refurbished and engineered to work well with modern, LED bulbs. You can read more about <a href=\"https:\/\/www.skinflintdesign.com\/blog\/lighting_advice\/choosing-the-right-lightbulb-for-your-vintage-light\">choosing the right light bulb here.<\/a><\/p>"
+          }
+        },
+        "template--16761764872508__1cf9c401-d4fd-4b1f-aa92-0b1b537a3a05-1667005869f4050c88-1": {
+          "type": "text_block",
+          "settings": {
+            "title": "",
+            "text": "<p><strong>10. Electrical components.<\/strong><\/p><p><\/p><p>All original electrical elements are removed and replaced with brand new EN60598-certified components. Any pre-wired lights are supplied tested and certified in line with the electrical safety standard BS EN 60598. Read more about our <a href=\"https:\/\/www.skinflintdesign.com\/faqs\/certifications\">certifications<\/a><\/p><p><\/p><p><strong>11. Worldwide.<\/strong><\/p><p>Our lights can be used in any country, and we can supply and fit lamp holders to meet your local electrical standards. We deliver our lights to over 150 countries worldwide; once they arrive, the next chapter is up to you.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16761764872508__1cf9c401-d4fd-4b1f-aa92-0b1b537a3a05-1667005869f4050c88-0",
+        "template--16761764872508__1cf9c401-d4fd-4b1f-aa92-0b1b537a3a05-1667005869f4050c88-1"
+      ],
+      "settings": {
+        "flush": false,
+        "flush_bottom": true,
+        "remove_borders": true,
+        "title": "",
+        "align_text": "left",
+        "desktop_columns_per_row": 2,
+        "button_label": "",
+        "button_link": "",
+        "button_label_two": "",
+        "button_link_two": "",
+        "show_link": true
+      }
+    },
+    "cff75a32-b43b-4283-8ccb-f3e051f37f5a": {
+      "type": "section-featured-collection",
+      "settings": {
+        "flush": false,
+        "flush_bottom": true,
+        "title": "You might also like",
+        "home_featured_products": "ceiling-light-test",
+        "count": 5,
+        "mobile_scrollable": true,
+        "view_all": false
+      }
+    },
+    "603fb69b-db5e-4677-8446-513b1502c24f": {
+      "type": "contact-form",
+      "disabled": true,
+      "settings": {
+        "paragraph": "<p><\/p>",
+        "title": "Contact us",
+        "text": "<p><\/p>",
+        "show_phone": false,
+        "narrow_column": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "365a217e-3808-473a-b193-abca73fbeeaf",
+    "b11a81de-4b89-483d-8008-30271bda8c03",
+    "36911d92-4147-4ac5-8874-4f73baf536e1",
+    "75c7aa17-1779-4377-a858-a7051e388cb4",
+    "b841d60e-8fd7-4a84-ada8-60438d90700d",
+    "0c68dc5d-843a-4b20-bd68-639d6ab86ab7",
+    "85f45888-8aea-48c4-800b-ceea32929c5b",
+    "14e99d66-bace-4a05-bd64-0a1cc8871571",
+    "d0a4753e-a731-43b6-bfd0-55647936c363",
+    "1cf9c401-d4fd-4b1f-aa92-0b1b537a3a05",
+    "cff75a32-b43b-4283-8ccb-f3e051f37f5a",
+    "603fb69b-db5e-4677-8446-513b1502c24f"
+  ]
+}

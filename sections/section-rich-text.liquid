@@ -1,0 +1,193 @@
+
+
+  <div class=" text-{{ section.settings.align_text }} {% if section.settings.flush %}section-flush {% endif %}
+  {% if section.settings.flush_bottom %}section-padding--bottom {% endif %}">
+
+
+    <div class="page-width{% if section.settings.narrow_column %} page-width--narrow{% endif %}">
+      {%- for block in section.blocks -%}
+        <div class="theme-block" {{ block.shopify_attributes }}>
+          {%- case block.type -%}
+            {%- when 'heading' -%}
+              <h2>{{ block.settings.title | escape }}</h2>
+            {%- when 'page' -%}
+              <div class="rte">
+                {%- if block.settings.page_text != blank -%}
+                  {{ pages[block.settings.page_text].content }}
+                {%- else -%}
+                  {{ 'home_page.onboarding.no_content' | t }}
+                {%- endif -%}
+              </div>
+            {%- when 'text' -%}
+              <div class="rte">
+                {%- if block.settings.text != blank -%}
+                  {%- if block.settings.enlarge_text %}
+                    <div class="enlarge-text">
+                    {% endif -%}
+                    {{ block.settings.text }}
+                    {%- if block.settings.enlarge_text %}
+                    </div>
+                  {% endif -%}
+                {%- else -%}
+                  {{ 'home_page.onboarding.no_content' | t }}
+                {%- endif -%}
+              </div>
+            {%- when 'button' -%}
+
+
+              <div class="rte">
+
+                {% render 'button', text: block.settings.link_text, link: block.settings.link, style:  block.settings.button_style, icon:  block.settings.button_icon %}
+
+
+
+              </div>
+          {%- endcase -%}
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+
+
+{% schema %}
+  {
+    "name": "t:sections.rich-text.name",
+    "class": "richtext-section index-section",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "flush",
+        "label": "Remove top space",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "flush_bottom",
+        "label": "Add bottom space",
+        "default": false
+      },
+      {
+        "type": "select",
+        "id": "align_text",
+        "label": "t:sections.rich-text.settings.align_text.label",
+        "default": "left",
+        "options": [
+          {
+            "value": "left",
+            "label": "t:sections.rich-text.settings.align_text.options.left.label"
+          }, {
+            "value": "center",
+            "label": "t:sections.rich-text.settings.align_text.options.center.label"
+          }, {
+            "value": "right",
+            "label": "t:sections.rich-text.settings.align_text.options.right.label"
+          }
+        ]
+      }, {
+        "type": "checkbox",
+        "id": "narrow_column",
+        "label": "t:sections.rich-text.settings.narrow_column.label",
+        "default": true
+      }
+    ],
+    "blocks": [
+      {
+        "type": "heading",
+        "name": "t:sections.rich-text.blocks.heading.name",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "t:sections.rich-text.blocks.heading.settings.title.label",
+            "default": "Rich text"
+          }
+        ]
+      }, {
+        "type": "text",
+        "name": "t:sections.rich-text.blocks.text.name",
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "enlarge_text",
+            "label": "t:sections.rich-text.blocks.text.settings.enlarge_text.label",
+            "default": true
+          }, {
+            "id": "text",
+            "type": "richtext",
+            "label": "t:sections.rich-text.blocks.text.settings.text.label",
+            "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        ]
+      }, {
+        "type": "button",
+        "name": "t:sections.rich-text.blocks.button.name",
+        "settings": [
+          {
+            "type": "url",
+            "id": "link",
+            "label": "t:sections.rich-text.blocks.button.settings.link.label"
+          }, {
+            "type": "text",
+            "id": "link_text",
+            "label": "t:sections.rich-text.blocks.button.settings.link_text.label",
+            "default": "Button"
+          }, {
+            "type": "radio",
+            "id": "button_style",
+            "label": "Button Style",
+            "options": [
+              {
+                "value": "primary",
+                "label": "Primary"
+              }, {
+                "value": "secondary",
+                "label": "Secondary"
+              }, {
+                "value": "underline",
+                "label": "Underline"
+              }
+            ],
+            "default": "primary"
+          }, {
+            "type": "radio",
+            "id": "button_icon",
+            "label": "Include Button Icon",
+            "options": [
+              {
+                "value": "false",
+                "label": "False"
+              }, {
+                "value": "true",
+                "label": "True"
+              }
+            ],
+            "default": "false"
+          }
+        ]
+      }, {
+        "type": "page",
+        "name": "t:sections.rich-text.blocks.page.name",
+        "settings": [
+          {
+            "id": "page_text",
+            "type": "page",
+            "label": "t:sections.rich-text.blocks.page.settings.page_text.label"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "t:sections.rich-text.presets.rich_text.name",
+        "blocks": [
+          {
+            "type": "heading"
+          }, 
+          {
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

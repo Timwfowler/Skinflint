@@ -1,0 +1,265 @@
+{%- if section.settings.show_newsletter -%}
+  <div class="footer__section footer__section--border">
+    <div class="page-width">
+      <div class="footer__newsletter">
+        {%- if section.settings.newsletter_richtext != blank -%}
+          <div class="footer__subscribe rte rte--nomargin">
+            <h3>{{ section.settings.newsletter_richtext }}
+            </h3>
+          </div>
+        {%- endif -%}
+
+        {%- render 'newsletter-form', section_id: section.id, snippet_context: 'footer' -%}
+
+        <h4>{{ section.settings.newsletter_subheading }}
+        </h4>
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% comment %}
+  Main navigation is copied here with JS for mobile users
+{% endcomment %}
+{%- if section.settings.footer_main_menu -%}
+  <div id="FooterMobileNavWrap" class="footer__section footer__section--border medium-up--hide hide">
+    <div id="FooterMobileNav" class="page-width"></div>
+  </div>
+{%- endif -%}
+
+<footer class="site-footer" data-section-id="{{ section.id }}" data-section-type="footer-section">
+  <div id="FooterMenus" class="footer__section footer__section--menus">
+    <div class="page-width">
+      <div class="footer__blocks">
+        {%- for block in section.blocks -%}
+          <div {{ block.shopify_attributes }} class="footer__block" data-type="{{ block.type }}">
+
+            {%- liquid
+                          case block.type
+                            when 'menu'
+                              render 'footer-menu', block: block
+                            when 'payment'
+                              assign show_currency_flags = block.settings.show_currency_flags
+                              render 'footer-payments', block: block, show_currency_flags: show_currency_flags
+                            when 'contact'
+                              render 'footer-contact', block: block
+                            when 'image'
+                              render 'footer-logos', block: block
+                          endcase
+                        -%}
+            {%- for block in section.blocks -%}{%- endfor -%}
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+
+
+  <div class="footer__section footer__base">
+    <div class="page-width text-center small--text-left">
+      <div class="footer__base-links">
+        {%- if section.settings.show_copyright -%}
+          <span>
+            &copy; skinflint Ltd {{ 'now' | date: '%Y' }}
+            {%- if section.settings.copyright_text != blank -%}
+              {{ section.settings.copyright_text }}
+            {%- endif -%}
+          </span>
+        {%- endif -%}
+        {%- if linklists[section.settings.policies_menu].links.size > 0 -%}
+          {%- for link in linklists[section.settings.policies_menu].links -%}
+            <a href="{{ link.url }}">{{ link.title }}
+            </a>
+          {%- endfor -%}
+        {%- endif -%}
+        <p class="dewsign">Website by <a target="_blank" href="https://www.dewsign.co.uk/">Dewsign</a></p>
+
+        <div class="footer__back-to-top">
+          <a href="#top"> Back to top <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-label="Go to top of page icon"><path d="M7.5-4.5a12,12,0,1,0,12,12A12,12,0,0,0,7.5-4.5Zm0,22a10,10,0,1,1,10-10A10,10,0,0,1,7.5,17.5Z" transform="translate(4.5 4.5)"></path> <path d="M11.2,5.8,8.3,2.9a.9.9,0,0,0-.8-.4h0a.9.9,0,0,0-.8.4L3.8,5.8a1,1,0,0,0,0,1.4.9.9,0,0,0,.7.3.9.9,0,0,0,.7-.3L6.5,5.9v5.6a.9.9,0,0,0,1,1,.9.9,0,0,0,1-1V5.9L9.8,7.2a1,1,0,0,0,1.4,0A1,1,0,0,0,11.2,5.8Z" transform="translate(4.5 4.5)"></path></svg> </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+  {
+    "name": "t:sections.footer.name",
+    "class": "footer-section",
+    "max_blocks": 12,
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:sections.footer.settings.header_newsletter"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_newsletter",
+        "label": "t:sections.footer.settings.show_newsletter.label",
+        "info": "t:sections.footer.settings.show_newsletter.info",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "newsletter_richtext",
+        "label": "Heading"
+      },
+      {
+        "type": "text",
+        "id": "newsletter_subheading",
+        "label": "Subheading"
+      }, {
+        "type": "header",
+        "content": "t:sections.footer.settings.header_additional_footer_content"
+      }, {
+        "type": "checkbox",
+        "id": "footer_main_menu",
+        "label": "t:sections.footer.settings.footer_main_menu.label",
+        "default": true
+      }, {
+        "type": "checkbox",
+        "id": "show_copyright",
+        "label": "t:sections.footer.settings.show_copyright.label"
+      }, {
+        "type": "text",
+        "id": "copyright_text",
+        "label": "t:sections.footer.settings.copyright_text.label"
+      }, {
+        "type": "link_list",
+        "id": "policies_menu",
+        "label": "t:sections.footer.settings.policies_menu.label",
+        "info": "t:sections.footer.settings.policies_menu.info"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "payment",
+        "name": "t:sections.footer.blocks.payments_and_localization.name",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "show_payment_icons",
+            "label": "t:sections.footer.blocks.payments_and_localization.settings.show_payment_icons.label",
+            "default": true
+          }, {
+            "type": "checkbox",
+            "id": "show_locale_selector",
+            "label": "t:sections.footer.blocks.payments_and_localization.settings.show_locale_selector.label",
+            "info": "t:sections.footer.blocks.payments_and_localization.settings.show_locale_selector.info",
+            "default": true
+          }, {
+            "type": "checkbox",
+            "id": "show_currency_selector",
+            "label": "t:sections.footer.blocks.payments_and_localization.settings.show_currency_selector.label",
+            "info": "t:sections.footer.blocks.payments_and_localization.settings.show_currency_selector.info",
+            "default": true
+          }, {
+            "type": "checkbox",
+            "id": "show_currency_flags",
+            "label": "t:sections.footer.blocks.payments_and_localization.settings.show_currency_flags.label",
+            "default": true
+          }
+        ]
+      }, {
+        "type": "menu",
+        "name": "t:sections.footer.blocks.navigation.name",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "t:sections.footer.blocks.navigation.settings.title.label",
+            "info": "t:sections.footer.blocks.navigation.settings.title.info"
+          }, {
+            "type": "link_list",
+            "id": "menu",
+            "label": "t:sections.footer.blocks.navigation.settings.menu.label",
+            "default": "footer",
+            "info": "t:sections.footer.blocks.navigation.settings.menu.info"
+          }, {
+            "type": "checkbox",
+            "id": "enable_account_link",
+            "label": "t:sections.footer.blocks.navigation.settings.enable_account_link.label"
+          }
+        ]
+      }, {
+        "type": "contact",
+        "name": "t:sections.footer.blocks.contact_and_social.name",
+        "settings": [
+          {
+            "type": "header",
+            "content": "t:sections.footer.blocks.contact_and_social.settings.header_contact"
+          },
+          {
+            "type": "text",
+            "id": "phone",
+            "label": "t:sections.footer.blocks.contact_and_social.settings.phone.label"
+          },
+          {
+            "type": "page",
+            "id": "contact",
+            "label": "t:sections.footer.blocks.contact_and_social.settings.contact.label"
+          },
+          {
+            "type": "page",
+            "id": "chat",
+            "label": "t:sections.footer.blocks.contact_and_social.settings.chat.label"
+          }, {
+            "type": "header",
+            "content": "t:sections.footer.blocks.contact_and_social.settings.header_social"
+          }, {
+            "type": "checkbox",
+            "id": "enable_social",
+            "label": "t:sections.footer.blocks.contact_and_social.settings.enable_social.label",
+            "default": true
+          }
+        ]
+      }, {
+        "type": "image",
+        "name": "Logo",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "logo_one",
+            "label": "Logo image (one)"
+          },
+          {
+            "type": "url",
+            "id": "link_one",
+            "label": "Link one"
+          },
+          {
+            "type": "image_picker",
+            "id": "logo_two",
+            "label": "Logo image (two)"
+          },
+          {
+            "type": "url",
+            "id": "blink_two",
+            "label": "Link two"
+          }, {
+            "type": "image_picker",
+            "id": "logo_three",
+            "label": "Logo image (three)"
+          }, {
+            "type": "url",
+            "id": "link_three",
+            "label": "Link three"
+          }
+        ]
+      }
+    ],
+    "default": {
+      "settings": {},
+      "blocks": [
+        {
+          "type": "menu",
+          "settings": {}
+        }, {
+          "type": "payment",
+          "settings": {}
+        }
+      ]
+    }
+  }
+{% endschema %}

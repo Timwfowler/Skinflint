@@ -1,0 +1,216 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1663393938ed44a770": {
+      "type": "slideshow-split",
+      "blocks": {
+        "1663393938e8a27aa8-0": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "Proven protection for electrosensitivity",
+            "title": "We bring you into resonance",
+            "subheading": "",
+            "link": "",
+            "link_text": "Shop protection",
+            "button_style": "primary",
+            "button_icon": "false",
+            "link_2": "",
+            "link_text_2": "Read the science",
+            "button_style_2": "underline",
+            "button_icon_2": "false",
+            "text_position": "left",
+            "image": "shopify:\/\/shop_images\/Rectangle_1_5.png",
+            "indent_image": false,
+            "focal_point": "center center",
+            "color_scheme": "1"
+          }
+        },
+        "1663393938e8a27aa8-1": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "",
+            "title": "Highlight products",
+            "subheading": "Repurpose your product photography with our \"Indented\" image option",
+            "link": "",
+            "link_text": "Optional button",
+            "button_style": "primary",
+            "button_icon": "false",
+            "link_2": "",
+            "link_text_2": "",
+            "button_style_2": "primary",
+            "button_icon_2": "false",
+            "text_position": "left",
+            "indent_image": true,
+            "focal_point": "center center",
+            "color_scheme": "1"
+          }
+        }
+      },
+      "block_order": [
+        "1663393938e8a27aa8-0",
+        "1663393938e8a27aa8-1"
+      ],
+      "settings": {
+        "flush": true,
+        "full_width": true,
+        "height": 500,
+        "height_mobile": 450,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "166339402876c2e1da": {
+      "type": "logo-list",
+      "blocks": {
+        "166339402873c4fef3-0": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "166339402873c4fef3-1": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "166339402873c4fef3-2": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "166339402873c4fef3-3": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "166339402873c4fef3-4": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "166339402873c4fef3-5": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "166339402873c4fef3-0",
+        "166339402873c4fef3-1",
+        "166339402873c4fef3-2",
+        "166339402873c4fef3-3",
+        "166339402873c4fef3-4",
+        "166339402873c4fef3-5"
+      ],
+      "settings": {
+        "title": "Our brands",
+        "divider": false
+      }
+    },
+    "166339415795c27185": {
+      "type": "text-and-image",
+      "settings": {
+        "layout": "right",
+        "image": "shopify:\/\/shop_images\/Square_image.png",
+        "top_subheading": "Benefits of Waveguard technology",
+        "title": "Relaxation & better sleep at home",
+        "heading_type": "h2",
+        "subheading": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet tincidunt augue, non ultrices  blandit nec.<\/p>",
+        "link": "",
+        "link_text": "Find out more",
+        "button_style": "underline",
+        "button_icon": "false",
+        "link_2": "",
+        "link_text_2": "",
+        "button_style_2": "primary",
+        "button_icon_2": "false"
+      }
+    },
+    "1663394216ee99eb11": {
+      "type": "text-and-image",
+      "settings": {
+        "layout": "left",
+        "top_subheading": "",
+        "title": "Energy & vitality on the go",
+        "heading_type": "h2",
+        "subheading": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet tincidunt augue, ultrices metus blandit nec.<\/p>",
+        "link": "",
+        "link_text": "Find out more",
+        "button_style": "underline",
+        "button_icon": "false",
+        "link_2": "",
+        "link_text_2": "",
+        "button_style_2": "primary",
+        "button_icon_2": "false"
+      }
+    },
+    "16633942838b725f15": {
+      "type": "text-and-image",
+      "settings": {
+        "layout": "right",
+        "image": "shopify:\/\/shop_images\/Square_image_a2eaf034-b6c4-4350-918e-cec9c32ce84f.png",
+        "top_subheading": "",
+        "title": "Focus & performance in the workplace",
+        "heading_type": "h2",
+        "subheading": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet tincidunt augue, non ultrices  blandit nec.<\/p>",
+        "link": "",
+        "link_text": "Optional button",
+        "button_style": "primary",
+        "button_icon": "false",
+        "link_2": "",
+        "link_text_2": "",
+        "button_style_2": "primary",
+        "button_icon_2": "false"
+      }
+    },
+    "16633943451fbe13cf": {
+      "type": "rich-text",
+      "blocks": {
+        "16633943456ee59f10-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Not sure which  product is right for you?"
+          }
+        },
+        "794a53ec-5bcb-4713-89cc-040f9db6bf5a": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "link_text": "Button",
+            "button_style": "secondary",
+            "button_icon": "false"
+          }
+        }
+      },
+      "block_order": [
+        "16633943456ee59f10-0",
+        "794a53ec-5bcb-4713-89cc-040f9db6bf5a"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "color_scheme": "1",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1663393938ed44a770",
+    "166339402876c2e1da",
+    "166339415795c27185",
+    "1663394216ee99eb11",
+    "16633942838b725f15",
+    "16633943451fbe13cf"
+  ]
+}

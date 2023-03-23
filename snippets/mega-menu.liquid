@@ -1,0 +1,81 @@
+<div class="mega-menu">
+  <div class="mega-menu__inner page-width">
+    <div class=" mobile-only">
+      <div class="mobile-nav-search">
+        {%- render 'header-search' -%}
+
+          <svg xmlns="http://www.w3.org/2000/svg"><path style="fill: black;" d="M886.9,156.5l-5.8-5.8a9,9,0,1,1,1.5-1.5l5.8,5.8Zm-11.3-6.1a6.8,6.8,0,1,0-4.8-2A6.7,6.7,0,0,0,875.7,150.5Z" transform="translate(-866.7 -134.8)"></path></svg>
+
+      </div>
+        
+    </div>
+
+    
+    <div class="mega-menu__column mega-menu__column-first">
+      <div class="mobile-nav-accordian-header mobile-only">
+        <h2>Collections</h2>
+        <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 2L12.5 12L23 2" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+          
+      </div>
+
+      <ul>
+        {%- for link in linklists[section.settings.main_menu_one].links -%}
+        <li>
+          <a href="{{ link.url }}">
+            {{ link.title }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="mega-menu__column mega-menu__column-second">
+
+      <div class="mobile-nav-accordian-header mobile-only">
+        <h2>Lights</h2>
+        <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 2L12.5 12L23 2" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>          
+      </div>
+
+      <ul>        
+        {%- for link in linklists[section.settings.main_menu_two].links -%}
+        <li>
+          <a href="{{ link.url }}">
+            {{ link.title }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="mega-menu__column mega-menu__column-third">
+      <ul>
+
+        {%- for link in linklists[section.settings.main_menu_three].links -%}
+        <li>
+          <a href="{{ link.url }}">
+            {{ link.title }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>  
+
+
+  </div>
+
+  <div class="mega-menu__toolbar page-width">
+    <ul>
+      {%- for link in linklists[section.settings.toolbar].links -%}
+      <li>
+        <a href="{{ link.url }}">
+          {{ link.title }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

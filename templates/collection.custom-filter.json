@@ -1,0 +1,116 @@
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "disabled": true,
+          "settings": {}
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "grid_style": "small"
+          }
+        },
+        "06044c65-0974-4a01-bce2-9a05d49fa327": {
+          "type": "CustomFilter",
+          "settings": {
+            "filter_label": "Ceiling lights",
+            "filter_link": "shopify:\/\/collections\/ceiling-lights"
+          }
+        },
+        "4c57ca09-5ce7-4bfd-9c03-5675985efd82": {
+          "type": "CustomFilter",
+          "settings": {
+            "filter_label": "Wall Lights",
+            "filter_link": "shopify:\/\/collections\/retro-lighting"
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "product_grid",
+        "06044c65-0974-4a01-bce2-9a05d49fa327",
+        "4c57ca09-5ce7-4bfd-9c03-5675985efd82"
+      ],
+      "settings": {
+        "image_with_text_image": "shopify:\/\/shop_images\/470x470_cv_skinflint-vintage-opaline-pendant-lights-in-groucho-members-club-mayfair-london-cta-4882x4882.webp",
+        "title": "Promo Card",
+        "button_label": "A link",
+        "button_link": "shopify:\/\/pages\/contact",
+        "position": 2,
+        "show_feat_img": false,
+        "remove_description": true,
+        "enable_sidebar": true,
+        "collapse_filters": true,
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "088a4527-b55b-450a-9298-2aea7014cc5a": {
+      "type": "section-featured-collections",
+      "blocks": {
+        "template--16727915528508__088a4527-b55b-450a-9298-2aea7014cc5a-1667873817704e3117-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage",
+            "title": ""
+          }
+        },
+        "template--16727915528508__088a4527-b55b-450a-9298-2aea7014cc5a-1667873817704e3117-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage",
+            "title": ""
+          }
+        },
+        "template--16727915528508__088a4527-b55b-450a-9298-2aea7014cc5a-1667873817704e3117-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage",
+            "title": ""
+          }
+        },
+        "template--16727915528508__088a4527-b55b-450a-9298-2aea7014cc5a-1667873817704e3117-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage",
+            "title": ""
+          }
+        },
+        "template--16727915528508__088a4527-b55b-450a-9298-2aea7014cc5a-1667873817704e3117-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16727915528508__088a4527-b55b-450a-9298-2aea7014cc5a-1667873817704e3117-0",
+        "template--16727915528508__088a4527-b55b-450a-9298-2aea7014cc5a-1667873817704e3117-1",
+        "template--16727915528508__088a4527-b55b-450a-9298-2aea7014cc5a-1667873817704e3117-2",
+        "template--16727915528508__088a4527-b55b-450a-9298-2aea7014cc5a-1667873817704e3117-3",
+        "template--16727915528508__088a4527-b55b-450a-9298-2aea7014cc5a-1667873817704e3117-4"
+      ],
+      "settings": {
+        "flush": false,
+        "flush_bottom": true,
+        "title": "You may also like"
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "main-collection",
+    "088a4527-b55b-450a-9298-2aea7014cc5a"
+  ]
+}

@@ -1,0 +1,521 @@
+
+<div class="wishlist" id="wishlist">
+  <div class="wishlist__inner page-width">
+
+    <div class="wishlist__description">
+      <h1>Compare Your Favourite Lights</h1>
+      <p>So here are your favourite vintage lights to compare. We may be a little biased but we think it's a great selection. If you’re still not sure what’s right for your space, we’re here to help - just call us on 01326 565227 or email studio@skinflintdesign.com</p>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="qty-select-modal">
+  <div class="qty-select-modal__inner">
+    <button type="button" aria-label="Close" class="btn-close"></button>
+
+    <h3>Added to cart</h3>
+    <p>{{ product.title }}</p>
+    <div class="qty-select-modal__qty-wrap">
+      <div class="qty-select-modal__qty">
+        <span class="cart__mobile-title">Quantity</span> 
+        <button class="minus" type="button">-</button> 
+        <span class="cart__qty-number">4</span> 
+        <button class="plus" type="button">+</button>
+      </div>
+      <div class="qty-select-modal__price">        
+        <p class="js-quantity-price">price</p>
+      </div>
+    </div>
+    
+    <div class="qty-select-modal__checkout">
+      <p class="continue-shopping">Continue shopping</p>
+      <div class="btn js-checkout">
+        <span>Checkout</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+<script>
+  const app = document.querySelector('.wishlist__inner')
+
+
+
+  let wishlist = JSON.parse(localStorage.getItem('wishlist')) || []
+
+  wishlist.forEach((item) => {
+
+    var url = "https://skin-flint.myshopify.com/collections/ceiling-lights" + '/products/' + `${item}` + '?view=wishlist';
+
+    fetch(url).then(function(response) {
+         return response.text();
+       }).then(function(html) {
+        let data = JSON.parse(html.split("thisIsaUniqueStringToSplitTheFollowingJsonObject!DoNotDelete")[1].trim())
+        const card = document.createElement('div')
+        const anchor = document.createElement('a')
+        const imageWrap = document.createElement('div')
+        const image = document.createElement('img')
+        let title = document.createElement('p')
+        const buyBtn = document.createElement('div')
+        const buyBtnSpan = document.createElement('span')
+        buyBtnSpan.innerText = "Add to cart"
+        buyBtn.classList.add('btn', 'js-buy-btn')
+        buyBtn.setAttribute('data-var-id', data.varId)
+        buyBtn.setAttribute('data-total', "0")
+        buyBtn.setAttribute('data-total-left', data.qty)
+        buyBtn.setAttribute('data-price', data.rawprice)
+        buyBtn.append(buyBtnSpan)
+
+
+
+                //<div class="btn js-buy-btn" data-var-id="43671023812924" data-total="100"> <span>Add to cart</span></div>
+
+        const wishListBtn = document.createElement('div')
+        wishListBtn.classList.add('wish-list-btn', 'added')
+        wishListBtn.setAttribute('data-product-handle', item)
+
+
+
+        //SVGs
+        const btnSVG = document.createElementNS('http://www.w3.org/2000/svg', "svg");
+        btnSVG.setAttribute('viewBox', '0 0 493 493')
+        btnSVG.setAttribute('width', "493")
+        btnSVG.setAttribute('height', "493")
+        const btnPath =  document.createElementNS("http://www.w3.org/2000/svg", 'path');
+        btnPath.setAttribute('d', "M138 18C71 18 18 72 18 138C18 273 154 308 246 441C334 309 475 268 475 138C475 72 421 18 355 18C307 18 265 46 246 87C227 46 186 18 138 18Z")
+        btnPath.setAttribute( 'stroke', "white")
+        btnSVG.append(btnPath)
+        wishListBtn.append(btnSVG)
+
+        const table = document.createElement('div')
+        table.classList.add('table')
+
+        //ref
+        const tableRowRef = document.createElement('div')
+        tableRowRef.classList.add('table-row')
+        const ref = document.createElement('p')
+        ref.innerHTML = "Ref"
+        const refValue = document.createElement('p')
+        refValue.innerHTML = data.sku ? data.sku : "N/A"
+        tableRowRef.append(ref, refValue)
+
+        //type
+        const tableRowType = document.createElement('div')
+        tableRowType.classList.add('table-row')
+        const type = document.createElement('p')
+        type.innerHTML = "Type"
+        const typeValue = document.createElement('p')
+        typeValue.innerHTML = data.type ? data.type : "N/A"
+        tableRowType.append(type, typeValue)
+
+
+        //origin
+        const tableRowOrigin = document.createElement('div')
+        tableRowOrigin.classList.add('table-row')
+        const origin = document.createElement('p')
+        origin.innerHTML = "Origin"
+        const originValue = document.createElement('p')
+        originValue.innerHTML = data.origin ? data.origin : "N/A"
+        tableRowOrigin.append(origin, originValue)
+
+        //era
+        const tableRowEra = document.createElement('div')
+        tableRowEra.classList.add('table-row')
+        const era = document.createElement('p')
+        era.innerHTML = "Era"
+        const eraValue = document.createElement('p')
+        eraValue.innerHTML = data.era ? data.era : "N/A"
+        tableRowEra.append(era, eraValue)
+
+        //Qty left
+        const tableRowQtyLeft = document.createElement('div')
+        tableRowQtyLeft.classList.add('table-row')
+        const qtyLeft = document.createElement('p')
+        qtyLeft.innerHTML = "QtyLeft"
+        const qtyLeftValue = document.createElement('p')
+        qtyLeftValue.innerHTML = data.qty ? data.qty : "N/A"
+        tableRowQtyLeft.append(qtyLeft, qtyLeftValue)
+
+        //Diameter
+        const tableRowDiameter = document.createElement('div')
+        tableRowDiameter.classList.add('table-row')
+        const diameter = document.createElement('p')
+        diameter.innerHTML = "Diameter"
+        const diameterValue = document.createElement('p')
+        diameterValue.innerHTML = data.diameter ? data.diameter : "N/A"
+        tableRowDiameter.append(diameter, diameterValue)
+
+        //Height
+        const tableRowHeight = document.createElement('div')
+        tableRowHeight.classList.add('table-row')
+        const height = document.createElement('p')
+        height.innerHTML = "Height"
+        const heightValue = document.createElement('p')
+        heightValue.innerHTML = data.height ? data.height : "N/A"
+        tableRowHeight.append(height, heightValue)
+
+        //Lenght
+        const tableRowLength = document.createElement('div')
+        tableRowLength.classList.add('table-row')
+        const lenght = document.createElement('p')
+        lenght.innerHTML = "Length"
+        const lenghtValue = document.createElement('p')
+        lenghtValue.innerHTML = data.length ? data.length : "N/A"
+        tableRowLength.append(lenght, lenghtValue)
+
+        //Width
+        const tableRowWidth = document.createElement('div')
+        tableRowWidth.classList.add('table-row')
+        const width = document.createElement('p')
+        width.innerHTML = "Width"
+        const widthValue = document.createElement('p')
+        widthValue.innerHTML = data.width ? data.width : "N/A"
+        tableRowWidth.append(width, widthValue)
+
+        //Colour
+        const tableRowColour = document.createElement('div')
+        tableRowColour.classList.add('table-row')
+        const colour = document.createElement('p')
+        colour.innerHTML = "Colour"
+        const colourValue = document.createElement('p')
+        colourValue.innerHTML = data.colour ? data.colour : "N/A"
+        tableRowColour.append(colour, colourValue)
+
+        
+
+        // Weight
+        const tableRowWeight = document.createElement('div')
+        tableRowWeight.classList.add('table-row')
+        const weight = document.createElement('p')
+        weight.innerHTML = "Weight"
+        const weightValue = document.createElement('p')
+        weightValue.innerHTML = data.weight ? data.weight : "N/A"
+        tableRowWeight.append(weight, weightValue)
+
+        // Price
+        const tableRowPrice = document.createElement('div')
+        tableRowPrice.classList.add('table-row')
+        const price = document.createElement('p')
+        price.innerHTML = "Price"
+        const priceValue = document.createElement('p')
+        priceValue.innerHTML = data.price + " Inc VAT"
+        tableRowPrice.append(price, priceValue)
+
+        // DescriptionTitle 
+        const tableRowDescriptionTitle = document.createElement('div')
+        tableRowDescriptionTitle.classList.add('table-row')
+        const descriptionTitle = document.createElement('p')
+        descriptionTitle.innerHTML = "Description"
+        tableRowDescriptionTitle.append(descriptionTitle)
+
+        // Description
+        const tableRowDescription = document.createElement('div')
+        tableRowDescription.classList.add('table-row')
+        const description = document.createElement('p')
+        description.innerHTML = data.description ? data.description : "N/A"
+        tableRowDescription.append(description)
+
+
+
+
+        table.append(buyBtn, tableRowRef, tableRowType, tableRowOrigin, 
+        tableRowEra, tableRowQtyLeft, tableRowDiameter, 
+        tableRowHeight, tableRowLength, tableRowWidth, tableRowColour,
+        tableRowWeight, tableRowPrice, tableRowDescriptionTitle, tableRowDescription)
+
+
+
+
+
+
+        card.classList.add('card')
+        imageWrap.classList.add('image-wrap')
+        anchor.setAttribute('href', data.url)
+        image.setAttribute('src', data.image)
+        anchor.append(image)
+        imageWrap.append(anchor, title, wishListBtn)
+        title.append(data.product_title)
+        card.append(imageWrap, table)
+        app.append(card)     
+       })
+
+  });
+
+  setTimeout(function(){ 
+
+    initWishlist()
+    initModal()
+   }, 2000);
+
+
+
+   function initModal(){
+
+    console.log('init modal called');
+
+
+   
+  //open modal
+  const buyButton = document.querySelectorAll('.js-buy-btn')
+  const modalBuy = document.querySelector('.qty-select-modal')
+  const closeButtonBuy = document.querySelector('.qty-select-modal .btn-close')  
+  const inputCartQty = document.querySelector('.cart__qty-number')  
+  const checkoutBtn = document.querySelector('.js-checkout')
+
+
+  buyButton.forEach((btn) => {
+
+    console.log('button');
+    btn.addEventListener('click', () => {
+      console.log('clicked');
+
+      openModal(btn)
+    })
+  })  
+
+    function openModal(btn){
+      let allTotals = parseInt(btn.getAttribute('data-total-left'))
+      let id = btn.getAttribute('data-var-id')
+      let total = btn.getAttribute('data-total')
+      const plus = document.querySelector('.qty-select-modal__qty .plus')
+      const minus = document.querySelector('.qty-select-modal__qty .minus')
+      const price = btn.getAttribute('data-price')
+
+
+
+
+      if (document.querySelector('.cart-link__bubble-num').innerHTML == "0") {
+        document.querySelector('.cart-link__bubble-num').innerHTML = "1"
+        document.querySelector('.cart-link__bubble').style.display = "block"
+      }
+  
+      fetch(window.Shopify.routes.root + 'cart.js')
+          .then(response => response.json())
+          .then(data => { 
+            updateNumberTotals(data)
+          });
+
+      function updateNumberTotals(data){
+        allTotals = document.querySelectorAll('.js-total-left')
+
+        data.items.forEach((item) => {
+          if (item.id == parseInt(id)) {
+            allTotals.forEach((totalNum) => {
+              totalNum.innerHTML = parseInt(total) - item.quantity
+            })
+          }
+        })
+
+        let totalCart = parseInt(inputCartQty.innerHTML)
+      document.querySelector('.js-quantity-price').innerHTML = "£" +  ((totalCart + 1) * parseInt(price)/100).toFixed(2)
+      }
+
+
+
+      
+
+
+      plus.addEventListener('click', () => {
+        console.log('plus clicked');
+        let qty = parseInt(total)
+        let totalCart = parseInt(inputCartQty.innerHTML)
+        allTotals = parseInt(btn.getAttribute('data-total-left'))
+
+        if (totalCart < allTotals ) {
+          inputCartQty.innerHTML = totalCart + 1
+          let totalBubler = document.querySelector('.cart-link__bubble-num')   
+          totalBubler.innerText = parseInt(totalBubler.innerText) + 1
+
+          console.log(parseInt(price));
+
+          document.querySelector('.js-quantity-price').innerHTML = "£" +  ((totalCart + 1) * parseInt(price)/100).toFixed(2)
+
+          //priceUI.innerHTML = "£" + (price * parseInt(inputCartQty.innerHTML)).toFixed(2)
+        }else{
+          console.log('runout');
+        }
+      })
+
+      minus.addEventListener('click', () => {
+        console.log('minus clicked');
+        let qty = parseInt(total)
+        let totalCart = parseInt(inputCartQty.innerHTML)
+        allTotals = document.querySelectorAll('.js-total-left')
+
+        if (totalCart > 1 ) {
+          inputCartQty.innerHTML = totalCart - 1
+          let totalBubler = document.querySelector('.cart-link__bubble-num')
+          totalBubler.innerText = parseInt(totalBubler.innerText) - 1    
+          
+          document.querySelector('.js-quantity-price').innerHTML = "£" +  ((totalCart - 1) * parseInt(price)/100).toFixed(2)
+
+          allTotals.forEach((totalNum) => {     
+            totalNum.innerHTML = total - parseInt(inputCartQty.innerHTML)
+          })
+        }
+      })
+
+        const ids = btn.getAttribute('data-var-id')
+        const totals = btn.getAttribute('data-total')
+        const url = `/cart/add.js`;
+        let data = []
+
+        data.push({id: ids, quantity: 1})
+
+        const payload = {"items" : data }  
+
+        fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(payload),
+        })
+        .then((response) => {
+          if (!response.ok) {
+            throw Error(response.statusText);
+          }
+          return response;
+        })
+        .then((response) => response.json())
+        .then((data) => {
+          handleResponse(data);
+        })
+        .catch((error) => {
+          console.error(error); 
+        });
+
+        function handleResponse(data){
+    
+
+          var cartContents = fetch(window.Shopify.routes.root + 'cart.js')
+          .then(response => response.json())
+          .then(data => { 
+            updateCart(data)
+          });
+        }
+
+        function updateCart(data){
+          const cartCount = document.querySelector('.cart-link__bubble-num')
+          cartCount.innerHTML = data.item_count
+
+          data.items.forEach((item) => {
+    
+
+            if (item.id == parseInt(id)) {
+              inputCartQty.innerHTML = item.quantity 
+            }
+          })
+
+
+          modalBuy.classList.add('active')
+
+          //update price 
+     
+          // priceUI.innerHTML = "£" + (price * parseInt(inputCartQty.innerHTML)).toFixed(2)
+        }
+
+
+
+      closeButtonBuy.addEventListener('click', () => {
+        modalBuy.classList.remove('active')
+        let qty = parseInt(document.querySelector('.cart__qty-number').innerHTML)
+        const id = btn.getAttribute('data-var-id')
+        var new_minus = minus.cloneNode(true);
+        minus.parentNode.replaceChild(new_minus, minus);  
+        var new_plus = plus.cloneNode(true);
+        plus.parentNode.replaceChild(new_plus, plus);
+
+        let data = {
+            "id" : id,
+            "quantity" : qty
+        }
+
+        let cartContents = fetch('/cart/change.js', {
+            method: 'POST',
+            credentials: 'same-origin',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => {
+    
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        })
+
+      })
+
+      document.querySelector('.continue-shopping').addEventListener('click', () => {
+        modalBuy.classList.remove('active')
+        let qty = parseInt(document.querySelector('.cart__qty-number').innerHTML)
+        const id = buyButton.getAttribute('data-var-id')
+
+        let data = {
+            "id" : id,
+            "quantity" : qty
+        }
+
+        let cartContents = fetch('/cart/change.js', {
+            method: 'POST',
+            credentials: 'same-origin',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => {
+    
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        })
+      })
+
+
+
+      checkoutBtn.addEventListener('click', () => {
+
+        let qty = parseInt(document.querySelector('.cart__qty-number').innerHTML)
+        const id = buyButton.getAttribute('data-var-id')
+
+        let data = {
+            "id" : id,
+            "quantity" : qty
+        }
+
+        let cartContents = fetch('/cart/change.js', {
+            method: 'POST',
+            credentials: 'same-origin',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => {
+            window.location = "/cart"
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        })
+
+      })
+    }     
+   }
+
+
+
+
+
+
+</script>
+

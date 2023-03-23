@@ -1,0 +1,264 @@
+{%- assign show = false -%}
+
+<div class="wrap page-width {% if section.settings.flush %}section-flush {% endif %} {% if section.settings.flush_bottom %}section-padding--bottom {% endif %}">
+  {%- for block in section.blocks -%}
+
+    {%- if block.type == "filter" -%}
+      {% if product.vendor == block.settings.heading %}
+        {%- assign show = true -%}
+      {% endif %}
+        {%- for metafield in product.metafields.custom -%}
+          {%- for item in  metafield -%}
+            {%- assign string = item.value[0]  -%}
+            {%- if string contains block.settings.heading  -%}
+              {%- assign show = true -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endfor -%}
+        {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+        {% assign title = block.settings.title | newline_to_br %}
+        {% assign copy =  block.settings.copy  %}
+        {% assign btnlink = block.settings.link %}
+        {% assign btnCopy = block.settings.link_text  %}
+
+        {%- if show -%}
+        <div class="product-metafield-details">
+          <div class="product-metafield-details__inner  product-metafield-details__inner--left">
+            <div class="product-metafield-details__image">
+              <div class="product-metafield-details__image-wrap">
+                <div class="image-wrap" style="height: 0; padding-bottom: {{ 100 | divided_by: block.settings.image.aspect_ratio }}%;">
+             
+                  <img class="lazyload" data-src="{{ img_url }}" data-widths="[360, 540, 720, 900, 1080, 1600]" data-aspectratio="{{block.settings.image.aspect_ratio }}" data-sizes="auto" alt="{{block.settings.image.alt }}">
+                </div>
+              </div>
+            </div>
+            <div class="product-metafield-details__text">
+              <div class="product-metafield-details__text-wrap">
+                <h3>{{ title }}</h3>
+                {{ copy }}
+                <a href="{{ btnlink }}">{{  btnCopy  }}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      {%- endif -%}      
+    {% endif %}    
+
+    {% if block.type == "meta" %}    
+      {% if product.metafields.product-block.image[0] != blank %}
+        {%- assign show = true -%}
+      {% endif %}    
+      {% for image in product.metafields.product-block.image %}
+      {%- assign img_url = image[0].src -%}
+      {% assign title = product.metafields.product-block.title[forloop.index0] | newline_to_br %}
+      {% assign copy =  product.metafields.product-block.copy[forloop.index0]  %}
+      {% assign btnlink = product.metafields.product-block.link[forloop.index0] %}
+      {% assign btnCopy = product.metafields.product-block.link_text[forloop.index0]  %} 
+        <div class="product-metafield-details">
+          <div class="product-metafield-details__inner  product-metafield-details__inner--left">
+            <div class="product-metafield-details__image">
+              <div class="product-metafield-details__image-wrap">
+                <div class="image-wrap" style="">
+             
+                  <img class="lazyload" src="{{img_url}}" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="product-metafield-details__text">
+              <div class="product-metafield-details__text-wrap">
+                <h3>{{ title }}</h3>
+                <p>{{ copy }}</p>                
+                <a href="{{ btnlink }}">{{  btnCopy  }}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}     
+    {% endif %}
+
+    {% if block.type == "pdf" %}    
+
+        
+
+
+    {%- assign img_url = product.metafields.pdf.image[0].src -%}
+    {% assign title = "Product details" %}
+    {% assign copy =  product.metafields.pdf.additional_description %}
+    {% assign btnlink = product.metafields.product-block.link[forloop.index0] %}
+    {% assign btnCopy = product.metafields.product-block.link_text[forloop.index0]  %} 
+
+      <div class="product-metafield-details">
+        <div class="product-metafield-details__inner  product-metafield-details__inner--left">
+          <div class="product-metafield-details__image">
+            <div class="product-metafield-details__image-wrap">
+              <div class="image-wrap" style="">
+               {% if img_url != blank %}
+                <img class="lazyload" src="{{img_url}}" alt="">
+                {% else %}
+                  <img src="{{ product.media[0].src | img_url: "master" }}" alt="">
+                {% endif %}  
+              </div>
+            </div>
+          </div>
+          <div class="product-metafield-details__text">
+            <div class="product-metafield-details__text-wrap">
+              <h3>{{ title }}</h3>
+
+              {% if copy != blank %}
+              <p>{{ copy }}</p>    
+              {% else %}
+                <p>{{ product.description }}</p>
+              {% endif %}
+
+     
+                
+          
+            
+              <div class="product-pdf-table">
+                {% if product.metafields.pdf.diameter != blank or  product.metafields.pdf.length != blank or product.metafields.pdf.height or product.metafields.pdf.width or product.metafields.pdf.weight%}
+                <table>
+                  <tr>
+                    {% if product.metafields.pdf.diameter != blank %}
+                      <td>Diameter:</td>
+                      <td>{{ product.metafields.pdf.diameter }}</td>
+                    {% endif %}
+                  </tr>
+                  <tr>
+                    {% if product.metafields.pdf.length != blank %}
+                      <td>Length:</td>
+                      <td>{{ pproduct.metafields.pdf.length }}</td>
+                    {% endif %}
+                  </tr>
+                  <tr>
+                    {% if product.metafields.pdf.height != blank %}
+                      <td>Height:</td>
+                      <td>{{ product.metafields.pdf.height }}</td>
+                    {% endif %}
+                  </tr>
+                  <tr>
+                    {% if product.metafields.pdf.width != blank %}
+                      <td>Width:</td>
+                      <td>{{ product.metafields.pdf.width }}</td>
+                    {% endif %}
+                  </tr>
+                  <tr>
+                    {% if product.metafields.pdf.weight != blank %}
+                      <td>Weight:</td>
+                      <td>{{ product.metafields.pdf.weight }}</td>
+                    {% endif %}
+                  </tr>      
+                </table>  
+                {% endif %}
+                <div class="pdf-download-btn">
+
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 34 32"><defs><style>.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{clip-path:url(#clip-path-2);}.cls-4{clip-path:url(#clip-path-3);}.cls-5{clip-path:url(#clip-path-4);}.cls-6{clip-path:url(#clip-path-5);}.cls-7{clip-path:url(#clip-path-6);}.cls-8{clip-path:url(#clip-path-7);}.cls-9{clip-path:url(#clip-path-8);}</style><clipPath id="clip-path"><path class="cls-1" d="M10,13a.94.94,0,0,1-1-1,7,7,0,0,1,7-7,7.18,7.18,0,0,1,6.7,4.9,1,1,0,0,1-.7,1.2,1,1,0,0,1-1.3-.6A4.83,4.83,0,0,0,16,7a5,5,0,0,0-5,5A.94.94,0,0,1,10,13Z"/></clipPath><clipPath id="clip-path-2"><path class="cls-1" d="M23,21a1,1,0,0,1,0-2,4,4,0,0,0,0-8,3.4,3.4,0,0,0-1,.1,1,1,0,0,1-.5-1.9A7.72,7.72,0,0,1,23,9a6,6,0,0,1,0,12Z"/></clipPath><clipPath id="clip-path-3"><path class="cls-1" d="M13,21H10a1,1,0,0,1,0-2h3a1,1,0,0,1,0,2Z"/></clipPath><clipPath id="clip-path-4"><path class="cls-1" d="M23,21H21a1,1,0,0,1,0-2h2a1,1,0,0,1,0,2Z"/></clipPath><clipPath id="clip-path-5"><path class="cls-1" d="M10,21a5,5,0,0,1,0-10,1,1,0,0,1,0,2,3,3,0,0,0,0,6,1,1,0,0,1,0,2Z"/></clipPath><clipPath id="clip-path-6"><path class="cls-1" d="M17,27a.94.94,0,0,1-1-1V17a1,1,0,0,1,2,0v9A.94.94,0,0,1,17,27Z"/></clipPath><clipPath id="clip-path-7"><path class="cls-1" d="M17,27a.91.91,0,0,1-.7-.3,1,1,0,0,1,0-1.4l3-3a1,1,0,0,1,1.4,1.4l-3,3A.91.91,0,0,1,17,27Z"/></clipPath><clipPath id="clip-path-8"><path class="cls-1" d="M17,27a.91.91,0,0,1-.7-.3l-3-3a1,1,0,0,1,1.4-1.4l3,3a1,1,0,0,1,0,1.4A.91.91,0,0,1,17,27Z"/></clipPath></defs><title>Asset 1</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g class="cls-2"><rect x="4" width="23.72" height="18"/></g><g class="cls-3"><rect x="15.78" y="4" width="18.22" height="22"/></g><g class="cls-4"><rect x="4" y="14" width="15" height="12"/></g><g class="cls-5"><rect x="15" y="14" width="14" height="12"/></g><g class="cls-6"><rect y="6" width="16" height="20"/></g><g class="cls-7"><rect x="11" y="11" width="12" height="21"/></g><g class="cls-8"><rect x="11" y="17" width="15" height="15"/></g><g class="cls-9"><rect x="8" y="17" width="15" height="15"/></g></g></g></svg>
+                  
+                  <p>Download PDFs</p>
+                </div>
+              </div>
+
+              <p>{{ product.metafields.pdf.notes }}</p>
+   
+            </div>
+          </div>
+        </div>
+      </div>
+
+    {% endif %}
+
+
+
+  {%- endfor -%}
+</div>
+
+
+
+
+
+
+
+{% include 'pdp-pdp' %}
+
+
+
+{% schema %}
+  {
+    "name": "Product metafield details",
+    "class": "product-metafield-details index-section",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "flush",
+        "label": "Remove top space",
+        "default": true
+      }, {
+        "type": "checkbox",
+        "id": "flush_bottom",
+        "label": "Add bottom space",
+        "default": true
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Filter Info",
+        "type": "filter",
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Metafield Title",
+            "info": "add a metafield title here (ie 1920s) and this section will only show if the product has the entered metafiled title"
+          },
+          {
+            "type": "checkbox",
+            "id": "flush_bottom",
+            "label": "Add bottom space",
+            "default": true
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading"
+          }, {
+            "type": "richtext",
+            "id": "copy",
+            "label": "Copy"
+          }, {
+            "type": "url",
+            "id": "link",
+            "label": "Link"
+          }, {
+            "type": "text",
+            "id": "link_text",
+            "label": "Link Text"
+          }
+        ]
+      },
+      {
+        "name": "PDF Block",
+        "type": "pdf",
+        "limit": 1,
+        "settings": [
+        ]
+      },
+      {
+        "name": "Metafield Blocks",
+        "type": "meta",
+        "limit": 1,
+        "settings": [
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product metafield details"
+      }
+    ],
+    "templates": ["product"]
+  }
+{% endschema %}

@@ -1,0 +1,194 @@
+<div class="pdf-modal">
+  <div class="pdf-modal__inner">
+    <button type="button" aria-label="Close" class="btn-close"></button>
+
+    <h3>Download Product Info</h3>
+    <p>{{ product.title }}</p>
+    <h4>With skinflint branding</h4>
+    <div class="download-modal__view js-pdf-branding">Download</div>
+    <h4>Without skinflint branding</h4>
+    <div class="download-modal__view js-pdf-nonbranding">Download</div>
+  </div>
+</div>
+
+
+
+<div id="element-to-print" style="display: none;">
+  {% assign total=0 %}
+    {%for variant in product.variants %}
+    {% capture i %}{{ total | plus:variant.inventory_quantity }}{%endcapture%}
+    {% assign total = i %}
+  {%endfor%}  
+  <div class="pdp-pdf" >
+    <div class="pdp-pdf__inner page-width">
+      <div class="pdp-pdf__body">
+        <div class="pdp-pdf__header">
+          <div class="remove-branding">{% render 'logo' %}</div>
+          <div class=""><h2>Lighting Data</h2> </div>
+        </div>  
+        <div class="pdp-pdf__images">
+          <div class="pdp-pdf__image">
+            <img class="pdf-img-one" src="{{ product.media[0].src  | img_url: "master"}}" alt="">
+          </div>
+          <div class="pdp-pdf__image">
+            <img src="{{ product.media[1].src  | img_url: "master"}}" alt="">  
+          </div>
+        </div>
+        <div class="pdp-pdf__data">
+          <div class="pdp-pdf__data-column">
+            <h4>Reference</h4>
+            <p>{{ product.variants[0].sku }}</p>
+            <h4>Title</h4>
+            <p class="file-name">{{ product.title }}</p>
+            <h4>Description</h4>
+            <p>{{ product.description }}</p>
+            <p style="margin-top: 20px;">{{ product.metafields.pdf.additional_description }}</p>
+          </div>
+          <div class="pdp-pdf__data-column">
+            <h4>Dimentions</h4>    
+            <table>
+              <tr>
+                {% if product.metafields.pdf.diameter != blank %}
+                  <td>Diameter:</td>
+                  <td>{{ product.metafields.pdf.diameter }}</td>
+                {% endif %}
+              </tr>
+              <tr>
+                {% if product.metafields.pdf.length != blank %}
+                  <td>Length:</td>
+                  <td>{{ product.metafields.pdf.length }}</td>
+                {% endif %}
+              </tr>
+              <tr>
+                {% if product.metafields.pdf.height != blank %}
+                  <td>Height:</td>
+                  <td>{{ product.metafields.pdf.height }}</td>
+                {% endif %}
+              </tr>
+              <tr>
+                {% if product.metafields.pdf.width != blank %}
+                  <td>Width:</td>
+                  <td>{{ product.metafields.pdf.width }}</td>
+                {% endif %}
+              </tr>
+              <tr>
+                {% if product.metafields.pdf.weight != blank %}
+                  <td>Weight:</td>
+                  <td>{{ product.metafields.pdf.weight }}</td>
+                {% endif %}
+              </tr>      
+            </table>  
+            {% if product.metafields.pdf.colour != blank %}
+              <h4>Colour</h4>
+              <p>{{ product.metafields.pdf.colour }}</p>
+            {% endif %}
+            <h4>Quantity Remaining</h4>
+            <p class="js-total-left">{{ total }}</p>
+            <h4>Unit Price</h4>
+            <p>{{ product.price | money }} + VAT</p>      
+            {% if product.metafields.pdf.notes != blank %}
+              <h4>notes</h4>
+              <p>{{ product.metafields.pdf.notes }}</p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      <div class="pdp-pdf__footer remove-branding">
+        <div class="pdp-pdf__footer-column">
+          <p>The Warehouse, Commercial Road,<br>
+            Penryn, Cornwall, TR10 8AE</p>
+        </div>
+        <div class="pdp-pdf__footer-column">
+          <a href="mailto:studio@skinflintdesign.com">studio@skinflintdesign.com</a>     
+          <a href="{{ shop.url }}">{{ shop.url }}</a>            
+        </div>
+        <div class="pdp-pdf__footer-column">
+          <p>+44 (0)1326 565 227 <br>
+            Limited Company Registered in England No: 4521098</p>          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js" integrity="sha512-dBB2PGgYedA6vzize7rsf//Q6iuUuMPvXCDybHtZP3hQXCPCD/YVJXK3QYZ2v0p7YCfVurqr8IdcSuj4CCKnGg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script>
+
+
+  //open modal
+  const button = document.querySelector('.pdf-download-btn')
+  const modal = document.querySelector('.pdf-modal')
+  const closeButton = document.querySelector('.pdf-modal .btn-close')
+
+  button.addEventListener('click', () => {
+    modal.classList.add('active')
+  })
+
+  closeButton.addEventListener('click', () => {
+    modal.classList.remove('active')
+  })
+
+
+  //pdf
+
+
+  const images = document.querySelectorAll('.pdp-pdf img')
+
+  images.forEach((img) => {
+    let src = img.getAttribute('src')
+    toDataURL(src, function(dataURL){
+      img.setAttribute('src', dataURL)
+    })
+  })
+
+  function toDataURL(src, callback){
+    var image = new Image();
+    image.crossOrigin = 'Anonymous';
+    image.onload = function(){
+      var canvas = document.createElement('canvas');
+      var context = canvas.getContext('2d');
+      canvas.height = this.naturalHeight;
+      canvas.width = this.naturalWidth;
+      context.drawImage(this, 0, 0);
+      var dataURL = canvas.toDataURL('image/jpeg');
+      callback(dataURL);
+    };
+    image.src = src;
+  }
+
+  var element = document.getElementById('element-to-print');
+
+  function printPDF(element){
+    var clonedElement = element.cloneNode(true);
+    clonedElement.style.display = "flex"   
+
+    let filename = document.querySelector('.file-name').innerHTML
+    const opt = { margin: 10, filename, html2canvas: { width: 800, useCORS: true } };
+    html2pdf().set(opt).from(clonedElement).save().then((pdf) => downloadPdf(pdf, options));
+      const downloadPdf = (pdf, opt) => {
+      let link = document.createElement('a');
+      link.target = '_blank';
+      link.href = pdf.output('bloburl');
+      link.download = 'myFileName.pdf';
+      link.click();
+      link.remove();
+    }
+
+    clonedElement.remove();
+  }
+
+  document.querySelector('.js-pdf-branding').addEventListener('click', () => {
+    document.querySelectorAll('.remove-branding').forEach((el) => el.style.display = "grid")
+    printPDF(element);
+  })
+
+  document.querySelector('.js-pdf-nonbranding').addEventListener('click', () => {
+    document.querySelectorAll('.remove-branding').forEach((el) => el.style.display = "none")
+    printPDF(element);
+  })
+</script>

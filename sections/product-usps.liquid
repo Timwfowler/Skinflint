@@ -1,0 +1,214 @@
+
+
+{% assign usps = product.metafields.accentuate.include_usps | split: "|" %}
+
+
+
+  <div class="index-section {% if section.settings.flush %}section-flush {% endif %}
+  {% if section.settings.flush_bottom %}section-padding--bottom {% endif %}">
+
+
+
+
+    <div class="page-width">
+      {%- if section.settings.title != blank -%}
+        <div class="section-header text-left">
+          <h2>{{ section.settings.title }}</h2>
+        </div>
+      {%- endif -%}
+
+      <div class="grid{% unless section.blocks.size == 5 %} grid--uniform{% endunless %} grid--flush-bottom">
+        {%- liquid
+        assign grid_item_width = 'medium-up--one-third'
+        case section.blocks.size
+          when 1
+            assign grid_item_width = 'medium-up--one-half'
+          when 2
+            assign grid_item_width = 'medium-up--one-half'
+          when 4
+            assign grid_item_width = 'medium-up--one-half'
+        endcase
+      -%}
+
+      {% if product.metafields.accentuate.include_usps != blank %}
+
+
+        {%- for block in section.blocks -%}
+
+        {% for usp in usps %}
+          {% if usp == block.settings.title %}
+          {%- if section.blocks.size == 5 and forloop.index < 3 -%}
+          {%- assign column_width = 'medium-up--one-half' -%}
+        {%- else -%}
+          {%- assign column_width = grid_item_width -%}
+        {%- endif -%}
+        <div class="grid__item {{ column_width }} text-left" {{ block.shopify_attributes }}>
+          {%- if block.settings.enable_image -%}
+            <div class="grid-image" style="">
+              {%- if block.settings.button_link != blank -%}
+                <a href="{{ block.settings.button_link }}" aria-label="{{ block.settings.button_link }}">
+                {%- endif -%}
+                {%- if block.settings.image != blank -%}
+                  <div class="image-wrap text-spacing" style="">
+                    {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                    <img class="lazyload" data-src="{{ img_url }}" data-widths="[180, 360, 540, 720, 900, 1080]" data-aspectratio="{{ block.settings.image.aspect_ratio }}" data-sizes="auto" alt="{{ block.settings.image.alt }}">
+                  </div>
+                {%- else -%}
+                  <div class="image-wrap text-spacing">{{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder-svg--no-padding' }}</div>
+                {%- endif -%}
+                {%- if block.settings.button_link != blank -%}
+                </a>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+          <div class="grid-text">
+            {%- if block.settings.title != blank -%}
+            <h4 class="h3 rte--block">{{ block.settings.title }}</h4>
+          {%- endif -%}
+          {%- if block.settings.text != blank -%}
+            <div class="rte-setting rte--block text-spacing">{{ block.settings.text }}</div>
+          {%- endif -%}
+          {%- if block.settings.button_label != blank -%}
+            <a href="{{ block.settings.button_link }}" class="yellow-underline">
+              {{ block.settings.button_label }}
+            </a>
+          {%- endif -%}
+          </div>
+        </div>
+            
+          {% endif %}
+
+        {% endfor %}
+        {%- endfor -%}
+
+
+        {%- else -%}
+          
+
+        {%- for block in section.blocks -%}
+        {%- if section.blocks.size == 5 and forloop.index < 3 -%}
+          {%- assign column_width = 'medium-up--one-half' -%}
+        {%- else -%}
+          {%- assign column_width = grid_item_width -%}
+        {%- endif -%}
+        <div class="grid__item {{ column_width }} text-left" {{ block.shopify_attributes }}>
+          {%- if block.settings.enable_image -%}
+            <div class="grid-image" style="">
+              {%- if block.settings.button_link != blank -%}
+                <a href="{{ block.settings.button_link }}" aria-label="{{ block.settings.button_link }}">
+                {%- endif -%}
+                {%- if block.settings.image != blank -%}
+                  <div class="image-wrap text-spacing" style="">
+                    {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                    <img class="lazyload" data-src="{{ img_url }}" data-widths="[180, 360, 540, 720, 900, 1080]" data-aspectratio="{{ block.settings.image.aspect_ratio }}" data-sizes="auto" alt="{{ block.settings.image.alt }}">
+                  </div>
+                {%- else -%}
+                  <div class="image-wrap text-spacing">{{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder-svg--no-padding' }}</div>
+                {%- endif -%}
+                {%- if block.settings.button_link != blank -%}
+                </a>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+          <div class="grid-text">
+            {%- if block.settings.title != blank -%}
+            <h4 class="h3 rte--block">{{ block.settings.title }}</h4>
+          {%- endif -%}
+          {%- if block.settings.text != blank -%}
+            <div class="rte-setting rte--block text-spacing">{{ block.settings.text }}</div>
+          {%- endif -%}
+          {%- if block.settings.button_label != blank -%}
+            <a href="{{ block.settings.button_link }}" class="yellow-underline">
+              {{ block.settings.button_label }}
+            </a>
+          {%- endif -%}
+          </div>
+        </div>
+      {%- endfor -%}
+
+
+      {% endif %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+{% schema %}
+  {
+    "name": "Product USPs",
+    "class": "text-columns-section",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "flush",
+        "label": "Remove top space",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "flush_bottom",
+        "label": "Add bottom space",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "t:sections.text-columns.settings.title.label"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text_block",
+        "name": "t:sections.text-columns.blocks.column.name",
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "enable_image",
+            "label": "t:sections.text-columns.blocks.column.settings.enable_image.label",
+            "default": true
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:sections.text-columns.blocks.column.settings.image.label"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "t:sections.text-columns.blocks.column.settings.title.label",
+            "info": "NOTE: If you change this title, you will need to also change the selection options here..  https://skin-flint.myshopify.com/admin/apps/accentuate/app/meta?scope=product",
+            "default": "Example title"
+          }, {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:sections.text-columns.blocks.column.settings.text.label",
+            "default": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.</p>"
+          }, {
+            "type": "text",
+            "id": "button_label",
+            "label": "t:sections.text-columns.blocks.column.settings.button_label.label",
+            "default": "Optional button"
+          }, {
+            "type": "url",
+            "id": "button_link",
+            "label": "t:sections.text-columns.blocks.column.settings.button_link.label"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

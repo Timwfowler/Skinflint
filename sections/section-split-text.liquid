@@ -1,0 +1,188 @@
+<div class="text-with-icons remove-borders-{{ section.settings.remove_borders }} has-{{ section.settings.desktop_columns_per_row }}-per-row
+        {% if section.settings.flush %}section-flush {% endif %}
+          {% if section.settings.flush_bottom %}section-padding--bottom {% endif %}
+        " data-section-id="{{ section.id }}" data-section-type="text-with-icons">
+  <div class="page-width">
+    {%- if section.settings.title != blank -%}
+      <div class="text-with-icons__title section-header">
+        <h2 class="text-{{ section.settings.align_text }}">{{ section.settings.title }}
+        </h2>
+      </div>
+    {%- endif -%}
+    <div class="text-with-icons__blocks " data-block-count="{{ section.blocks.size }}">
+      {% for block in section.blocks %}
+        <div class="text-with-icons__block text-{{ section.settings.align_text }}" {{ block.shopify_attributes }}>
+          {% if block.settings.title != blank %}
+            <div class="text-with-icons__block-title">
+              <h4>{{ block.settings.title }}
+              </h4>
+            </div>
+          {% endif %}
+          <div class="text-with-icons__block-text">
+            {{ block.settings.text | newline_to_br }}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    {%- if section.settings.button_label != blank -%}
+      <div class="text-with-icons__button">
+        <a aria-label="Read more" href="{{ section.settings.button_link }}" class="{% unless section.settings.show_link %}
+                                              btn
+                                            {% endunless %}">
+          {{ section.settings.button_label }}
+        </a>
+
+        {% if section.settings.button_link_two != blank %}
+        <a aria-label="Read more" href="{{ section.settings.button_link_two }}" class="{% unless section.settings.show_link %}
+        btn
+      {% endunless %}">
+{{ section.settings.button_label_two }}
+</a>
+        {% endif %}
+
+
+
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+
+
+{% style %}
+  #shopify-section-{{ section.id }}.icon {
+    color: {{ section.settings.icon_color }};
+  }
+
+  #shopify-section-{{ section.id }}.icon path, #shopify-section-{{ section.id }}.icon polygon, #shopify-section-{{ section.id }}.icon rect, #shopify-section-{{ section.id }}.icon circle, #shopify-section-{{ section.id }}.icon ellipse, #shopify-section-{{ section.id }}.icon line, #shopify-section-{{ section.id }}.icon polyline, #shopify-section-{{ section.id }}.icon g {
+    stroke-width: {{ settings.icon_weight | replace: 'px', '' | minus: 1 }}px;
+  }
+{% endstyle %}
+
+{% schema %}
+  {
+    "name": "Split Text section",
+    "class": "index-section split-text-section",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "flush",
+        "label": "Remove top space",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "flush_bottom",
+        "label": "Add bottom space",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "remove_borders",
+        "label": "Remove Borders",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading"
+      }, {
+        "type": "select",
+        "id": "align_text",
+        "label": "Text alignment",
+        "default": "center",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          }, {
+            "value": "center",
+            "label": "Center"
+          }
+        ]
+      }, {
+        "type": "range",
+        "id": "desktop_columns_per_row",
+        "label": "Desktop columns per row",
+        "default": 2,
+        "min": 2,
+        "max": 4,
+        "step": 1
+      }, {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button label"
+      }, {
+        "type": "url",
+        "id": "button_link",
+        "label": "Link"
+      }, {
+        "type": "text",
+        "id": "button_label_two",
+        "label": "Button label Two"
+      }, {
+        "type": "url",
+        "id": "button_link_two",
+        "label": "Link Two"
+      }, {
+        "type": "checkbox",
+        "id": "show_link",
+        "label": "Show as link",
+        "default": true
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text_block",
+        "name": "Column",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Example title"
+          }, {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Split Text section",
+        "settings": {
+          "flush": false,
+          "flush_bottom": false,
+          "remove_borders": false,
+          "title": "Vintage lighting for modern use",
+          "align_text": "left",
+          "desktop_columns_per_row": 2,
+          "button_label": "",
+          "button_link": "",
+          "button_label_two": "",
+          "button_link_two": "",
+          "show_link": true
+        },
+        "blocks": [
+          {
+            "type": "text_block",
+            "settings": {
+              "title": "",
+              "text": "<p>Welcome to Europe’s leading vintage industrial lighting site. skinflint scours locations across the world to source and restore unique and historic vintage lights; manufactured in the era from 1920 to 1970, and originally utilised in a wide variety of industrial environments.<\/p><p>Every vintage light you’ll find here is an original with a story to tell, that has been reclaimed and restored by UK-based lighting experts – then carefully rebuilt and tested by hand, to give you a truly individual light with real character, which you can rely on. Just as importantly, your vintage light will arrive quickly, and safely packaged – with shipping options to over 200 countries worldwide.<\/p>"
+            }
+          }, 
+          {
+            "type": "text_block",
+            "settings": {
+              "title": "",
+              "text": "<p>Our reclaimed vintage lights are all unique pieces, ranging from Hungarian railway ceiling lights and German cargo ship wall lights, to Eastern Bloc machinists table lights and Czech pendants. Discover iconic vintage lighting brands among our collections, including Revo, Holophane, Benjamin Electric and G.E.C. - all known for their dedicated craftsmanship and pivotal contribution to industrial purpose.<\/p><p>We work with commercial and residential clients around the world, as well as offering a vintage lighting prop hire service for TV and film. skinflint is also a proud member of the UK Lighting Industry Association (LIA), ensuring all of our lights are expertly restored to modern standards for faultless functionality.<\/p>"
+            }
+          }
+        ]
+      } 
+    ]
+  }
+{% endschema %}

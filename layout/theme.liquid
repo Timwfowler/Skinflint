@@ -1,0 +1,251 @@
+<!doctype html>
+<html class="no-js" lang="{{ request.locale.iso_code }}" dir="{{ settings.text_direction }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="{{ settings.color_button }}">
+    <link rel="canonical" href="{{ canonical_url }}">
+    <link rel="preload" as="script" href="{{ 'theme.js' | asset_url }}">
+    <link rel="preconnect" href="https://cdn.shopify.com">
+    <link rel="preconnect" href="https://fonts.shopifycdn.com">
+    <link rel="dns-prefetch" href="https://productreviews.shopifycdn.com">
+    <link rel="dns-prefetch" href="https://ajax.googleapis.com">
+    <link rel="dns-prefetch" href="https://maps.googleapis.com">
+    <link rel="dns-prefetch" href="https://maps.gstatic.com">
+
+    {%- if settings.favicon != blank -%}
+      <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png"/>
+    {%- endif -%}
+
+    {%- render 'seo-title' -%}
+
+    {%- if page_description -%}
+      <meta name="description" content="{{ page_description | escape }}">
+
+      {%- else -%}
+      <meta name="description" content="Skinflint">
+    {%- endif -%}
+
+    {%- render 'social-meta-tags' -%}
+
+    {%- if shop.enabled_currencies.size > 1 -%}
+      <link rel="stylesheet" href="{{ 'country-flags.css' | asset_url | split: '?' | first }}">
+    {%- endif -%}
+
+    {%- render 'font-face' -%}
+    {{ 'theme.css' | asset_url | stylesheet_tag: preload: true }}
+    {{ 'custom.css' | asset_url | stylesheet_tag: preload: true }}
+    {{ 'header.css' | asset_url | stylesheet_tag: preload: true }}
+    {%- render 'css-variables' -%}
+
+    {%- liquid
+     assign enableSuperScript = false
+     unless shop.money_format contains 'money' or shop.money_format contains '.'
+ 
+     endunless
+   -%}
+
+    <script>
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+
+      window.theme = window.theme || {};
+      theme.routes = {
+        home: "{{ routes.root_url }}",
+        collections: "{{ routes.collections_url }}",
+        cart: "{{ routes.cart_url | append: '.js' }}",
+        cartPage: "{{ routes.cart_url }}",
+        cartAdd: "{{ routes.cart_add_url | append: '.js' }}",
+        cartChange: "{{ routes.cart_change_url | append: '.js' }}",
+        search: "{{ routes.search_url }}"
+      };
+      theme.strings = {
+        soldOut: {{ 'products.product.sold_out' | t | json }},
+        unavailable: {{ 'products.product.unavailable' | t | json }},
+        inStockLabel: {{ 'products.product.in_stock_label' | t | json }},
+        oneStockLabel: {{ 'products.product.stock_label.one' | t: count: '[count]' | json }},
+        otherStockLabel: {{ 'products.product.stock_label.other' | t: count: '[count]' | json }},
+        willNotShipUntil: {{ 'products.product.will_not_ship_until' | t: date: '[date]' | json }},
+        willBeInStockAfter: {{ 'products.product.will_be_in_stock_after' | t: date: '[date]' | json }},
+        waitingForStock: {{ 'products.product.waiting_for_stock' | t | json }},
+        savePrice: {{ 'products.general.save_html' | t: saved_amount: '[saved_amount]' | json }},
+        cartEmpty: {{ 'cart.general.empty' | t | json }},
+        cartTermsConfirmation: {{ 'cart.general.terms_confirm' | t | json }},
+        searchCollections: {{ 'general.search.collections' | t | json }},
+        searchPages: {{ 'general.search.pages' | t | json }},
+        searchArticles: {{ 'general.search.articles' | t | json }}
+      };
+      theme.settings = {
+        cartType: {{ settings.cart_type | json }},
+        isCustomerTemplate:{% if request.page_type contains 'customers/' %}
+          true
+        {% else %}
+          false{% endif %},
+        moneyFormat: {{ shop.money_format | json }},
+        saveType: {{ settings.product_save_type | json }},
+        productImageSize: {{ settings.product_grid_image_size | json }},
+        productImageCover: {{ settings.product_grid_image_fill }},
+        predictiveSearch: {{ settings.predictive_search_enabled }},
+        predictiveSearchType: {{ settings.search_type | json }},
+        superScriptSetting: {{ settings.superscript_decimals }},
+        superScriptPrice: {{ enableSuperScript }},
+        quickView: {{ settings.quick_shop_enable }},
+        quickAdd: {{ settings.quick_add_enable }},
+        themeName: 'Expanse',
+        themeVersion: "4.0.0"
+      };
+    </script>
+
+    {{ content_for_header }}
+
+
+    <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+    <script src="https://unpkg.com/downloadjs@1.4.7"></script>
+    <script src="{{ 'vendor-scripts-v2.js' | asset_url | split: '?' | first }}" defer="defer"></script>
+    <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
+
+    <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
+    {%- if request.page_type contains 'customers/' -%}
+      <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script>
+    {%- endif -%}
+
+    {% if request.design_mode %}
+      <script src="https://api.archetypethemes.co/design-mode.js" defer="defer"></script>
+    {% endif %}
+  </head>
+
+  <body class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% if request.path == '/challenge' %} template-challange{% endif %}" data-transitions="{{ settings.animate_page_transitions }}" data-button_style="{{ settings.button_style }}" data-edges="{{ settings.roundness }}" data-type_header_capitalize="{{ settings.type_header_capitalize }}" data-swatch_style="{{ settings.swatch_style }}" data-grid-style="{{ settings.product_grid_style }}">
+
+    {% if settings.animate_page_transitions %}
+      <script type="text/javascript">
+        window.setTimeout(function() {
+          document.body.className += " loaded";
+        }, 25);
+      </script>
+    {% endif %}
+
+    <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}
+    </a>
+
+    <div id="PageContainer" class="page-container">
+      <div class="transition-body">
+        {%- section 'header' -%}
+
+
+        {% render 'loading' %}
+
+        <main class="main-content" id="MainContent">
+          {{ content_for_layout }}
+        </main>
+
+        {%- section 'footer' -%}
+      </div>
+    </div>
+
+    {%- liquid
+     render 'video-modal'
+     render 'photoswipe-template'
+     if settings.quick_add_enable
+       render 'quick-add-modal'
+     endif
+     render 'tool-tip'
+   -%}
+    <div id="ProductModals"></div>
+
+
+    {% assign current_url = '' %}
+
+    {% case template %}
+    {% when 'page' %}
+    {% assign current_url = page.url %}
+    {% when 'blog' %}
+    {% assign current_url = blog.url %}
+    {% when 'article' %}
+    {% assign current_url = article.url %}
+    {% when 'collection' %}
+    {% assign current_url = collection.url %}
+    {% when 'product' %}
+    {% assign current_url = product.url %}
+    {% endcase %}
+
+    <style>
+
+      .btn-email:before {
+          content: "";
+          position: relative;
+          top: 4px;
+          display: inline-block;
+          background: url({{ 'email-svg.svg' | asset_url }}) no-repeat;
+          width: 24px;
+          height: 16px;
+          margin-right: 13px;
+      }
+
+      .btn-pinterest:before {
+          content: "";
+          position: relative;
+          top: 3px;
+          display: inline-block;
+          background: url({{ 'pintrest-svg.svg' | asset_url }}) no-repeat;
+          width: 13px;
+          height: 16px;
+          margin-right: 12px;
+      }
+
+      .btn-twitter:before {
+          content: "";
+          position: relative;
+          top: 3px;
+          display: inline-block;
+          background: url({{ 'twitter-svg.svg' | asset_url }}) no-repeat;
+          width: 20px;
+          height: 16px;
+          margin-right: 12px;
+        }
+
+        .btn-facebook:before {
+          content: "";
+          position: relative;
+          top: 3px;
+          display: inline-block;
+          background: url({{ 'facebook-svg.svg' | asset_url }}) no-repeat;
+          width: 9px;
+          height: 16px;
+          margin-right: 13px;
+        }
+    </style>
+
+   
+    <div class="share-modal">
+      <div class="share-modal__inner">
+        <button type="button" aria-label="Close" class="btn-close"></button>    
+        <h3>Share</h3>
+        <p>Share this  {{ template.name }}</p>
+            <div class="share-modal__buttons">
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{ request.origin }}{{ current_url }}" target="_blank" rel="external" title="Share on Facebook" aria-label="Share on Facebook" class="btn-social btn-facebook">Share</a> 
+            <a href="http://twitter.com/share?url={{ request.origin }}{{ current_url }}" target="_blank" rel="external" title="Share on Twitter" aria-label="Share on Twitter" class="btn-social btn-twitter">Tweet</a> 
+            <a href="http://pinterest.com/pin/create/button/?url={{ request.origin }}{{ current_url }}" target="_blank" rel="external" title="Share on Pinterest" aria-label="Share on Pinterest" class="btn-social btn-pinterest">Share</a> 
+            <a href="mailto:?subject=Skinflint&amp;body=View the product here: {{ request.origin }}{{ current_url }}" title="Share via email" aria-label="Share via email" class="btn-social btn-email">Email</a>
+          </div>
+      </div>
+    </div>
+
+    <script>
+      //open modal
+      const modalShare = document.querySelector('.share-modal')
+      const closeButtonShare = document.querySelector('.share-modal .btn-close')
+      const shareButtons = document.querySelectorAll('.scrolling-nav-actions__share')
+
+      shareButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          modalShare.classList.add('active')
+        })
+      })
+
+      closeButtonShare.addEventListener('click', () => {
+        modalShare.classList.remove('active')
+      })
+    </script>
+
+  </body>
+</html>

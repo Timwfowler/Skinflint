@@ -1,0 +1,69 @@
+{%- assign count = product.metafields.custom['3d_model_images'].value | split: "," | join: "" -%}
+{% assign countSize =  count | size %}
+
+
+
+{%- comment -%}Our card holder{%- endcomment -%}
+{% for image in product.metafields.custom['3d_model_images'].value  %}
+  {% if forloop.index == countSize %}
+    <div class="sf-product-grid__image js-open-3d-model">
+      <img src="{{ image  | img_url: "1000x" }}" alt="">
+      <div class="threeD-model-button">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	        viewBox="0 0 46.2 26.4" style="enable-background:new 0 0 46.2 26.4;" xml:space="preserve">
+        <style type="text/css">
+          .st0{fill:#FFFFFF;}
+        </style>
+        <title>360 Slider</title>
+        <path class="st0" d="M22.9,0.7C10.2,0.7,0.2,5.3,0.2,11.2c0,3.4,3.1,6.4,8.7,8.4c0.7,0.2,1.4-0.1,1.8-0.7l0-0.5
+          c0.1-0.6-0.3-1.2-1-1.5C6.5,15.6,3,13.5,3,11.2c0-2.6,7.7-7.6,19.7-7.6c12.7,0,19.7,4.5,19.7,7.6c0,3.3-3.8,4.7-8,6.1l-4.6,1.5
+          l5.1-4.4c0.6-0.5,0.6-1.5,0.1-2.1c-0.3-0.3-0.6-0.5-1-0.5c-0.5,0-0.9,0.1-1.2,0.4l-8.4,7.2c-0.3,0.2-0.4,0.5-0.5,0.6l-0.1,0.2
+          c-0.1,0.1-0.1,0.2,0,0.5c0.1,0.6,0.5,1,1,1.2l10.3,4c0.2,0.1,0.4,0.1,0.5,0.1c0.4,0,0.8-0.2,1-0.4c0.3-0.3,0.4-0.7,0.4-1.1
+          c0-0.6-0.3-1.1-0.9-1.4l-4.9-1.9l3-0.8c7.2-2,11.4-5.3,11.4-9.2C45.6,5.3,35.7,0.7,22.9,0.7z"/>
+        </svg>
+      </div>
+    </div>  
+  {% endif %}  
+{% endfor %}
+
+
+{%- comment -%}Popup{%- endcomment -%}
+
+<div class="threed-model-modal">
+  <div class="threed-model-modal__inner">
+    <button type="button" aria-label="Close" class="btn-model-close"></button>
+    <div class="drag-token" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
+    {% for image in product.metafields.custom['3d_model_images'].value  %}
+         <img src="{{ image  | img_url: "1000x" }}" alt="">
+    {% endfor %}
+  </div>
+</div>
+
+
+<div class="model-overlay"></div>
+
+
+
+<style>
+
+
+  .drag-token:before {
+  background-image: url({{'arrow-left-icon.svg' | asset_url }});
+  background-position: 25%;
+  z-index: 1
+}
+
+
+
+.drag-token::after {
+  background-color: rgba(45,41,38,.8);
+  background-image: url({{'arrow-right-icon.svg' | asset_url }});
+  background-position: 75%;
+  border-radius: 100%
+}
+</style>
+
+
+
+
+

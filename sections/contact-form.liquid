@@ -1,0 +1,82 @@
+<div class="contact-form">
+  <div class="contact-form__inner">
+    <div class="contact-form__left">
+      {{section.settings.paragraph}}
+
+      <div class="contact-form__gg-map">
+        <a href="https://goo.gl/maps/cFoUPZZpWZTXq3466" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="21" viewBox="0 0 13 21">
+            <defs>
+              <style>
+                path {
+                  fill: #2d2926;
+                }
+              </style>
+            </defs>
+            <title>Location</title>
+            <path d="M9.3-5.4A6.5,6.5,0,0,0,2.8,1.1c0,6.3,6.5,14.4,6.5,14.4s6.5-8.2,6.5-14.4A6.5,6.5,0,0,0,9.3-5.4Zm0,10.2A3.5,3.5,0,0,1,5.7,1.2a3.5,3.5,0,1,1,7,0A3.5,3.5,0,0,1,9.3,4.8Z" transform="translate(-2.8 5.4)"/>
+          </svg>
+          <h3>Find us on Google Maps</h3>
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-form__right">
+      {%- render 'contact-form', section: section -%}
+    </div>
+  </div>
+
+
+
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "Contact form",
+    "class": "contact-form-section",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "t:sections.contact-form.settings.content"
+      },
+      {
+        "type": "header",
+        "content": "Left"
+      },
+      {
+        "type": "richtext",
+        "id": "paragraph",
+        "label": "Paragraph"
+      },
+      {
+        "type": "header",
+        "content": "Right"
+      }, {
+        "type": "text",
+        "id": "title",
+        "label": "t:sections.contact-form.settings.title.label",
+        "default": "Contact us"
+      }, {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text (below the form)"
+      }, {
+        "type": "checkbox",
+        "id": "show_phone",
+        "label": "t:sections.contact-form.settings.show_phone.label"
+      }, {
+        "type": "checkbox",
+        "id": "narrow_column",
+        "label": "t:sections.contact-form.settings.narrow_column.label",
+        "default": true
+      }
+    ],
+    "presets": [
+      {
+        "name": "t:sections.contact-form.presets.contact_form.name"
+      }
+    ]
+  }
+{% endschema %}

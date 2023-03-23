@@ -1,0 +1,296 @@
+{
+  "sections": {
+    "ab621580-b75a-4803-ae34-f20abc80d17d": {
+      "type": "section-hero-banner",
+      "blocks": {
+        "0dd9a91e-af3e-4f76-afb0-07eb79935f96": {
+          "type": "hero",
+          "settings": {
+            "title": "New Bulkhead\nCollection",
+            "text_color": "#ffffff",
+            "link": "shopify:\/\/collections\/bulkhead-lights",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/skinflint-bulkhead-collection-homepage-banner-16-9.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/skinflint-bulkhead-collection-homepage-banner-1-1.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "template--16727916118332__ab621580-b75a-4803-ae34-f20abc80d17d-1666667198a9ea7f44-1": {
+          "type": "hero",
+          "settings": {
+            "title": "We're a B Corp",
+            "text_color": "#ffffff",
+            "link": "#",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/skinflint-home-page-banner-b-corp-16-9-resize.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "template--16727916118332__ab621580-b75a-4803-ae34-f20abc80d17d-1666667198a9ea7f44-0": {
+          "type": "hero",
+          "settings": {
+            "title": "Vintage lighting \nprop hire",
+            "text_color": "#ffffff",
+            "link": "#",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/skinflint-prop-hire-home-page-banner-b-corp-16-9-resize.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "9dbcf259-7c3b-4526-b259-bb5dcd637484": {
+          "type": "hero",
+          "settings": {
+            "title": "Full Circle \nbuy-back \nscheme",
+            "text_color": "#ffffff",
+            "link": "shopify:\/\/blogs\/news",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/skinflint-full-circle-home-page-banner-b-corp-16-9-resize.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "0dd9a91e-af3e-4f76-afb0-07eb79935f96",
+        "template--16727916118332__ab621580-b75a-4803-ae34-f20abc80d17d-1666667198a9ea7f44-1",
+        "template--16727916118332__ab621580-b75a-4803-ae34-f20abc80d17d-1666667198a9ea7f44-0",
+        "9dbcf259-7c3b-4526-b259-bb5dcd637484"
+      ],
+      "settings": {
+        "flush": true,
+        "flush_bottom": false,
+        "full_width": false,
+        "height": 790,
+        "height_mobile": 400,
+        "style": "bars",
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "d0552a20-44ab-4477-a3af-bc7e8f308871": {
+      "type": "section-featured-collections",
+      "blocks": {
+        "template--16727916118332__d0552a20-44ab-4477-a3af-bc7e8f308871-1666855107aab062ef-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "ceiling-light-test",
+            "title": ""
+          }
+        },
+        "template--16727916118332__d0552a20-44ab-4477-a3af-bc7e8f308871-1666855107aab062ef-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "ceiling-light-test",
+            "title": ""
+          }
+        },
+        "template--16727916118332__d0552a20-44ab-4477-a3af-bc7e8f308871-1666855107aab062ef-5": {
+          "type": "collection",
+          "settings": {
+            "collection": "ceiling-light-test",
+            "title": ""
+          }
+        },
+        "a64d8735-b831-4a36-9650-99f63ca63f85": {
+          "type": "collection",
+          "settings": {
+            "collection": "crystal-glassware-lights",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16727916118332__d0552a20-44ab-4477-a3af-bc7e8f308871-1666855107aab062ef-0",
+        "template--16727916118332__d0552a20-44ab-4477-a3af-bc7e8f308871-1666855107aab062ef-1",
+        "template--16727916118332__d0552a20-44ab-4477-a3af-bc7e8f308871-1666855107aab062ef-5",
+        "a64d8735-b831-4a36-9650-99f63ca63f85"
+      ],
+      "settings": {
+        "flush": false,
+        "flush_bottom": false,
+        "title": "",
+        "link": "See All",
+        "button_link": "shopify:\/\/collections"
+      }
+    },
+    "c70c2edc-86d6-4ea1-a525-0d2313a9be6f": {
+      "type": "section-split-text",
+      "blocks": {
+        "template--16727916118332__c70c2edc-86d6-4ea1-a525-0d2313a9be6f-166668346839ad66c0-0": {
+          "type": "text_block",
+          "settings": {
+            "title": "",
+            "text": "<p>Welcome to Europe’s leading vintage industrial lighting site. skinflint scours locations across the world to source and restore unique and historic vintage lights; manufactured in the era from 1920 to 1970, and originally utilised in a wide variety of industrial environments.<\/p><p><\/p><p>Every vintage light you’ll find here is an original with a story to tell, that has been reclaimed and restored by UK-based lighting experts – then carefully rebuilt and tested by hand, to give you a truly individual light with real character, which you can rely on. Just as importantly, your vintage light will arrive quickly, and safely packaged – with shipping options to over 200 countries worldwide.<\/p>"
+          }
+        },
+        "template--16727916118332__c70c2edc-86d6-4ea1-a525-0d2313a9be6f-166668346839ad66c0-1": {
+          "type": "text_block",
+          "settings": {
+            "title": "",
+            "text": "<p>Our reclaimed vintage lights are all unique pieces, ranging from Hungarian railway ceiling lights and German cargo ship wall lights, to Eastern Bloc machinists table lights and Czech pendants. Discover iconic vintage lighting brands among our collections, including Revo, Holophane, Benjamin Electric and G.E.C. - all known for their dedicated craftsmanship and pivotal contribution to industrial purpose.<\/p><p><\/p><p>We work with commercial and residential clients around the world, as well as offering a vintage lighting prop hire service for TV and film. skinflint is also a proud member of the UK Lighting Industry Association (LIA), ensuring all of our lights are expertly restored to modern standards for faultless functionality.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16727916118332__c70c2edc-86d6-4ea1-a525-0d2313a9be6f-166668346839ad66c0-0",
+        "template--16727916118332__c70c2edc-86d6-4ea1-a525-0d2313a9be6f-166668346839ad66c0-1"
+      ],
+      "settings": {
+        "flush": false,
+        "flush_bottom": false,
+        "remove_borders": false,
+        "title": "Vintage lighting for modern use",
+        "align_text": "left",
+        "desktop_columns_per_row": 2,
+        "button_label": "Our story",
+        "button_link": "shopify:\/\/pages\/all-sections",
+        "button_label_two": "",
+        "button_link_two": "",
+        "show_link": true
+      }
+    },
+    "38ecbd97-e46c-4071-a13d-fdfe226affb7": {
+      "type": "section-featured-video",
+      "settings": {
+        "flush": false,
+        "flush_bottom": false,
+        "title": "",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=aSoMvvs74n0",
+        "placeholder": "shopify:\/\/shop_images\/skinflint-cognitive-animation-thumbnail-5120-2880.jpg",
+        "play_title": "Why choose vintage?",
+        "play_bg": true
+      }
+    },
+    "3739c9e2-9b21-4677-8ff4-a0ddd44db337": {
+      "type": "section-text-and-image",
+      "settings": {
+        "flush": false,
+        "flush_bottom": false,
+        "layout": "left",
+        "image": "shopify:\/\/shop_images\/SF_Full_Circle_Development_AW_SF_FC_Roundel_with_copy-1.jpg",
+        "title": "Lights for life",
+        "subheading": "<p>As well as offering a lifetime guarantee that includes repairs, our Full Circle buy-back scheme gives you the opportunity to trade-in your skinflint lights. It keeps vintage lights in use forever - helping you and our planet.<\/p>",
+        "link": "shopify:\/\/pages\/about-the-lights",
+        "link_text": "Trade in, get credit",
+        "link_2": "",
+        "link_text_2": ""
+      }
+    },
+    "897d93c1-0164-4d3d-b8bf-0b1efe22129e": {
+      "type": "section-image-with-text-box",
+      "settings": {
+        "flush": false,
+        "flush_bottom": false,
+        "image": "shopify:\/\/shop_images\/1400x788_cv_the-cellar-kitchen-lighting-blog-main-crop_1.webp",
+        "heading_link": "#",
+        "heading": "Kitchen lighting design ideas",
+        "copy": "<p>Helpful ideas and tips for creating your own kitchen lighting scheme from the lighting designers at skinflint.<\/p>",
+        "link_text": "View our blog",
+        "link": "#"
+      }
+    },
+    "2ae13ef7-b0aa-4f69-933b-3d1d94734750": {
+      "type": "section-image-with-text-box",
+      "settings": {
+        "flush": false,
+        "flush_bottom": false,
+        "image": "shopify:\/\/shop_images\/1400x788_cv_skinflint-verdant-brewery-project-main-image-16-9_1.webp",
+        "heading_link": "#",
+        "heading": "Verdant Taproom, Penryn",
+        "copy": "<p>skinflint lights can now be spotted at Verdant, the famed brewery that's shaking up the drinks industry.<\/p>",
+        "link_text": "View all projects",
+        "link": "#"
+      }
+    },
+    "a2e5fb6d-fe91-4155-b3a1-624fbd562b2e": {
+      "type": "section-featured-collection",
+      "settings": {
+        "flush": false,
+        "flush_bottom": true,
+        "title": "Featured Products",
+        "home_featured_products": "ceiling-light-test",
+        "count": 6,
+        "mobile_scrollable": true,
+        "view_all": true
+      }
+    },
+    "6dc84b42-672b-499b-8596-394b228d51b5": {
+      "type": "section-split-text",
+      "blocks": {
+        "template--16727916118332__6dc84b42-672b-499b-8596-394b228d51b5-166668573803b7510f-0": {
+          "type": "text_block",
+          "settings": {
+            "title": "1940s industrial lights",
+            "text": "<p>The quality of what I bought (being around a third of the cost of their top end items) is exceptional. Recommended.<\/p><p>- Steve | London | UK<\/p>"
+          }
+        },
+        "template--16727916118332__6dc84b42-672b-499b-8596-394b228d51b5-166668573803b7510f-1": {
+          "type": "text_block",
+          "settings": {
+            "title": "British Factory Light",
+            "text": "<p>I am very pleased with my purchase, it finishes off my dining room just perfectly. <\/p><p>- David | East Sussex | UK<\/p>"
+          }
+        },
+        "2fc4401d-c0dc-47e2-98c0-48af771331a9": {
+          "type": "text_block",
+          "settings": {
+            "title": "Light fantastic",
+            "text": "<p>Fantastic light and flex... We will be back for more! Service was unimprovable.<\/p><p>- Gareth | Northamptonshire | UK<\/p>"
+          }
+        },
+        "4ed78382-71bd-4973-91f8-c3cb6046f825": {
+          "type": "text_block",
+          "settings": {
+            "title": "Outstanding customer service",
+            "text": "<p>Thank you for the very careful crating and packing. The fixture is even better in person! We are so impressed with not only your inventory, but your outstanding customer service. <\/p><p>- Jerry | California | US<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16727916118332__6dc84b42-672b-499b-8596-394b228d51b5-166668573803b7510f-0",
+        "template--16727916118332__6dc84b42-672b-499b-8596-394b228d51b5-166668573803b7510f-1",
+        "2fc4401d-c0dc-47e2-98c0-48af771331a9",
+        "4ed78382-71bd-4973-91f8-c3cb6046f825"
+      ],
+      "settings": {
+        "flush": false,
+        "flush_bottom": true,
+        "remove_borders": false,
+        "title": "A quick word from our customers",
+        "align_text": "left",
+        "desktop_columns_per_row": 2,
+        "button_label": "",
+        "button_link": "",
+        "button_label_two": "",
+        "button_link_two": "",
+        "show_link": true
+      }
+    }
+  },
+  "order": [
+    "ab621580-b75a-4803-ae34-f20abc80d17d",
+    "d0552a20-44ab-4477-a3af-bc7e8f308871",
+    "c70c2edc-86d6-4ea1-a525-0d2313a9be6f",
+    "38ecbd97-e46c-4071-a13d-fdfe226affb7",
+    "3739c9e2-9b21-4677-8ff4-a0ddd44db337",
+    "897d93c1-0164-4d3d-b8bf-0b1efe22129e",
+    "2ae13ef7-b0aa-4f69-933b-3d1d94734750",
+    "a2e5fb6d-fe91-4155-b3a1-624fbd562b2e",
+    "6dc84b42-672b-499b-8596-394b228d51b5"
+  ]
+}

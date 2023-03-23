@@ -1,0 +1,37 @@
+
+
+{% assign total=0 %}
+{%for variant in product.variants %}
+{% capture i %}{{ total | plus:variant.inventory_quantity }}{%endcapture%}
+{% assign total = i %}
+{%endfor%}  
+
+
+
+thisIsaUniqueStringToSplitTheFollowingJsonObject!DoNotDelete
+
+
+{
+  "product_title": "{{ product.title }}", 
+  "image": "{{ product.media[0].src | img_url: "800x" }}",
+  "price": "{{ product.price | money }}",
+  "rawprice": "{{ product.price }}",
+  "url": "{{ product.url }}",
+  "qty": "{{ total }}",
+  "varId": "{{ product.variants[0].id }}",
+  "sku": "{{ product.variants[0].sku }}",
+  "diameter": "{{ product.metafields.pdf.diameter }}",
+  "length": "{{ product.metafields.pdf.length }}",
+  "height": "{{ product.metafields.pdf.height }}",
+  "width": "{{ product.metafields.pdf.width }}",
+  "weight": "{{ product.metafields.pdf.weight }}",
+  "colour": "{{ product.metafields.pdf.colour }}",
+  "era": "{{ product.metafields.custom.era.value }}",
+  "origin": "{{ product.metafields.custom.origin.value }}",
+  "description": "{{ product.metafields.pdf.additional_description }}",
+  "type": "{{ product.type }}"
+}
+
+
+thisIsaUniqueStringToSplitTheFollowingJsonObject!DoNotDelete
+

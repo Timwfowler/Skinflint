@@ -1,0 +1,22 @@
+<div class="article-card">
+  <div class="article-card__inner">
+    <div class="article-card__image">
+      <a href="{{ article.url }}">
+        <img src="{{ article.image | img_url: "400x" }}" alt="">
+      </a>
+    </div>
+    <div class="article-card__text">
+      <h3>
+        <a href="{{ article.url }}">{{ article.title }}</a>
+      </h3>
+
+      {% if article.excerpt != blank %}
+        <p>{{ article.excerpt }}</p>
+      {% else %}
+        <p>{{ article.content |  strip_html  | truncate: 100  }}</p>
+      {% endif %}
+
+      <a class="a-link" href="{{ blog.url }}">{{ blog.title }}</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,297 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "5683bda6-84d6-421d-84ea-e0cc8806f752": {
+      "type": "section-hero-banner",
+      "blocks": {
+        "template--16727915725116__5683bda6-84d6-421d-84ea-e0cc8806f752-166728361765f506d2-0": {
+          "type": "hero",
+          "settings": {
+            "title": "New Bulkhead Collection",
+            "text_color": "#ffffff",
+            "link": "shopify:\/\/pages\/all-sections",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/skinflint-bulkhead-collection-homepage-banner-16-9.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "template--16727915725116__5683bda6-84d6-421d-84ea-e0cc8806f752-166728361765f506d2-1": {
+          "type": "hero",
+          "settings": {
+            "title": "We're a B Corp",
+            "text_color": "#ffffff",
+            "link": "#",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/skinflint-home-page-banner-b-corp-16-9-resize.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "template--16727915725116__5683bda6-84d6-421d-84ea-e0cc8806f752-166728361765f506d2-2": {
+          "type": "hero",
+          "settings": {
+            "title": "Vintage lighting \nprop hire",
+            "text_color": "#ffffff",
+            "link": "#",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/skinflint-prop-hire-home-page-banner-b-corp-16-9-resize.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "template--16727915725116__5683bda6-84d6-421d-84ea-e0cc8806f752-166728361765f506d2-3": {
+          "type": "hero",
+          "settings": {
+            "title": "Full Circle \nbuy-back \nscheme",
+            "text_color": "#ffffff",
+            "link": "shopify:\/\/blogs\/news",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/skinflint-full-circle-home-page-banner-b-corp-16-9-resize.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16727915725116__5683bda6-84d6-421d-84ea-e0cc8806f752-166728361765f506d2-0",
+        "template--16727915725116__5683bda6-84d6-421d-84ea-e0cc8806f752-166728361765f506d2-1",
+        "template--16727915725116__5683bda6-84d6-421d-84ea-e0cc8806f752-166728361765f506d2-2",
+        "template--16727915725116__5683bda6-84d6-421d-84ea-e0cc8806f752-166728361765f506d2-3"
+      ],
+      "settings": {
+        "flush": true,
+        "flush_bottom": false,
+        "full_width": false,
+        "height": 790,
+        "height_mobile": 400,
+        "style": "bars",
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "7237345b-8f22-4634-8eb6-ce0e20b247d0": {
+      "type": "section-featured-collections",
+      "blocks": {
+        "template--16727915725116__7237345b-8f22-4634-8eb6-ce0e20b247d0-16672836165673251b-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage",
+            "title": ""
+          }
+        },
+        "template--16727915725116__7237345b-8f22-4634-8eb6-ce0e20b247d0-16672836165673251b-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage",
+            "title": ""
+          }
+        },
+        "template--16727915725116__7237345b-8f22-4634-8eb6-ce0e20b247d0-16672836165673251b-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage",
+            "title": ""
+          }
+        },
+        "template--16727915725116__7237345b-8f22-4634-8eb6-ce0e20b247d0-16672836165673251b-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage",
+            "title": ""
+          }
+        },
+        "template--16727915725116__7237345b-8f22-4634-8eb6-ce0e20b247d0-16672836165673251b-5": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16727915725116__7237345b-8f22-4634-8eb6-ce0e20b247d0-16672836165673251b-0",
+        "template--16727915725116__7237345b-8f22-4634-8eb6-ce0e20b247d0-16672836165673251b-2",
+        "template--16727915725116__7237345b-8f22-4634-8eb6-ce0e20b247d0-16672836165673251b-3",
+        "template--16727915725116__7237345b-8f22-4634-8eb6-ce0e20b247d0-16672836165673251b-4",
+        "template--16727915725116__7237345b-8f22-4634-8eb6-ce0e20b247d0-16672836165673251b-5"
+      ],
+      "settings": {
+        "flush": false,
+        "flush_bottom": false,
+        "title": "Featured Collection"
+      }
+    },
+    "8455c935-02a9-43b8-8358-9f7f4551f1dc": {
+      "type": "section-split-text",
+      "blocks": {
+        "template--16727915725116__8455c935-02a9-43b8-8358-9f7f4551f1dc-166728393036e0f4a6-0": {
+          "type": "text_block",
+          "settings": {
+            "title": "",
+            "text": "<p>Welcome to Europe’s leading vintage industrial lighting site. skinflint scours locations across the world to source and restore unique and historic vintage lights; manufactured in the era from 1920 to 1970, and originally utilised in a wide variety of industrial environments.<\/p><p>Every vintage light you’ll find here is an original with a story to tell, that has been reclaimed and restored by UK-based lighting experts – then carefully rebuilt and tested by hand, to give you a truly individual light with real character, which you can rely on. Just as importantly, your vintage light will arrive quickly, and safely packaged – with shipping options to over 200 countries worldwide.<\/p>"
+          }
+        },
+        "template--16727915725116__8455c935-02a9-43b8-8358-9f7f4551f1dc-166728393036e0f4a6-1": {
+          "type": "text_block",
+          "settings": {
+            "title": "",
+            "text": "<p>Our reclaimed vintage lights are all unique pieces, ranging from Hungarian railway ceiling lights and German cargo ship wall lights, to Eastern Bloc machinists table lights and Czech pendants. Discover iconic vintage lighting brands among our collections, including Revo, Holophane, Benjamin Electric and G.E.C. - all known for their dedicated craftsmanship and pivotal contribution to industrial purpose.<\/p><p>We work with commercial and residential clients around the world, as well as offering a vintage lighting prop hire service for TV and film. skinflint is also a proud member of the UK Lighting Industry Association (LIA), ensuring all of our lights are expertly restored to modern standards for faultless functionality.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16727915725116__8455c935-02a9-43b8-8358-9f7f4551f1dc-166728393036e0f4a6-0",
+        "template--16727915725116__8455c935-02a9-43b8-8358-9f7f4551f1dc-166728393036e0f4a6-1"
+      ],
+      "settings": {
+        "flush": false,
+        "flush_bottom": false,
+        "remove_borders": false,
+        "title": "Vintage lighting for modern use",
+        "align_text": "left",
+        "desktop_columns_per_row": 2,
+        "button_label": "",
+        "button_link": "",
+        "button_label_two": "",
+        "button_link_two": "",
+        "show_link": true
+      }
+    },
+    "6fc5ac7f-b3e4-4ea9-8d5b-ce95486e3936": {
+      "type": "section-featured-video",
+      "settings": {
+        "flush": false,
+        "flush_bottom": false,
+        "title": "",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+      }
+    },
+    "405f4c7e-726f-45be-8d6c-224a5cd159c4": {
+      "type": "section-text-and-image",
+      "settings": {
+        "flush": false,
+        "flush_bottom": false,
+        "layout": "left",
+        "image": "shopify:\/\/shop_images\/SF_Full_Circle_Development_AW_SF_FC_Roundel_with_copy-1.jpg",
+        "title": "Heading",
+        "subheading": "<p>Copy<\/p>",
+        "link": "",
+        "link_text": "Optional button",
+        "link_2": "",
+        "link_text_2": ""
+      }
+    },
+    "542431dc-a492-4a7d-bdf0-a099c7e786b1": {
+      "type": "section-featured-collection",
+      "settings": {
+        "flush": false,
+        "flush_bottom": false,
+        "title": "Featured collection",
+        "home_featured_products": "ceiling-light-test",
+        "count": 5,
+        "mobile_scrollable": true,
+        "view_all": true
+      }
+    },
+    "60856d0a-2c30-4049-b25c-733766ff5acd": {
+      "type": "section-rich-text",
+      "blocks": {
+        "template--16727915725116__60856d0a-2c30-4049-b25c-733766ff5acd-1667285801158ef42f-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Rich text"
+          }
+        },
+        "template--16727915725116__60856d0a-2c30-4049-b25c-733766ff5acd-1667285801158ef42f-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16727915725116__60856d0a-2c30-4049-b25c-733766ff5acd-1667285801158ef42f-0",
+        "template--16727915725116__60856d0a-2c30-4049-b25c-733766ff5acd-1667285801158ef42f-1"
+      ],
+      "settings": {
+        "flush": false,
+        "flush_bottom": false,
+        "align_text": "left",
+        "narrow_column": true
+      }
+    },
+    "711a6f72-fb40-4862-b719-5a8fe7dece53": {
+      "type": "section-icon-title",
+      "blocks": {
+        "42880c51-a01c-4568-ac91-eff863e27172": {
+          "type": "icon",
+          "settings": {
+            "logo_image": "shopify:\/\/shop_images\/2_shippingfastdelivery_1.webp",
+            "title": "Shipping",
+            "paragraph": "Our UK and international shipping and our no quibble return options explained.",
+            "link": "",
+            "link_text": "Read more"
+          }
+        },
+        "940921eb-704d-47ab-83e2-a1de8389afb6": {
+          "type": "icon",
+          "settings": {
+            "logo_image": "shopify:\/\/shop_images\/2_wetroomsfaq_1.webp",
+            "title": "Returns",
+            "paragraph": "All you need to know about our no quibble returns policy.",
+            "link": "",
+            "link_text": "Read more"
+          }
+        },
+        "fd8ebc40-55f6-49b3-9482-b66c3add6e94": {
+          "type": "icon",
+          "settings": {
+            "logo_image": "shopify:\/\/shop_images\/1_lightbulbsfaq_1.webp",
+            "title": "Light Bulbs",
+            "paragraph": "Why we recommend using energy-saving LED light bulbs in all of our vintage lights.",
+            "link": "",
+            "link_text": "Read more"
+          }
+        }
+      },
+      "block_order": [
+        "42880c51-a01c-4568-ac91-eff863e27172",
+        "940921eb-704d-47ab-83e2-a1de8389afb6",
+        "fd8ebc40-55f6-49b3-9482-b66c3add6e94"
+      ],
+      "settings": {
+        "flush": false,
+        "flush_bottom": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "5683bda6-84d6-421d-84ea-e0cc8806f752",
+    "7237345b-8f22-4634-8eb6-ce0e20b247d0",
+    "8455c935-02a9-43b8-8358-9f7f4551f1dc",
+    "6fc5ac7f-b3e4-4ea9-8d5b-ce95486e3936",
+    "405f4c7e-726f-45be-8d6c-224a5cd159c4",
+    "542431dc-a492-4a7d-bdf0-a099c7e786b1",
+    "60856d0a-2c30-4049-b25c-733766ff5acd",
+    "711a6f72-fb40-4862-b719-5a8fe7dece53"
+  ]
+}

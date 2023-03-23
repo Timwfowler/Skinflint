@@ -1,0 +1,118 @@
+{% assign article = articles[section.settings.article ] %}
+{%- assign urlArray = article.url | split: "/" -%}
+{% assign featuredArticleBlog = blogs[ urlArray[2] ] %}   
+
+<div class="blog-landing-page">
+  <div class="blog-landing-page__inner page-width">
+    <div class="blog-landing-page__article">
+      <div class="image-with-text-box">
+        <div class="image-with-text-box__inner">
+          <div class="image-with-text-box__image">
+            <a href="{{ article.url}}">
+              <img src="{{ article.image | img_url: 'master' }}">
+            </a>
+          </div>
+          <div class="image-with-text-box__text-box">
+            <div class="image-with-text-box__text-wrap">
+              <a href="{{ article.url }}">
+                <h2>{{ article.title }}</h2>
+              </a>
+              <p>{{ article.excerpt }}</p>
+              <div class="image-with-text-box__link-wrap">
+                <a href="{{ featuredArticleBlog.url }}">{{ featuredArticleBlog.title }}</a>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+    <div class="blog-landing-page__filter">
+      <h1>{{ section.settings.title }}</h1>
+      <div class="blog-landing-page__filter-list">
+        <p>Browse by:</p>
+        <ul>
+          {% if template.suffix  != blank %}
+          <li {% if template.name == "page" %} class="active" {% endif %}><a href="/pages/projects-landing-page">All</a></li>   
+          {%- else -%}
+          <li {% if template.name == "page" %} class="active" {% endif %}><a href="/pages/blog-landing-page">All</a></li>   
+          {% endif %}         
+          {% for block in section.blocks %}
+            {% assign blogFilter = blogs[ block.settings.blog ] %}           
+              <li  
+              {% if blogFilter.title == blog.title %}
+                class="active"
+              {% endif %}              
+              ><a href="{{ blogFilter.url }}">{{ blogFilter.title }}</a></li>    
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+{% if template.name == "page" %}
+  <div class="article-grid">
+    <div class="article-grid__inner page-width">
+      {% for block in section.blocks %}
+        {% assign blog = blogs[ block.settings.blog ] %}           
+          {% for article in blog.articles %}
+            {% render 'article-card', article: article, blog: blog %}        
+          {% endfor %} 
+        {% endfor %}
+    </div>
+  </div>
+
+  {% else %}
+
+  <div class="article-grid">
+    <div class="article-grid__inner page-width">                
+        {% for article in blog.articles %}
+          {% render 'article-card', article: article, blog: blog %}        
+        {% endfor %} 
+    </div>
+  </div>
+{% endif %}
+
+
+
+
+
+
+
+
+
+
+
+{% schema %}
+{
+  "name": "t:sections.main-collection.name",
+  "settings": [
+    {
+      "type": "article",
+      "id": "article",
+      "label": "Featured Article"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Filter title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "blog_filter",
+      "name": "Blog Filter",
+      "settings": [
+        {
+          "type": "blog",
+          "id": "blog",
+          "label": "Blog"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

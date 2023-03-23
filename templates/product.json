@@ -1,0 +1,261 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "f7eaea23-fddd-45a3-bdd6-2cc15b99d5c9": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true
+          }
+        }
+      },
+      "block_order": [
+        "f7eaea23-fddd-45a3-bdd6-2cc15b99d5c9",
+        "price",
+        "variant_picker",
+        "buy_buttons"
+      ],
+      "settings": {
+        "sku_enable": false,
+        "image_position": "left",
+        "image_container_size": "medium",
+        "product_image_size": "square",
+        "product_zoom_enable": true,
+        "thumbnail_position": "below",
+        "thumbnail_height": "flexible",
+        "thumbnail_arrows": false,
+        "mobile_layout": "partial",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    },
+    "1ef34e4a-a4e6-4be3-931f-5a87ad67a705": {
+      "type": "product-metafield-details",
+      "blocks": {
+        "c7f26244-db24-4241-a043-ebe2cdef2d0e": {
+          "type": "filter",
+          "settings": {
+            "heading": "Czechoslovakia (former)",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/700x700_cv_czechoslovakia-origin-country-map.webp",
+            "title": "Origin: Czechoslovakia (former)",
+            "copy": "<p>Much of the lighting we salvage and restore from the former Eastern Bloc was produced in the manufacturing powerhouses of former Czechoslovakia. Under Communist rule the same design was often manufactured in three scaled versions to cater for varying bulb wattage. The country is also famed for its beautiful glassware, with both wall and ceiling opaline glass lights often being used in public and residential settings, such as housing blocks and schools.<\/p>",
+            "link": "shopify:\/\/collections\/czechoslovakia-former",
+            "link_text": "View all lights from Czechoslovakia (former)"
+          }
+        },
+        "1203d3fa-4b2b-4667-8e70-b82ef9e0532f": {
+          "type": "meta",
+          "settings": {}
+        },
+        "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08": {
+          "type": "pdf",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "c7f26244-db24-4241-a043-ebe2cdef2d0e",
+        "1203d3fa-4b2b-4667-8e70-b82ef9e0532f",
+        "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08"
+      ],
+      "settings": {
+        "flush": true,
+        "flush_bottom": true
+      }
+    },
+    "ee009aad-efa1-453e-a080-2be48216ae9f": {
+      "type": "section-text-and-image",
+      "settings": {
+        "flush": true,
+        "flush_bottom": false,
+        "layout": "right",
+        "image": "shopify:\/\/shop_images\/SF_Full_Circle_Development_AW_SF_FC_Roundel_with_copy-1.jpg",
+        "title": "Lights for life",
+        "subheading": "<p>As well as offering a lifetime guarantee that includes repairs, our Full Circle buy-back scheme gives you the opportunity to trade-in your skinflint lights. It keeps vintage lights in use forever - helping you and our planet.<\/p><p><\/p><p><a href=\"https:\/\/www.skinflintdesign.com\/pages\/full-circle\">Trade in, get credit<\/a><\/p>",
+        "link": "",
+        "link_text": "",
+        "link_2": "",
+        "link_text_2": ""
+      }
+    },
+    "product-usps": {
+      "type": "product-usps",
+      "blocks": {
+        "21aebdb9-c123-471d-843e-3ccad2f4bfa8": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/1_lightbulbsfaq_1.webp",
+            "title": "Light Bulbs",
+            "text": "<p>Why we recommend using energy-saving LED light bulbs in all of our vintage lights.<\/p>",
+            "button_label": "Read more",
+            "button_link": "#"
+          }
+        },
+        "94a8a4ac-6bb8-4523-97c9-71ac3109801d": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/2_shippingfastdelivery_1.webp",
+            "title": "Shipping",
+            "text": "<p>Our UK and international shipping and our no quibble return options explained.<\/p>",
+            "button_label": "Read more",
+            "button_link": "#"
+          }
+        },
+        "f5676427-85e8-42c5-bc18-dae4e881a94d": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/2_wetroomsfaq_1.webp",
+            "title": "Applications",
+            "text": "<p>Where our lights can be used internally and externally, including bathrooms and IP ratings.<\/p>",
+            "button_label": "Read more",
+            "button_link": "#"
+          }
+        },
+        "6c4045ce-acac-4a8d-be55-5dd29778e7dc": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/1_certificationsfaq.webp",
+            "title": "Certifications",
+            "text": "<p>Our UK Lighting Industry Association (LIA), British Standards and UL certifications.<\/p>",
+            "button_label": "Read more",
+            "button_link": "#"
+          }
+        },
+        "2ece7aaf-2318-457b-9a95-5533602c51bb": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/bcorplogoblack4.webp",
+            "title": "B-Corp",
+            "text": "<p>Everything you need to know about B Corps - explained.<\/p>",
+            "button_label": "Read more",
+            "button_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "21aebdb9-c123-471d-843e-3ccad2f4bfa8",
+        "94a8a4ac-6bb8-4523-97c9-71ac3109801d",
+        "f5676427-85e8-42c5-bc18-dae4e881a94d",
+        "6c4045ce-acac-4a8d-be55-5dd29778e7dc",
+        "2ece7aaf-2318-457b-9a95-5533602c51bb"
+      ],
+      "settings": {
+        "flush": false,
+        "flush_bottom": false,
+        "title": ""
+      }
+    },
+    "product-contact-form": {
+      "type": "product-contact-form",
+      "settings": {
+        "paragraph": "",
+        "title": "Enquire about this product",
+        "text": "",
+        "show_phone": false,
+        "narrow_column": true,
+        "tc_link": ""
+      }
+    },
+    "more-products-origin": {
+      "type": "more-products-origin",
+      "settings": {}
+    },
+    "more-products-era": {
+      "type": "more-products-era",
+      "settings": {}
+    },
+    "more-products-vendor": {
+      "type": "more-products-vendor",
+      "settings": {}
+    },
+    "1018a177-fdc7-4a54-9f7f-8f3611e1e80c": {
+      "type": "section-split-text",
+      "blocks": {
+        "template--16727915790652__1018a177-fdc7-4a54-9f7f-8f3611e1e80c-1669706979c85095d9-0": {
+          "type": "text_block",
+          "settings": {
+            "title": "Ceiling plates",
+            "text": "<p>Beautiful little ceiling plate. Elegant. Functional. Well made. Simple to install. Top quality. Excellent condition. Excellent <\/p><p>- Jonny | East Sussex | UK<\/p>"
+          }
+        },
+        "template--16727915790652__1018a177-fdc7-4a54-9f7f-8f3611e1e80c-1669706979c85095d9-1": {
+          "type": "text_block",
+          "settings": {
+            "title": "Lampada biblioteca Versailles",
+            "text": "<p>Lampada stupenda!!! Servizio impeccabile e velocissimo, davvero tutti i miei complimenti, siete bravissimi!<\/p><p>- Isabella | Milano | Italy<\/p>"
+          }
+        },
+        "d4464f82-7bdb-4bcb-9677-a8fa6ae6da49": {
+          "type": "text_block",
+          "settings": {
+            "title": "Example title",
+            "text": "<p>I have never received a more beautifully packaged item, the light itself is wonderful and we are very pleased. <\/p><p>- Eleanor | Worcester | UK<\/p>"
+          }
+        },
+        "290d6d41-ec3c-49d2-9d47-c01b7a17cd83": {
+          "type": "text_block",
+          "settings": {
+            "title": "\"Genius Full Circle initative\"",
+            "text": "<p>Love the lights, love your ethos. Absolutely what more companies need to be doing. I have my Retro Czech Ceiling Lights (V2) in my dining room and the spray of light they give off is gorgeous and unusual.<\/p><p>- Jenny | Lincolnshire | UK<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16727915790652__1018a177-fdc7-4a54-9f7f-8f3611e1e80c-1669706979c85095d9-0",
+        "template--16727915790652__1018a177-fdc7-4a54-9f7f-8f3611e1e80c-1669706979c85095d9-1",
+        "d4464f82-7bdb-4bcb-9677-a8fa6ae6da49",
+        "290d6d41-ec3c-49d2-9d47-c01b7a17cd83"
+      ],
+      "settings": {
+        "flush": false,
+        "flush_bottom": true,
+        "remove_borders": false,
+        "title": "A quick word from our customers",
+        "align_text": "left",
+        "desktop_columns_per_row": 2,
+        "button_label": "",
+        "button_link": "",
+        "button_label_two": "",
+        "button_link_two": "",
+        "show_link": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1ef34e4a-a4e6-4be3-931f-5a87ad67a705",
+    "ee009aad-efa1-453e-a080-2be48216ae9f",
+    "product-usps",
+    "product-contact-form",
+    "more-products-origin",
+    "more-products-era",
+    "more-products-vendor",
+    "1018a177-fdc7-4a54-9f7f-8f3611e1e80c"
+  ]
+}

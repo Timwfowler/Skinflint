@@ -1,0 +1,71 @@
+<style>
+
+
+  .drag-token:before {
+  background-image: url({{'arrow-left-icon.svg' | asset_url }});
+  background-position: 25%;
+  z-index: 1
+}
+
+
+
+.drag-token::after {
+  background-color: rgba(45,41,38,.8);
+  background-image: url({{'arrow-right-icon.svg' | asset_url }});
+  background-position: 75%;
+  border-radius: 100%
+}
+</style>
+
+
+<div class="image-split page-width {% if section.settings.flush %}section-flush {% endif %}
+{% if section.settings.flush_bottom %}section-padding--bottom {% endif %}">
+  <img draggable="false" src="{{ section.settings.before_image | img_url: "master" }}" alt="Original alt"> 
+  <div class="image-split__overlay">
+    <img draggable="false" src="{{ section.settings.after_image | img_url: "master" }}" alt="Overlay alt">
+  </div> 
+  <div class="drag-token" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+  </div>
+</div>
+
+
+
+
+
+
+
+{% schema %}
+{
+  "name": "Image Scrub",
+  "class": "image-scrub index-section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "flush",
+      "label": "Remove top space",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "flush_bottom",
+      "label": "Add bottom space",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "before_image",
+      "label": "Before image"
+    }, 
+    {
+      "type": "image_picker",
+      "id": "after_image",
+      "label": "After image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image Scrub"
+    }
+  ]
+}
+{% endschema %}

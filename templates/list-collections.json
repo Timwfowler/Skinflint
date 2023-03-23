@@ -1,0 +1,100 @@
+{
+  "sections": {
+    "main": {
+      "type": "list-collections-template",
+      "blocks": {
+        "9ffe5e07-0b90-4172-9f6a-05d72d774449": {
+          "type": "collection",
+          "settings": {
+            "collection": "crystal-glassware-lights"
+          }
+        },
+        "fed69d9d-f36c-4488-b862-fae46833d596": {
+          "type": "collection",
+          "settings": {
+            "collection": "industrial-lighting"
+          }
+        },
+        "6710d2ca-a5e7-45d6-946a-49fbd21dff67": {
+          "type": "collection",
+          "settings": {
+            "collection": "opaline-glassware"
+          }
+        },
+        "455941a1-a4ef-470e-8e4c-f6bd2fe0bb61": {
+          "type": "collection",
+          "settings": {
+            "collection": "retro-lighting"
+          }
+        },
+        "03051b1c-b4d2-4bc8-a2af-21ef986bb2df": {
+          "type": "collection",
+          "settings": {
+            "collection": "bulkhead-lights"
+          }
+        },
+        "7f6334dd-8da9-4eb5-a05c-6c2ebc7aef30": {
+          "type": "collection",
+          "settings": {
+            "collection": "industrial-lighting"
+          }
+        }
+      },
+      "block_order": [
+        "9ffe5e07-0b90-4172-9f6a-05d72d774449",
+        "fed69d9d-f36c-4488-b862-fae46833d596",
+        "6710d2ca-a5e7-45d6-946a-49fbd21dff67",
+        "455941a1-a4ef-470e-8e4c-f6bd2fe0bb61",
+        "03051b1c-b4d2-4bc8-a2af-21ef986bb2df",
+        "7f6334dd-8da9-4eb5-a05c-6c2ebc7aef30"
+      ],
+      "settings": {
+        "collection": "bulkhead-lights",
+        "title": "Collections",
+        "copy": "<p>To help you choose the right light for your space, skinflint has curated a series of collections from our range of vintage lighting. From industrial lighting for your kitchen or opaline lights for your bedroom, retro lighting for your living room or antique lights for your hallway; we have inspiration for every project. And if you want to see more of our lights, you can view our<a href=\"https:\/\/www.skinflintdesign.com\/lights\">complete catalogue here.<\/a><\/p>",
+        "display_type": "all",
+        "sort": "alphabetical"
+      }
+    },
+    "42a08016-9620-42e6-a4e7-98d87db4f66f": {
+      "type": "section-featured-collections",
+      "blocks": {
+        "template--16727916282172__42a08016-9620-42e6-a4e7-98d87db4f66f-1667551239e9010296-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage",
+            "title": ""
+          }
+        },
+        "template--16727916282172__42a08016-9620-42e6-a4e7-98d87db4f66f-1667551239e9010296-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "industrial-lighting",
+            "title": ""
+          }
+        },
+        "template--16727916282172__42a08016-9620-42e6-a4e7-98d87db4f66f-1667551239e9010296-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16727916282172__42a08016-9620-42e6-a4e7-98d87db4f66f-1667551239e9010296-0",
+        "template--16727916282172__42a08016-9620-42e6-a4e7-98d87db4f66f-1667551239e9010296-3",
+        "template--16727916282172__42a08016-9620-42e6-a4e7-98d87db4f66f-1667551239e9010296-4"
+      ],
+      "settings": {
+        "flush": false,
+        "flush_bottom": true,
+        "title": "You might also like"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "42a08016-9620-42e6-a4e7-98d87db4f66f"
+  ]
+}

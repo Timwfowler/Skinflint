@@ -1,0 +1,132 @@
+
+
+<div class="page-width {% if section.settings.flush %}section-flush {% endif %}
+{% if section.settings.flush_bottom %}section-padding--bottom {% endif %}">
+  {%- if section.settings.title != blank -%}
+    <div class="section-header">
+      <h2>{{ section.settings.title }}</h2>
+    </div>
+  {%- endif -%}
+  <div class="video-wrapper">
+
+
+  {%- if section.settings.video_url == blank -%}
+    <iframe title="Vimeo Video" src="//www.youtube.com/embed/_9VUPq3SxOc?rel=0&showinfo=0&vq=720" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+  {%- else -%}
+    {%- if section.settings.video_url.type == "youtube" -%}
+      <iframe  title="Youtube Video" src="//www.youtube.com/embed/{{ section.settings.video_url.id }}?autoplay=1&enablejsapi=1" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+    {%- endif -%}
+    {%- if section.settings.video_url.type == "vimeo" -%}
+      <iframe title="Vimeo Video" src="//player.vimeo.com/video/{{ section.settings.video_url.id }}?color={{ settings.color_button | remove: "#" }}&byline=0&portrait=0&badge=0" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+    {%- endif -%}
+  {%- endif -%}
+  </div>
+
+
+  {% unless section.settings.play_bg %}
+
+  <style>
+    .dummy-hack-play svg path{
+      fill: white;
+    }
+
+    .dummy-hack-play p{
+      color: white;
+    }
+  </style>
+    
+  {% endunless %}
+
+
+<div class="dummy-hack-play" {% if section.settings.play_bg %}
+  style="background-color: white"
+{% endif %}>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="86px" height="86px" viewBox="0 0 86 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group@2x</title>
+    <g id="About" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Our-Story---Reviews" transform="translate(-659.000000, -455.000000)">
+            <g id="Group-5" transform="translate(659.000000, 455.000000)">
+                <g id="Group-7" transform="translate(0.500000, 0.500000)">
+                    <path d="M42.5,0 C19.0278981,0 0,19.0278981 0,42.5 C0,65.9721019 19.0278981,85 42.5,85 C65.9721019,85 85,65.9721019 85,42.5 C85,19.0278981 65.9721019,0 42.5,0 Z M42.5,5 C63.2106781,5 80,21.7893219 80,42.5 C80,63.2106781 63.2106781,80 42.5,80 C21.7893219,80 5,63.2106781 5,42.5 C5,21.7893219 21.7893219,5 42.5,5 Z" id="Oval" fill="#2D2926" fill-rule="nonzero"></path>
+                    <g id="controller-play" transform="translate(33.500000, 29.500000)"></g>
+                </g>
+                <path d="M56.6515152,43.5026454 C56.6515152,44.1672984 55.9712727,44.6452262 55.9712727,44.6452262 L36.8776485,56.4333707 C35.4859394,57.3425449 34.3484848,56.6690002 34.3484848,54.9462372 L34.3484848,32.0568306 C34.3484848,30.3296218 35.4859394,29.6605229 36.8798788,30.5674743 L55.973503,42.3600645 C55.9712727,42.3600645 56.6515152,42.8379923 56.6515152,43.5026454 Z" id="Shape" fill="#2D2926" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>
+<p>{{ section.settings.play_title }}</p>
+    <iframe title="Vimeo Video" id="fake-vid" src=”https://olafwempe.com/mp3/silence/silence.mp3″ type=”audio/mp3″  id=”audio” style=”display:none”></iframe>
+    <video style="display: none;" autoplay muted loop playsinline preload="metadata">
+      <source src="EDMVideo(Jay)_NEW.webm">
+    </video>
+  </div>
+
+  <div class="video__placeholder">
+    <img src="{{ section.settings.placeholder | img_url: "master" }}" alt="">
+  </div>
+  
+</div>
+
+
+
+
+
+{% schema %}
+{
+  "name": "t:sections.featured-video.name",
+  "class": "index-section featured-video-section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "flush",
+      "label": "Remove top space",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "flush_bottom",
+      "label": "Add bottom space",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:sections.featured-video.settings.title.label"
+    },
+    {
+      "type": "video_url",
+      "id": "video_url",
+      "label": "t:sections.featured-video.settings.video_url.label",
+      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+      "accept": [
+        "youtube",
+        "vimeo"
+      ]
+    },
+    {
+      "type": "image_picker",
+      "id": "placeholder",
+      "label": "Placeholder"
+    },
+    {
+      "type": "text",
+      "id": "play_title",
+      "label": "Play button text"
+    },
+    {
+      "type": "checkbox",
+      "id": "play_bg",
+      "label": "White background on play btn?",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.featured-video.presets.video.name"
+    }
+  ]
+}
+{% endschema %}

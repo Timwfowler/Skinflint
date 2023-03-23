@@ -1,0 +1,218 @@
+{
+  "sections": {
+    "db8c84c3-a207-455c-9cc4-90cbb2f95723": {
+      "type": "section-featured-video",
+      "settings": {
+        "flush": true,
+        "flush_bottom": false,
+        "title": "",
+        "video_url": "https:\/\/youtu.be\/bsldk2b4d4M",
+        "placeholder": "shopify:\/\/shop_images\/our-story-video-light-prep.jpg",
+        "play_title": "Our Story",
+        "play_bg": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "d3e7f6e7-1f18-4e48-ab7f-6562895aec8d": {
+      "type": "section-text-and-image",
+      "settings": {
+        "flush": true,
+        "flush_bottom": true,
+        "layout": "right",
+        "image": "shopify:\/\/shop_images\/story_lights_origin.jpg",
+        "title": "We don’t make lights. We find them.",
+        "subheading": "<p><\/p><p>At skinflint we salvage and restore vintage lights that would otherwise go to landfill - from iconic British factories and theatres to abandoned glassworks in former Czechoslovakia. We have three guiding principles:<\/p><p><\/p><p><strong>To salvage <\/strong>the best lighting from the 1920s to the 1970s.<\/p><p><\/p><p><strong>To restore <\/strong>every piece without compromising character.<\/p><p><\/p><p><strong>To refurbish <\/strong>every fixture to the highest modern standards.<\/p>",
+        "link": "",
+        "link_text": "",
+        "link_2": "",
+        "link_text_2": ""
+      }
+    },
+    "d0ef7b1d-df04-4394-8054-1def31ed25da": {
+      "type": "section-text-and-image",
+      "settings": {
+        "flush": true,
+        "flush_bottom": true,
+        "layout": "left",
+        "image": "shopify:\/\/shop_images\/Our_story_b_corp_ethos_2_1.jpg",
+        "title": "Our ethos",
+        "subheading": "<p><\/p><p><strong>We’re on a mission<\/strong> to stop vintage lighting going to landfill and make business a force for good.<\/p><p><\/p><p><strong>We’re a Certified B Corp<\/strong> so we put our people, planet and customers above profit and hold ourselves accountable to being the change we want to see in the world, donating 1% of our sales to the planet every year.<\/p><p><\/p><p><strong>We work sustainably<\/strong> and constantly evolve the way we operate through product circularity initiatives like Full Circle, our product buy-back scheme.<\/p><p><\/p><p><strong>We don’t make lights. We find them.<\/strong> We are skinflint.<\/p>",
+        "link": "",
+        "link_text": "",
+        "link_2": "",
+        "link_text_2": ""
+      }
+    },
+    "a2ca83d2-dfa6-41d8-bc62-2b184ddf2f4b": {
+      "type": "section-slideshow-image",
+      "blocks": {
+        "template--16760212947260__a2ca83d2-dfa6-41d8-bc62-2b184ddf2f4b-1667288309684f9e7a-0": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "image": "shopify:\/\/shop_images\/Our_story_team_photo.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--16760212947260__a2ca83d2-dfa6-41d8-bc62-2b184ddf2f4b-1667288309684f9e7a-0"
+      ],
+      "settings": {
+        "flush": true,
+        "flush_bottom": false,
+        "full_width": false,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "e71a1c9a-c0f7-4eaf-a684-8839a0bd3a80": {
+      "type": "section-rich-text",
+      "blocks": {
+        "template--16760212947260__e71a1c9a-c0f7-4eaf-a684-8839a0bd3a80-1666920806555b1a78-0": {
+          "type": "heading",
+          "settings": {
+            "title": "The skinflint story"
+          }
+        },
+        "template--16760212947260__e71a1c9a-c0f7-4eaf-a684-8839a0bd3a80-1666920806555b1a78-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>skinflint is Europe’s leading vintage lighting retailer, supplying restored original vintage lights to shops, hotels, bars and restaurants around the world, from Patagonia, Aesop, Padella and Somerset House, to private residences designed by Plain English. We even offer a lighting hire division for film and tv, which is why skinflint lights can be spotted in titles like Mission Impossible.<\/p><p><\/p><p>We’ve grown a lot over the last few years, but in 2009, skinflint was the brainchild of two lighting enthusiasts - Sophie, a BAFTA award-winning Art Director, and Chris, who spent his early career working with the industry’s brave and bold at Foster + Partners, iGuzzini and Philippe Starck.<\/p><p><\/p><p>This high level exposure led to Chris questioning the status quo; why couldn’t modern-day homes, hotels, shops and restaurants be fitted with salvaged and restored vintage lights? Chris put his theory to the test in a Victorian home in North London, and with that, skinflint was born.<\/p><p><\/p><p>These days, we’re far bigger than a team of two. We’re led by Chris from a Victorian studio in Cornwall where we supply lights on projects globally, from the UK and the US to Hong Kong and Australia. But whilst we’ve grown, we’ve also stayed true to our founding ethos; we continue to stop lighting going to landfill through product circularity initiatives like our Full Circle buy-back scheme. We’re a Certified B Corp, so we use business as a force for good and hold ourselves accountable to being the change we want to see in the world by donating to charities like 1% for the Planet every year.<\/p><p><\/p><p>And when we’re not at our desks or in our workshop, we’re probably out rescuing vintage lights from abandoned WWII munitions factories, famed Bohemian lighting towns, and shipbreakers’ yards in Gujarat.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16760212947260__e71a1c9a-c0f7-4eaf-a684-8839a0bd3a80-1666920806555b1a78-0",
+        "template--16760212947260__e71a1c9a-c0f7-4eaf-a684-8839a0bd3a80-1666920806555b1a78-1"
+      ],
+      "settings": {
+        "flush": false,
+        "flush_bottom": false,
+        "align_text": "left",
+        "narrow_column": true
+      }
+    },
+    "8839b835-e824-4646-a858-0d20b2345bb3": {
+      "type": "section-featured-collections",
+      "blocks": {
+        "template--16760212947260__8839b835-e824-4646-a858-0d20b2345bb3-1666920796d7813966-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "ceiling-light-test",
+            "title": ""
+          }
+        },
+        "template--16760212947260__8839b835-e824-4646-a858-0d20b2345bb3-1666920796d7813966-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "ceiling-light-test",
+            "title": ""
+          }
+        },
+        "template--16760212947260__8839b835-e824-4646-a858-0d20b2345bb3-1666920796d7813966-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "ceiling-light-test",
+            "title": ""
+          }
+        },
+        "template--16760212947260__8839b835-e824-4646-a858-0d20b2345bb3-1666920796d7813966-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "ceiling-light-test",
+            "title": ""
+          }
+        },
+        "template--16760212947260__8839b835-e824-4646-a858-0d20b2345bb3-1666920796d7813966-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "ceiling-light-test",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16760212947260__8839b835-e824-4646-a858-0d20b2345bb3-1666920796d7813966-0",
+        "template--16760212947260__8839b835-e824-4646-a858-0d20b2345bb3-1666920796d7813966-1",
+        "template--16760212947260__8839b835-e824-4646-a858-0d20b2345bb3-1666920796d7813966-2",
+        "template--16760212947260__8839b835-e824-4646-a858-0d20b2345bb3-1666920796d7813966-3",
+        "template--16760212947260__8839b835-e824-4646-a858-0d20b2345bb3-1666920796d7813966-4"
+      ],
+      "settings": {
+        "flush": false,
+        "flush_bottom": false,
+        "title": "You might also like",
+        "link": "",
+        "button_link": ""
+      }
+    },
+    "8ff241b8-baf2-4cf2-aa8e-665d36745dda": {
+      "type": "section-split-text",
+      "blocks": {
+        "template--16760212947260__8ff241b8-baf2-4cf2-aa8e-665d36745dda-16669221367bded66f-0": {
+          "type": "text_block",
+          "settings": {
+            "title": "1940s industrial lights",
+            "text": "<p>The quality of what I bought (being around a third of the cost of their top end items) is exceptional. Recommended.<\/p><p>- Steve | London | UK<\/p>"
+          }
+        },
+        "template--16760212947260__8ff241b8-baf2-4cf2-aa8e-665d36745dda-16669221367bded66f-1": {
+          "type": "text_block",
+          "settings": {
+            "title": "British Factory Light",
+            "text": "<p>I am very pleased with my purchase, it finishes off my dining room just perfectly. <\/p><p>- David | East Sussex | UK<\/p>"
+          }
+        },
+        "c0565a77-ce2c-4ed8-925e-a4d35c64fc46": {
+          "type": "text_block",
+          "settings": {
+            "title": "Light fantastic",
+            "text": "<p>Fantastic light and flex... We will be back for more! Service was unimprovable.<\/p><p>- Gareth | Northamptonshire | UK<\/p>"
+          }
+        },
+        "98a068eb-0dd8-4244-b25f-d0a36156d317": {
+          "type": "text_block",
+          "settings": {
+            "title": "Outstanding customer service",
+            "text": "<p>Thank you for the very careful crating and packing. The fixture is even better in person! We are so impressed with not only your inventory, but your outstanding customer service. <\/p><p>- Jerry | California | US<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16760212947260__8ff241b8-baf2-4cf2-aa8e-665d36745dda-16669221367bded66f-0",
+        "template--16760212947260__8ff241b8-baf2-4cf2-aa8e-665d36745dda-16669221367bded66f-1",
+        "c0565a77-ce2c-4ed8-925e-a4d35c64fc46",
+        "98a068eb-0dd8-4244-b25f-d0a36156d317"
+      ],
+      "settings": {
+        "flush": false,
+        "flush_bottom": true,
+        "remove_borders": false,
+        "title": "A quick word from our customers",
+        "align_text": "left",
+        "desktop_columns_per_row": 2,
+        "button_label": "",
+        "button_link": "",
+        "button_label_two": "",
+        "button_link_two": "",
+        "show_link": true
+      }
+    }
+  },
+  "order": [
+    "db8c84c3-a207-455c-9cc4-90cbb2f95723",
+    "main",
+    "d3e7f6e7-1f18-4e48-ab7f-6562895aec8d",
+    "d0ef7b1d-df04-4394-8054-1def31ed25da",
+    "a2ca83d2-dfa6-41d8-bc62-2b184ddf2f4b",
+    "e71a1c9a-c0f7-4eaf-a684-8839a0bd3a80",
+    "8839b835-e824-4646-a858-0d20b2345bb3",
+    "8ff241b8-baf2-4cf2-aa8e-665d36745dda"
+  ]
+}

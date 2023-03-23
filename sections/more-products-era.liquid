@@ -1,0 +1,37 @@
+{% if product.metafields.custom.era != blank %}
+  {% for collection in product.collections %}
+    {% if collection.title contains product.metafields.custom.era.value[0] %}
+    {% assign numOfProducts = collection.products | size %}
+    {% if numOfProducts > 1 %}
+
+      
+ 
+      <div class="page-width more-products-from">
+        <h2>More from {{ product.metafields.custom.era.value[0] }}</h2>    
+        <div class="new-grid">
+          {% for eraProduct in collection.products %}
+            {%- unless eraProduct.title == product.title -%}
+            {%- render 'product-grid-item', product: eraProduct-%}
+            {%- endunless -%}
+        {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+
+{% schema %}
+{
+"name": "More Products Era",
+"class": "index-section more-products-vendor-section",
+"settings": [
+  {
+    "type": "paragraph",
+    "content": "t:sections.more-products-vendor.settings.content"
+  }
+]
+}
+{% endschema %}

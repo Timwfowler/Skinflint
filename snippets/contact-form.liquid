@@ -1,0 +1,83 @@
+<div class="index-section newsletter-{{ section.id }}">
+  {%- if section.settings.color_scheme != 'none' -%}
+    {%- render 'color-scheme-texture', color_scheme: section.settings.color_scheme -%}
+  {%- endif -%}
+  <div class="page-width{% if section.settings.narrow_column %} page-width--narrow{% endif %}">
+    {%- if section.settings.title != blank or section.settings.text != blank -%}
+      <div class="section-header text-center">
+        {%- if section.settings.title != blank -%}
+          <h3 class="section-header__title">
+            {{ section.settings.title }}
+          </h3>
+        {%- endif -%}
+      </div>
+    {% endif %}
+
+    <div class="form-vertical">
+      {%- assign form_id = 'contact-' | append: section.id -%}
+      {%- form 'contact', id: form_id -%}
+
+        {%- if form.posted_successfully? -%}
+          <p class="note note--success">
+            {{ 'contact.form.post_success' | t }}
+          </p>
+        {%- endif -%}
+
+        {{ form.errors | default_errors }}
+
+        <div class="grid grid--small">
+          <div class="grid__item medium-up--one-half first-name">
+            <label for="ContactFormName-{{ section.id }}">First Name *</label>
+            <input required type="text" id="ContactFormName-{{ section.id }}" class="input-full" name="contact[first-name]" autocapitalize="words" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}">
+          </div>
+
+          <div class="grid__item medium-up--one-half last-name">
+            <label for="ContactFormName-{{ section.id }}">Surname *</label>
+            <input required type="text" id="ContactFormName-{{ section.id }}" class="input-full" name="contact[last-name]" autocapitalize="words" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}">
+          </div>
+
+          <div class="grid__item">
+            <label for="ContactFormEmail-{{ section.id }}">Your email *</label>
+            <input type="email" id="ContactFormEmail-{{ section.id }}" class="input-full" name="contact[email]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+          </div>
+
+          <div class="grid__item">
+            <label for="ContactFormEmail-{{ section.id }}">Subject</label>
+            <input type="text" id="ContactFormEmail-{{ section.id }}" class="input-full" name="contact[subject]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+          </div>
+        </div>
+
+        {%- if section.settings.show_phone -%}
+          <label for="ContactFormPhone-{{ section.id }}">{{ 'contact.form.phone' | t }}</label>
+          <input type="tel" id="ContactFormPhone-{{ section.id }}" class="input-full" name="contact[phone]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+        {%- endif -%}
+
+        <label for="ContactFormMessage-{{ section.id }}">{{ 'contact.form.message' | t }}</label>
+        <textarea rows="5" id="ContactFormMessage-{{ section.id }}" class="input-full" name="contact[body]">
+          {% if form.body %}
+            {{ form.body }}{% endif %}
+        </textarea>
+
+        <div class="section-header text-center">
+          {%- if section.settings.text != blank -%}
+            <div class="rte section-header__rte">{{ section.settings.text }}</div>
+          {%- endif -%}
+        </div>
+
+        <label for="contact-form-submit-{{ section.id }}" class="hidden-label">{{ 'contact.form.send' | t }}</label>
+        <button type="submit" id="contact-form-submit-{{ section.id }}" class="btn">
+          {{ 'contact.form.send' | t }}
+        </button>
+
+        {% comment %}
+          Remove the following three lines of code to remove the note
+          about being protected by Google's reCAPTCHA service.
+          By removing it, the small reCAPTCHA widget will appear in the
+          bottom right corner of the page.
+        {% endcomment %}
+        <div class="captcha">{{ 'shopify.online_store.spam_detection.disclaimer_html' | t }}</div>
+
+      {%- endform -%}
+    </div>
+  </div>
+</div>

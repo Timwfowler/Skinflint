@@ -1,0 +1,116 @@
+<div class="icon-title-copy {% if section.settings.flush %}section-flush {% endif %}
+{% if section.settings.flush_bottom %}section-padding--bottom {% endif %}">
+  <div class="icon-title-copy__inner page-width">
+    <div class="icon-title-copy__block">
+      <div class="icon-title-copy__block-inner">
+        {% for block in section.blocks %}
+          <div class="icon-title-copy__item">
+            <div class="icon-title-copy__img-title">
+              <div class="icon-title-copy__img"><img src="{{ block.settings.logo_image | img_url: "400x" }}" alt=""></div>
+              <h2>{{ block.settings.title }}</h2>
+            </div>
+
+            <p>{{ block.settings.paragraph }}</p>
+
+            <div class="icon-title-copy__link">
+              <a href="{{ block.settings.link }}">{{ block.settings.link_text }}</a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Icon with title and copy",
+    "class": "index-section icon-title-copy",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "flush",
+        "label": "Remove top space",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "flush_bottom",
+        "label": "Add bottom space",
+        "default": false
+      }
+
+    ],
+    "blocks": [
+      {
+        "type": "icon",
+        "name": "Icon block",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "logo_image",
+            "label": "Icon"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "text",
+            "id": "paragraph",
+            "label": "Paragraph"
+          },
+          {
+            "type": "url",
+            "id": "link",
+            "label": "Link"
+          }, {
+            "type": "text",
+            "id": "link_text",
+            "label": "Link text",
+            "default": "Read more"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Icon with title and copy",
+        "blocks": [
+          {
+          "type": "icon",
+          "settings": {
+            "logo_image": "shopify:\/\/shop_images\/2_shippingfastdelivery_1.webp",
+            "title": "Shipping",
+            "paragraph": "Our UK and international shipping and our no quibble return options explained.",
+            "link": "",
+            "link_text": "Read more"
+            }
+          },
+          {
+          "type": "icon",
+          "settings": {
+            "logo_image": "shopify:\/\/shop_images\/2_wetroomsfaq_1.webp",
+            "title": "Returns",
+            "paragraph": "All you need to know about our no quibble returns policy.",
+            "link": "",
+            "link_text": "Read more"
+            }
+          },
+          {
+          "type": "icon",
+          "settings": {
+            "logo_image": "shopify:\/\/shop_images\/1_lightbulbsfaq_1.webp",
+            "title": "Light Bulbs",
+            "paragraph": "Why we recommend using energy-saving LED light bulbs in all of our vintage lights.",
+            "link": "",
+            "link_text": "Read more"
+           }
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

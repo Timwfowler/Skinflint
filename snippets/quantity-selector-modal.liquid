@@ -1,0 +1,259 @@
+<div class="qty-select-modal">
+  <div class="qty-select-modal__inner">
+    <button type="button" aria-label="Close" class="btn-close"></button>
+
+    <h3>Added to cart</h3>
+    <p>{{ product.title }}</p>
+    <div class="qty-select-modal__qty-wrap">
+      <div class="qty-select-modal__qty">
+        <span class="cart__mobile-title">Quantity</span> 
+        <button class="minus" type="button">-</button> 
+        <span class="cart__qty-number">4</span> 
+        <button class="plus" type="button">+</button>
+      </div>
+      <div class="qty-select-modal__price">        
+        <p class="js-quantity-price">price</p>
+      </div>
+    </div>
+    
+    <div class="qty-select-modal__checkout">
+      <p class="continue-shopping">Continue shopping</p>
+      <div class="btn js-checkout">
+        <span>Checkout</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script>
+
+  //open modal
+  const buyButton = document.querySelector('.js-buy-btn')
+  const modalBuy = document.querySelector('.qty-select-modal')
+  const closeButtonBuy = document.querySelector('.qty-select-modal .btn-close')
+  const plus = document.querySelector('.qty-select-modal__qty .plus')
+  const minus = document.querySelector('.qty-select-modal__qty .minus')
+  const total = buyButton.getAttribute('data-total')
+  const inputCartQty = document.querySelector('.cart__qty-number')
+  const id = buyButton.getAttribute('data-var-id')
+  const checkoutBtn = document.querySelector('.js-checkout')
+  let allTotals = document.querySelectorAll('.js-total-left')
+
+
+  fetch(window.Shopify.routes.root + 'cart.js')
+      .then(response => response.json())
+      .then(data => { 
+        updateNumberTotals(data)
+      });
+
+  function updateNumberTotals(data){
+    allTotals = document.querySelectorAll('.js-total-left')
+
+    data.items.forEach((item) => {
+      if (item.id == parseInt(id)) {
+        allTotals.forEach((totalNum) => {
+          totalNum.innerHTML = parseInt(total) - item.quantity
+        })
+      }
+    })
+  }
+
+  
+
+
+  plus.addEventListener('click', () => {
+    let qty = parseInt(total)
+    let totalCart = parseInt(inputCartQty.innerHTML)
+    allTotals = document.querySelectorAll('.js-total-left')
+
+    if (totalCart < qty ) {
+      inputCartQty.innerHTML = totalCart + 1
+
+
+      allTotals.forEach((totalNum) => {     
+        totalNum.innerHTML = total - parseInt(inputCartQty.innerHTML)
+      })
+
+      //update price 
+      let priceUI = document.querySelector('.js-quantity-price')
+      let price = parseFloat(document.querySelector('.price-vat-done').innerHTML.substring(1))
+      priceUI.innerHTML = "£" + (price * parseInt(inputCartQty.innerHTML)).toFixed(2)
+
+    }
+  })
+
+  minus.addEventListener('click', () => {
+    let qty = parseInt(total)
+    let totalCart = parseInt(inputCartQty.innerHTML)
+    allTotals = document.querySelectorAll('.js-total-left')
+
+    if (totalCart > 1 ) {
+      inputCartQty.innerHTML = totalCart - 1
+
+      allTotals.forEach((totalNum) => {     
+        totalNum.innerHTML = total - parseInt(inputCartQty.innerHTML)
+      })
+
+      //update price 
+      let priceUI = document.querySelector('.js-quantity-price')
+      let price = parseFloat(document.querySelector('.price-vat-done').innerHTML.substring(1))
+      priceUI.innerHTML = "£" + (price * parseInt(inputCartQty.innerHTML)).toFixed(2)
+    }
+  })
+
+
+
+  buyButton.addEventListener('click', () => {
+
+    const id = buyButton.getAttribute('data-var-id')
+    const total = buyButton.getAttribute('data-total')
+
+
+    const url = `/cart/add.js`;
+    let data = []
+
+    data.push({id: id, quantity: 1})
+
+    const payload = {"items" : data }  
+
+    fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(payload),
+    })
+    .then((response) => {
+      if (!response.ok) {
+        throw Error(response.statusText);
+      }
+      return response;
+    })
+    .then((response) => response.json())
+    .then((data) => {
+      handleResponse(data);
+    })
+    .catch((error) => {
+      console.error(error); 
+    });
+
+    function handleResponse(data){
+ 
+
+      var cartContents = fetch(window.Shopify.routes.root + 'cart.js')
+      .then(response => response.json())
+      .then(data => { 
+        updateCart(data)
+      });
+    }
+
+    function updateCart(data){
+      const cartCount = document.querySelector('.cart-link__bubble-num')
+      cartCount.innerHTML = data.item_count
+
+      data.items.forEach((item) => {
+ 
+
+        if (item.id == parseInt(id)) {
+          inputCartQty.innerHTML = item.quantity 
+        }
+      })
+
+
+      modalBuy.classList.add('active')
+
+      //update price 
+      let priceUI = document.querySelector('.js-quantity-price')
+      let price = parseFloat(document.querySelector('.price-vat-done').innerHTML.substring(1))
+      priceUI.innerHTML = "£" + (price * parseInt(inputCartQty.innerHTML)).toFixed(2)
+    }
+
+  })
+
+  closeButtonBuy.addEventListener('click', () => {
+    modalBuy.classList.remove('active')
+    let qty = parseInt(document.querySelector('.cart__qty-number').innerHTML)
+    const id = buyButton.getAttribute('data-var-id')
+
+    let data = {
+        "id" : id,
+        "quantity" : qty
+    }
+
+    let cartContents = fetch('/cart/change.js', {
+        method: 'POST',
+        credentials: 'same-origin',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => {
+ 
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    })
+
+  })
+
+  document.querySelector('.continue-shopping').addEventListener('click', () => {
+    modalBuy.classList.remove('active')
+    let qty = parseInt(document.querySelector('.cart__qty-number').innerHTML)
+    const id = buyButton.getAttribute('data-var-id')
+
+    let data = {
+        "id" : id,
+        "quantity" : qty
+    }
+
+    let cartContents = fetch('/cart/change.js', {
+        method: 'POST',
+        credentials: 'same-origin',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => {
+ 
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    })
+  })
+
+
+
+  checkoutBtn.addEventListener('click', () => {
+
+    let qty = parseInt(document.querySelector('.cart__qty-number').innerHTML)
+    const id = buyButton.getAttribute('data-var-id')
+
+    let data = {
+        "id" : id,
+        "quantity" : qty
+    }
+
+    let cartContents = fetch('/cart/change.js', {
+        method: 'POST',
+        credentials: 'same-origin',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => {
+        window.location = "/cart"
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    })
+
+  })
+
+
+
+</script>

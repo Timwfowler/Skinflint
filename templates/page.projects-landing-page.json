@@ -1,0 +1,94 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-blog-landing",
+      "blocks": {
+        "dadefcee-74d4-49f4-953b-ba179e7013ca": {
+          "type": "blog_filter",
+          "settings": {
+            "blog": "projects-commercial"
+          }
+        },
+        "4bd03a3b-da7f-42dc-9062-6b8c74cc7950": {
+          "type": "blog_filter",
+          "settings": {
+            "blog": "projects-residential"
+          }
+        },
+        "1106cb27-6858-48cc-8bf7-2bf1fd4e8487": {
+          "type": "blog_filter",
+          "settings": {
+            "blog": "projects-prop-hire"
+          }
+        }
+      },
+      "block_order": [
+        "dadefcee-74d4-49f4-953b-ba179e7013ca",
+        "4bd03a3b-da7f-42dc-9062-6b8c74cc7950",
+        "1106cb27-6858-48cc-8bf7-2bf1fd4e8487"
+      ],
+      "settings": {
+        "article": "projects-commercial\/origin-coffee-roastery-industrial-lighting",
+        "title": "Vintage Lighting Projects"
+      }
+    },
+    "2374c9fb-ad59-405b-9bdf-9e90a47c0a55": {
+      "type": "section-featured-collections",
+      "blocks": {
+        "template--16891579826492__2374c9fb-ad59-405b-9bdf-9e90a47c0a55-1670473256a2d01ebe-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage",
+            "title": ""
+          }
+        },
+        "template--16891579826492__2374c9fb-ad59-405b-9bdf-9e90a47c0a55-1670473256a2d01ebe-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage",
+            "title": ""
+          }
+        },
+        "template--16891579826492__2374c9fb-ad59-405b-9bdf-9e90a47c0a55-1670473256a2d01ebe-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage",
+            "title": ""
+          }
+        },
+        "template--16891579826492__2374c9fb-ad59-405b-9bdf-9e90a47c0a55-1670473256a2d01ebe-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage",
+            "title": ""
+          }
+        },
+        "template--16891579826492__2374c9fb-ad59-405b-9bdf-9e90a47c0a55-1670473256a2d01ebe-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16891579826492__2374c9fb-ad59-405b-9bdf-9e90a47c0a55-1670473256a2d01ebe-0",
+        "template--16891579826492__2374c9fb-ad59-405b-9bdf-9e90a47c0a55-1670473256a2d01ebe-1",
+        "template--16891579826492__2374c9fb-ad59-405b-9bdf-9e90a47c0a55-1670473256a2d01ebe-2",
+        "template--16891579826492__2374c9fb-ad59-405b-9bdf-9e90a47c0a55-1670473256a2d01ebe-3",
+        "template--16891579826492__2374c9fb-ad59-405b-9bdf-9e90a47c0a55-1670473256a2d01ebe-4"
+      ],
+      "settings": {
+        "flush": true,
+        "flush_bottom": true,
+        "title": "You might also like",
+        "link": "",
+        "button_link": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "2374c9fb-ad59-405b-9bdf-9e90a47c0a55"
+  ]
+}

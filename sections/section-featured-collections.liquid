@@ -1,0 +1,144 @@
+
+
+  <div class="page-width numb-of-products-{{ section.blocks.size }} {% if section.settings.flush %}section-flush {% endif %}
+  {% if section.settings.flush_bottom %}section-padding--bottom {% endif %}" >
+    {%- if section.settings.title != blank -%}
+      <div class="section-header">
+        <h2 class="section-header__title">{{ section.settings.title }}</h2>
+      </div>
+    {%- endif -%}
+
+    <div class="new-grid" data-view="6-3">
+      {%- liquid
+      assign isEmpty = true
+      if section.blocks.size > 0
+        assign isEmpty = false
+      endif
+    -%}
+
+      {%- for block in section.blocks -%}
+        {%- liquid
+        assign collection = collections[block.settings.collection]
+        render 'collection-grid-item', collection: collection, block: block
+      -%}
+      {%- endfor -%}
+
+      {%- if isEmpty -%}
+        <div class="page-width">
+          <div class="rte">
+            {{ 'home_page.onboarding.no_content' | t }}
+          </div>
+        </div>
+      {%- endif -%} 
+
+
+    </div>
+
+    {% if section.settings.link %}
+    <a class="featured-collections-link" href="{{ section.settings.button_link }}">{{ section.settings.link }}</a>
+    {% endif %}
+  </div>
+
+
+
+{% schema %}
+  {
+    "name": "Featured Collection",
+    "class": "index-section featured-collections-section",
+    "max_blocks": 18,
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "flush",
+        "label": "Remove top space",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "flush_bottom",
+        "label": "Add bottom space",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "t:sections.featured-collections.settings.title.label",
+        "default": "Popular categories"
+      },
+      {
+        "type": "text",
+        "id": "link",
+        "label": "Bottom Link Text"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "link"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "collection",
+        "name": "t:sections.featured-collections.blocks.collection.name",
+        "settings": [
+          {
+            "id": "collection",
+            "type": "collection",
+            "label": "t:sections.featured-collections.blocks.collection.settings.collection.label",
+            "info": "t:sections.featured-collections.blocks.collection.settings.collection.info"
+          }, {
+            "type": "text",
+            "id": "title",
+            "label": "t:sections.featured-collections.blocks.collection.settings.title.label",
+            "info": "t:sections.featured-collections.blocks.collection.settings.title.info"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Featured Collection",
+        "settings": {
+          "title": "Featured Collection"
+        },
+        "blocks": [
+          {
+            "type": "collection",
+            "settings": {
+              "collection": "frontpage",
+              "title": ""
+            }
+          },
+          {
+            "type": "collection",
+            "settings": {
+              "collection": "frontpage",
+              "title": ""
+            }
+          },
+          {
+            "type": "collection",
+            "settings": {
+              "collection": "frontpage",
+              "title": ""
+            }
+          },
+          {
+            "type": "collection",
+            "settings": {
+              "collection": "frontpage",
+              "title": ""
+            }
+          },
+          {
+            "type": "collection",
+            "settings": {
+              "collection": "frontpage",
+              "title": ""
+            }
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

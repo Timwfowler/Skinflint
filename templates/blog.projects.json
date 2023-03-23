@@ -1,0 +1,40 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-blog-landing",
+      "blocks": {
+        "dadefcee-74d4-49f4-953b-ba179e7013ca": {
+          "type": "blog_filter",
+          "settings": {
+            "blog": "projects-commercial"
+          }
+        },
+        "4bd03a3b-da7f-42dc-9062-6b8c74cc7950": {
+          "type": "blog_filter",
+          "settings": {
+            "blog": "projects-residential"
+          }
+        },
+        "1106cb27-6858-48cc-8bf7-2bf1fd4e8487": {
+          "type": "blog_filter",
+          "settings": {
+            "blog": "projects-prop-hire"
+          }
+        }
+      },
+      "block_order": [
+        "dadefcee-74d4-49f4-953b-ba179e7013ca",
+        "4bd03a3b-da7f-42dc-9062-6b8c74cc7950",
+        "1106cb27-6858-48cc-8bf7-2bf1fd4e8487"
+      ],
+      "settings": {
+        "article": "projects-commercial\/origin-coffee-roastery-industrial-lighting",
+        "link": "Commercial",
+        "title": "Vintage Lighting Projects"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

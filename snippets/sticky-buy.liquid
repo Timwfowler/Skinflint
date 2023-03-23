@@ -1,0 +1,29 @@
+{% assign total=0 %}
+{%for variant in product.variants %}
+{% capture i %}{{ total | plus:variant.inventory_quantity }}{%endcapture%}
+{% assign total = i %}
+{%endfor%}  
+
+<div class="sticky-buy">
+  <div class="sticky-buy__inner">
+    <div class="pdp-main-price">
+      <h2><span class="price-vat-done" data-price="{{ product.price }}">{{ product.price | money }}</span> <span class="vat-line"></span> </h2>
+      <span class="product__qty-left"><strong class="js-total-left">{{ total }}</strong> Left</span>
+      <div class="btn js-sticky-buy-btn">
+        Add to cart
+      </div>
+    
+
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const stickyBuyBtn = document.querySelector('.js-sticky-buy-btn')
+
+  stickyBuyBtn.addEventListener('click', () => {
+    document.querySelector('.js-buy-btn').click()
+  })
+
+</script>

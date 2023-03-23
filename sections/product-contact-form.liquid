@@ -1,0 +1,62 @@
+<div class="contact-form product-contact-form">
+  <div class=" product-contact-form__inner page-width">
+
+
+      {%- render 'product-contact-form', section: section -%}
+
+  </div>
+
+
+
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "Contact form",
+    "class": "contact-form-section",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "t:sections.contact-form.settings.content"
+      },
+      {
+        "type": "header",
+        "content": "Left"
+      },
+      {
+        "type": "richtext",
+        "id": "paragraph",
+        "label": "Paragraph"
+      },
+      {
+        "type": "header",
+        "content": "Right"
+      }, {
+        "type": "text",
+        "id": "title",
+        "label": "t:sections.contact-form.settings.title.label",
+        "default": "Contact us"
+      }, {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text (below the form)"
+      }, {
+        "type": "checkbox",
+        "id": "show_phone",
+        "label": "t:sections.contact-form.settings.show_phone.label"
+      }, {
+        "type": "checkbox",
+        "id": "narrow_column",
+        "label": "t:sections.contact-form.settings.narrow_column.label",
+        "default": true
+      },
+      {
+        "type": "url",
+        "id": "tc_link",
+        "label": "T and C link"
+      }
+    ]
+  }
+{% endschema %}
