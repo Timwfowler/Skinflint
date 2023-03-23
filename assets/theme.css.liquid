@@ -2657,9 +2657,9 @@ svg.icon:not(.icon--full-color) circle,svg.icon:not(.icon--full-color) ellipse,s
 }
 
 .unload:before{
-  background:{{ settings.color_body_text | default: "#1c1d1d" }};
+  /* background:{{ settings.color_body_text | default: "#1c1d1d" }};
   background:var(--colorTextBody);
-  opacity:1;
+  opacity:1; */
 }
 
 .unload:after{
@@ -2668,9 +2668,9 @@ svg.icon:not(.icon--full-color) circle,svg.icon:not(.icon--full-color) ellipse,s
 }
 
 .loading{
-  animation:placeholder-shimmer 1.3s linear 0.5s infinite;
+  /* animation:placeholder-shimmer 1.3s linear 0.5s infinite;
   background-size:300% 100%;
-  background-image:linear-gradient(100deg, var(--colorLargeImageBg) 40%, var(--colorLargeImageBgLight) 63%, var(--colorLargeImageBg) 79%)
+  background-image:linear-gradient(100deg, var(--colorLargeImageBg) 40%, var(--colorLargeImageBgLight) 63%, var(--colorLargeImageBg) 79%) */
 }
 
 .loading.loaded{
@@ -2679,12 +2679,12 @@ svg.icon:not(.icon--full-color) circle,svg.icon:not(.icon--full-color) ellipse,s
   }
 
 .loading--delayed:before{
-  animation-delay:0.8s !important;
-  animation-duration:1s !important;
+  /* animation-delay:0.8s !important;
+  animation-duration:1s !important; */
 }
 
 .loading--delayed:after{
-  animation-delay:1.3s !important;
+  /* animation-delay:1.3s !important; */
 }
 
 .shopify-product-reviews-badge{
@@ -5843,8 +5843,8 @@ input[type=image]{
 }
 
 .hero.loaded{
-    background-color:transparent;
-    transition:background-color 0.2s ease 0.3s;
+    /* background-color:transparent;
+    transition:background-color 0.2s ease 0.3s; */
   }
 
 .hero--padded .hero{
@@ -6082,7 +6082,7 @@ input[type=image]{
 
 .hero .slideshow__slide .hero__animation-contents{
     opacity:0;
-    transform:translateY(10px);
+    /* transform:translateY(10px); */
     transition:none
   }
 
@@ -6093,7 +6093,7 @@ input[type=image]{
 @media only screen and (max-width:768px){
 
 .hero .slideshow__slide .hero__animation-contents{
-      transform:translateY(7px)
+      /* transform:translateY(7px) */
   }
     }
 
@@ -6107,7 +6107,7 @@ input[type=image]{
   }
 
 .hero .slideshow__slide .hero__link .btn{
-    opacity:0;
+    opacity:1;
 
   }
 
@@ -6152,7 +6152,7 @@ input[type=image]{
   }
 
 .hero.loaded .slideshow__slide.is-selected .hero__title .hero__animation-contents{
-    transition-delay:0.2s;
+    /* transition-delay:0.2s; */
   }
 
 .hero.loaded .slideshow__slide.is-selected .hero__subtitle .hero__animation-contents{
@@ -6160,7 +6160,7 @@ input[type=image]{
   }
 
 .hero.loaded .slideshow__slide.is-selected .hero__link .btn{
-    animation:fade-in 1s ease 0.6s forwards;
+    /* animation:fade-in 1s ease 0.6s forwards; */
   }
 
 .hero.loaded .slideshow__slide.is-selected .hero__link .btn:nth-child(2){
@@ -6175,7 +6175,7 @@ input[type=image]{
 .hero.loaded .slideshow__slide.is-selected .hero__image-wrapper{
     opacity:1;
     transform:scale(1);
-    transition:transform 1s cubic-bezier(0.18, 0.63, 0.25, 1),opacity 0.7s ease;
+    /* transition:transform 1s cubic-bezier(0.18, 0.63, 0.25, 1),opacity 0.7s ease; */
   }
 
 .hero.loaded .slideshow__slide.is-selected .hero__sidebyside{
