@@ -78,7 +78,7 @@
         "height": 790,
         "height_mobile": 400,
         "style": "bars",
-        "autoplay": false,
+        "autoplay": true,
         "autoplay_speed": 7
       }
     },
