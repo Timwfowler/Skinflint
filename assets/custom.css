@@ -292,6 +292,20 @@ a:hover {
   color: #2d2926 !important;
   margin-left: 10px; }
 
+.grid-product__tags {
+  position: absolute;
+  top: 0;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  right: 0; }
+  .grid-product__tags div {
+    font-size: 1.5rem;
+    line-height: 1.7;
+    color: #fff;
+    font-family: AvertaStd-Bold,sans-serif;
+    font-weight: 400; }
+
 .grid-item .collection-image img {
   padding: 0; }
 .grid-item .grid-item__meta, .grid-item .collection-item__title {
@@ -325,7 +339,7 @@ a:hover {
   line-height: 1.7;
   color: #fff;
   font-family: AvertaStd-Bold,sans-serif;
-  max-width: 84%;
+  max-width: 99%;
   font-weight: 400; }
 .grid-item .collection-item__title {
   color: #fff;
@@ -1537,7 +1551,7 @@ a:hover {
     .collection-card-filters .collection-sidebar__group .collapsible-content--all {
       background-color: #f5f5f5;
       position: absolute;
-      z-index: 102;
+      z-index: 5;
       width: 100%; } }
 .collection-card-filters .collection-sidebar {
   margin: 0;
@@ -1671,7 +1685,8 @@ a:hover {
     margin-bottom: 0;
     padding-bottom: 0;
     margin-top: 0;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    margin-top: 2px; }
     @media (min-width: 1024px) {
       .collection-header h1 {
         margin-bottom: 40px; } }

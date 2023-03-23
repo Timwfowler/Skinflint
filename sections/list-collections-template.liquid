@@ -18,6 +18,7 @@
       <div class="collection-template-card">
         <h1>{{ section.settings.title }}</h1>  
         {{ section.settings.copy }}
+        {% render 'share' %}
       </div>
 
       <div class="collection-featured-image">
@@ -37,6 +38,18 @@
   </div>
 
 
+</div>
+
+<div class="see-archive">
+  <div class="see-archive__button">
+    <a href=" {{ collection.metafields.custom.does_this_collection_have_an_archived_non_archived_equivalent_.value.url }}" class="link">      
+      {% if collection.metafields.custom.is_this_collection_archived_ %}
+        View active items
+      {% else %}
+        View archived items
+      {% endif %}
+    </a>   
+  </div>
 </div>
 
 {%- endpaginate -%}
