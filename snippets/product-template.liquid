@@ -93,13 +93,13 @@
         {% endfor %}
 
         {% unless era %}
-        <span class="product-single__filters">Era: {{ product.metafields.custom.era.value }}</a>
+        <span class="product-single__filters">Era: {{ product.metafields.custom.era.value }}</span>
         {% endunless %}
       {% endif %}
 
       {% assign origin = false %}
       {% if product.metafields.custom.origin != blank %}
-        {% for collection in product.collections %}
+        {% for collection in product.collections %}          
           {% if collection.title contains product.metafields.custom.origin.value[0] %}
             <a class="product-single__filters" href="{{ collection.url }}">Origin: {{ product.metafields.custom.origin.value }}</a>
             {% assign origin = true %}

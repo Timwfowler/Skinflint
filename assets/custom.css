@@ -2566,13 +2566,14 @@ a:hover {
       padding: 40px 40px 160px; } }
   .article-card__text h3 {
     margin: 0;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    line-height: 0.9; }
     @media (min-width: 1024px) {
       .article-card__text h3 {
         min-height: 52px; } }
     .article-card__text h3 a {
       font-size: 1.9rem;
-      line-height: 1.4;
+      line-height: 0.9;
       font-family: AvertaStd-Bold,sans-serif;
       font-weight: 400;
       font-style: normal;
@@ -2932,7 +2933,9 @@ a:hover {
     border-bottom: 1px solid #ffbf50; }
 .product-single__filters {
   font-family: AvertaStd-Bold,sans-serif;
-  padding-right: 30px; }
+  padding-right: 30px;
+  z-index: 7;
+  position: relative; }
 
 /*=====  End of Main product data  ======*/
 /*=============================================
@@ -3392,5 +3395,13 @@ a:hover {
       grid-row: 1 / 3; } }
 
 /*=====  End of Wishlist  ======*/
+/*=============================================
+=            Custom section specific            =
+=============================================*/
+@media (min-width: 1024px) {
+  #shopify-section-template--18439249002812__b11a81de-4b89-483d-8008-30271bda8c03 {
+    margin-bottom: 155px; } }
+
+/*=====  End of Custom section specific  ======*/
 
 /*# sourceMappingURL=custom.css.map */
