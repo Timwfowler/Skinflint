@@ -3403,6 +3403,10 @@ a:hover {
     margin-bottom: 155px;
     margin-top: 154px; } }
 
+@media (min-width: 1024px) {
+  #shopify-section-template--18439249002812__b11a81de-4b89-483d-8008-30271bda8c03 {
+    margin-top: 154px; } }
+
 /*=====  End of Custom section specific  ======*/
 
 /*# sourceMappingURL=custom.css.map */
