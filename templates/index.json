@@ -2,6 +2,34 @@
   "sections": {
     "4ea365e4-88e4-4ea3-b2cc-5d3982240a18": {
       "type": "section-banner",
+      "blocks": {
+        "9b6709b0-05b0-4358-95e4-d3ae5ec364fe": {
+          "type": "icon",
+          "settings": {
+            "text": "DELIVERY TO THE EU",
+            "link": ""
+          }
+        },
+        "91a50643-8dd1-4918-a791-dce911345727": {
+          "type": "icon",
+          "settings": {
+            "text": "B CORP",
+            "link": ""
+          }
+        },
+        "fec31634-369a-439a-bdb4-232014a7faef": {
+          "type": "icon",
+          "settings": {
+            "text": "LIGHTING SUPPLIER OF THE YEAR | LUX AWARD SHORTLIST",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "9b6709b0-05b0-4358-95e4-d3ae5ec364fe",
+        "91a50643-8dd1-4918-a791-dce911345727",
+        "fec31634-369a-439a-bdb4-232014a7faef"
+      ],
       "settings": {
       }
     },
