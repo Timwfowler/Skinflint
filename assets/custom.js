@@ -359,6 +359,57 @@ function initWishlist(){
   })
 }
 
+function initAnnouncementBar(){
+  // $('.cc-announcement__item').css('opacity', '1')
+
+  // $('.main-content').addClass('announcement-showing')
+
+
+
+  const bar = document.querySelectorAll('.notice-banner__slide')
+
+
+
+
+    let i = 0;    
+
+    // bar.style.display = 'none'
+    // bar.classList.remove('active') 
+    bar.forEach((bar) => {
+      // bar.style.display = "none"
+      bar.classList.remove('active')
+    })
+
+    bar[i].style.display = "block"
+    bar[i].classList.add('active')
+    i++          
+
+    function loopTheMessages() {         
+      setTimeout(function() {   
+        bar.forEach((bar) => {
+          // bar.style.display = "none"
+          bar.classList.remove('active')
+        })
+        bar[i].style.display = "block"
+        bar[i].classList.add('active')    
+
+        if (i < bar.length - 1) {  
+          i++;           
+          loopTheMessages();            
+        }else{
+          i= 0;
+          loopTheMessages(); 
+        }                   
+      }, 4000)
+    }
+
+    loopTheMessages(); 
+
+
+
+ 
+} 
+
 
 
 
@@ -369,3 +420,4 @@ init3dModelPDP()
 initBlogFiltersMobile()
 initYoutubePlay()
 initWishlist()
+initAnnouncementBar()

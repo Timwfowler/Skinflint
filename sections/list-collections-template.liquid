@@ -40,17 +40,19 @@
 
 </div>
 
-<div class="see-archive">
-  <div class="see-archive__button">
-    <a href=" {{ collection.metafields.custom.does_this_collection_have_an_archived_non_archived_equivalent_.value.url }}" class="link">      
-      {% if collection.metafields.custom.is_this_collection_archived_ %}
-        View active items
-      {% else %}
-        View archived items
-      {% endif %}
-    </a>   
-  </div>
+
+<div class="collection-list__archived page-width">
+  <h3>Archived collections</h3>
+ <div class="collection-list__archived-grid">
+  {% for archived in collections %}
+    {% if archived.metafields.custom.is_this_collection_archived_ %}
+      <a href="{{ archived.url }}"><p>{{ archived.title }}</p></a> 
+    {% endif %}
+  {% endfor %}
+ </div>
 </div>
+
+
 
 {%- endpaginate -%}
 

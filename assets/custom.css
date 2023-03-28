@@ -3314,7 +3314,7 @@ a:hover {
   justify-content: center;
   margin-top: 10px; }
   .wish-list-btn.added svg path {
-    stroke: #F5C264;
+    stroke: #F5C264 !important;
     fill: #F5C264; }
   .wish-list-btn svg {
     height: 24px;
@@ -3417,5 +3417,62 @@ a:hover {
   margin-bottom: 20px; }
 
 /*=====  End of Custom section specific  ======*/
+/*=============================================
+=            Collection list            =
+=============================================*/
+.collection-list__archived {
+  margin-top: 160px; }
+  .collection-list__archived h3 {
+    font-size: 1.9rem;
+    line-height: 1.4;
+    text-align: center;
+    margin: 0 auto 60px; }
+.collection-list__archived-grid {
+  display: grid; }
+  @media (min-width: 600px) {
+    .collection-list__archived-grid {
+      grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 1024px) {
+    .collection-list__archived-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 40px; } }
+  .collection-list__archived-grid a {
+    text-align: center; }
+
+/*=====  End of Collection list  ======*/
+/*=============================================
+=            Notice banner            =
+=============================================*/
+.notice-banner {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 28px 20px 26px;
+  margin-top: 1px; }
+  .notice-banner__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .notice-banner__inner p, .notice-banner__inner a {
+      font-size: 1.6rem;
+      line-height: 1;
+      margin: 0;
+      padding: 0;
+      text-transform: uppercase; }
+      @media (min-width: 1024px) {
+        .notice-banner__inner p, .notice-banner__inner a {
+          font-size: 2rem; } }
+    .notice-banner__inner a {
+      opacity: 0;
+      transition: opacity 1.4s;
+      visibility: hidden;
+      max-width: 0;
+      max-height: 0; }
+      .notice-banner__inner a.active {
+        opacity: 1;
+        visibility: visible;
+        max-width: 100%;
+        max-height: 100%; }
+
+/*=====  End of Notice banner  ======*/
 
 /*# sourceMappingURL=custom.css.map */
