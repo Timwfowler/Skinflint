@@ -11,7 +11,8 @@
         },
         "price": {
           "type": "price",
-          "settings": {}
+          "settings": {
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -65,17 +66,32 @@
             "link_text": "View all lights from Czechoslovakia (former)"
           }
         },
+        "6d36c4cc-7ce7-400d-9789-708f4eeded5a": {
+          "type": "filter",
+          "settings": {
+            "heading": "UK",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/700x700_cv_united-kingdom-origin-country-map.webp",
+            "title": "Origin: UK",
+            "copy": "<p>Lighting design in the UK benefitted from a free market. Different companies were working at the same time, designing and producing similar products for the same market. Often with only slight differences in their style, they constantly upgraded and improved their original designs. The products we salvage come from the old industrial heartland of England. This area of the UK was once the boiler room of the British economy - from the potteries of Stoke, through the engineering works of Birmingham, to the wool, textile and cotton mills of Oldham and Manchester.<\/p>",
+            "link": "",
+            "link_text": ""
+          }
+        },
         "1203d3fa-4b2b-4667-8e70-b82ef9e0532f": {
           "type": "meta",
-          "settings": {}
+          "settings": {
+          }
         },
         "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08": {
           "type": "pdf",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [
         "c7f26244-db24-4241-a043-ebe2cdef2d0e",
+        "6d36c4cc-7ce7-400d-9789-708f4eeded5a",
         "1203d3fa-4b2b-4667-8e70-b82ef9e0532f",
         "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08"
       ],
@@ -184,15 +200,18 @@
     },
     "more-products-origin": {
       "type": "more-products-origin",
-      "settings": {}
+      "settings": {
+      }
     },
     "more-products-era": {
       "type": "more-products-era",
-      "settings": {}
+      "settings": {
+      }
     },
     "more-products-vendor": {
       "type": "more-products-vendor",
-      "settings": {}
+      "settings": {
+      }
     },
     "1018a177-fdc7-4a54-9f7f-8f3611e1e80c": {
       "type": "section-split-text",
