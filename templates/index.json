@@ -1,5 +1,10 @@
 {
   "sections": {
+    "4ea365e4-88e4-4ea3-b2cc-5d3982240a18": {
+      "type": "section-banner",
+      "settings": {
+      }
+    },
     "ab621580-b75a-4803-ae34-f20abc80d17d": {
       "type": "section-hero-banner",
       "blocks": {
@@ -283,6 +288,7 @@
     }
   },
   "order": [
+    "4ea365e4-88e4-4ea3-b2cc-5d3982240a18",
     "ab621580-b75a-4803-ae34-f20abc80d17d",
     "d0552a20-44ab-4477-a3af-bc7e8f308871",
     "c70c2edc-86d6-4ea1-a525-0d2313a9be6f",
