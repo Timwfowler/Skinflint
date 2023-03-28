@@ -367,13 +367,27 @@
                     {%- when 'buy_buttons' -%}
 
                       {% if product.available %}
-                        <div class="btn js-buy-btn" data-var-id="{{ product.variants[0].id }}" data-total="{{ total }}">
-                          <span>Add to cart</span>
+
+                        <div class="" style="display: flex; align-items: center; justify-content: space-between;">
+                          <div class="btn js-buy-btn" data-var-id="{{ product.variants[0].id }}" data-total="{{ total }}">
+                            <span>Add to cart</span>
+                          </div>
+                          {% for block in section.blocks %}                          
+                            {% if block.type == "manufacture" %}                            
+                              {% if block.settings.man_name == product.metafields.custom.manufacture %}
+                              <a href="{{ block.settings.man_url }}">
+                                <img style="margin-top: 20px" width="80px" src="{{ block.settings.man_image | img_url: 'medium' }}" alt="">
+                              </a>
+                              
+                              {% endif %}
+                            {% endif %}
+                          {% endfor %}    
                         </div>
+
 
                         {% render 'quantity-selector-modal' %}
 
-
+                        
                  
                       {% endif %}
  
