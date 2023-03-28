@@ -29,13 +29,22 @@
             "show_dynamic_checkout": false,
             "surface_pickup_enable": true
           }
+        },
+        "fd0319f0-bd1f-4b28-9593-52764908cd5c": {
+          "type": "manufacture",
+          "settings": {
+            "man_name": "Benzamin",
+            "man_image": "shopify:\/\/shop_images\/2_marque-benjamin.webp",
+            "man_url": ""
+          }
         }
       },
       "block_order": [
         "f7eaea23-fddd-45a3-bdd6-2cc15b99d5c9",
         "price",
         "variant_picker",
-        "buy_buttons"
+        "buy_buttons",
+        "fd0319f0-bd1f-4b28-9593-52764908cd5c"
       ],
       "settings": {
         "sku_enable": false,
