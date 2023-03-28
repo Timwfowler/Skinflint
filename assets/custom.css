@@ -2369,9 +2369,19 @@ a:hover {
   .product-metafield-details__inner--right {
     display: flex;
     flex-direction: row-reverse; } }
-@media (min-width: 1024px) {
-  .product-metafield-details__image {
-    width: 50%; } }
+.product-metafield-details__image {
+  position: relative; }
+  @media (min-width: 1024px) {
+    .product-metafield-details__image {
+      width: 50%; } }
+  .product-metafield-details__image--two:hover .image-two {
+    position: absolute;
+    top: 0;
+    z-index: 1; }
+  .product-metafield-details__image .image-two {
+    position: absolute;
+    top: 0;
+    z-index: -1; }
 @media (min-width: 1024px) {
   .product-metafield-details__text {
     width: 50%; } }

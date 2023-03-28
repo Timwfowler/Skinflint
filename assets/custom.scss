@@ -4023,9 +4023,28 @@ a:hover{
   }
 
   &__image{
+    position: relative;
 
     @include breakpoint(md){
       width: 50%;
+    }
+    
+
+    &--two{
+
+      &:hover{
+        .image-two{
+          position: absolute;
+          top: 0;
+          z-index: 1;
+        }
+      }
+    }
+
+    .image-two{
+      position: absolute;
+      top: 0;
+      z-index: -1;
     }
   }
 
