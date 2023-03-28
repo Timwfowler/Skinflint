@@ -4,9 +4,7 @@
   {%- for block in section.blocks -%}
 
     {%- if block.type == "filter" -%}
-      {% if product.vendor == block.settings.heading %}
-        {%- assign show = true -%}
-      {% endif %}
+
         {%- for metafield in product.metafields.custom -%}
           {%- for item in  metafield -%}
             {%- assign string = item.value[0]  -%}
