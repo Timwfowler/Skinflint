@@ -5759,11 +5759,14 @@ a:hover{
   text-align: center;
   padding: 28px 20px 26px;
   margin-top: 1px;
+  min-height: 74px;
+  position: relative;
 
   &__inner{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
     p, a{
       font-size: 1.6rem;
@@ -5777,12 +5780,29 @@ a:hover{
       }
     }
 
+    p{
+      max-width: calc(100vw - 40px);
+      line-height: 1.2;
+      
+
+      @include breakpoint(md){
+        margin-top: 9px;
+      }
+    }
+
     a{
       opacity: 0;
       transition: opacity 1.4s;
       visibility: hidden;
       max-width: 0;
       max-height: 0;
+      position: absolute;
+      position: absolute;
+      height: 100%;
+      top: 0px;
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
 
       &.active{
         opacity: 1;
