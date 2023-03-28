@@ -1124,8 +1124,16 @@ a:hover {
 /*=============================================
 =            more-products-collection-section            =
 =============================================*/
-.index-section--sub-product .section-header h2, .index-section--sub-product h2, .more-products-vendor-section .section-header h2, .more-products-vendor-section h2, .more-products-era-section .section-header h2, .more-products-era-section h2 {
+.index-section--sub-product .section-header h2, .index-section--sub-product h2, .more-products-vendor-section .section-header h2, .more-products-vendor-section h2, .more-products-era-section .section-header h2, .more-products-era-section h2, .article-associated-ps .section-header h2, .article-associated-ps h2 {
   text-align: center; }
+
+.article-associated-ps {
+  margin-top: 120px; }
+  .article-associated-ps h2 {
+    margin-bottom: 80px; }
+    @media (min-width: 1024px) {
+      .article-associated-ps h2 {
+        margin-bottom: 160px; } }
 
 /*=====  End of more-products-collection-section  ======*/
 /*=============================================

@@ -1959,7 +1959,7 @@ a:hover{
 =============================================*/
 
 
-.index-section--sub-product, .more-products-vendor-section, .more-products-era-section{
+.index-section--sub-product, .more-products-vendor-section, .more-products-era-section, .article-associated-ps{
 
   .section-header h2, h2{
     text-align: center;
@@ -1968,6 +1968,18 @@ a:hover{
 
 .more-products-collection-section{
 
+}
+
+.article-associated-ps{
+  margin-top: 120px;
+
+  h2{
+    margin-bottom: 80px;
+
+    @include breakpoint(md){
+      margin-bottom: 160px;
+    }
+  }
 }
 
 /*=====  End of more-products-collection-section  ======*/
