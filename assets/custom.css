@@ -641,6 +641,9 @@ a:hover {
 .featured-collections-section .collection-item {
   margin-bottom: 0; }
 
+.template-page .collection-image-wrap, .template-blog .collection-image-wrap {
+  padding-top: 100%; }
+
 /*=====  End of featured-collections-section  ======*/
 /*=============================================
 =            featured-product-section            =
