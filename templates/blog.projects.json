@@ -29,12 +29,66 @@
       ],
       "settings": {
         "article": "projects-commercial\/origin-coffee-roastery-industrial-lighting",
-        "link": "Commercial",
         "title": "Vintage Lighting Projects"
+      }
+    },
+    "300f92cb-dfd6-4868-b913-02267e508732": {
+      "type": "section-featured-collections",
+      "blocks": {
+        "template--18439249101116__300f92cb-dfd6-4868-b913-02267e508732-167997877410d2f46a-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "crystal-glassware-lights",
+            "title": ""
+          }
+        },
+        "template--18439249101116__300f92cb-dfd6-4868-b913-02267e508732-167997877410d2f46a-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "industrial-lighting",
+            "title": ""
+          }
+        },
+        "template--18439249101116__300f92cb-dfd6-4868-b913-02267e508732-167997877410d2f46a-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "opaline-glassware",
+            "title": ""
+          }
+        },
+        "template--18439249101116__300f92cb-dfd6-4868-b913-02267e508732-167997877410d2f46a-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "retro-lighting",
+            "title": ""
+          }
+        },
+        "template--18439249101116__300f92cb-dfd6-4868-b913-02267e508732-167997877410d2f46a-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "bulkhead-lights",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18439249101116__300f92cb-dfd6-4868-b913-02267e508732-167997877410d2f46a-0",
+        "template--18439249101116__300f92cb-dfd6-4868-b913-02267e508732-167997877410d2f46a-1",
+        "template--18439249101116__300f92cb-dfd6-4868-b913-02267e508732-167997877410d2f46a-2",
+        "template--18439249101116__300f92cb-dfd6-4868-b913-02267e508732-167997877410d2f46a-3",
+        "template--18439249101116__300f92cb-dfd6-4868-b913-02267e508732-167997877410d2f46a-4"
+      ],
+      "settings": {
+        "flush": false,
+        "flush_bottom": false,
+        "title": "Featured Collection",
+        "link": "",
+        "button_link": ""
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "300f92cb-dfd6-4868-b913-02267e508732"
   ]
 }
