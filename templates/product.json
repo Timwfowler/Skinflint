@@ -87,11 +87,6 @@
             "link_text": ""
           }
         },
-        "1203d3fa-4b2b-4667-8e70-b82ef9e0532f": {
-          "type": "meta",
-          "settings": {
-          }
-        },
         "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08": {
           "type": "pdf",
           "settings": {
@@ -113,7 +108,6 @@
       "block_order": [
         "c7f26244-db24-4241-a043-ebe2cdef2d0e",
         "6d36c4cc-7ce7-400d-9789-708f4eeded5a",
-        "1203d3fa-4b2b-4667-8e70-b82ef9e0532f",
         "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
         "824e2fed-a1d2-4916-a757-a2d35a16708a"
       ],
