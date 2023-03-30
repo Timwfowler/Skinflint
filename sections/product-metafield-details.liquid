@@ -1,14 +1,15 @@
-{%- assign show = false -%}
+
 
 <div class="wrap page-width {% if section.settings.flush %}section-flush {% endif %} {% if section.settings.flush_bottom %}section-padding--bottom {% endif %}">
   {%- for block in section.blocks -%}
 
     {%- if block.type == "filter" -%}
+    {%- assign show = false -%}
 
         {%- for metafield in product.metafields.custom -%}
           {%- for item in  metafield -%}
-            {%- assign string = item.value[0]  -%}
-            {%- if string contains block.settings.heading  -%}
+            {%- assign string = item.value[0] -%}
+            {%- if string contains block.settings.heading -%}
               {%- assign show = true -%}
             {%- endif -%}
           {%- endfor -%}
@@ -43,26 +44,59 @@
       {%- endif -%}      
     {% endif %}    
 
-    
-
-    {% if block.type == "meta" %}    
+    {% if block.type == "meta_one" %}
+      {%- assign show = false -%}
       {% if product.metafields.product-block.image[0] != blank %}
         {%- assign show = true -%}
-      {% endif %}     
-      {% for image in product.metafields.product-block.image %}
-      {%- assign img_url = image[0].src -%}
-      {% assign title = product.metafields.product-block.title[forloop.index0] | newline_to_br %}
-      {% assign copy =  product.metafields.product-block.copy[forloop.index0]  %}
-      {% assign btnlink = product.metafields.product-block.link[forloop.index0] %}
-      {% assign btnCopy = product.metafields.product-block.link_text[forloop.index0]  %} 
+      {% endif %}
+      {%- assign img_url = product.metafields.product-block.image[0][0].src -%}
+      {% assign title = product.metafields.product-block.title[0] | newline_to_br %}
+      {% assign copy =  product.metafields.product-block.copy[0] %}
+      {% assign btnlink = product.metafields.product-block.link[0] %}
+      {% assign btnCopy = product.metafields.product-block.link_text[0] %} 
+
+
+      <div class="product-metafield-details">
+        <div class="product-metafield-details__inner  product-metafield-details__inner--left">
+          <div class="product-metafield-details__image {% if product.metafields.product-block.image[0][1] != blank %}product-metafield-details__image--two {% endif %}  ">
+            <div class="product-metafield-details__image-wrap">
+              <div class="image-wrap" style="">             
+                <img class="lazyload" src="{{img_url}}" alt="">
+                {% if product.metafields.product-block.image[0][1] != blank %}
+                  <img class="image-two" src="{{ product.metafields.product-block.image[0][1].src }}" alt="">
+                {% endif %}                      
+              </div>
+            </div>
+          </div>
+          <div class="product-metafield-details__text">
+            <div class="product-metafield-details__text-wrap">
+              <h3>{{ title }}</h3>
+              <p>{{ copy }}</p>                
+              <a href="{{ btnlink }}">{{  btnCopy  }}</a>
+            </div>
+          </div>
+        </div>
+      </div>      
+    {% endif %}
+
+    {% if block.type == "meta_two" %}
+
+      {% if product.metafields.product-block.image[1] != blank %}
+        {%- assign img_url = product.metafields.product-block.image[1][0].src -%}
+        {% assign title = product.metafields.product-block.title[1] | newline_to_br %}
+        {% assign copy =  product.metafields.product-block.copy[1] %}
+        {% assign btnlink = product.metafields.product-block.link[1] %}
+        {% assign btnCopy = product.metafields.product-block.link_text[1] %} 
+
+
         <div class="product-metafield-details">
           <div class="product-metafield-details__inner  product-metafield-details__inner--left">
-            <div class="product-metafield-details__image {% if product.metafields.product-block.image[0][1] != blank %}product-metafield-details__image--two {% endif %}  ">
+            <div class="product-metafield-details__image {% if product.metafields.product-block.image[1][1] != blank %}product-metafield-details__image--two {% endif %}  ">
               <div class="product-metafield-details__image-wrap">
                 <div class="image-wrap" style="">             
                   <img class="lazyload" src="{{img_url}}" alt="">
-                  {% if product.metafields.product-block.image[0][1] != blank %}
-                    <img class="image-two" src="{{ product.metafields.product-block.image[0][1].src }}" alt="">
+                  {% if product.metafields.product-block.image[1][1] != blank %}
+                    <img class="image-two" src="{{ product.metafields.product-block.image[1][1].src }}" alt="">
                   {% endif %}                      
                 </div>
               </div>
@@ -75,13 +109,118 @@
               </div>
             </div>
           </div>
-        </div>
-      {% endfor %}     
-    {% endif %}
+        </div>   
 
-    {% if block.type == "pdf" %}    
+      {% endif %}
+    {% endif %}    
 
-        
+    {% if block.type == "meta_three" %}
+
+      {% if product.metafields.product-block.image[2] != blank %}
+        {%- assign img_url = product.metafields.product-block.image[2][0].src -%}
+        {% assign title = product.metafields.product-block.title[2] | newline_to_br %}
+        {% assign copy =  product.metafields.product-block.copy[2] %}
+        {% assign btnlink = product.metafields.product-block.link[2] %}
+        {% assign btnCopy = product.metafields.product-block.link_text[2] %} 
+
+
+        <div class="product-metafield-details">
+          <div class="product-metafield-details__inner  product-metafield-details__inner--left">
+            <div class="product-metafield-details__image {% if product.metafields.product-block.image[2][1] != blank %}product-metafield-details__image--two {% endif %}  ">
+              <div class="product-metafield-details__image-wrap">
+                <div class="image-wrap" style="">             
+                  <img class="lazyload" src="{{img_url}}" alt="">
+                  {% if product.metafields.product-block.image[1][1] != blank %}
+                    <img class="image-two" src="{{ product.metafields.product-block.image[2][1].src }}" alt="">
+                  {% endif %}                      
+                </div>
+              </div>
+            </div>
+            <div class="product-metafield-details__text">
+              <div class="product-metafield-details__text-wrap">
+                <h3>{{ title }}</h3>
+                <p>{{ copy }}</p>                
+                <a href="{{ btnlink }}">{{  btnCopy  }}</a>
+              </div>
+            </div>
+          </div>
+        </div>   
+
+      {% endif %}
+    {% endif %} 
+    
+    {% if block.type == "meta_four" %}
+
+      {% if product.metafields.product-block.image[3] != blank %}
+        {%- assign img_url = product.metafields.product-block.image[3][0].src -%}
+        {% assign title = product.metafields.product-block.title[3] | newline_to_br %}
+        {% assign copy =  product.metafields.product-block.copy[3] %}
+        {% assign btnlink = product.metafields.product-block.link[3] %}
+        {% assign btnCopy = product.metafields.product-block.link_text[3] %} 
+
+
+        <div class="product-metafield-details">
+          <div class="product-metafield-details__inner  product-metafield-details__inner--left">
+            <div class="product-metafield-details__image {% if product.metafields.product-block.image[3][1] != blank %}product-metafield-details__image--two {% endif %}  ">
+              <div class="product-metafield-details__image-wrap">
+                <div class="image-wrap" style="">             
+                  <img class="lazyload" src="{{img_url}}" alt="">
+                  {% if product.metafields.product-block.image[1][1] != blank %}
+                    <img class="image-two" src="{{ product.metafields.product-block.image[3][1].src }}" alt="">
+                  {% endif %}                      
+                </div>
+              </div>
+            </div>
+            <div class="product-metafield-details__text">
+              <div class="product-metafield-details__text-wrap">
+                <h3>{{ title }}</h3>
+                <p>{{ copy }}</p>                
+                <a href="{{ btnlink }}">{{  btnCopy  }}</a>
+              </div>
+            </div>
+          </div>
+        </div>   
+
+      {% endif %}
+    {% endif %}    
+    
+    {% if block.type == "meta_five" %}
+
+      {% if product.metafields.product-block.image[4] != blank %}
+        {%- assign img_url = product.metafields.product-block.image[4][0].src -%}
+        {% assign title = product.metafields.product-block.title[4] | newline_to_br %}
+        {% assign copy =  product.metafields.product-block.copy[4] %}
+        {% assign btnlink = product.metafields.product-block.link[4] %}
+        {% assign btnCopy = product.metafields.product-block.link_text[4] %} 
+
+
+        <div class="product-metafield-details">
+          <div class="product-metafield-details__inner  product-metafield-details__inner--left">
+            <div class="product-metafield-details__image {% if product.metafields.product-block.image[4][1] != blank %}product-metafield-details__image--two {% endif %}  ">
+              <div class="product-metafield-details__image-wrap">
+                <div class="image-wrap" style="">             
+                  <img class="lazyload" src="{{img_url}}" alt="">
+                  {% if product.metafields.product-block.image[1][1] != blank %}
+                    <img class="image-two" src="{{ product.metafields.product-block.image[4][1].src }}" alt="">
+                  {% endif %}                      
+                </div>
+              </div>
+            </div>
+            <div class="product-metafield-details__text">
+              <div class="product-metafield-details__text-wrap">
+                <h3>{{ title }}</h3>
+                <p>{{ copy }}</p>                
+                <a href="{{ btnlink }}">{{  btnCopy  }}</a>
+              </div>
+            </div>
+          </div>
+        </div>   
+
+      {% endif %}
+    {% endif %}      
+
+  
+    {% if block.type == "pdf" %}        
 
 
     {%- assign img_url = product.metafields.pdf.image[0].src -%}
@@ -252,6 +391,41 @@
       {
         "name": "Metafield Blocks",
         "type": "meta",
+        "limit": 1,
+        "settings": [
+        ]
+      },
+      {
+        "name": "Image and text meta one",
+        "type": "meta_one",
+        "limit": 1,
+        "settings": [
+        ]
+      },
+      {
+        "name": "Image and text meta two",
+        "type": "meta_two",
+        "limit": 1,
+        "settings": [
+        ]
+      },
+      {
+        "name": "Image and text meta three",
+        "type": "meta_three",
+        "limit": 1,
+        "settings": [
+        ]
+      },
+      {
+        "name": "Image and text meta four",
+        "type": "meta_four",
+        "limit": 1,
+        "settings": [
+        ]
+      },
+      {
+        "name": "Image and text meta five",
+        "type": "meta_five",
         "limit": 1,
         "settings": [
         ]
