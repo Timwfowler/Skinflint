@@ -3273,11 +3273,14 @@ a:hover {
     list-style: none;
     display: flex; }
   .cart__labels li:first-of-type {
-    flex: 0 0 572px; }
+    flex: 0 0 578px; }
   .cart__labels li:nth-of-type(2) {
-    flex: 0 0 174px; }
+    flex: 0 0 157px; }
   .cart__labels li:nth-of-type(3) {
-    flex: 0 0 183px; }
+    flex: 0 0 152px; }
+  .cart__labels li:nth-of-type(4) {
+    flex: 0 0 97px;
+    text-align: end; }
 .cart__remove {
   display: none; }
 .cart__image {

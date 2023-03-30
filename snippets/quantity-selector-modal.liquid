@@ -81,6 +81,14 @@
       let price = parseFloat(document.querySelector('.price-vat-done').innerHTML.substring(1))
       priceUI.innerHTML = "£" + (price * parseInt(inputCartQty.innerHTML)).toFixed(2)
 
+      let removeVat = localStorage.getItem('removeVat');
+      if (removeVat == "true") {
+        priceUI.append(' Excl VAT')
+
+      }else{
+        priceUI.append(' Inc VAT')
+      }
+
     }
   })
 
@@ -100,6 +108,14 @@
       let priceUI = document.querySelector('.js-quantity-price')
       let price = parseFloat(document.querySelector('.price-vat-done').innerHTML.substring(1))
       priceUI.innerHTML = "£" + (price * parseInt(inputCartQty.innerHTML)).toFixed(2)
+
+      let removeVat = localStorage.getItem('removeVat');
+      if (removeVat == "true") {
+        priceUI.append(' Excl VAT')
+
+      }else{
+        priceUI.append(' Inc VAT')
+      }
     }
   })
 
@@ -168,6 +184,14 @@
       let priceUI = document.querySelector('.js-quantity-price')
       let price = parseFloat(document.querySelector('.price-vat-done').innerHTML.substring(1))
       priceUI.innerHTML = "£" + (price * parseInt(inputCartQty.innerHTML)).toFixed(2)
+
+      let removeVat = localStorage.getItem('removeVat');
+      if (removeVat == "true") {
+        priceUI.append(' Excl VAT')
+
+      }else{
+        priceUI.append(' Inc VAT')
+      }
     }
 
   })
