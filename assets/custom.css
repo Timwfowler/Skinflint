@@ -2372,6 +2372,28 @@ a:hover {
 =============================================*/
 .product-metafield-details:nth-of-type(odd) .product-metafield-details__inner {
   flex-direction: row; }
+.product-metafield-details--stacked {
+  padding: 80px 20px; }
+  @media (min-width: 1024px) {
+    .product-metafield-details--stacked {
+      padding: 160px 0; } }
+  .product-metafield-details--stacked .product-metafield-details__inner {
+    display: block;
+    display: flex;
+    flex-direction: column-reverse !important;
+    align-items: center; }
+  .product-metafield-details--stacked .product-metafield-details__text, .product-metafield-details--stacked .product-metafield-details__image {
+    width: 100%;
+    max-width: 790px; }
+    .product-metafield-details--stacked .product-metafield-details__text img, .product-metafield-details--stacked .product-metafield-details__image img {
+      width: 100%; }
+  .product-metafield-details--stacked .product-metafield-details__text-wrap {
+    padding: 0; }
+    .product-metafield-details--stacked .product-metafield-details__text-wrap h3 {
+      font-size: 2.4rem;
+      margin-bottom: 40px; }
+    .product-metafield-details--stacked .product-metafield-details__text-wrap p {
+      margin-bottom: 40px; }
 @media (min-width: 1024px) {
   .product-metafield-details__inner {
     display: flex;
@@ -2470,6 +2492,15 @@ a:hover {
   @media (min-width: 1024px) {
     .blog-landing-page__inner {
       flex-direction: row; } }
+.blog-landing-page__filter-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px; }
+  .blog-landing-page__filter-btn:hover {
+    cursor: pointer; }
+  .blog-landing-page__filter-btn .btn {
+    display: flex; }
 @media (min-width: 1024px) {
   .blog-landing-page__article {
     width: 67%; } }
@@ -2924,6 +2955,92 @@ a:hover {
 
 /*=====  End of Share Modal  ======*/
 /*=============================================
+=            Newsletter moddal            =
+=============================================*/
+.newsletter-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 101;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+  display: none; }
+  .newsletter-modal.active {
+    display: flex; }
+  .newsletter-modal .footer__newsletter {
+    display: block;
+    padding: 0;
+    width: 100%; }
+  .newsletter-modal .newsletter-modal__inner h4 {
+    padding: 0; }
+  .newsletter-modal .newsletter__input-group {
+    max-width: none; }
+  .newsletter-modal__inner {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 80px 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; }
+    @media (min-width: 1024px) {
+      .newsletter-modal__inner {
+        width: 700px;
+        height: auto;
+        position: relative;
+        padding: 70px; } }
+    .newsletter-modal__inner .btn-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 10;
+      width: 26px;
+      height: 26px; }
+      .newsletter-modal__inner .btn-close:hover {
+        opacity: 0.7; }
+      .newsletter-modal__inner .btn-close:after, .newsletter-modal__inner .btn-close:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        background-color: #2d2926;
+        display: block;
+        width: 100%;
+        height: 2px;
+        -webkit-transition: all .25s ease-in-out;
+        transition: all .25s ease-in-out; }
+      .newsletter-modal__inner .btn-close:before {
+        transform: translateY(-50%) rotate(-45deg); }
+      .newsletter-modal__inner .btn-close:after {
+        transform: translateY(-50%) rotate(45deg); }
+    .newsletter-modal__inner h3 {
+      text-align: center;
+      margin-bottom: 40px;
+      margin-top: 0;
+      font-size: 1.9rem;
+      line-height: 1.4; }
+      @media (min-width: 1024px) {
+        .newsletter-modal__inner h3 {
+          font-size: 3.3rem;
+          line-height: 1.2; } }
+    .newsletter-modal__inner p {
+      font-size: 1.9rem;
+      text-align: center;
+      padding-bottom: 40px; }
+    .newsletter-modal__inner h4 {
+      text-align: center;
+      margin: 40px auto 0;
+      max-width: 320px; }
+
+/*=====  End of Newsletter moddal  ======*/
+/*=============================================
 =            Main product data            =
 =============================================*/
 .page-content--product {
@@ -2955,7 +3072,7 @@ a:hover {
 .product-single__filters {
   font-family: AvertaStd-Bold,sans-serif;
   padding-right: 30px;
-  z-index: 7;
+  z-index: 5;
   position: relative; }
 
 /*=====  End of Main product data  ======*/

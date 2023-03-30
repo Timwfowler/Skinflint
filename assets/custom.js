@@ -368,6 +368,10 @@ function initAnnouncementBar(){
 
   const bar = document.querySelectorAll('.notice-banner__slide')
 
+  if(!bar.length){
+    return
+  }
+
 
 
 

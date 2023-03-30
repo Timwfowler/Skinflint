@@ -1,0 +1,37 @@
+
+
+    <div class="newsletter-modal">
+      <div class="newsletter-modal__inner">
+        <button type="button" aria-label="Close" class="btn-close"></button>    
+        <div class="footer__newsletter">
+
+            <div class="footer__subscribe rte rte--nomargin">
+              <h3>Sign up to our newsletter
+              </h3>
+            </div>
+
+  
+          {%- render 'newsletter-form', section_id: section.id, snippet_context: 'footer' -%}
+  
+          <h4>Sign up to receive our latest weekly releases, offers, guides and more
+          </h4>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      //open modal
+      const modalShare = document.querySelector('.newsletter-modal')
+      const closeButtonShare = document.querySelector('.newsletter-modal .btn-close')
+      const newsletterButtons = document.querySelectorAll('.js-newsletter')
+
+      newsletterButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          modalShare.classList.add('active')
+        })
+      })
+
+      closeButtonShare.addEventListener('click', () => {
+        modalShare.classList.remove('active')
+      })
+    </script>

@@ -8,8 +8,13 @@
 
         {%- for metafield in product.metafields.custom -%}
           {%- for item in  metafield -%}
-            {%- assign string = item.value[0] -%}
-            {%- if string contains block.settings.heading -%}
+
+            {%- assign string = item.value | downcase -%}
+            
+            {% assign filterS = block.settings.heading | downcase %}
+
+            {%- if string contains filterS -%}
+  
               {%- assign show = true -%}
             {%- endif -%}
           {%- endfor -%}
@@ -46,6 +51,8 @@
 
     {% if block.type == "meta_one" %}
       {%- assign show = false -%}
+      {% assign stacked = false %}
+
       {% if product.metafields.product-block.image[0] != blank %}
         {%- assign show = true -%}
       {% endif %}
@@ -55,8 +62,14 @@
       {% assign btnlink = product.metafields.product-block.link[0] %}
       {% assign btnCopy = product.metafields.product-block.link_text[0] %} 
 
+      {% if product.metafields.accentuate.layout_centered_stacked[0] == "true" %}
+        {% assign stacked = true %}
+      {% endif %}
 
-      <div class="product-metafield-details">
+      
+
+
+      <div class="product-metafield-details {% if stacked %} product-metafield-details--stacked{% endif %}">
         <div class="product-metafield-details__inner  product-metafield-details__inner--left">
           <div class="product-metafield-details__image {% if product.metafields.product-block.image[0][1] != blank %}product-metafield-details__image--two {% endif %}  ">
             <div class="product-metafield-details__image-wrap">
@@ -81,15 +94,21 @@
 
     {% if block.type == "meta_two" %}
 
+
       {% if product.metafields.product-block.image[1] != blank %}
+        {% assign stacked = false %}
         {%- assign img_url = product.metafields.product-block.image[1][0].src -%}
         {% assign title = product.metafields.product-block.title[1] | newline_to_br %}
         {% assign copy =  product.metafields.product-block.copy[1] %}
         {% assign btnlink = product.metafields.product-block.link[1] %}
         {% assign btnCopy = product.metafields.product-block.link_text[1] %} 
 
+        {% if product.metafields.accentuate.layout_centered_stacked[1] == "true" %}
+          {% assign stacked = true %}
+        {% endif %}
 
-        <div class="product-metafield-details">
+
+        <div class="product-metafield-details {% if stacked %} product-metafield-details--stacked{% endif %}">
           <div class="product-metafield-details__inner  product-metafield-details__inner--left">
             <div class="product-metafield-details__image {% if product.metafields.product-block.image[1][1] != blank %}product-metafield-details__image--two {% endif %}  ">
               <div class="product-metafield-details__image-wrap">
@@ -117,14 +136,19 @@
     {% if block.type == "meta_three" %}
 
       {% if product.metafields.product-block.image[2] != blank %}
+        {% assign stacked = false %}
         {%- assign img_url = product.metafields.product-block.image[2][0].src -%}
         {% assign title = product.metafields.product-block.title[2] | newline_to_br %}
         {% assign copy =  product.metafields.product-block.copy[2] %}
         {% assign btnlink = product.metafields.product-block.link[2] %}
         {% assign btnCopy = product.metafields.product-block.link_text[2] %} 
 
+        {% if product.metafields.accentuate.layout_centered_stacked[2] == "true" %}
+          {% assign stacked = true %}
+        {% endif %}        
 
-        <div class="product-metafield-details">
+
+        <div class="product-metafield-details {% if stacked %} product-metafield-details--stacked{% endif %}">
           <div class="product-metafield-details__inner  product-metafield-details__inner--left">
             <div class="product-metafield-details__image {% if product.metafields.product-block.image[2][1] != blank %}product-metafield-details__image--two {% endif %}  ">
               <div class="product-metafield-details__image-wrap">
@@ -152,14 +176,19 @@
     {% if block.type == "meta_four" %}
 
       {% if product.metafields.product-block.image[3] != blank %}
+        {% assign stacked = false %}
         {%- assign img_url = product.metafields.product-block.image[3][0].src -%}
         {% assign title = product.metafields.product-block.title[3] | newline_to_br %}
         {% assign copy =  product.metafields.product-block.copy[3] %}
         {% assign btnlink = product.metafields.product-block.link[3] %}
         {% assign btnCopy = product.metafields.product-block.link_text[3] %} 
 
+        {% if product.metafields.accentuate.layout_centered_stacked[3] == "true" %}
+          {% assign stacked = true %}
+        {% endif %}        
 
-        <div class="product-metafield-details">
+
+        <div class="product-metafield-details {% if stacked %} product-metafield-details--stacked{% endif %}">
           <div class="product-metafield-details__inner  product-metafield-details__inner--left">
             <div class="product-metafield-details__image {% if product.metafields.product-block.image[3][1] != blank %}product-metafield-details__image--two {% endif %}  ">
               <div class="product-metafield-details__image-wrap">
@@ -187,14 +216,19 @@
     {% if block.type == "meta_five" %}
 
       {% if product.metafields.product-block.image[4] != blank %}
+        {% assign stacked = false %}
         {%- assign img_url = product.metafields.product-block.image[4][0].src -%}
         {% assign title = product.metafields.product-block.title[4] | newline_to_br %}
         {% assign copy =  product.metafields.product-block.copy[4] %}
         {% assign btnlink = product.metafields.product-block.link[4] %}
         {% assign btnCopy = product.metafields.product-block.link_text[4] %} 
 
+        {% if product.metafields.accentuate.layout_centered_stacked[4] == "true" %}
+          {% assign stacked = true %}
+        {% endif %}        
 
-        <div class="product-metafield-details">
+
+        <div class="product-metafield-details {% if stacked %} product-metafield-details--stacked{% endif %}">
           <div class="product-metafield-details__inner  product-metafield-details__inner--left">
             <div class="product-metafield-details__image {% if product.metafields.product-block.image[4][1] != blank %}product-metafield-details__image--two {% endif %}  ">
               <div class="product-metafield-details__image-wrap">
@@ -268,7 +302,7 @@
                   <tr>
                     {% if product.metafields.pdf.length != blank %}
                       <td>Length:</td>
-                      <td>{{ pproduct.metafields.pdf.length }}</td>
+                      <td>{{ product.metafields.pdf.length }}</td>
                     {% endif %}
                   </tr>
                   <tr>
@@ -386,6 +420,10 @@
         "type": "pdf",
         "limit": 1,
         "settings": [
+          {
+            "type": "paragraph",
+            "content": "This will show the PDF metafield block"
+          }
         ]
       },
       {
