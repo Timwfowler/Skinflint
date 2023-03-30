@@ -63,27 +63,27 @@
     "1ef34e4a-a4e6-4be3-931f-5a87ad67a705": {
       "type": "product-metafield-details",
       "blocks": {
-        "dd76d78e-3615-4c03-bef7-31d5a8375e9b": {
+        "052e0a53-1776-46fe-a6fc-95e9edc89353": {
           "type": "meta_one",
           "settings": {
           }
         },
-        "7735e78d-5fb0-434f-85b7-1054d10efafa": {
+        "241364da-ca26-48c0-8fdd-12c48bb329af": {
           "type": "meta_two",
           "settings": {
           }
         },
-        "1330bcb9-b3b6-4db1-9ee6-6a049a12621b": {
+        "d1870981-b76b-4455-a845-bd7526a220f9": {
           "type": "meta_three",
           "settings": {
           }
         },
-        "de556eaf-6e72-4044-8906-a57e2859ff4d": {
+        "471332c3-15a0-4968-9030-f9f0db59f550": {
           "type": "meta_four",
           "settings": {
           }
         },
-        "19a755f4-1bbc-49f7-8a72-8277dbc01b0c": {
+        "7554683d-774c-4a01-a4a3-80f7bb734309": {
           "type": "meta_five",
           "settings": {
           }
@@ -131,11 +131,11 @@
         }
       },
       "block_order": [
-        "dd76d78e-3615-4c03-bef7-31d5a8375e9b",
-        "7735e78d-5fb0-434f-85b7-1054d10efafa",
-        "1330bcb9-b3b6-4db1-9ee6-6a049a12621b",
-        "de556eaf-6e72-4044-8906-a57e2859ff4d",
-        "19a755f4-1bbc-49f7-8a72-8277dbc01b0c",
+        "052e0a53-1776-46fe-a6fc-95e9edc89353",
+        "241364da-ca26-48c0-8fdd-12c48bb329af",
+        "d1870981-b76b-4455-a845-bd7526a220f9",
+        "471332c3-15a0-4968-9030-f9f0db59f550",
+        "7554683d-774c-4a01-a4a3-80f7bb734309",
         "c7f26244-db24-4241-a043-ebe2cdef2d0e",
         "6d36c4cc-7ce7-400d-9789-708f4eeded5a",
         "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
