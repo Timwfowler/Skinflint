@@ -33,7 +33,7 @@
           assign collection_image = collection.image
           assign using_collection_image = true
         else
-          assign collection_image = collection.products.first.featured_media.preview_image
+          assign collection_image = settings.fallback
           assign using_collection_image = false
         endif
       -%}
