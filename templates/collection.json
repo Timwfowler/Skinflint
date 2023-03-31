@@ -13,7 +13,8 @@
         "collection_description": {
           "type": "collection_description",
           "disabled": true,
-          "settings": {}
+          "settings": {
+          }
         },
         "product_grid": {
           "type": "product_grid",
@@ -46,7 +47,7 @@
         "template--16727915528508__088a4527-b55b-450a-9298-2aea7014cc5a-1667873817704e3117-0": {
           "type": "collection",
           "settings": {
-            "collection": "frontpage",
+            "collection": "crystal-glassware-lights",
             "title": ""
           }
         },
