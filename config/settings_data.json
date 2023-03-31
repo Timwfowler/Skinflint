@@ -1,5 +1,6 @@
 {
   "current": {
+    "fallback": "shopify:\/\/shop_images\/skinflint-logo-full_1.png",
     "color_body_bg": "#ffffff",
     "color_body_text": "#000000",
     "color_price": "#1c1d1d",
@@ -155,7 +156,8 @@
       },
       "recently-viewed": {
         "type": "recently-viewed",
-        "settings": {}
+        "settings": {
+        }
       },
       "footer": {
         "type": "footer",
@@ -224,7 +226,9 @@
         }
       }
     },
-    "content_for_index": []
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Modern": {
@@ -322,11 +326,7 @@
         "header": {
           "type": "header",
           "settings": {
-            "main_menu_link_list": "main-menu",
-            "main_menu_alignment": "left",
-            "header_sticky": true,
-            "sticky_index": false,
-            "sticky_collection": false
+            "main_menu_alignment": "left"
           }
         },
         "newsletter-popup": {
@@ -335,7 +335,8 @@
             "reminder-block": {
               "type": "header",
               "disabled": true,
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
@@ -347,7 +348,6 @@
             "popup_days": 30,
             "popup_title": "Save 10% off your first purchase",
             "popup_text": "<p>Sign up today and we&#x27;ll send you a 10% discount code towards your first purchase.<\/p>",
-            "color_scheme": "3",
             "enable_newsletter": true,
             "button_label": "Optional button"
           }
@@ -355,44 +355,7 @@
         "collection-header": {
           "type": "collection-header",
           "settings": {
-            "enable": true,
-            "collection_image_enable": true,
-            "parallax": false
-          }
-        },
-        "footer-promotions": {
-          "type": "footer-promotions",
-          "blocks": {
-            "footer-promotions-0": {
-              "type": "promotion",
-              "settings": {
-                "enable_image": true,
-                "color_scheme": "1"
-              }
-            },
-            "footer-promotions-1": {
-              "type": "promotion",
-              "settings": {
-                "enable_image": true,
-                "color_scheme": "3"
-              }
-            },
-            "footer-promotions-2": {
-              "type": "promotion",
-              "settings": {
-                "enable_image": true,
-                "color_scheme": "2"
-              }
-            }
-          },
-          "block_order": [
-            "footer-promotions-0",
-            "footer-promotions-1",
-            "footer-promotions-2"
-          ],
-          "settings": {
-            "hide_homepage": false,
-            "image_size": "wide"
+            "enable": true
           }
         },
         "product-recommendations": {
@@ -403,25 +366,8 @@
         },
         "recently-viewed": {
           "type": "recently-viewed",
-          "settings": {}
-        },
-        "toolbar": {
-          "type": "toolbar",
-          "blocks": {
-            "0b066516-effd-470b-ba3b-fc9f69d6c6ae": {
-              "type": "announcement",
-              "settings": {}
-            },
-            "cff431d4-9a3a-4622-a731-bd2d4c67a45c": {
-              "type": "announcement",
-              "settings": {}
-            }
-          },
-          "block_order": [
-            "0b066516-effd-470b-ba3b-fc9f69d6c6ae",
-            "cff431d4-9a3a-4622-a731-bd2d4c67a45c"
-          ],
-          "settings": {}
+          "settings": {
+          }
         },
         "footer": {
           "type": "footer",
@@ -578,12 +524,7 @@
         "header": {
           "type": "header",
           "settings": {
-            "main_menu_link_list": "main-menu",
-            "main_menu_alignment": "below",
-            "mega_products": true,
-            "header_sticky": true,
-            "sticky_index": false,
-            "sticky_collection": false
+            "main_menu_alignment": "below"
           }
         },
         "newsletter-popup": {
@@ -594,7 +535,6 @@
             "popup_days": 30,
             "popup_title": "Get 10% off your first purchase.",
             "popup_text": "<p>Sign up today and we&#x27;ll send you a 10% discount code towards your first purchase. Some restrictions apply.<\/p>",
-            "color_scheme": "2",
             "enable_newsletter": true,
             "button_label": "Optional button"
           }
@@ -602,44 +542,7 @@
         "collection-header": {
           "type": "collection-header",
           "settings": {
-            "enable": true,
-            "collection_image_enable": true,
-            "parallax": false
-          }
-        },
-        "footer-promotions": {
-          "type": "footer-promotions",
-          "blocks": {
-            "footer-promotions-0": {
-              "type": "promotion",
-              "settings": {
-                "enable_image": true,
-                "color_scheme": "1"
-              }
-            },
-            "footer-promotions-1": {
-              "type": "promotion",
-              "settings": {
-                "enable_image": true,
-                "color_scheme": "none"
-              }
-            },
-            "footer-promotions-2": {
-              "type": "promotion",
-              "settings": {
-                "enable_image": true,
-                "color_scheme": "2"
-              }
-            }
-          },
-          "block_order": [
-            "footer-promotions-0",
-            "footer-promotions-1",
-            "footer-promotions-2"
-          ],
-          "settings": {
-            "hide_homepage": false,
-            "image_size": "wide"
+            "enable": true
           }
         },
         "product-recommendations": {
@@ -650,14 +553,7 @@
         },
         "recently-viewed": {
           "type": "recently-viewed",
-          "settings": {}
-        },
-        "toolbar": {
-          "type": "toolbar",
           "settings": {
-            "toolbar_social": false,
-            "show_locale_selector": false,
-            "show_currency_selector": false
           }
         },
         "footer": {
@@ -812,12 +708,7 @@
         "header": {
           "type": "header",
           "settings": {
-            "main_menu_link_list": "main-menu",
-            "main_menu_alignment": "below",
-            "mega_products": true,
-            "header_sticky": true,
-            "sticky_index": false,
-            "sticky_collection": false
+            "main_menu_alignment": "below"
           }
         },
         "newsletter-popup": {
@@ -828,7 +719,6 @@
             "popup_days": 30,
             "popup_title": "Sign up and save",
             "popup_text": "<p>Entice customers to sign up for your mailing list with discounts or exclusive offers. Include an image for extra impact.<\/p>",
-            "color_scheme": "3",
             "enable_newsletter": true,
             "button_label": "Optional button"
           }
@@ -836,44 +726,7 @@
         "collection-header": {
           "type": "collection-header",
           "settings": {
-            "enable": true,
-            "collection_image_enable": true,
-            "parallax": false
-          }
-        },
-        "footer-promotions": {
-          "type": "footer-promotions",
-          "blocks": {
-            "footer-promotions-2": {
-              "type": "promotion",
-              "settings": {
-                "enable_image": true,
-                "color_scheme": "3"
-              }
-            },
-            "footer-promotions-0": {
-              "type": "promotion",
-              "settings": {
-                "enable_image": true,
-                "color_scheme": "1"
-              }
-            },
-            "footer-promotions-1": {
-              "type": "promotion",
-              "settings": {
-                "enable_image": true,
-                "color_scheme": "none"
-              }
-            }
-          },
-          "block_order": [
-            "footer-promotions-2",
-            "footer-promotions-0",
-            "footer-promotions-1"
-          ],
-          "settings": {
-            "hide_homepage": false,
-            "image_size": "square"
+            "enable": true
           }
         },
         "product-recommendations": {
@@ -884,14 +737,7 @@
         },
         "recently-viewed": {
           "type": "recently-viewed",
-          "settings": {}
-        },
-        "toolbar": {
-          "type": "toolbar",
           "settings": {
-            "toolbar_social": false,
-            "show_locale_selector": false,
-            "show_currency_selector": false
           }
         },
         "footer": {
@@ -950,7 +796,6 @@
         "list-collections-template": {
           "type": "list-collections-template",
           "settings": {
-            "title_enable": false,
             "display_type": "all",
             "sort": "alphabetical"
           }
