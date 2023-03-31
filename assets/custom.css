@@ -1849,7 +1849,8 @@ a:hover {
   .collection-image-wrap img {
     height: 100%;
     position: absolute;
-    top: 0; }
+    top: 0;
+    object-fit: cover; }
   .collection-image-wrap.force-square {
     padding-top: 100%; }
     .collection-image-wrap.force-square img {
