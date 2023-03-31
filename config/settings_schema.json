@@ -12,7 +12,7 @@
     "settings": [
       {
         "type": "header",
-        "content": "this will show throught theme if products/collections do not have featured images"
+        "content": "this will show throught theme if products\/collections do not have featured images"
       },
       {
         "type": "image_picker",
