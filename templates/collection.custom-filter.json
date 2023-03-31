@@ -55,62 +55,15 @@
         "enable_sort": true
       }
     },
-    "088a4527-b55b-450a-9298-2aea7014cc5a": {
-      "type": "section-featured-collections",
-      "blocks": {
-        "template--16727915528508__088a4527-b55b-450a-9298-2aea7014cc5a-1667873817704e3117-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "frontpage",
-            "title": ""
-          }
-        },
-        "template--16727915528508__088a4527-b55b-450a-9298-2aea7014cc5a-1667873817704e3117-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "frontpage",
-            "title": ""
-          }
-        },
-        "template--16727915528508__088a4527-b55b-450a-9298-2aea7014cc5a-1667873817704e3117-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "frontpage",
-            "title": ""
-          }
-        },
-        "template--16727915528508__088a4527-b55b-450a-9298-2aea7014cc5a-1667873817704e3117-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "frontpage",
-            "title": ""
-          }
-        },
-        "template--16727915528508__088a4527-b55b-450a-9298-2aea7014cc5a-1667873817704e3117-4": {
-          "type": "collection",
-          "settings": {
-            "collection": "frontpage",
-            "title": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16727915528508__088a4527-b55b-450a-9298-2aea7014cc5a-1667873817704e3117-0",
-        "template--16727915528508__088a4527-b55b-450a-9298-2aea7014cc5a-1667873817704e3117-1",
-        "template--16727915528508__088a4527-b55b-450a-9298-2aea7014cc5a-1667873817704e3117-2",
-        "template--16727915528508__088a4527-b55b-450a-9298-2aea7014cc5a-1667873817704e3117-3",
-        "template--16727915528508__088a4527-b55b-450a-9298-2aea7014cc5a-1667873817704e3117-4"
-      ],
+    "collection-reccomended": {
+      "type": "collection-reccomended",
       "settings": {
-        "flush": false,
-        "flush_bottom": true,
-        "title": "You may also like"
       }
     }
   },
   "order": [
     "collection-header",
     "main-collection",
-    "088a4527-b55b-450a-9298-2aea7014cc5a"
+    "collection-reccomended"
   ]
 }

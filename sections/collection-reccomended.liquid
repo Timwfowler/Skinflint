@@ -69,21 +69,13 @@
 {% assign collectionOne = collections[collectionArray[collectionOneNum]] %}
 {% assign collectionTwo = collections[collectionArray[collectionTwoNum]] %} 
 
-<p>{{ collectionOneNum }}</p>
-
-<p>{{ collectionTwoNum }}</p>
-
-<h1>{{ collectionArray | json }}</h1>
-
-
-
 
   <div id="CollectionSection-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="collection-template" class="coll-ymal index-section featured-collections-section numb-of-products-5 {% if section.settings.flush %}section-flush {% endif %}
                                                                   {% if section.settings.flush_bottom %}section-padding--bottom {% endif %}">
     <div class="page-width">
       <div class="section-header{% if section.settings.view_all %} section-header--with-link{% endif %}">
         <h2 class="section-header__title">
-          Ypu may also like
+          You may also like
         </h2>
       </div>
     </div>
