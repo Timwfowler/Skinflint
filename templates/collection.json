@@ -94,11 +94,19 @@
         "link": "",
         "button_link": ""
       }
+    },
+    "collection-reccomended": {
+      "type": "collection-reccomended",
+      "disabled": false,
+      "settings": {
+        "enable": true
+      }
     }
   },
   "order": [
     "collection-header",
     "main-collection",
+    "collection-reccomended",
     "088a4527-b55b-450a-9298-2aea7014cc5a"
   ]
 }

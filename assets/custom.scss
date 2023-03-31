@@ -957,6 +957,21 @@ a:hover{
 =            featured-collection-section            =
 =============================================*/
 
+
+.coll-ymal{
+  
+
+    .grid-item:nth-of-type(1), .grid-item:nth-of-type(2){
+
+      @include breakpoint(md){
+        grid-column: auto / span 3;
+      }
+    }
+  
+}
+
+
+
 .featured-collection-section, .featured-collections-section{
 
   .section-header--with-link{
@@ -3175,7 +3190,7 @@ a:hover{
 .collection-image-wrap{
   height: 100%;
   height: 0;
-  padding-top: 66.666%;
+  padding-top: 100%;
 
   img{
     height: 100%;
@@ -3189,6 +3204,7 @@ a:hover{
     img{
       position: absolute;
       top: 0;
+      object-fit: cover;
     }
   }
 }

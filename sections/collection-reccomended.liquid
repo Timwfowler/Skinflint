@@ -1,0 +1,129 @@
+{%- liquid
+  assign collection = collections[section.settings.home_featured_products]
+  assign product_limit = section.settings.count | plus: 1
+  if section.settings.mobile_scrollable
+    assign product_limit = section.settings.count
+  endif
+-%}
+
+
+
+
+
+{% assign productArray = '' | split: '' %}
+
+
+{% for product in collections['all'].products %}
+    {% if product.available %}
+    {% assign controllerName = product.handle | split: 'aresdber' | first | split: 'srghhnaljh' %}
+    {% assign productArray = productArray | concat: controllerName %}
+    {% endif %}
+{% endfor %}
+
+{% assign min = 1 %}
+{% assign max = productArray | size %}
+
+
+{% assign diff = max | minus: min %}
+{% assign productOneNum = "now" | date: "%N" | modulo: diff | plus: min %}
+{% assign productTwoNum = "now" | date: "%N" | modulo: diff | plus: min %}
+{% assign productThreeNum = "now" | date: "%N" | modulo: diff | plus: min %}
+
+
+{% if productTwoNum == productOneNum %}
+{% assign productTwoNum = "now" | date: "%N" | modulo: diff | plus: min %}
+{% endif %}
+
+{% if productThreeNum == productOneNum or productThreeNum == productTwoNum %}
+{% assign productThreeNum = "now" | date: "%N" | modulo: diff | plus: min %}
+{% endif %}
+
+
+{% assign productOne = all_products[productArray[productOneNum]] %}
+{% assign productTwo = all_products[productArray[productTwoNum]] %}
+{% assign productThree = all_products[productArray[productThreeNum]] %}
+
+
+
+
+
+
+{% assign collectionArray = '' | split: '' %}
+
+{% for collection in collections %}
+  {% if collection.metafields.custom.is_this_a_category_collection_ie_wall_lights_ != "true" or collection.metafields.custom.is_this_collection_archived_ != "true" %}
+    
+  {% endif %}
+  {% assign collectionName = collection.handle | split: 'aresdber' | first | split: 'srghhnaljh' %}
+  {% assign collectionArray = collectionArray | concat: collectionName %}
+{% endfor %}
+
+{% assign min = 1 %}
+{% assign max = collectionArray | size %}
+
+
+{% assign diff = max | minus: min %}
+{% assign collectionOneNum = "now" | date: "%N" | modulo: diff | plus: min %}
+{% assign collectionTwoNum = "now" | date: "%N" | modulo: diff | plus: min %}
+
+{% assign collectionOne = collections[collectionArray[collectionOneNum]] %}
+{% assign collectionTwo = collections[collectionArray[collectionTwoNum]] %} 
+
+
+
+
+  <div id="CollectionSection-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="collection-template" class="coll-ymal index-section featured-collections-section numb-of-products-5 {% if section.settings.flush %}section-flush {% endif %}
+                                                                  {% if section.settings.flush_bottom %}section-padding--bottom {% endif %}">
+    <div class="page-width">
+      <div class="section-header{% if section.settings.view_all %} section-header--with-link{% endif %}">
+        <h2 class="section-header__title">
+          Ypu may also like
+        </h2>
+      </div>
+    </div>
+
+
+    <div class="page-width featured-collections-section{% if section.settings.mobile_scrollable %} page-width--flush-small{% endif %}">
+      <div class="new-grid product-grid{% if section.settings.mobile_scrollable %} scrollable-grid--small{% endif %}" data-view="6-3">
+
+
+        {% render 'collection-grid-item', collection: collectionOne %}
+        {% render 'collection-grid-item', collection: collectionTwo, block: block %}
+
+        {% render 'product-grid-item', product: productOne, collection: collection, classes: item_classes %}
+        {% render 'product-grid-item', product: productTwo, collection: collection, classes: item_classes %}
+        {% render 'product-grid-item', product: productThree, collection: collection, classes: item_classes %}
+
+
+          {%- liquid
+          for product in collections[section.settings.home_featured_products].products limit: product_limit
+            assign item_classes = ''
+            unless section.settings.mobile_scrollable
+              if forloop.index > section.settings.count
+                assign item_classes = 'hide'
+                assign mod = forloop.index | modulo: 2
+                if mod == 0
+                  assign item_classes = 'medium-up--hide'
+                endif
+              endif
+            endunless
+
+            render 'product-grid-item', product: product, collection: collection, classes: item_classes
+
+            if settings.quick_shop_enable
+              render 'quick-shop-modal', product: product
+            endif
+          endfor
+        -%}
+
+
+      </div>
+
+      <div class="view-all">
+        {%- if section.settings.view_all -%}
+          <a href="{{ collections[section.settings.home_featured_products].url }}" class="section-header__link">Vieew all</a>
+        {%- endif -%}
+      </div>
+
+    </div>
+  </div>

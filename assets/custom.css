@@ -564,6 +564,10 @@ a:hover {
 /*=============================================
 =            featured-collection-section            =
 =============================================*/
+@media (min-width: 1024px) {
+  .coll-ymal .grid-item:nth-of-type(1), .coll-ymal .grid-item:nth-of-type(2) {
+    grid-column: auto / span 3; } }
+
 .featured-collection-section .section-header--with-link, .featured-collections-section .section-header--with-link {
   margin-bottom: 0; }
 @media (min-width: 1024px) {
@@ -1836,7 +1840,7 @@ a:hover {
 .collection-image-wrap {
   height: 100%;
   height: 0;
-  padding-top: 66.666%; }
+  padding-top: 100%; }
   .collection-image-wrap img {
     height: 100%;
     position: absolute;
@@ -1845,7 +1849,8 @@ a:hover {
     padding-top: 100%; }
     .collection-image-wrap.force-square img {
       position: absolute;
-      top: 0; }
+      top: 0;
+      object-fit: cover; }
 
 /*=====  End of Collections All  ======*/
 /*=============================================
