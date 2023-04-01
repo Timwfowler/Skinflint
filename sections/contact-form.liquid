@@ -10,7 +10,7 @@
       {{section.settings.paragraph}}
 
       <div class="contact-form__gg-map">
-        <a href="https://goo.gl/maps/cFoUPZZpWZTXq3466" target="_blank">
+        <a href="{{ section.settings.button_link }}" target="_blank">
           <svg xmlns="http://www.w3.org/2000/svg" width="13" height="21" viewBox="0 0 13 21">
             <defs>
               <style>
@@ -73,6 +73,11 @@
         "type": "richtext",
         "id": "text",
         "label": "Text (below the form)"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Google maps link"
       }, {
         "type": "checkbox",
         "id": "show_phone",
