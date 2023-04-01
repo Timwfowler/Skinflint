@@ -171,8 +171,20 @@
       <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-left" viewBox="0 0 50 15"><path d="M50 5.38v4.25H15V15L0 7.5 15 0v5.38z"/></svg>
       {{ 'blogs.article.back_to_blog' | t: title: blog.title }}</a>
   </div>
-
 </div>
+
+
+
+
+
+{% if blog.title contains "Project" or page.title contains "Project" %}
+
+  <p>test mao</p>
+  <div class="article-map">
+    {% render 'article-map' %}
+  </div>
+
+{% endif %}
 
 {% if article.metafields.custom.products_used != blank %}
   <div class="article-associated-ps">
@@ -186,6 +198,9 @@
     </div>
   </div>
 {% endif %}
+
+
+
 
 
 

@@ -28,10 +28,37 @@
   <div class="collection-filter__sort "> 
     <label for="SortBy" class="">Sort by</label>
     <select name="SortBy" id="SortBy" data-default-sortby="{{ collection.default_sort_by }}">
-      <option value="quantity"{% if option.value == sort_by %} selected="selected"{% endif %}>Quantity</option>
-      <option value="title-ascending"{% if sort_by == collection.default_sort_by %} selected="selected"{% endif %}>{{ 'collections.sorting.title' | t }}</option>
+      <option value="best-selling"{% if option.value == sort_by %} selected="selected"{% endif %}>Most Popular</option>
+      <option value="quantity"{% if option.value == "quantity" %} selected="selected"{% endif %}>Quantity</option>
+
       {%- for option in collection.sort_options -%}
+
+        {% unless option.name == "Alphabetically, A-Z" or option.name == "Alphabetically, Z-A" or option.name == "Date, old to new" or option.value == "title-ascending"  or option.value == "best-selling"%}
+          
+
+        {% if option.name == "Best selling" %}
+            <option value="{{ option.value }}"{% if option.value == sort_by %} selected="selected"{% endif %}>Most popular</option>
+
+          {%- elsif option.name == "Price, low to high" -%}
+          <option value="{{ option.value }}"{% if option.value == sort_by %} selected="selected"{% endif %}>Price Low</option>
+
+          {%- elsif option.name == "Price, high to low" -%}
+          <option value="{{ option.value }}"{% if option.value == sort_by %} selected="selected"{% endif %}>Price High</option>
+
+          {%- elsif option.name == "Date, new to old" -%}
+          <option value="{{ option.value }}"{% if option.value == sort_by %} selected="selected"{% endif %}>Release Date</option>
+
+          
+            
+        
+
+        {% else %}
         <option value="{{ option.value }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name }}</option>
+        {% endif %}
+        {% endunless %}
+
+
+        
       {%- endfor -%}
 
     </select>

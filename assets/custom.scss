@@ -4975,7 +4975,7 @@ a:hover{
 =            Newsletter moddal            =
 =============================================*/
 
-.newsletter-modal{
+.newsletter-modal, .contact-modal{
   position: fixed;
   top: 0;
   left: 0;
@@ -5092,6 +5092,94 @@ a:hover{
 }
 
 /*=====  End of Newsletter moddal  ======*/
+
+
+
+
+
+
+
+
+/*=============================================
+=            Project map            =
+=============================================*/
+
+#project-map{
+  height: 500px;
+}
+
+/*=====  End of Project map  ======*/
+
+
+
+
+
+/*=============================================
+=            Contact fgor project            =
+=============================================*/
+
+.contact-modal-wrap{
+  max-height: 80vh;
+  position: relative;
+  overflow: scroll;
+
+  h3{
+    padding-top: 80vh;
+  }
+}
+
+.contact-modal{
+
+
+
+  &__inner{
+    max-width: none;
+
+    overflow: scroll;
+    height: 100%;
+
+    @include breakpoint(md){
+      width: 60vw;
+    }
+  }
+
+  #contact-form-submit-{
+    margin: auto;
+  }
+
+  .project-submit-btn{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.project-contact{
+  
+
+  @include breakpoint(lg){
+    display: flex;
+  }
+
+  &__left{
+
+    @include breakpoint(lg){
+      width: 50%;
+      margin-right: 20px;
+    }
+  }
+
+  &__right{
+
+    @include breakpoint(lg){
+      width: 50%;
+      margin-left: 20px;
+    }
+  }
+}
+
+/*=====  End of Contact fgor project  ======*/
+
+
 
 
 

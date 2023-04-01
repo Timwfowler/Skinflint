@@ -22,18 +22,8 @@
     <div class="collection-sidebar" id="CollectionSidebarFilterWrap">
       <div class="filter-wrapper">
         <ul class="no-bullets tag-list tag-list--active-tags">
-
-
-
-
-
-
           {%- for filter in collection.filters -%}
             {%- for filter_value in filter.active_values -%}
-
-              
-
-
               <li class="tag tag--remove" data-filter="{{ filter.label }}">
                 <a class="btn btn--small js-no-transition" href="{{ filter_value.url_to_remove }}">
                   {{ filter_value.label | escape }}
@@ -71,6 +61,7 @@
 
         {%- if enable_sidebar -%}
           <form class="filter-form">
+            
 
             {% assign customFilter = false %}
 
@@ -130,8 +121,59 @@
               
             {% endif %}
 
+            {% assign filterArray = '' | split: '' %}
 
 
+            {%- for filter in collection.filters -%}
+                {% assign controllerName = filter.label | split: 'aresdber' | first | split: 'srghhnaljh' %}
+                {% assign filterArray = filterArray | concat: controllerName %}
+            {% endfor %}
+
+      
+
+          {% unless filterArray contains "Era" %}
+          <div class="collection-sidebar__group"><button type="button" class="collapsible-trigger collapsible-trigger-btn collapsible--auto-height tag-list__header" data-controls="CollectionSidebar-1" data-collapsible-id="filter-era" aria-expanded="false">
+            <span class="collapsible-trigger__layout collapsible-trigger__layout--inline">          
+              <svg class="collapsible-trigger__icon collapsible-trigger__icon--open" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill="none" d="M1 1L7 7L13 1" stroke="#979797"></path>
+                </svg>              
+            <span>Era</span>            
+              </span>
+            </button>
+          </div>
+          {% endunless %}
+
+          {% unless filterArray contains "Origin" %}
+          <div class="collection-sidebar__group"><button type="button" class="collapsible-trigger collapsible-trigger-btn collapsible--auto-height tag-list__header" data-controls="CollectionSidebar-1" data-collapsible-id="filter-era" aria-expanded="false">
+            <span class="collapsible-trigger__layout collapsible-trigger__layout--inline">          
+              <svg class="collapsible-trigger__icon collapsible-trigger__icon--open" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill="none" d="M1 1L7 7L13 1" stroke="#979797"></path>
+                </svg>              
+            <span>Origin</span>            
+              </span>
+            </button>
+          </div>
+          {% endunless %}
+
+          {% unless filterArray contains "Manufacture" %}
+          <div class="collection-sidebar__group"><button type="button" class="collapsible-trigger collapsible-trigger-btn collapsible--auto-height tag-list__header" data-controls="CollectionSidebar-1" data-collapsible-id="filter-era" aria-expanded="false">
+            <span class="collapsible-trigger__layout collapsible-trigger__layout--inline">          
+              <svg class="collapsible-trigger__icon collapsible-trigger__icon--open" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill="none" d="M1 1L7 7L13 1" stroke="#979797"></path>
+                </svg>              
+            <span>Manufacture</span>            
+              </span>
+            </button>
+          </div>
+          {% endunless %}
+
+
+
+            
+
+              
+
+   
 
 
 

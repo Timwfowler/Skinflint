@@ -2968,7 +2968,7 @@ a:hover {
 /*=============================================
 =            Newsletter moddal            =
 =============================================*/
-.newsletter-modal {
+.newsletter-modal, .contact-modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -2979,17 +2979,17 @@ a:hover {
   justify-content: center;
   align-items: center;
   display: none; }
-  .newsletter-modal.active {
+  .newsletter-modal.active, .contact-modal.active {
     display: flex; }
-  .newsletter-modal .footer__newsletter {
+  .newsletter-modal .footer__newsletter, .contact-modal .footer__newsletter {
     display: block;
     padding: 0;
     width: 100%; }
-  .newsletter-modal .newsletter-modal__inner h4 {
+  .newsletter-modal .newsletter-modal__inner h4, .contact-modal .newsletter-modal__inner h4 {
     padding: 0; }
-  .newsletter-modal .newsletter__input-group {
+  .newsletter-modal .newsletter__input-group, .contact-modal .newsletter__input-group {
     max-width: none; }
-  .newsletter-modal__inner {
+  .newsletter-modal__inner, .contact-modal__inner {
     height: 100vh;
     width: 100vw;
     background-color: white;
@@ -3002,21 +3002,21 @@ a:hover {
     flex-direction: column;
     justify-content: center; }
     @media (min-width: 1024px) {
-      .newsletter-modal__inner {
+      .newsletter-modal__inner, .contact-modal__inner {
         width: 700px;
         height: auto;
         position: relative;
         padding: 70px; } }
-    .newsletter-modal__inner .btn-close {
+    .newsletter-modal__inner .btn-close, .contact-modal__inner .btn-close {
       position: absolute;
       top: 20px;
       right: 20px;
       z-index: 10;
       width: 26px;
       height: 26px; }
-      .newsletter-modal__inner .btn-close:hover {
+      .newsletter-modal__inner .btn-close:hover, .contact-modal__inner .btn-close:hover {
         opacity: 0.7; }
-      .newsletter-modal__inner .btn-close:after, .newsletter-modal__inner .btn-close:before {
+      .newsletter-modal__inner .btn-close:after, .newsletter-modal__inner .btn-close:before, .contact-modal__inner .btn-close:after, .contact-modal__inner .btn-close:before {
         content: "";
         position: absolute;
         top: 50%;
@@ -3027,30 +3027,73 @@ a:hover {
         height: 2px;
         -webkit-transition: all .25s ease-in-out;
         transition: all .25s ease-in-out; }
-      .newsletter-modal__inner .btn-close:before {
+      .newsletter-modal__inner .btn-close:before, .contact-modal__inner .btn-close:before {
         transform: translateY(-50%) rotate(-45deg); }
-      .newsletter-modal__inner .btn-close:after {
+      .newsletter-modal__inner .btn-close:after, .contact-modal__inner .btn-close:after {
         transform: translateY(-50%) rotate(45deg); }
-    .newsletter-modal__inner h3 {
+    .newsletter-modal__inner h3, .contact-modal__inner h3 {
       text-align: center;
       margin-bottom: 40px;
       margin-top: 0;
       font-size: 1.9rem;
       line-height: 1.4; }
       @media (min-width: 1024px) {
-        .newsletter-modal__inner h3 {
+        .newsletter-modal__inner h3, .contact-modal__inner h3 {
           font-size: 3.3rem;
           line-height: 1.2; } }
-    .newsletter-modal__inner p {
+    .newsletter-modal__inner p, .contact-modal__inner p {
       font-size: 1.9rem;
       text-align: center;
       padding-bottom: 40px; }
-    .newsletter-modal__inner h4 {
+    .newsletter-modal__inner h4, .contact-modal__inner h4 {
       text-align: center;
       margin: 40px auto 0;
       max-width: 320px; }
 
 /*=====  End of Newsletter moddal  ======*/
+/*=============================================
+=            Project map            =
+=============================================*/
+#project-map {
+  height: 500px; }
+
+/*=====  End of Project map  ======*/
+/*=============================================
+=            Contact fgor project            =
+=============================================*/
+.contact-modal-wrap {
+  max-height: 80vh;
+  position: relative;
+  overflow: scroll; }
+  .contact-modal-wrap h3 {
+    padding-top: 80vh; }
+
+.contact-modal__inner {
+  max-width: none;
+  overflow: scroll;
+  height: 100%; }
+  @media (min-width: 1024px) {
+    .contact-modal__inner {
+      width: 60vw; } }
+.contact-modal #contact-form-submit- {
+  margin: auto; }
+.contact-modal .project-submit-btn {
+  display: flex;
+  justify-content: center; }
+
+@media (min-width: 1200px) {
+  .project-contact {
+    display: flex; } }
+@media (min-width: 1200px) {
+  .project-contact__left {
+    width: 50%;
+    margin-right: 20px; } }
+@media (min-width: 1200px) {
+  .project-contact__right {
+    width: 50%;
+    margin-left: 20px; } }
+
+/*=====  End of Contact fgor project  ======*/
 /*=============================================
 =            Main product data            =
 =============================================*/

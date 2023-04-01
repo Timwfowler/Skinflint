@@ -46,7 +46,15 @@
           {% endfor %}
         </ul>
 
-        <div class="btn blog-landing-page__filter-btn js-newsletter"><span>Sign up to our newsletter</span></div>
+
+        
+        
+
+        {% if blog.title contains "Project" or page.title contains "Project" %}
+          <div class="btn blog-landing-page__filter-btn js-contact"><span>Enquire about your project</span></div>
+        {% else %}
+          <div class="btn blog-landing-page__filter-btn js-newsletter"><span>Sign up to our newsletter</span></div>
+        {% endif %}
       </div>
     </div>
   </div>

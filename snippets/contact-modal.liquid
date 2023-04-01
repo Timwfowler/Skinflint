@@ -1,0 +1,42 @@
+
+
+    <div class="contact-modal">
+
+      <div class="contact-modal-wrap">
+
+
+
+      <div class="contact-modal__inner">
+        <button type="button" aria-label="Close" class="btn-close"></button>    
+        <div class="footer__contact">
+
+            <div class="footer__subscribe rte rte--nomargin">
+              <h3>Enquire about you project
+              </h3>
+            </div>
+
+  
+          {%- render 'contact-form-project', section_id: section.id, snippet_context: 'footer' -%}
+  
+          <p style="margin-top: 40px">By hitting submit you agree to our T&Cs and the ways in which we process data.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <script>
+      //open modal
+      const contactFormSh = document.querySelector('.contact-modal')
+      const closeButtonContact = document.querySelector('.contact-modal .btn-close')
+      const contactButtons = document.querySelectorAll('.js-contact')
+
+      contactButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          contactFormSh.classList.add('active')
+        })
+      })
+
+      closeButtonContact.addEventListener('click', () => {
+        contactFormSh.classList.remove('active')
+      })
+    </script>

@@ -45,6 +45,13 @@
  
      endunless
    -%}
+   <script src="//maps.google.com/maps/api/js?key=AIzaSyDgKd7rJItMF3QPU8Okpj0rzMXECaoh1ic"></script>
+   <!-- <script>
+    window.googleApi = "AIzaSyDgKd7rJItMF3QPU8Okpj0rzMXECaoh1ic"
+    var my_awesome_script = document.createElement('script');
+    my_awesome_script.setAttribute('src',`//maps.google.com/maps/api/js?key=AIzaSyDgKd7rJItMF3QPU8Okpj0rzMXECaoh1ic`);
+    document.head.appendChild(my_awesome_script);
+  </script> -->
 
     <script>
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
@@ -216,6 +223,7 @@
     </style>
 
     {% render 'newsletter-modal' %}
+    {% render 'contact-modal' %}
 
    
     <div class="share-modal">
