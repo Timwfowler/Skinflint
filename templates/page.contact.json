@@ -6,39 +6,10 @@
       "settings": {
       }
     },
-    "df7f3069-e809-4266-a1ef-9e096d0d0e0c": {
-      "type": "section-rich-text",
-      "disabled": true,
-      "blocks": {
-        "template--18439248675132__df7f3069-e809-4266-a1ef-9e096d0d0e0c-1680334319f27a2577-0": {
-          "type": "heading",
-          "settings": {
-            "title": "Rich text"
-          }
-        },
-        "template--18439248675132__df7f3069-e809-4266-a1ef-9e096d0d0e0c-1680334319f27a2577-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "enlarge_text": true,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--18439248675132__df7f3069-e809-4266-a1ef-9e096d0d0e0c-1680334319f27a2577-0",
-        "template--18439248675132__df7f3069-e809-4266-a1ef-9e096d0d0e0c-1680334319f27a2577-1"
-      ],
-      "settings": {
-        "flush": false,
-        "flush_bottom": true,
-        "align_text": "left",
-        "narrow_column": false
-      }
-    },
     "form": {
       "type": "contact-form",
       "settings": {
+        "heading": "Lets talk lights",
         "paragraph": "<p>We ship our lights to happy customers all over the world.<\/p><p>If you have a question about any of our lights, or if you're looking for something in particular, we're always happy to help. Please get in touch.<\/p><p><a href=\"mailto:studio@skinflintdesign.com\">studio@skinflintdesign.com<\/a><\/p><p><a href=\"tel:+00441326565227\">01326 565227<\/a><\/p><p>We look forward to welcoming you to our Cornish studio by appointment only between 9am-5pm Monday to Friday (GMT).<\/p><p>The Warehouse<br\/>Commercial Road<br\/>Penryn<br\/>Cornwall<br\/>TR10 8AE<br\/><br\/>LTD Company<br\/>Registered in England<br\/>No: 4521098<br\/><br\/><strong>Prop Hire<\/strong><\/p><p>We hold Europe's largest selection of original vintage lighting for prop hire for TV, films and events - visit our <a href=\"https:\/\/www.skinflintdesign.com\/pages\/prop-hire\">prop hire page<\/a> for more information.<\/p>",
         "title": "Enquiry",
         "text": "<p>By hitting submit you agree to our <a href=\"https:\/\/www.skinflintdesign.com\/pages\/legal\" target=\"_blank\">T&Cs <\/a>and the ways in which we process data.<\/p>",
@@ -49,7 +20,6 @@
   },
   "order": [
     "main",
-    "df7f3069-e809-4266-a1ef-9e096d0d0e0c",
     "form"
   ]
 }
