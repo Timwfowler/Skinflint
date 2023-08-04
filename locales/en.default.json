@@ -373,5 +373,12 @@
   },
   "date_formats": {
     "month_day_year": "%b %d, %Y"
+  },
+  "shopify": {
+    "checkout": {
+      "delivery_options": {
+        "free_total_label": "POA"
+      }
+    }
   }
 }
