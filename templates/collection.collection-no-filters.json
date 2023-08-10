@@ -33,7 +33,7 @@
         "button_label": "Button",
         "button_link": "",
         "position": 12,
-        "show_feat_img": false,
+        "show_feat_img": true,
         "remove_description": false,
         "enable_sidebar": true,
         "collapse_filters": true,
