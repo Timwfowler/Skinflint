@@ -2245,7 +2245,8 @@
       }
     },
     "store-availability": {
-      "name": {}
+      "name": {
+      }
     },
     "testimonials": {
       "name": "Testimonials",

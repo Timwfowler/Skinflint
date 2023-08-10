@@ -3782,7 +3782,7 @@ lazySizesConfig.expFactor = 4;
       autoPlay: 5000,
       avoidReflow: true,
       cellAlign: theme.config.rtl ? 'right' : 'left',
-      fade: true
+      fade: false
     };
     var bar;
     var flickity;
@@ -6263,7 +6263,7 @@ lazySizesConfig.expFactor = 4;
           var sliderArgs = {
             prevNextButtons: this.slideshow.hasAttribute('data-arrows'),
             pageDots: this.slideshow.hasAttribute('data-dots'),
-            fade: true,
+            fade: false,
             setGallerySize: false,
             initialIndex: this.initialIndex,
             autoPlay: this.slideshow.dataset.autoplay === 'true'
