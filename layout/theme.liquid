@@ -242,18 +242,18 @@
 
     <script>
       //open modal
-      const modalShare = document.querySelector('.share-modal')
-      const closeButtonShare = document.querySelector('.share-modal .btn-close')
+      const modalShareT = document.querySelector('.share-modal')
+      const closeButtonShareT = document.querySelector('.share-modal .btn-close')
       const shareButtons = document.querySelectorAll('.scrolling-nav-actions__share')
 
       shareButtons.forEach((button) => {
         button.addEventListener('click', () => {
-          modalShare.classList.add('active')
+          modalShareT.classList.add('active')
         })
       })
 
-      closeButtonShare.addEventListener('click', () => {
-        modalShare.classList.remove('active')
+      closeButtonShareT.addEventListener('click', () => {
+        modalShareT.classList.remove('active')
       })
     </script>
 
