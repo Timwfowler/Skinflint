@@ -74,6 +74,7 @@
                 {%- render 'collection-grid'
                   collection: collection,
                   card_one_pos: section.settings.position,
+                  card_one_pos_two: section.settings.position_two,
                   items: collection.products,
                   grid_style: block.settings.grid_style,
                   quick_shop_enable: settings.quick_shop_enable,
@@ -167,6 +168,42 @@
       "label": "Position in grid",
       "default": 2
     },
+
+    {
+      "type": "header",
+      "content": "Promo Card Two"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_with_text_image_two",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "title_two",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "button_label_two",
+      "label": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "button_link_two",
+      "label": "Button Link"
+    },
+    {
+      "type": "range",
+      "id": "position_two",
+      "min": 2,
+      "max": 24,
+      "step": 1,
+      "label": "Position in grid",
+      "default": 2
+    },
+
+
     {
       "type": "header",
       "content": "t:sections.main-collection.settings.header_filtering_and_sorting"

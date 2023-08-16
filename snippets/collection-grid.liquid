@@ -164,22 +164,41 @@
 
       {% if forloop.index == card_one_pos %}
 
-      {% if section.settings.image_with_text_image != blank %}
-      <div class="promo-card" >
-        <div class="promo-card__inner">
-          <img src="{{ section.settings.image_with_text_image | img_url: "400x" }}" alt="">
-          <div class="promo-card__text">
-            <h2>{{ section.settings.title }}</h2>
-            <a href="{{ section.settings.button_link }}">
-              <div class="btn">{{ section.settings.button_label }}</div>
-            </a>
-          </div>
-        </div>
-      </div>      
-    {% endif %}
+        {% if section.settings.image_with_text_image != blank %}
+          <div class="promo-card" >
+            <div class="promo-card__inner">
+              <img src="{{ section.settings.image_with_text_image | img_url: "400x" }}" alt="">
+              <div class="promo-card__text">
+                <h2>{{ section.settings.title }}</h2>
+                <a href="{{ section.settings.button_link }}">
+                  <div class="btn">{{ section.settings.button_label }}</div>
+                </a>
+              </div>
+            </div>
+          </div>      
+        {% endif %}
     
         
       {% endif %}
+
+      {% if forloop.index == card_one_pos_two %}
+
+      {% if section.settings.image_with_text_image_two != blank %}
+        <div class="promo-card" >
+          <div class="promo-card__inner">
+            <img src="{{ section.settings.image_with_text_image_two | img_url: "400x" }}" alt="">
+            <div class="promo-card__text">
+              <h2>{{ section.settings.title_two }}</h2>
+              <a href="{{ section.settings.button_link_two }}">
+                <div class="btn">{{ section.settings.button_label_two }}</div>
+              </a>
+            </div>
+          </div>
+        </div>      
+      {% endif %}
+  
+      
+    {% endif %}
 
       {%- if item.object_type == 'product' -%}
         {%- render 'product-grid-item', product: item -%}

@@ -414,6 +414,22 @@ function initAnnouncementBar(){
  
 } 
 
+function initPdpLightsOn(){
+  const secondImage = document.querySelector('.image-two')
+
+  if (!secondImage) {
+    return
+  }
+
+  const top = secondImage.offsetTop;
+
+
+
+
+  console.log('second')
+  console.log(top)
+}
+
 
 
 
@@ -425,3 +441,4 @@ initBlogFiltersMobile()
 initYoutubePlay()
 initWishlist()
 initAnnouncementBar()
+initPdpLightsOn()
