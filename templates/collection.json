@@ -28,11 +28,14 @@
         "product_grid"
       ],
       "settings": {
-        "image_with_text_image": "shopify:\/\/shop_images\/470x470_cv_skinflint-vintage-opaline-pendant-lights-in-groucho-members-club-mayfair-london-cta-4882x4882.webp",
-        "title": "A promo card",
-        "button_label": "Button",
+        "title": "",
+        "button_label": "",
         "button_link": "",
-        "position": 7,
+        "position": 6,
+        "title_two": "",
+        "button_label_two": "",
+        "button_link_two": "",
+        "position_two": 2,
         "show_feat_img": false,
         "remove_description": false,
         "enable_sidebar": true,
