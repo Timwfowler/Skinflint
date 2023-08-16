@@ -1372,6 +1372,11 @@ a:hover {
   font-size: 3.5rem;
   line-height: 1.2;
 }
+.image-with-text__text h3.small {
+  font-size: 1.9rem;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
 .image-with-text__text .btn {
   margin-top: 50px;
 }
@@ -3969,10 +3974,6 @@ a:hover {
   position: relative;
   overflow: scroll;
 }
-.contact-modal-wrap h3 {
-  padding-top: 80vh;
-}
-
 .contact-modal__inner {
   max-width: none;
   overflow: scroll;

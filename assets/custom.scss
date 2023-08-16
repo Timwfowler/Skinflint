@@ -1827,6 +1827,12 @@ a:hover{
       margin-bottom: 20px;
       font-size: 3.5rem;
       line-height: 1.2;
+
+      &.small{
+        font-size: 1.9rem;
+        line-height: 1.4;
+        margin-bottom: 20px;
+      }
     }
     
     .btn{
@@ -4625,6 +4631,13 @@ a:hover{
     
   }
 
+  &__data-column{
+
+    a{
+
+    }
+  }
+
   &__images{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -5145,7 +5158,7 @@ a:hover{
   overflow: scroll;
 
   h3{
-    padding-top: 80vh;
+    // padding-top: 80vh;
   }
 }
 
