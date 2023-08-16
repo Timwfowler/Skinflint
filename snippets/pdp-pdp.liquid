@@ -84,12 +84,17 @@
             {% endif %}
             <h4>Quantity Remaining</h4>
             <p class="js-total-left">{{ total }}</p>
+
+            <div class="remove-branding">
             <h4>Unit Price</h4>
             <p>{{ product.price | money }} + VAT</p>      
             {% if product.metafields.pdf.notes != blank %}
               <h4>notes</h4>
               <p>{{ product.metafields.pdf.notes }}</p>
             {% endif %}
+            </div>
+
+
           </div>
         </div>
       </div>

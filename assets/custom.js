@@ -415,19 +415,56 @@ function initAnnouncementBar(){
 } 
 
 function initPdpLightsOn(){
+
+
   const secondImage = document.querySelector('.image-two')
 
   if (!secondImage) {
     return
   }
 
-  const top = secondImage.offsetTop;
+  const imageWrap = document.querySelector('.product-metafield-details__image--two')
+
+  // get top of second image relative to top of page
+
+
+
+  let top = secondImage.getBoundingClientRect().top + window.pageYOffset
+
+  // if scroll position is in view port on scroll add active else add remove active
+
+  // second image on hover toggle active class
+
+  imageWrap.addEventListener('mouseover', () => {
+    console.log('in');
+    secondImage.classList.remove('active') 
+  })
+
+  imageWrap.addEventListener('mouseout', () => {
+    secondImage.classList.add('active')
+  })
 
 
 
 
-  console.log('second')
-  console.log(top)
+
+  window.addEventListener('scroll', () => {
+    let scrollPos = window.pageYOffset
+
+    console.log(scrollPos);
+    console.log(top);
+
+    if (scrollPos + 500 > top) {
+      secondImage.classList.add('active')
+    }else{
+      secondImage.classList.remove('active')
+    }
+
+    //if scrolled past bott
+  })
+
+
+
 }
 
 
@@ -441,4 +478,11 @@ initBlogFiltersMobile()
 initYoutubePlay()
 initWishlist()
 initAnnouncementBar()
-initPdpLightsOn()
+
+
+// once dom comnpletely loaded
+
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  initPdpLightsOn()
+});

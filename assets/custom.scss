@@ -4121,7 +4121,12 @@ a:hover{
     .image-two{
       position: absolute;
       top: 0;
-      z-index: -1;
+      z-index: 1;
+
+      &.active
+      {
+        z-index: -2;
+      }
     }
   }
 
@@ -4632,10 +4637,10 @@ a:hover{
     gap: 20px;
 
     p, span, tr, a{
-      font-size: 13px;
-      font-weight: 100;
-      -webkit-font-smoothing: antialiased;  
-      font-family: AvertaStd-Light,sans-serif;
+      font-size: 13px !important;
+      font-weight: 100 !important;
+      -webkit-font-smoothing: antialiased !important;  
+      font-family: AvertaStd-Light,sans-serif !important;
     }
     table { 
       border-collapse:collapse 
@@ -4645,6 +4650,11 @@ a:hover{
       padding: 0;
       padding: 0;
       padding-bottom: 6px;
+      font-size: 13px;
+      font-size: 13px;
+      font-weight: 100;
+      -webkit-font-smoothing: antialiased;
+      font-family: AvertaStd-Light,sans-serif;
     }
 
     h4{
