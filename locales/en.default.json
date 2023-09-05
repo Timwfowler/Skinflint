@@ -299,7 +299,7 @@
       "account": "Account",
       "log_out": "Log out",
       "log_in": "Log in",
-      "create_account": "Create account"
+      "create_account": "Don't have an account? Create One!"
     },
     "footer": {
       "accepted_payments": "We accept",
