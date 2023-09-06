@@ -1,83 +1,155 @@
-<div class="page-width page-width--tiny page-content">
-  <header class="section-header">
-    <h1 class="section-header__title">{{ 'customer.login.title' | t }}</h1>
-  </header>
+<section class="user-heading"><div class="user-heading__title user-heading__title--border"><h1>Update account</h1></div></section>
 
-  <div class="note note--success hide" id="ResetSuccess">
-    {{ 'customer.recover_password.success' | t }}
-  </div>
+<section class="register"><div class="form__invalid-warning"><h3>Please <div class="form__invalid-warning__login"><button type="button" class="js-login-btn">
+        log in
+    </button> <!----></div> or <div class="form__invalid-warning__register"><button class="js-register-btn" type="button">
+        register
+    </button> <!----></div> an account.</h3></div> <!----></section>
 
-  <div id="CustomerLoginForm" class="form-vertical">
-    {%- form 'customer_login' -%}
 
-      {{ form.errors | default_errors }}
 
-      <label for="CustomerEmail">{{ 'customer.login.email' | t }}</label>
-      <input type="email" name="customer[email]" id="CustomerEmail" class="input-full{% if form.errors contains 'email' %} error{% endif %}" autocorrect="off" autocapitalize="off" autofocus>
 
-      {%- if form.password_needed -%}
-        <div class="grid">
-          <div class="grid__item one-half">
-            <label for="CustomerPassword">{{ 'customer.login.password' | t }}</label>
-          </div>
-          <div class="grid__item one-half text-right">
-            <small class="label-info">
-              <a href="#recover" id="RecoverPassword">
-                {{ 'customer.login.forgot_password' | t }}
-              </a>
-            </small>
-          </div>
-        </div>
-        <input type="password" value="" name="customer[password]" id="CustomerPassword" class="input-full{% if form.errors contains 'password' %} error{% endif %}">
-      {%- endif -%}
 
-      <p>
-        <button type="submit" class="btn btn--full">
-          {{ 'customer.login.sign_in' | t }}
+
+
+
+
+
+    <section class="modal__content" data-gtm-vis-recent-on-screen-1467544_62="6526561" data-gtm-vis-first-on-screen-1467544_62="6526561" data-gtm-vis-total-visible-time-1467544_62="100" data-gtm-vis-has-fired-1467544_62="1"><button type="button" aria-label="Close" class="btn-close"></button> <h3>Login to your account</h3> <form class="form"><div class="form__field"><input type="email" placeholder="Email" aria-label="Your account email" aria-invalid="false" required="required"> <!----></div> <div class="form__field"><input type="password" placeholder="Password" aria-label="Your account password" aria-invalid="false" required="required"> <!----></div> <div class="generic__continue"><div><button type="button" class="login-modal__forgot-password">
+        Forgotten Password?
+        </button> <!----></div> <button type="submit" class="btn-primary btn--pre-loading">Login</button></div></form> <button class="btn-secondary modal__prompt">
+            Don't have an account? Create One!
         </button>
-      </p>
-      <p>{{ 'layout.customer.create_account' | t | customer_register_link }}</p>
+      </section>
 
-    {%- endform -%}
-  </div>
 
-  <div id="RecoverPasswordForm" class="hide">
-    <div class="form-vertical">
-      <h2>{{ 'customer.recover_password.title' | t }}</h2>
-      <p>{{ 'customer.recover_password.subtext' | t }}</p>
 
-      {%- form 'recover_customer_password' -%}
+        <div class="contact-modal login-modal">
+          <div class="contact-modal-wrap">    
+            <div class="contact-modal__inner">
+              <button type="button" aria-label="Close" class="btn-close"></button>    
+              <div class="footer__contact">  
+                <div class="footer__subscribe rte rte--nomargin">
+                  <h3>Login to your account</h3>
+                </div>         
+                {%- form 'customer_login' -%}
+                  {{ form.errors | default_errors }}             
+                  <input type="email" placeholder="Email" name="customer[email]" id="CustomerEmail" class="input-full{% if form.errors contains 'email' %} error{% endif %}" autocorrect="off" autocapitalize="off" autofocus>
+                  {%- if form.password_needed -%}
+                    <div class="grid">    
+                    </div>
+                    <input type="password" placeholder="Password" value="" name="customer[password]" id="CustomerPassword" class="input-full{% if form.errors contains 'password' %} error{% endif %}">
+                  {%- endif -%}
+                  <div class="login-btn-wrap">
+                    <button type="submit" class="btn btn--full">
+                      {{ 'customer.login.sign_in' | t }}
+                    </button>
 
-        {{ form.errors | default_errors }}
+                    <div class="forgot-account">
+                      <small class="label-info">
+                        <a href="#recover" id="RecoverPassword">
+                          {{ 'customer.login.forgot_password' | t }}
+                        </a>
+                      </small>
+                    </div>
+                  </div>
+                  <div class="btn-secondary modal__prompt js-register-btn">                  
+                    Don't have an account? Create One!                  
+                  </div>        
+                {%- endform -%}
+              </div>
+            </div>
+        </div>
+      </div>
 
-        {%- if form.posted_successfully? -%}
-          <span class="hide reset-password-success"></span>
-        {%- endif -%}
+      <div class="contact-modal register-modal">
+        <div class="contact-modal-wrap">    
+          <div class="contact-modal__inner">
+            <button type="button" aria-label="Close" class="btn-close"></button>    
+            <div class="footer__contact">  
+              <div class="footer__subscribe rte rte--nomargin">
+                <h3>Register a new account</h3>
+              </div>   
+              
+              
+              <div class="form-vertical">
+                {%- form 'create_customer' -%}
+            
+                  {{ form.errors | default_errors }}
+            
+                  
+                  <input type="text" placeholder="First name" name="customer[first_name]" id="FirstName" class="input-full"{% if form.first_name %} value="{{ form.first_name }}"{% endif %} autocapitalize="words" autofocus>
+            
+                  
+                  <input type="text" placeholder="Surnme" name="customer[last_name]" id="LastName" class="input-full"{% if form.last_name %} value="{{ form.last_name }}"{% endif %} autocapitalize="words">
+            
+                  
+                  <input type="email" placeholder="Email" name="customer[email]" id="Email" class="input-full{% if form.errors contains 'email' %} error{% endif %}"{% if form.email %} value="{{ form.email }}"{% endif %} autocorrect="off" autocapitalize="off">
+            
+                  
+                  <input type="password" placeholder="Password" name="customer[password]" id="CreatePassword" class="input-full{% if form.errors contains 'password' %} error{% endif %}">
+            
+                  <p>
+                    <label for="register-submit" class="hidden-label">{{ 'customer.register.submit' | t }}</label>
+                    <input type="submit" id="register-submit" value="{{ 'customer.register.submit' | t }}" class="btn btn--full">
+                  </p>
+            
+                {%- endform -%}
 
-        <label for="RecoverEmail">{{ 'customer.recover_password.email' | t }}</label>
-        <input type="email" value="" name="email" id="RecoverEmail" class="input-full" autocorrect="off" autocapitalize="off">
+                <button class="btn-secondary modal__prompt js-login-btn">                  
+                    Already have an account? Login now!                       
+                  </button>      
+              </div>
 
-        <p>
-          <button type="submit" class="btn">
-            {{ 'customer.recover_password.submit' | t }}
-          </button>
-        </p>
-        <button type="button" id="HideRecoverPasswordLink">{{ 'customer.recover_password.cancel' | t }}</button>
-      {%- endform -%}
+
+            </div>
+          </div>
+      </div>
     </div>
+  
+      <script>
+        //open modal
+        const contactFormSh = document.querySelector('.login-modal')
+        const closeButtonContact = document.querySelector('.login-modal .btn-close')
+        const contactButtons = document.querySelectorAll('.js-login-btn')
 
-  </div>
+        const contactFormReg = document.querySelector('.register-modal')
+        const closeButtonContactReg = document.querySelector('.register-modal .btn-close')
+        const contactButtonsReg = document.querySelectorAll('.js-register-btn')
+  
+        contactButtons.forEach((button) => {
+          button.addEventListener('click', () => {
+            contactFormSh.classList.add('active')
+            contactFormReg.classList.remove('active')
+          })
+        })
+  
+        closeButtonContact.addEventListener('click', () => {
+          contactFormSh.classList.remove('active')
+        })
 
-  {%- if shop.checkout.guest_login -%}
-    <hr class="hr--clear">
 
-    <h1>{{ 'customer.login.guest_title' | t }}</h1>
-    <hr class="hr--small">
 
-    {%- form 'guest_login' -%}
-      <button type="submit" class="btn">
-        {{ 'customer.login.guest_continue' | t }}
-      </button>
-    {%- endform -%}
-  {%- endif -%}
-</div>
+
+  
+        contactButtonsReg.forEach((button) => {
+          button.addEventListener('click', () => {
+            contactFormReg.classList.add('active')
+            contactFormSh.classList.remove('active')
+          })
+        })
+  
+        closeButtonContactReg.addEventListener('click', () => {
+          contactFormReg.classList.remove('active')
+        })
+
+
+
+
+      </script>
+
+
+
+
+
+

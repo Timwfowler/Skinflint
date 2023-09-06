@@ -6178,6 +6178,117 @@ a:hover{
 
 /*=====  End of Notice banner  ======*/
 
+.template-customers-register, .template-customers-login{
+
+
+  .user-heading {
+    max-width: 1023px;
+    width: 100%;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include breakpoint(sm){
+      width: calc(100% - 60px);
+    }
+  }
+
+  .user-heading__title--border{
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 80px;
+  }
+
+  .register{
+    max-width: 1023px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+  }
+
+  .form__invalid-warning{
+    display: block;
+    width: 100%;
+    padding: 40px 20px;
+    margin-bottom: 80px;
+    text-align: center;
+    border: 3px solid #2d2926;
+  }
+
+  .form__invalid-warning>h3{
+    font-size: 1.9rem;
+    line-height: 1.4;
+    margin-bottom: 0;
+    font-family: AvertaStd-Bold,sans-serif;
+    display: flex;
+    align-items: baseline;
+    justify-content: center; 
+    margin-top: 0;
+    flex-wrap: wrap;
+  }
+
+  .form__invalid-warning__login{
+    display: inline;
+  }
+
+  .form__invalid-warning__login>button, .form__invalid-warning__register>button{
+    padding-bottom: 0;
+    display: inline;
+    font-size: inherit;
+    font-family: inherit;
+    border-bottom: 1px solid #ffbf50;
+  }
+}
+
+
+.login-modal, .register-modal{
+
+  .contact-modal{
+
+    &__inner{
+
+      @include breakpoint(md){
+        width: 700px;
+      }
+    }
+  }
+
+  .footer__contact{
+    width: 100%;
+  }
+
+  input:not([type="submit"]){
+    background-color: #f5f5f5;
+    padding: 14.28571429px;
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .btn-secondary{
+    border: 2px solid #e1e1e1;
+    padding: 20px 30px;
+    font-family: AvertaStd-Bold,sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 15px;
+    line-height: 1.7;
+    letter-spacing: inherit;
+    color: inherit;
+    text-align: center;
+
+    a{
+      font-family: AvertaStd-Bold,sans-serif;
+      font-size: 15px;
+    }
+  }
+
+  .forgot-account{
+    margin-top: 10px;
+    margin-bottom: 49px;
+  }
+}
 
 
 

@@ -4777,5 +4777,94 @@ a:hover {
 }
 
 /*=====  End of Notice banner  ======*/
+.template-customers-register .user-heading, .template-customers-login .user-heading {
+  max-width: 1023px;
+  width: 100%;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 600px) {
+  .template-customers-register .user-heading, .template-customers-login .user-heading {
+    width: calc(100% - 60px);
+  }
+}
+.template-customers-register .user-heading__title--border, .template-customers-login .user-heading__title--border {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 80px;
+}
+.template-customers-register .register, .template-customers-login .register {
+  max-width: 1023px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+.template-customers-register .form__invalid-warning, .template-customers-login .form__invalid-warning {
+  display: block;
+  width: 100%;
+  padding: 40px 20px;
+  margin-bottom: 80px;
+  text-align: center;
+  border: 3px solid #2d2926;
+}
+.template-customers-register .form__invalid-warning > h3, .template-customers-login .form__invalid-warning > h3 {
+  font-size: 1.9rem;
+  line-height: 1.4;
+  margin-bottom: 0;
+  font-family: AvertaStd-Bold, sans-serif;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-top: 0;
+  flex-wrap: wrap;
+}
+.template-customers-register .form__invalid-warning__login, .template-customers-login .form__invalid-warning__login {
+  display: inline;
+}
+.template-customers-register .form__invalid-warning__login > button, .template-customers-register .form__invalid-warning__register > button, .template-customers-login .form__invalid-warning__login > button, .template-customers-login .form__invalid-warning__register > button {
+  padding-bottom: 0;
+  display: inline;
+  font-size: inherit;
+  font-family: inherit;
+  border-bottom: 1px solid #ffbf50;
+}
+
+@media (min-width: 1024px) {
+  .login-modal .contact-modal__inner, .register-modal .contact-modal__inner {
+    width: 700px;
+  }
+}
+.login-modal .footer__contact, .register-modal .footer__contact {
+  width: 100%;
+}
+.login-modal input:not([type=submit]), .register-modal input:not([type=submit]) {
+  background-color: #f5f5f5;
+  padding: 14.28571429px;
+  border: none;
+  outline: none;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.login-modal .btn-secondary, .register-modal .btn-secondary {
+  border: 2px solid #e1e1e1;
+  padding: 20px 30px;
+  font-family: AvertaStd-Bold, sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 15px;
+  line-height: 1.7;
+  letter-spacing: inherit;
+  color: inherit;
+  text-align: center;
+}
+.login-modal .btn-secondary a, .register-modal .btn-secondary a {
+  font-family: AvertaStd-Bold, sans-serif;
+  font-size: 15px;
+}
+.login-modal .forgot-account, .register-modal .forgot-account {
+  margin-top: 10px;
+  margin-bottom: 49px;
+}
 
 /*# sourceMappingURL=custom.css.map */

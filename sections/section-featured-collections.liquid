@@ -17,10 +17,40 @@
     -%}
 
       {%- for block in section.blocks -%}
+
+        {% if block.type == "collection" %}
         {%- liquid
         assign collection = collections[block.settings.collection]
         render 'collection-grid-item', collection: collection, block: block
       -%}
+
+      {% else %}
+
+
+
+
+
+        {% assign article = v %}
+
+      <div class="grid-item">
+    <a href="{{ block.settings.article.url }}" class="collection-item"><div class="collection-image-wrap collection-image--square  ">
+      <div class="collection-image collection-image--is-collection image-wrap">
+        
+      
+
+    {% if block.settings.article.image != blank %}
+        <img class="lazyloaded"
+        src="{{ block.settings.article.image | img_url: '1000x' }}"
+        alt="Industrial Lighting">
+    {% endif %}
+
+          </div></div>
+      <span class="collection-item__title">{{ block.settings.article.title }}</span>
+    </a>
+  </div>
+        
+        {% endif %}
+
       {%- endfor -%}
 
       {%- if isEmpty -%}
@@ -87,6 +117,24 @@
             "label": "t:sections.featured-collections.blocks.collection.settings.collection.label",
             "info": "t:sections.featured-collections.blocks.collection.settings.collection.info"
           }, {
+            "type": "text",
+            "id": "title",
+            "label": "t:sections.featured-collections.blocks.collection.settings.title.label",
+            "info": "t:sections.featured-collections.blocks.collection.settings.title.info"
+          }
+        ]
+      },
+      {
+        "type": "article",
+        "name": "article",
+        "settings": [
+          {
+            "id": "article",
+            "type": "article",
+            "label": "t:sections.featured-collections.blocks.collection.settings.collection.label",
+            "info": "t:sections.featured-collections.blocks.collection.settings.collection.info"
+          }, 
+          {
             "type": "text",
             "id": "title",
             "label": "t:sections.featured-collections.blocks.collection.settings.title.label",
