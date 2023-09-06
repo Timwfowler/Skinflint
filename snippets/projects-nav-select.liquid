@@ -1,0 +1,71 @@
+<div class="nav-categories">
+
+  <div class="nav-categories__header">
+    <h4>Categories</h4>
+          
+  </div>
+
+  <div class="nav-categories__select">
+    <ul>    
+
+      {% if page.title == "Projects Landing Page" or blog.handle contains "project" %}       
+        
+        <li class="active"><a href="/pages/projects-landing-page">All</a></li>                  
+        <li><a href="/blogs/projects-commercial">Commercial Projects</a></li>                    
+        <li><a href="/blogs/projects-residential">Residential Projects</a></li>                  
+        <li><a href="/blogs/projects-prop-hire">Prop Hire Projects</a></li>   
+        
+        {% else %}
+        
+          <li><a href="/pages/blog-landing-page">All</a></li>   
+                   
+          
+                       
+              <li class="active"><a href="/blogs/architecture">Architecture</a></li>    
+          
+                       
+              <li><a href="/blogs/b-corp">B Corp</a></li>    
+          
+                       
+              <li><a href="/blogs/in-the-press">In the Press</a></li>    
+          
+                       
+              <li><a href="/blogs/interiors">Interiors</a></li>    
+          
+                       
+              <li><a href="/blogs/lighting-advice">Lighting Advice</a></li>    
+          
+                       
+              <li><a href="/blogs/lighting-history">Lighting History</a></li>    
+          
+                       
+              <li><a href="/blogs/lights-organised-neatly">Lights Organised Neatly</a></li>    
+          
+                       
+              <li><a href="/blogs/news">News</a></li>    
+     
+          
+                       
+              <li><a href="/blogs/skinflint-meets">skinflint Meets</a></li>    
+          
+                       
+              <li><a href="/blogs/stuff-we-love">Stuff We Love</a></li>    
+          
+                       
+              <li><a href="/blogs/sustainability">Sustainability</a></li>    
+          
+        
+    {% endif %}        
+    </ul>
+  </div>
+
+
+</div>
+\
+
+<script>
+  document.querySelector('.nav-categories__header').addEventListener('click', () => {
+
+  document.querySelector('.nav-categories__select').classList.toggle('active')
+  })
+</script>

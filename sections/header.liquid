@@ -61,7 +61,7 @@
 </style>
 
 <div data-section-id="{{ section.id }}" data-section-type="header">
-  <div id="HeaderWrapper" class="header-wrapper{% if overlay_header %} header-wrapper--overlay is-light{% endif %}">
+  <div id="HeaderWrapper" class="header-wrapper{% if overlay_header %} header-wrapper--overlay is-light{% endif %} page--{{ page.handle }}">
     <header
       id="SiteHeader"
       class="site-header{% if settings.type_navigation_style == 'heading' %} site-header--heading-style{% endif %}"
@@ -110,6 +110,9 @@
                         </div>
                         <div class="scrolling-nav-actions__bread">
                           {% include 'breadcrumbs' %}
+                        </div>
+                        <div class="scrolling-nav-actions__projects">
+                          {% render 'projects-nav-select' %}
                         </div>
                       </div>
                     </div>            

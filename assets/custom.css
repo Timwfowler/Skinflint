@@ -4921,4 +4921,88 @@ a:hover {
   margin-top: 30px;
 }
 
+.scrolling-nav-actions__projects {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .page--projects-landing-page .shrink .scrolling-nav-actions__projects, .template-blog .shrink .scrolling-nav-actions__projects, .page--blog-landing-page .shrink .scrolling-nav-actions__projects {
+    width: 211px;
+    right: 165px;
+    margin-right: 0;
+    position: relative;
+    display: block;
+    top: 8px;
+    position: absolute;
+  }
+  .page--projects-landing-page .shrink .site-nav__wishlist, .page--projects-landing-page .shrink #HeaderCartTrigger, .template-blog .shrink .site-nav__wishlist, .template-blog .shrink #HeaderCartTrigger, .page--blog-landing-page .shrink .site-nav__wishlist, .page--blog-landing-page .shrink #HeaderCartTrigger {
+    display: none;
+  }
+  .page--projects-landing-page .shrink .scrolling-nav-actions__project, .template-blog .shrink .scrolling-nav-actions__project, .page--blog-landing-page .shrink .scrolling-nav-actions__project {
+    display: block;
+  }
+}
+
+.nav-categories__header {
+  text-align: right;
+}
+.nav-categories__header:hover {
+  cursor: pointer;
+}
+.nav-categories__header:hover h4 {
+  color: #979797;
+}
+.nav-categories__header h4 {
+  font-family: AvertaStd-Bold, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.7;
+  letter-spacing: inherit;
+  color: inherit;
+}
+.nav-categories__header h4:before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  border-top: 1px solid #2d2926;
+  border-right: 1px solid #2d2926;
+  width: 10px;
+  height: 10px;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  margin-right: 20px;
+  left: 3px;
+  top: -4px;
+}
+.nav-categories__select {
+  position: relative;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s;
+}
+.nav-categories__select.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.nav-categories__select ul {
+  list-style: none;
+  padding-inline-start: 0;
+  margin-inline-start: 0;
+}
+.nav-categories__select ul li {
+  margin: 0;
+}
+.nav-categories__select ul a {
+  display: block;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #eeeeee;
+  margin: 0;
+  color: #2d2926;
+  font-size: 15px;
+}
+.nav-categories__select ul a:hover {
+  cursor: pointer;
+  background-color: #eeeeee;
+}
+
 /*# sourceMappingURL=custom.css.map */
