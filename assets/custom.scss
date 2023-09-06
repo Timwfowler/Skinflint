@@ -6245,7 +6245,7 @@ a:hover{
 }
 
 .template-customers-addresses{
-  input:not([type="submit"]){
+  input:not([type="submit"], .newsletter__input){
     background-color: #f5f5f5;
     padding: 14.28571429px;
     border: none;
