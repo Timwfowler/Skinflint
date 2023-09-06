@@ -4833,7 +4833,7 @@ a:hover {
   border-bottom: 1px solid #ffbf50;
 }
 
-.template-customers-addresses input:not([type=submit], .newsletter__input), .template-customers-addresses select {
+.template-customers-addresses input:not([type=submit], .newsletter__input), .template-customers-addresses select, .template-customers-account input:not([type=submit], .newsletter__input), .template-customers-account select {
   background-color: #f5f5f5;
   padding: 14.28571429px;
   border: none;
@@ -4841,7 +4841,7 @@ a:hover {
   width: 100%;
   margin-bottom: 30px;
 }
-.template-customers-addresses .main-content {
+.template-customers-addresses .main-content, .template-customers-account .main-content {
   max-width: 1023px;
   width: 100%;
   padding: 0 20px;
