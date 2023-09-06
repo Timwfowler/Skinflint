@@ -4877,4 +4877,13 @@ a:hover {
   margin-bottom: 49px;
 }
 
+.breadcrumb {
+  margin: 0;
+  font-family: AvertaStd-Regular, sans-serif;
+  color: #979797;
+}
+.breadcrumb span, .breadcrumb a {
+  color: #979797;
+}
+
 /*# sourceMappingURL=custom.css.map */
