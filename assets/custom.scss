@@ -6244,6 +6244,17 @@ a:hover{
   }
 }
 
+.template-customers-addresses{
+  input:not([type="submit"]){
+    background-color: #f5f5f5;
+    padding: 14.28571429px;
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
 
 .login-modal, .register-modal{
   display: none;
@@ -6306,10 +6317,15 @@ a:hover{
   font-family: AvertaStd-Regular,sans-serif;
   color: #979797;
 
+  font-size: 1.5rem;
 
   span, a{
     color: #979797;
   }
+}
+
+.js-address-form{
+  margin-top: 30px;
 }
 
 
