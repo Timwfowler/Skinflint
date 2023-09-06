@@ -4777,6 +4777,9 @@ a:hover {
 }
 
 /*=====  End of Notice banner  ======*/
+.template-customers-register .main-content, .template-customers-login .main-content {
+  min-height: 400px;
+}
 .template-customers-register .user-heading, .template-customers-login .user-heading {
   max-width: 1023px;
   width: 100%;
@@ -4830,6 +4833,9 @@ a:hover {
   border-bottom: 1px solid #ffbf50;
 }
 
+.login-modal, .register-modal {
+  display: none;
+}
 @media (min-width: 1024px) {
   .login-modal .contact-modal__inner, .register-modal .contact-modal__inner {
     width: 700px;
@@ -4857,6 +4863,10 @@ a:hover {
   letter-spacing: inherit;
   color: inherit;
   text-align: center;
+  width: 100%;
+}
+.login-modal .btn-secondary:hover, .register-modal .btn-secondary:hover {
+  cursor: pointer;
 }
 .login-modal .btn-secondary a, .register-modal .btn-secondary a {
   font-family: AvertaStd-Bold, sans-serif;

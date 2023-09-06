@@ -6180,6 +6180,10 @@ a:hover{
 
 .template-customers-register, .template-customers-login{
 
+  .main-content{
+    min-height: 400px;
+  }
+
 
   .user-heading {
     max-width: 1023px;
@@ -6242,6 +6246,7 @@ a:hover{
 
 
 .login-modal, .register-modal{
+  display: none;
 
   .contact-modal{
 
@@ -6277,6 +6282,11 @@ a:hover{
     letter-spacing: inherit;
     color: inherit;
     text-align: center;
+    width: 100%;
+
+    &:hover{
+      cursor: pointer;
+    }
 
     a{
       font-family: AvertaStd-Bold,sans-serif;
