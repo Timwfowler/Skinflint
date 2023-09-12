@@ -128,6 +128,18 @@
           "type": "meta_five",
           "settings": {
           }
+        },
+        "b360ee08-228a-4164-aac2-a992803658b8": {
+          "type": "filter",
+          "settings": {
+            "heading": "1920s",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/700x700_cv_11-0868-elegant-glass-bakelite-teardrop-pendants-web-4.webp",
+            "title": "1920",
+            "copy": "",
+            "link": "",
+            "link_text": ""
+          }
         }
       },
       "block_order": [
@@ -139,7 +151,8 @@
         "241364da-ca26-48c0-8fdd-12c48bb329af",
         "d1870981-b76b-4455-a845-bd7526a220f9",
         "471332c3-15a0-4968-9030-f9f0db59f550",
-        "7554683d-774c-4a01-a4a3-80f7bb734309"
+        "7554683d-774c-4a01-a4a3-80f7bb734309",
+        "b360ee08-228a-4164-aac2-a992803658b8"
       ],
       "settings": {
         "flush": true,
