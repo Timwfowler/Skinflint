@@ -78,6 +78,16 @@
             "link": "shopify:\/\/pages\/full-circle",
             "link_text": "Read more"
           }
+        },
+        "07bc141e-21e2-412b-b986-7ab0fbc1ab02": {
+          "type": "icon",
+          "settings": {
+            "logo_image": "shopify:\/\/shop_images\/bcorplogoblack4_87ef4e7b-532a-4c77-9cee-75871aa1557f.webp",
+            "title": "B-Corp",
+            "paragraph": "Everything you need to know about B Corps - explained.",
+            "link": "shopify:\/\/pages\/b-corp",
+            "link_text": "Read more"
+          }
         }
       },
       "block_order": [
@@ -87,7 +97,8 @@
         "3ee67819-67c6-479a-8b8a-c4e70265ebde",
         "1fb0863b-107e-41e5-b435-ec6611be948f",
         "d82ecb3d-2783-469a-bead-1505c0288043",
-        "55325d6c-b3e3-4647-b9bb-898b58b3d969"
+        "55325d6c-b3e3-4647-b9bb-898b58b3d969",
+        "07bc141e-21e2-412b-b986-7ab0fbc1ab02"
       ],
       "settings": {
         "flush": false,
