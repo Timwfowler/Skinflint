@@ -48,13 +48,24 @@
             "link": "shopify:\/\/pages\/applications",
             "link_text": "Read more"
           }
+        },
+        "1fb0863b-107e-41e5-b435-ec6611be948f": {
+          "type": "icon",
+          "settings": {
+            "logo_image": "shopify:\/\/shop_images\/certificationsfaq.webp",
+            "title": "Certifications",
+            "paragraph": "Our UK Lighting Industry Association (LIA), British Standards and UL certifications.",
+            "link": "shopify:\/\/pages\/certifications-1",
+            "link_text": "Read more"
+          }
         }
       },
       "block_order": [
         "42880c51-a01c-4568-ac91-eff863e27172",
         "940921eb-704d-47ab-83e2-a1de8389afb6",
         "fd8ebc40-55f6-49b3-9482-b66c3add6e94",
-        "3ee67819-67c6-479a-8b8a-c4e70265ebde"
+        "3ee67819-67c6-479a-8b8a-c4e70265ebde",
+        "1fb0863b-107e-41e5-b435-ec6611be948f"
       ],
       "settings": {
         "flush": false,
