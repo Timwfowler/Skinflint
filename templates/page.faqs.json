@@ -58,6 +58,16 @@
             "link": "shopify:\/\/pages\/certifications-1",
             "link_text": "Read more"
           }
+        },
+        "d82ecb3d-2783-469a-bead-1505c0288043": {
+          "type": "icon",
+          "settings": {
+            "logo_image": "shopify:\/\/shop_images\/sustainability_118d74c6-a0c0-4c8c-bfe7-bfe4ead34343.webp",
+            "title": "Sustainability",
+            "paragraph": "Our carbon-neutral business policy and our commitment to looking after the planet.",
+            "link": "shopify:\/\/pages\/sustainability",
+            "link_text": "Read more"
+          }
         }
       },
       "block_order": [
@@ -65,7 +75,8 @@
         "940921eb-704d-47ab-83e2-a1de8389afb6",
         "fd8ebc40-55f6-49b3-9482-b66c3add6e94",
         "3ee67819-67c6-479a-8b8a-c4e70265ebde",
-        "1fb0863b-107e-41e5-b435-ec6611be948f"
+        "1fb0863b-107e-41e5-b435-ec6611be948f",
+        "d82ecb3d-2783-469a-bead-1505c0288043"
       ],
       "settings": {
         "flush": false,
