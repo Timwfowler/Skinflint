@@ -63,40 +63,16 @@
     "1ef34e4a-a4e6-4be3-931f-5a87ad67a705": {
       "type": "product-metafield-details",
       "blocks": {
-        "c7f26244-db24-4241-a043-ebe2cdef2d0e": {
+        "0c7a4ad1-214d-4bfa-acb4-c3fd43649a7c": {
           "type": "filter",
           "settings": {
             "heading": "Czechoslovakia (former)",
             "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/700x700_cv_czechoslovakia-origin-country-map.webp",
+            "image": "shopify:\/\/shop_images\/700x700_cv_czechoslovakia-origin-country-map_1.webp",
             "title": "Origin: Czechoslovakia (former)",
             "copy": "<p>Much of the lighting we salvage and restore from the former Eastern Bloc was produced in the manufacturing powerhouses of former Czechoslovakia. Under Communist rule the same design was often manufactured in three scaled versions to cater for varying bulb wattage. The country is also famed for its beautiful glassware, with both wall and ceiling opaline glass lights often being used in public and residential settings, such as housing blocks and schools.<\/p>",
-            "link": "shopify:\/\/collections\/czechoslovakia-former",
+            "link": "",
             "link_text": "View all lights from Czechoslovakia (former)"
-          }
-        },
-        "824e2fed-a1d2-4916-a757-a2d35a16708a": {
-          "type": "filter",
-          "settings": {
-            "heading": "Benzamin",
-            "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/bens.png",
-            "title": "Manufacturer: Benjamin Electric",
-            "copy": "<p>The Benjamin Electric Manufacturing Company was founded by Reuben Berkley Benjamin in Chicago, Illinois in 1898. With the popularity of its lighting, the company expanded rapidly throughout the USA and Canada and then finally abroad, to England - more specifically London - which is where our shades were manufactured. Benjamin was a prolific inventor, mostly in the field of electric lighting. One of his most influential designs was the R.L.M. enamel shade - an influence so profound that this design is what we now recognise as the classic industrial enamel.<\/p>",
-            "link": "",
-            "link_text": "View all Benjamin Electric Lights"
-          }
-        },
-        "6d36c4cc-7ce7-400d-9789-708f4eeded5a": {
-          "type": "filter",
-          "settings": {
-            "heading": "UK",
-            "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/700x700_cv_united-kingdom-origin-country-map.webp",
-            "title": "Origin: UK",
-            "copy": "<p>Lighting design in the UK benefitted from a free market. Different companies were working at the same time, designing and producing similar products for the same market. Often with only slight differences in their style, they constantly upgraded and improved their original designs. The products we salvage come from the old industrial heartland of England. This area of the UK was once the boiler room of the British economy - from the potteries of Stoke, through the engineering works of Birmingham, to the wool, textile and cotton mills of Oldham and Manchester.<\/p>",
-            "link": "",
-            "link_text": ""
           }
         },
         "052e0a53-1776-46fe-a6fc-95e9edc89353": {
@@ -128,31 +104,16 @@
           "type": "meta_five",
           "settings": {
           }
-        },
-        "b360ee08-228a-4164-aac2-a992803658b8": {
-          "type": "filter",
-          "settings": {
-            "heading": "1920s",
-            "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/700x700_cv_11-0868-elegant-glass-bakelite-teardrop-pendants-web-4.webp",
-            "title": "1920",
-            "copy": "",
-            "link": "",
-            "link_text": ""
-          }
         }
       },
       "block_order": [
-        "c7f26244-db24-4241-a043-ebe2cdef2d0e",
-        "824e2fed-a1d2-4916-a757-a2d35a16708a",
-        "6d36c4cc-7ce7-400d-9789-708f4eeded5a",
+        "0c7a4ad1-214d-4bfa-acb4-c3fd43649a7c",
         "052e0a53-1776-46fe-a6fc-95e9edc89353",
         "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
         "241364da-ca26-48c0-8fdd-12c48bb329af",
         "d1870981-b76b-4455-a845-bd7526a220f9",
         "471332c3-15a0-4968-9030-f9f0db59f550",
-        "7554683d-774c-4a01-a4a3-80f7bb734309",
-        "b360ee08-228a-4164-aac2-a992803658b8"
+        "7554683d-774c-4a01-a4a3-80f7bb734309"
       ],
       "settings": {
         "flush": true,
