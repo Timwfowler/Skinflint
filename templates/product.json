@@ -195,6 +195,18 @@
             "link_text": "View all AEI Lights"
           }
         },
+        "579486ba-f638-4b06-b48e-7046da30bc7d": {
+          "type": "filter",
+          "settings": {
+            "heading": "Benjamin Electric",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/2_marque-benjamin_72ea0a27-cb51-4668-9fea-9c89b9368c9b.webp",
+            "title": "Manufacturer: Benjamin Electric",
+            "copy": "<p>The Benjamin Electric Manufacturing Company was founded by Reuben Berkley Benjamin in Chicago, Illinois in 1898. With the popularity of its lighting, the company expanded rapidly throughout the USA and Canada and then finally abroad, to England - more specifically London - which is where our shades were manufactured. Benjamin was a prolific inventor, mostly in the field of electric lighting. One of his most influential designs was the R.L.M. enamel shade - an influence so profound that this design is what we now recognise as the classic industrial enamel.<\/p>",
+            "link": "",
+            "link_text": "View all Benjamin Electric Lights"
+          }
+        },
         "e149d46f-ce1a-4108-b49e-fa1c018b3bf0": {
           "type": "filter",
           "settings": {
@@ -205,6 +217,18 @@
             "copy": "<p>Founded in Sheffield in 1919, Baldwin and Francis started out as Baldwin Electrical, before merging with Wilfred Francis & Co Ltd in the 1940s and forming the firm we know today as Baldwin & Francis. Throughout the 1940s, the team focused on manufacturing electricals for the mining industry, including switchgears and gate end boxes (GEBs), before shifting their focus to lighting. A subsequent merger with Rolls Royce in 1989 enabled the firm to cement themselves as an industry leader, with expansion now seen globally across the USA, Canada and China.<\/p>",
             "link": "",
             "link_text": "View all Baldwin & Francis Lights"
+          }
+        },
+        "5d14cae6-0f53-458b-8856-57da8894bfe4": {
+          "type": "filter",
+          "settings": {
+            "heading": "BTH",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/bthv2.webp",
+            "title": "Manufacturer: BTH",
+            "copy": "<p>British Thomson-Houston (BTH) was founded in 1896 in Rugby, Warwickshire. In 1911, BTH obtained the GE patents for tungsten filaments and the Mazda trademark. From the 1930s the company became well known for the production of street lighting columns and lanterns - some of our favourite and rarest finds are the urban prismatic lanterns they produced in the 1950s. The company was abolished during the mass mergers of the 1960s and consolidated under the AEI banner.<\/p>",
+            "link": "",
+            "link_text": "View all BTH Lights"
           }
         },
         "052e0a53-1776-46fe-a6fc-95e9edc89353": {
@@ -236,18 +260,6 @@
           "type": "meta_five",
           "settings": {
           }
-        },
-        "579486ba-f638-4b06-b48e-7046da30bc7d": {
-          "type": "filter",
-          "settings": {
-            "heading": "Benjamin Electric",
-            "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/2_marque-benjamin_72ea0a27-cb51-4668-9fea-9c89b9368c9b.webp",
-            "title": "Manufacturer: Benjamin Electric",
-            "copy": "<p>The Benjamin Electric Manufacturing Company was founded by Reuben Berkley Benjamin in Chicago, Illinois in 1898. With the popularity of its lighting, the company expanded rapidly throughout the USA and Canada and then finally abroad, to England - more specifically London - which is where our shades were manufactured. Benjamin was a prolific inventor, mostly in the field of electric lighting. One of his most influential designs was the R.L.M. enamel shade - an influence so profound that this design is what we now recognise as the classic industrial enamel.<\/p>",
-            "link": "",
-            "link_text": "View all Benjamin Electric Lights"
-          }
         }
       },
       "block_order": [
@@ -262,14 +274,15 @@
         "b8f4f725-e525-49db-9bcf-65a9f0395954",
         "7f7dbebb-6100-4fa9-b1df-aa29385d816f",
         "670b8665-2ca2-40e4-95fd-ac85cb9f45ca",
+        "579486ba-f638-4b06-b48e-7046da30bc7d",
         "e149d46f-ce1a-4108-b49e-fa1c018b3bf0",
+        "5d14cae6-0f53-458b-8856-57da8894bfe4",
         "052e0a53-1776-46fe-a6fc-95e9edc89353",
         "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
         "241364da-ca26-48c0-8fdd-12c48bb329af",
         "d1870981-b76b-4455-a845-bd7526a220f9",
         "471332c3-15a0-4968-9030-f9f0db59f550",
-        "7554683d-774c-4a01-a4a3-80f7bb734309",
-        "579486ba-f638-4b06-b48e-7046da30bc7d"
+        "7554683d-774c-4a01-a4a3-80f7bb734309"
       ],
       "settings": {
         "flush": true,
