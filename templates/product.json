@@ -104,6 +104,18 @@
           "type": "meta_five",
           "settings": {
           }
+        },
+        "cfbf9ed8-7f51-4972-bb2b-309151b65af4": {
+          "type": "filter",
+          "settings": {
+            "heading": "France",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/700x700_cv_france-origin-country-map.webp",
+            "title": "Origin: France",
+            "copy": "<p>Vintage French lighting is often defined by the industrial lights of Jielde and Mapelec, but lighting companies throughout France have historically designed and manufactured lights for all applications. This variety is reflected in the styles of lights we salvage and restore - from the decorative Art Nouveau and Art Deco to the classic harder edged, clean-lined industrial aesthetic.<\/p>",
+            "link": "",
+            "link_text": "View all lights from France"
+          }
         }
       },
       "block_order": [
@@ -113,7 +125,8 @@
         "241364da-ca26-48c0-8fdd-12c48bb329af",
         "d1870981-b76b-4455-a845-bd7526a220f9",
         "471332c3-15a0-4968-9030-f9f0db59f550",
-        "7554683d-774c-4a01-a4a3-80f7bb734309"
+        "7554683d-774c-4a01-a4a3-80f7bb734309",
+        "cfbf9ed8-7f51-4972-bb2b-309151b65af4"
       ],
       "settings": {
         "flush": true,
