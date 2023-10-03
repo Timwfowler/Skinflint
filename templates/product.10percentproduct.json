@@ -63,6 +63,11 @@
     "1ef34e4a-a4e6-4be3-931f-5a87ad67a705": {
       "type": "product-metafield-details",
       "blocks": {
+        "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08": {
+          "type": "pdf",
+          "settings": {
+          }
+        },
         "0c7a4ad1-214d-4bfa-acb4-c3fd43649a7c": {
           "type": "filter",
           "settings": {
@@ -236,11 +241,6 @@
           "settings": {
           }
         },
-        "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08": {
-          "type": "pdf",
-          "settings": {
-          }
-        },
         "241364da-ca26-48c0-8fdd-12c48bb329af": {
           "type": "meta_two",
           "settings": {
@@ -263,6 +263,7 @@
         }
       },
       "block_order": [
+        "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
         "0c7a4ad1-214d-4bfa-acb4-c3fd43649a7c",
         "cfbf9ed8-7f51-4972-bb2b-309151b65af4",
         "558bc971-aa7d-4e2d-ab1b-49a64b44085d",
@@ -278,7 +279,6 @@
         "e149d46f-ce1a-4108-b49e-fa1c018b3bf0",
         "5d14cae6-0f53-458b-8856-57da8894bfe4",
         "052e0a53-1776-46fe-a6fc-95e9edc89353",
-        "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
         "241364da-ca26-48c0-8fdd-12c48bb329af",
         "d1870981-b76b-4455-a845-bd7526a220f9",
         "471332c3-15a0-4968-9030-f9f0db59f550",
