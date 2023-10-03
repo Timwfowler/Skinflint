@@ -236,6 +236,18 @@
           "type": "meta_five",
           "settings": {
           }
+        },
+        "579486ba-f638-4b06-b48e-7046da30bc7d": {
+          "type": "filter",
+          "settings": {
+            "heading": "Benjamin Electric",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/2_marque-benjamin_72ea0a27-cb51-4668-9fea-9c89b9368c9b.webp",
+            "title": "Manufacturer: Benjamin Electric",
+            "copy": "<p>The Benjamin Electric Manufacturing Company was founded by Reuben Berkley Benjamin in Chicago, Illinois in 1898. With the popularity of its lighting, the company expanded rapidly throughout the USA and Canada and then finally abroad, to England - more specifically London - which is where our shades were manufactured. Benjamin was a prolific inventor, mostly in the field of electric lighting. One of his most influential designs was the R.L.M. enamel shade - an influence so profound that this design is what we now recognise as the classic industrial enamel.<\/p>",
+            "link": "",
+            "link_text": "View all Benjamin Electric Lights"
+          }
         }
       },
       "block_order": [
@@ -256,7 +268,8 @@
         "241364da-ca26-48c0-8fdd-12c48bb329af",
         "d1870981-b76b-4455-a845-bd7526a220f9",
         "471332c3-15a0-4968-9030-f9f0db59f550",
-        "7554683d-774c-4a01-a4a3-80f7bb734309"
+        "7554683d-774c-4a01-a4a3-80f7bb734309",
+        "579486ba-f638-4b06-b48e-7046da30bc7d"
       ],
       "settings": {
         "flush": true,
