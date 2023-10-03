@@ -212,6 +212,18 @@
           "type": "meta_five",
           "settings": {
           }
+        },
+        "b8f4f725-e525-49db-9bcf-65a9f0395954": {
+          "type": "filter",
+          "settings": {
+            "heading": "U.S.S.R (former)",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/700x700_cv_ussr-origin-country-map_e441bbdf-89cf-4de2-951f-e4d91d820226.webp",
+            "title": "Origin: U.S.S.R (former)",
+            "copy": "<p>Many of the products we salvage and restore from the former Eastern Bloc were produced in the former U.S.S.R. and are defined by a clean industrial aesthetic. As with other Communist countries, the same design was often manufactured in three scaled versions to cater for varying bulb wattage. Lights from this region are often defined by their distinctive light green, two-tone colour ways.<\/p>",
+            "link": "",
+            "link_text": "View all lights from U.S.S.R (former)"
+          }
         }
       },
       "block_order": [
@@ -230,7 +242,8 @@
         "241364da-ca26-48c0-8fdd-12c48bb329af",
         "d1870981-b76b-4455-a845-bd7526a220f9",
         "471332c3-15a0-4968-9030-f9f0db59f550",
-        "7554683d-774c-4a01-a4a3-80f7bb734309"
+        "7554683d-774c-4a01-a4a3-80f7bb734309",
+        "b8f4f725-e525-49db-9bcf-65a9f0395954"
       ],
       "settings": {
         "flush": true,
