@@ -111,6 +111,18 @@
             "link_text": "View all AEI Lights"
           }
         },
+        "e149d46f-ce1a-4108-b49e-fa1c018b3bf0": {
+          "type": "filter",
+          "settings": {
+            "heading": "Baldwin & Francis",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/marques-baldwin-and-francis.webp",
+            "title": "Manufacturer: Baldwin & Francis",
+            "copy": "<p>Founded in Sheffield in 1919, Baldwin and Francis started out as Baldwin Electrical, before merging with Wilfred Francis & Co Ltd in the 1940s and forming the firm we know today as Baldwin & Francis. Throughout the 1940s, the team focused on manufacturing electricals for the mining industry, including switchgears and gate end boxes (GEBs), before shifting their focus to lighting. A subsequent merger with Rolls Royce in 1989 enabled the firm to cement themselves as an industry leader, with expansion now seen globally across the USA, Canada and China.<\/p>",
+            "link": "",
+            "link_text": "View all Baldwin & Francis Lights"
+          }
+        },
         "052e0a53-1776-46fe-a6fc-95e9edc89353": {
           "type": "meta_one",
           "settings": {
@@ -141,16 +153,16 @@
           "settings": {
           }
         },
-        "e149d46f-ce1a-4108-b49e-fa1c018b3bf0": {
+        "a57098d3-5fef-49e4-83cd-4e4e27e0695c": {
           "type": "filter",
           "settings": {
-            "heading": "Baldwin & Francis",
+            "heading": "Holland",
             "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/marques-baldwin-and-francis.webp",
-            "title": "Manufacturer: Baldwin & Francis",
-            "copy": "<p>Founded in Sheffield in 1919, Baldwin and Francis started out as Baldwin Electrical, before merging with Wilfred Francis & Co Ltd in the 1940s and forming the firm we know today as Baldwin & Francis. Throughout the 1940s, the team focused on manufacturing electricals for the mining industry, including switchgears and gate end boxes (GEBs), before shifting their focus to lighting. A subsequent merger with Rolls Royce in 1989 enabled the firm to cement themselves as an industry leader, with expansion now seen globally across the USA, Canada and China.<\/p>",
+            "image": "shopify:\/\/shop_images\/700x700_cv_holland-origin-country-map.webp",
+            "title": "Origin: Holland",
+            "copy": "<p>Holland’s lighting landscape has been illuminated by the Dutch powerhouse Philips since its creation in the the late 1800s. Philips and other lighting companies throughout Holland design and manufacture lights for all applications, and this variety is reflected in the styles of lights we salvage.<\/p>",
             "link": "",
-            "link_text": "View all Baldwin & Francis Lights"
+            "link_text": "View all lights from Holland"
           }
         }
       },
@@ -159,13 +171,14 @@
         "cfbf9ed8-7f51-4972-bb2b-309151b65af4",
         "558bc971-aa7d-4e2d-ab1b-49a64b44085d",
         "670b8665-2ca2-40e4-95fd-ac85cb9f45ca",
+        "e149d46f-ce1a-4108-b49e-fa1c018b3bf0",
         "052e0a53-1776-46fe-a6fc-95e9edc89353",
         "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
         "241364da-ca26-48c0-8fdd-12c48bb329af",
         "d1870981-b76b-4455-a845-bd7526a220f9",
         "471332c3-15a0-4968-9030-f9f0db59f550",
         "7554683d-774c-4a01-a4a3-80f7bb734309",
-        "e149d46f-ce1a-4108-b49e-fa1c018b3bf0"
+        "a57098d3-5fef-49e4-83cd-4e4e27e0695c"
       ],
       "settings": {
         "flush": true,
