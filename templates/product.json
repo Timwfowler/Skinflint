@@ -123,6 +123,42 @@
             "link_text": "View all lights from Hungary"
           }
         },
+        "eb6e1178-8def-4826-a76f-78529c492e9c": {
+          "type": "filter",
+          "settings": {
+            "heading": "Japan",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/700x700_cv_japan-origin-country-map.webp",
+            "title": "Origin: Japan",
+            "copy": "<p>Due to the location we rarely have the opportunity to reclaim and restore light fixtures from Japan. The majority of the products we do reclaim and restore are salvaged from Japanese cargo ships which, after serving long lives at sea, are decommissioned and dismantled at the world’s ship breaking yards in India and Bangladesh. Often produced in Brass, Copper or Aluminium a single ship may contain many thousands of the same light fixture.<\/p>",
+            "link": "",
+            "link_text": "View all lights from Japan"
+          }
+        },
+        "a2330632-993f-4579-b847-6107bf482c26": {
+          "type": "filter",
+          "settings": {
+            "heading": "Poland",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/700x700_cv_poland-origin-country-map.webp",
+            "title": "Origin: Poland",
+            "copy": "<p>Many of the products we salvage and restore from the former Eastern Bloc were produced in Poland. As with the majority of lights designed and manufactured under Communist rule - during the period from the end of the Second World War to the fall of the Berlin wall - they are defined by a clean industrial aesthetic, with the same design often manufactured in three scaled versions to cater for varying bulb wattage.<\/p>",
+            "link": "",
+            "link_text": ""
+          }
+        },
+        "91adb453-ecbf-478c-b840-eeea1d2b3b6a": {
+          "type": "filter",
+          "settings": {
+            "heading": "U.S.A",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/700x700_cv_1_usa-origin-country-map.webp",
+            "title": "Origin: U.S.A",
+            "copy": "<p>Unlike the communist Eastern Bloc countries, lighting design in mid-century U.S.A. benefitted from a free market. Different companies were working at the same time designing and producing similar products for the same market, often with only slight differences in their style. Due to the location we rarely have the opportunity to reclaim and restore light fixtures from the U.S.A., but some of our perennial favourites are the old signal lights that adorned the highways of the midwest. We reconfigure and restore these timeless classics into functional pendant lights, for both residential and commercial use.<\/p>",
+            "link": "",
+            "link_text": "View all lights from U.S.A"
+          }
+        },
         "670b8665-2ca2-40e4-95fd-ac85cb9f45ca": {
           "type": "filter",
           "settings": {
@@ -176,18 +212,6 @@
           "type": "meta_five",
           "settings": {
           }
-        },
-        "eb6e1178-8def-4826-a76f-78529c492e9c": {
-          "type": "filter",
-          "settings": {
-            "heading": "Japan",
-            "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/700x700_cv_japan-origin-country-map.webp",
-            "title": "Origin: Japan",
-            "copy": "<p>Due to the location we rarely have the opportunity to reclaim and restore light fixtures from Japan. The majority of the products we do reclaim and restore are salvaged from Japanese cargo ships which, after serving long lives at sea, are decommissioned and dismantled at the world’s ship breaking yards in India and Bangladesh. Often produced in Brass, Copper or Aluminium a single ship may contain many thousands of the same light fixture.<\/p>",
-            "link": "",
-            "link_text": "View all lights from Japan"
-          }
         }
       },
       "block_order": [
@@ -196,6 +220,9 @@
         "558bc971-aa7d-4e2d-ab1b-49a64b44085d",
         "a57098d3-5fef-49e4-83cd-4e4e27e0695c",
         "4264ca96-e5bf-41b6-b855-598ac57b2019",
+        "eb6e1178-8def-4826-a76f-78529c492e9c",
+        "a2330632-993f-4579-b847-6107bf482c26",
+        "91adb453-ecbf-478c-b840-eeea1d2b3b6a",
         "670b8665-2ca2-40e4-95fd-ac85cb9f45ca",
         "e149d46f-ce1a-4108-b49e-fa1c018b3bf0",
         "052e0a53-1776-46fe-a6fc-95e9edc89353",
@@ -203,8 +230,7 @@
         "241364da-ca26-48c0-8fdd-12c48bb329af",
         "d1870981-b76b-4455-a845-bd7526a220f9",
         "471332c3-15a0-4968-9030-f9f0db59f550",
-        "7554683d-774c-4a01-a4a3-80f7bb734309",
-        "eb6e1178-8def-4826-a76f-78529c492e9c"
+        "7554683d-774c-4a01-a4a3-80f7bb734309"
       ],
       "settings": {
         "flush": true,
