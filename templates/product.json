@@ -171,6 +171,18 @@
             "link_text": "View all lights from U.S.S.R (former)"
           }
         },
+        "7f7dbebb-6100-4fa9-b1df-aa29385d816f": {
+          "type": "filter",
+          "settings": {
+            "heading": "UK",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/700x700_cv_united-kingdom-origin-country-map_6aff0b49-69b2-4c31-a1b0-a2a790806be9.webp",
+            "title": "Origin: UK",
+            "copy": "<p>Lighting design in the UK benefitted from a free market. Different companies were working at the same time, designing and producing similar products for the same market. Often with only slight differences in their style, they constantly upgraded and improved their original designs. The products we salvage come from the old industrial heartland of England. This area of the UK was once the boiler room of the British economy - from the potteries of Stoke, through the engineering works of Birmingham, to the wool, textile and cotton mills of Oldham and Manchester.<\/p>",
+            "link": "",
+            "link_text": "View all lights from UK"
+          }
+        },
         "670b8665-2ca2-40e4-95fd-ac85cb9f45ca": {
           "type": "filter",
           "settings": {
@@ -236,6 +248,7 @@
         "a2330632-993f-4579-b847-6107bf482c26",
         "91adb453-ecbf-478c-b840-eeea1d2b3b6a",
         "b8f4f725-e525-49db-9bcf-65a9f0395954",
+        "7f7dbebb-6100-4fa9-b1df-aa29385d816f",
         "670b8665-2ca2-40e4-95fd-ac85cb9f45ca",
         "e149d46f-ce1a-4108-b49e-fa1c018b3bf0",
         "052e0a53-1776-46fe-a6fc-95e9edc89353",
