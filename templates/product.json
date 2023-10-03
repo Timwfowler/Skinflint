@@ -159,6 +159,18 @@
             "link_text": "View all lights from U.S.A"
           }
         },
+        "b8f4f725-e525-49db-9bcf-65a9f0395954": {
+          "type": "filter",
+          "settings": {
+            "heading": "U.S.S.R (former)",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/700x700_cv_ussr-origin-country-map_e441bbdf-89cf-4de2-951f-e4d91d820226.webp",
+            "title": "Origin: U.S.S.R (former)",
+            "copy": "<p>Many of the products we salvage and restore from the former Eastern Bloc were produced in the former U.S.S.R. and are defined by a clean industrial aesthetic. As with other Communist countries, the same design was often manufactured in three scaled versions to cater for varying bulb wattage. Lights from this region are often defined by their distinctive light green, two-tone colour ways.<\/p>",
+            "link": "",
+            "link_text": "View all lights from U.S.S.R (former)"
+          }
+        },
         "670b8665-2ca2-40e4-95fd-ac85cb9f45ca": {
           "type": "filter",
           "settings": {
@@ -212,18 +224,6 @@
           "type": "meta_five",
           "settings": {
           }
-        },
-        "b8f4f725-e525-49db-9bcf-65a9f0395954": {
-          "type": "filter",
-          "settings": {
-            "heading": "U.S.S.R (former)",
-            "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/700x700_cv_ussr-origin-country-map_e441bbdf-89cf-4de2-951f-e4d91d820226.webp",
-            "title": "Origin: U.S.S.R (former)",
-            "copy": "<p>Many of the products we salvage and restore from the former Eastern Bloc were produced in the former U.S.S.R. and are defined by a clean industrial aesthetic. As with other Communist countries, the same design was often manufactured in three scaled versions to cater for varying bulb wattage. Lights from this region are often defined by their distinctive light green, two-tone colour ways.<\/p>",
-            "link": "",
-            "link_text": "View all lights from U.S.S.R (former)"
-          }
         }
       },
       "block_order": [
@@ -235,6 +235,7 @@
         "eb6e1178-8def-4826-a76f-78529c492e9c",
         "a2330632-993f-4579-b847-6107bf482c26",
         "91adb453-ecbf-478c-b840-eeea1d2b3b6a",
+        "b8f4f725-e525-49db-9bcf-65a9f0395954",
         "670b8665-2ca2-40e4-95fd-ac85cb9f45ca",
         "e149d46f-ce1a-4108-b49e-fa1c018b3bf0",
         "052e0a53-1776-46fe-a6fc-95e9edc89353",
@@ -242,8 +243,7 @@
         "241364da-ca26-48c0-8fdd-12c48bb329af",
         "d1870981-b76b-4455-a845-bd7526a220f9",
         "471332c3-15a0-4968-9030-f9f0db59f550",
-        "7554683d-774c-4a01-a4a3-80f7bb734309",
-        "b8f4f725-e525-49db-9bcf-65a9f0395954"
+        "7554683d-774c-4a01-a4a3-80f7bb734309"
       ],
       "settings": {
         "flush": true,
