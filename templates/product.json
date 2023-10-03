@@ -176,6 +176,18 @@
           "type": "meta_five",
           "settings": {
           }
+        },
+        "eb6e1178-8def-4826-a76f-78529c492e9c": {
+          "type": "filter",
+          "settings": {
+            "heading": "Japan",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/700x700_cv_japan-origin-country-map.webp",
+            "title": "Origin: Japan",
+            "copy": "<p>Due to the location we rarely have the opportunity to reclaim and restore light fixtures from Japan. The majority of the products we do reclaim and restore are salvaged from Japanese cargo ships which, after serving long lives at sea, are decommissioned and dismantled at the world’s ship breaking yards in India and Bangladesh. Often produced in Brass, Copper or Aluminium a single ship may contain many thousands of the same light fixture.<\/p>",
+            "link": "",
+            "link_text": "View all lights from Japan"
+          }
         }
       },
       "block_order": [
@@ -191,7 +203,8 @@
         "241364da-ca26-48c0-8fdd-12c48bb329af",
         "d1870981-b76b-4455-a845-bd7526a220f9",
         "471332c3-15a0-4968-9030-f9f0db59f550",
-        "7554683d-774c-4a01-a4a3-80f7bb734309"
+        "7554683d-774c-4a01-a4a3-80f7bb734309",
+        "eb6e1178-8def-4826-a76f-78529c492e9c"
       ],
       "settings": {
         "flush": true,
