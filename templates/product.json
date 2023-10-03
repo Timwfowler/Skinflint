@@ -99,6 +99,18 @@
             "link_text": "View all lights from Germany"
           }
         },
+        "a57098d3-5fef-49e4-83cd-4e4e27e0695c": {
+          "type": "filter",
+          "settings": {
+            "heading": "Holland",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/700x700_cv_holland-origin-country-map.webp",
+            "title": "Origin: Holland",
+            "copy": "<p>Holland’s lighting landscape has been illuminated by the Dutch powerhouse Philips since its creation in the the late 1800s. Philips and other lighting companies throughout Holland design and manufacture lights for all applications, and this variety is reflected in the styles of lights we salvage.<\/p>",
+            "link": "",
+            "link_text": "View all lights from Holland"
+          }
+        },
         "670b8665-2ca2-40e4-95fd-ac85cb9f45ca": {
           "type": "filter",
           "settings": {
@@ -153,16 +165,16 @@
           "settings": {
           }
         },
-        "a57098d3-5fef-49e4-83cd-4e4e27e0695c": {
+        "4264ca96-e5bf-41b6-b855-598ac57b2019": {
           "type": "filter",
           "settings": {
-            "heading": "Holland",
+            "heading": "Hungary",
             "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/700x700_cv_holland-origin-country-map.webp",
-            "title": "Origin: Holland",
-            "copy": "<p>Holland’s lighting landscape has been illuminated by the Dutch powerhouse Philips since its creation in the the late 1800s. Philips and other lighting companies throughout Holland design and manufacture lights for all applications, and this variety is reflected in the styles of lights we salvage.<\/p>",
+            "image": "shopify:\/\/shop_images\/700x700_cv_hungary-origin-country-map.webp",
+            "title": "Origin: Hungary",
+            "copy": "<p>We salvage high volumes of industrial and decorative lighting from this landlocked former Eastern Bloc country. Hungarian industrial enamel shades are often available in blue or white, whereas the decorative glassware has more of a clean line and timeless design. In the mid to late 20th century, the Communist east produced a wide variety of lights for both industrial, commercial and residential applications often manufactured in three scaled versions to cater for varying bulb wattage.<\/p>",
             "link": "",
-            "link_text": "View all lights from Holland"
+            "link_text": "View all lights from Hungary"
           }
         }
       },
@@ -170,6 +182,7 @@
         "0c7a4ad1-214d-4bfa-acb4-c3fd43649a7c",
         "cfbf9ed8-7f51-4972-bb2b-309151b65af4",
         "558bc971-aa7d-4e2d-ab1b-49a64b44085d",
+        "a57098d3-5fef-49e4-83cd-4e4e27e0695c",
         "670b8665-2ca2-40e4-95fd-ac85cb9f45ca",
         "e149d46f-ce1a-4108-b49e-fa1c018b3bf0",
         "052e0a53-1776-46fe-a6fc-95e9edc89353",
@@ -178,7 +191,7 @@
         "d1870981-b76b-4455-a845-bd7526a220f9",
         "471332c3-15a0-4968-9030-f9f0db59f550",
         "7554683d-774c-4a01-a4a3-80f7bb734309",
-        "a57098d3-5fef-49e4-83cd-4e4e27e0695c"
+        "4264ca96-e5bf-41b6-b855-598ac57b2019"
       ],
       "settings": {
         "flush": true,
