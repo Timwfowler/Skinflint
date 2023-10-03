@@ -75,6 +75,18 @@
             "link_text": "View all lights from Czechoslovakia (former)"
           }
         },
+        "cfbf9ed8-7f51-4972-bb2b-309151b65af4": {
+          "type": "filter",
+          "settings": {
+            "heading": "France",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/700x700_cv_france-origin-country-map.webp",
+            "title": "Origin: France",
+            "copy": "<p>Vintage French lighting is often defined by the industrial lights of Jielde and Mapelec, but lighting companies throughout France have historically designed and manufactured lights for all applications. This variety is reflected in the styles of lights we salvage and restore - from the decorative Art Nouveau and Art Deco to the classic harder edged, clean-lined industrial aesthetic.<\/p>",
+            "link": "",
+            "link_text": "View all lights from France"
+          }
+        },
         "052e0a53-1776-46fe-a6fc-95e9edc89353": {
           "type": "meta_one",
           "settings": {
@@ -105,28 +117,29 @@
           "settings": {
           }
         },
-        "cfbf9ed8-7f51-4972-bb2b-309151b65af4": {
+        "670b8665-2ca2-40e4-95fd-ac85cb9f45ca": {
           "type": "filter",
           "settings": {
-            "heading": "France",
+            "heading": "AEI",
             "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/700x700_cv_france-origin-country-map.webp",
-            "title": "Origin: France",
-            "copy": "<p>Vintage French lighting is often defined by the industrial lights of Jielde and Mapelec, but lighting companies throughout France have historically designed and manufactured lights for all applications. This variety is reflected in the styles of lights we salvage and restore - from the decorative Art Nouveau and Art Deco to the classic harder edged, clean-lined industrial aesthetic.<\/p>",
+            "image": "shopify:\/\/shop_images\/marque-aei.webp",
+            "title": "Manufacturer: AEI",
+            "copy": "<p>Associated Electrical Industries (AEI) was established in 1928, a result of a merger between two well known rival electrical companies - Metropolitan-Vickers and British Thomson-Houston. Although they produced a selection of lights alongside other electrical devices, it wasn’t until 1956 that AEI Lamps and Lighting Co. was formed. By 1961 their lighting production had become so successful it became a company in its own right, retaining the brand name AEI until the company was taken over in 1964 to form part of British Lighting Industries.<\/p>",
             "link": "",
-            "link_text": "View all lights from France"
+            "link_text": "View all AEI Lights"
           }
         }
       },
       "block_order": [
         "0c7a4ad1-214d-4bfa-acb4-c3fd43649a7c",
+        "cfbf9ed8-7f51-4972-bb2b-309151b65af4",
         "052e0a53-1776-46fe-a6fc-95e9edc89353",
         "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
         "241364da-ca26-48c0-8fdd-12c48bb329af",
         "d1870981-b76b-4455-a845-bd7526a220f9",
         "471332c3-15a0-4968-9030-f9f0db59f550",
         "7554683d-774c-4a01-a4a3-80f7bb734309",
-        "cfbf9ed8-7f51-4972-bb2b-309151b65af4"
+        "670b8665-2ca2-40e4-95fd-ac85cb9f45ca"
       ],
       "settings": {
         "flush": true,
