@@ -411,6 +411,29 @@
             "link_text": "View all Kandem Lights"
           }
         },
+        "74189e08-4e30-4390-b1c1-050836c4c684": {
+          "type": "filter",
+          "settings": {
+            "heading": "Kelvin, Bottomley and Baird",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/skinflint-kbb.webp",
+            "title": "Manufacturer: Kelvin, Bottomley and Baird",
+            "copy": "<p>Formed in 1913 and more widely recognised within the marine field, the company Kelvin, Bottomley and Baird rapidly became well regarded in the production of ship's compasses and general nautical instruments. After a successful collaboration in 1941 with Henry Hughes and Sons, the two companies amalgamated in 1947 as Kelvin Hughes and the name Kelvin, Bottomley and Baird ceased to exist. We are unsure, but due to the nature of the company’s history, we suggest any lights produced were designed for application at sea.<\/p>",
+            "link": "",
+            "link_text": "View all Kelvin, Bottomley and Baird Lights"
+          }
+        },
+        "b6fff42b-f9ee-4297-b5dd-3d2c8bf9697c": {
+          "type": "filter",
+          "settings": {
+            "heading": "",
+            "flush_bottom": true,
+            "title": "",
+            "copy": "",
+            "link": "",
+            "link_text": ""
+          }
+        },
         "052e0a53-1776-46fe-a6fc-95e9edc89353": {
           "type": "meta_one",
           "settings": {
@@ -472,6 +495,8 @@
         "b82e7029-cffd-4fdc-9f80-19e24a22ee1b",
         "bfd0ac35-73bd-452f-b3e1-52a17305fa28",
         "b1e02439-895d-4d42-8794-806dfe8846a0",
+        "74189e08-4e30-4390-b1c1-050836c4c684",
+        "b6fff42b-f9ee-4297-b5dd-3d2c8bf9697c",
         "052e0a53-1776-46fe-a6fc-95e9edc89353",
         "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
         "241364da-ca26-48c0-8fdd-12c48bb329af",
