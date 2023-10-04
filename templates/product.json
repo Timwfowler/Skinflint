@@ -296,6 +296,18 @@
           "type": "meta_five",
           "settings": {
           }
+        },
+        "f9c72ccb-96ce-408e-b975-12645c57836f": {
+          "type": "filter",
+          "settings": {
+            "heading": "Cryselco",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/cryselco.webp",
+            "title": "Manufacturer: Cryselco",
+            "copy": "<p>The Crystal Electric Lighting Company (Crysleco) was founded in 1895 and based at the Kempston Works in Bedford. Originally established to manufacture Carbon and tungsten filament lamps. The company was privatised in 1898 and by the 1960s they were employing over 600 workers, by this time they'd expanded to manufacture electric light fittings with the first recorded mention of the Cryselco lamp shade appearing in 1961. In the late 1980s the company moved to new premises at 274 Ampthill Road, Bedford and after over 120 years of trading the company ceased operations in 2016.<\/p>",
+            "link": "",
+            "link_text": "View all Cryselco Lights"
+          }
         }
       },
       "block_order": [
@@ -321,7 +333,8 @@
         "241364da-ca26-48c0-8fdd-12c48bb329af",
         "d1870981-b76b-4455-a845-bd7526a220f9",
         "471332c3-15a0-4968-9030-f9f0db59f550",
-        "7554683d-774c-4a01-a4a3-80f7bb734309"
+        "7554683d-774c-4a01-a4a3-80f7bb734309",
+        "f9c72ccb-96ce-408e-b975-12645c57836f"
       ],
       "settings": {
         "flush": true,
