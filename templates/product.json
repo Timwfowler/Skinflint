@@ -291,6 +291,18 @@
             "link_text": "View all E.D.L Lights"
           }
         },
+        "32aa3006-dd69-41c0-8f5f-912eb1ef7acc": {
+          "type": "filter",
+          "settings": {
+            "heading": "Eagle",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/marque-eagle-signal.webp",
+            "title": "Manufacturer: Eagle",
+            "copy": "<p>The Eagle Signal and Sign Company is one of the oldest traffic light manufacturers in the U.S., founded in 1931 in Moline, Illinois. Eagle became one of the market leaders of traffic signal lights, competing with other brands such as Crouse-Hinds and Marbelite, for control of the midwest American market. During the 1930s and 1940s Eagle manufactured a limited range of lights but often upgraded their designs with minor changes. In the 1950s and 1960s they went on to produce flat-back models and larger 12 inch designs.<\/p>",
+            "link": "",
+            "link_text": "View all Eagle Lights"
+          }
+        },
         "052e0a53-1776-46fe-a6fc-95e9edc89353": {
           "type": "meta_one",
           "settings": {
@@ -321,16 +333,16 @@
           "settings": {
           }
         },
-        "32aa3006-dd69-41c0-8f5f-912eb1ef7acc": {
+        "d4a510d2-72cd-4dd1-855a-cd3b35d9df27": {
           "type": "filter",
           "settings": {
-            "heading": "Eagle",
+            "heading": "Ediswan",
             "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/marque-eagle-signal.webp",
-            "title": "Manufacturer: Eagle",
-            "copy": "<p>The Eagle Signal and Sign Company is one of the oldest traffic light manufacturers in the U.S., founded in 1931 in Moline, Illinois. Eagle became one of the market leaders of traffic signal lights, competing with other brands such as Crouse-Hinds and Marbelite, for control of the midwest American market. During the 1930s and 1940s Eagle manufactured a limited range of lights but often upgraded their designs with minor changes. In the 1950s and 1960s they went on to produce flat-back models and larger 12 inch designs.<\/p>",
+            "image": "shopify:\/\/shop_images\/1_ediswan.webp",
+            "title": "Manufacturer: Ediswan",
+            "copy": "<p>American Thomas Edison was not the first to patent the modern design of the light bulb - in the UK, Joseph Swan's patent predated it. Edison lost in the British courts for infringement of Swan's patent and as part of the settlement, Edison was forced to take Swan in as a partner in his British electric works. The company was registered in 1883 as the ‘Edison and Swan United Electric Light Co.’ In 1916, the company rebranded as Ediswan. In the 1920s it first became part of BTH, then subsequently part of AEI, although production continued under the Ediswan brand into the 1950s.<\/p>",
             "link": "",
-            "link_text": "View all Eagle Lights"
+            "link_text": "View all Ediswan Lights"
           }
         }
       },
@@ -354,13 +366,14 @@
         "f4ddb2c5-48fe-47cb-8f19-7850862d3674",
         "f9c72ccb-96ce-408e-b975-12645c57836f",
         "e6438c3c-66ef-4a6d-a0b2-09779f7c6c43",
+        "32aa3006-dd69-41c0-8f5f-912eb1ef7acc",
         "052e0a53-1776-46fe-a6fc-95e9edc89353",
         "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
         "241364da-ca26-48c0-8fdd-12c48bb329af",
         "d1870981-b76b-4455-a845-bd7526a220f9",
         "471332c3-15a0-4968-9030-f9f0db59f550",
         "7554683d-774c-4a01-a4a3-80f7bb734309",
-        "32aa3006-dd69-41c0-8f5f-912eb1ef7acc"
+        "d4a510d2-72cd-4dd1-855a-cd3b35d9df27"
       ],
       "settings": {
         "flush": true,
