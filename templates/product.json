@@ -231,6 +231,18 @@
             "link_text": "View all BTH Lights"
           }
         },
+        "b7eafbd5-46ae-48ad-ab26-63a077fa3f2a": {
+          "type": "filter",
+          "settings": {
+            "heading": "Coolicon",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/1_marque-coolicon.webp",
+            "title": "Manufacturer: Coolicon",
+            "copy": "<p>Coolicon shades were first produced in 1933 with the company focusing purely on two different diameters of vitreous enamel shade. The lights were clearly identified by their classic open neck vents and British racing green enamel. Each product was also branded with the manufacturer's label ‘Coolicon The Standard Utility Lighting Shade’. The lights were originally marketed with the strapline ‘The modern shade for the modern lamp’ and - due to their robust design and low price - were the choice for lighting factories, workshops, mills and farm buildings from the 1930s through to the 1950s.<\/p>",
+            "link": "",
+            "link_text": "View all Coolicon Lights"
+          }
+        },
         "052e0a53-1776-46fe-a6fc-95e9edc89353": {
           "type": "meta_one",
           "settings": {
@@ -277,6 +289,7 @@
         "579486ba-f638-4b06-b48e-7046da30bc7d",
         "e149d46f-ce1a-4108-b49e-fa1c018b3bf0",
         "5d14cae6-0f53-458b-8856-57da8894bfe4",
+        "b7eafbd5-46ae-48ad-ab26-63a077fa3f2a",
         "052e0a53-1776-46fe-a6fc-95e9edc89353",
         "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
         "241364da-ca26-48c0-8fdd-12c48bb329af",
