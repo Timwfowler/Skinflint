@@ -717,12 +717,38 @@
             "link": "",
             "link_text": "View all Thorlux Lights"
           }
+        },
+        "402bf3d1-6b7b-43c8-88e2-76d678ae3f1d": {
+          "type": "filter",
+          "settings": {
+            "heading": "Victor",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/marque-victor.webp",
+            "title": "Manufacturer: Victor",
+            "copy": "<p>Victor Products Ltd were founded during 1929 in Newcastle-upon-Tyne. The company was established to specialise in the design and manufacture of industrial and explosion proof light fittings, intended for use by the mining industry and in extreme locations such as oil refineries. Over 75 years later the company are still operating from their location in the northeast of England.<\/p>",
+            "link": "",
+            "link_text": "View all Victor Lights"
+          }
+        },
+        "e6419d20-c823-4c38-9c90-8f9caab6319d": {
+          "type": "filter",
+          "settings": {
+            "heading": "Walligraph",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/skinflint-walligraph.webp",
+            "title": "Manufacturer: Walligraph",
+            "copy": "<p>From the 1930s Walligraph produced some of the finest examples of early industrial lighting in Britain, comparable, yet widely overlooked in relation to the designs emanating from the Bauhaus during the same period. The company were known for their innovative scissor wall lights entitled the ‘Radialite’ the mechanism allowing people to use the light at their desk then fold it away when they had finished. Along with the wall lights the company also produced the elegant ‘Localite’ desk lights. As the 1930s printed marketing literature proclaimed 'Save your site with Localite.'<\/p>",
+            "link": "",
+            "link_text": "View all Walligraph Lights"
+          }
         }
       },
       "block_order": [
         "1dc1bed2-799f-4e91-a4a2-335fdd15f0eb",
         "41d4cbe3-b529-4fc5-901a-5bcf4305bbba",
-        "2c8c4414-3d93-445f-bc09-a73b918e6cb3"
+        "2c8c4414-3d93-445f-bc09-a73b918e6cb3",
+        "402bf3d1-6b7b-43c8-88e2-76d678ae3f1d",
+        "e6419d20-c823-4c38-9c90-8f9caab6319d"
       ],
       "settings": {
         "flush": true,
