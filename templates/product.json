@@ -741,6 +741,18 @@
             "link": "",
             "link_text": "View all Walligraph Lights"
           }
+        },
+        "55c7ad5a-2dda-4851-a9d3-a0ce570ce273": {
+          "type": "filter",
+          "settings": {
+            "heading": "Walsall",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/marque-walsall.webp",
+            "title": "Manufacturer: Walsall",
+            "copy": "<p>Walsall Conduits Ltd of Excelsior Works, West Bromwich, Birmingham, UK was founded in 1890. The foundations of the business were built on the manufacture and supply of steel electrical conduit and accessories. Walsall went onto manufacture a wide array of electrical elements and lighting fixtures for the industrial market with the products’ glass or cast enclosures being branded with the distinctive Walsall mark. By 1961 the company was employing 2,000 people. In the mass mergers of the late 1960s, Walsall was eventually bought out by another of our favourite iconic British lighting brands, General Electric Company (G.E.C).<\/p>",
+            "link": "",
+            "link_text": "View all Walsall Lights"
+          }
         }
       },
       "block_order": [
@@ -748,7 +760,8 @@
         "41d4cbe3-b529-4fc5-901a-5bcf4305bbba",
         "2c8c4414-3d93-445f-bc09-a73b918e6cb3",
         "402bf3d1-6b7b-43c8-88e2-76d678ae3f1d",
-        "e6419d20-c823-4c38-9c90-8f9caab6319d"
+        "e6419d20-c823-4c38-9c90-8f9caab6319d",
+        "55c7ad5a-2dda-4851-a9d3-a0ce570ce273"
       ],
       "settings": {
         "flush": true,
