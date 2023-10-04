@@ -267,6 +267,18 @@
             "link_text": "View all Crouse Hinds Lights"
           }
         },
+        "f9c72ccb-96ce-408e-b975-12645c57836f": {
+          "type": "filter",
+          "settings": {
+            "heading": "Cryselco",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/cryselco.webp",
+            "title": "Manufacturer: Cryselco",
+            "copy": "<p>The Crystal Electric Lighting Company (Crysleco) was founded in 1895 and based at the Kempston Works in Bedford. Originally established to manufacture Carbon and tungsten filament lamps. The company was privatised in 1898 and by the 1960s they were employing over 600 workers, by this time they'd expanded to manufacture electric light fittings with the first recorded mention of the Cryselco lamp shade appearing in 1961. In the late 1980s the company moved to new premises at 274 Ampthill Road, Bedford and after over 120 years of trading the company ceased operations in 2016.<\/p>",
+            "link": "",
+            "link_text": "View all Cryselco Lights"
+          }
+        },
         "052e0a53-1776-46fe-a6fc-95e9edc89353": {
           "type": "meta_one",
           "settings": {
@@ -297,16 +309,16 @@
           "settings": {
           }
         },
-        "f9c72ccb-96ce-408e-b975-12645c57836f": {
+        "e6438c3c-66ef-4a6d-a0b2-09779f7c6c43": {
           "type": "filter",
           "settings": {
-            "heading": "Cryselco",
+            "heading": "E.D.L",
             "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/cryselco.webp",
-            "title": "Manufacturer: Cryselco",
-            "copy": "<p>The Crystal Electric Lighting Company (Crysleco) was founded in 1895 and based at the Kempston Works in Bedford. Originally established to manufacture Carbon and tungsten filament lamps. The company was privatised in 1898 and by the 1960s they were employing over 600 workers, by this time they'd expanded to manufacture electric light fittings with the first recorded mention of the Cryselco lamp shade appearing in 1961. In the late 1980s the company moved to new premises at 274 Ampthill Road, Bedford and after over 120 years of trading the company ceased operations in 2016.<\/p>",
+            "image": "shopify:\/\/shop_images\/marque-edl.webp",
+            "title": "Manufacturer: E.D.L",
+            "copy": "<p>Established in 1922 in Staffordshire as a lighting and cable support manufacturer, EDL Lighting is one of the few companies we salvage lighting from still in operation today. Rightly well known for their beautifully engineered task and machinist lights, we have been privileged to salvage many fine examples; lights that have in most cases, outlasted the buildings for which they were originally designed.<\/p>",
             "link": "",
-            "link_text": "View all Cryselco Lights"
+            "link_text": "View all E.D.L Lights"
           }
         }
       },
@@ -328,13 +340,14 @@
         "b7eafbd5-46ae-48ad-ab26-63a077fa3f2a",
         "965b9024-3036-426c-9e8c-3866b41e64b7",
         "f4ddb2c5-48fe-47cb-8f19-7850862d3674",
+        "f9c72ccb-96ce-408e-b975-12645c57836f",
         "052e0a53-1776-46fe-a6fc-95e9edc89353",
         "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
         "241364da-ca26-48c0-8fdd-12c48bb329af",
         "d1870981-b76b-4455-a845-bd7526a220f9",
         "471332c3-15a0-4968-9030-f9f0db59f550",
         "7554683d-774c-4a01-a4a3-80f7bb734309",
-        "f9c72ccb-96ce-408e-b975-12645c57836f"
+        "e6438c3c-66ef-4a6d-a0b2-09779f7c6c43"
       ],
       "settings": {
         "flush": true,
