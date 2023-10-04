@@ -303,6 +303,18 @@
             "link_text": "View all Eagle Lights"
           }
         },
+        "d4a510d2-72cd-4dd1-855a-cd3b35d9df27": {
+          "type": "filter",
+          "settings": {
+            "heading": "Ediswan",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/1_ediswan.webp",
+            "title": "Manufacturer: Ediswan",
+            "copy": "<p>American Thomas Edison was not the first to patent the modern design of the light bulb - in the UK, Joseph Swan's patent predated it. Edison lost in the British courts for infringement of Swan's patent and as part of the settlement, Edison was forced to take Swan in as a partner in his British electric works. The company was registered in 1883 as the ‘Edison and Swan United Electric Light Co.’ In 1916, the company rebranded as Ediswan. In the 1920s it first became part of BTH, then subsequently part of AEI, although production continued under the Ediswan brand into the 1950s.<\/p>",
+            "link": "",
+            "link_text": "View all Ediswan Lights"
+          }
+        },
         "052e0a53-1776-46fe-a6fc-95e9edc89353": {
           "type": "meta_one",
           "settings": {
@@ -333,16 +345,16 @@
           "settings": {
           }
         },
-        "d4a510d2-72cd-4dd1-855a-cd3b35d9df27": {
+        "84b96e02-a28e-4e20-aa44-c0f8e4c5f649": {
           "type": "filter",
           "settings": {
-            "heading": "Ediswan",
+            "heading": "Eleco",
             "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/1_ediswan.webp",
-            "title": "Manufacturer: Ediswan",
-            "copy": "<p>American Thomas Edison was not the first to patent the modern design of the light bulb - in the UK, Joseph Swan's patent predated it. Edison lost in the British courts for infringement of Swan's patent and as part of the settlement, Edison was forced to take Swan in as a partner in his British electric works. The company was registered in 1883 as the ‘Edison and Swan United Electric Light Co.’ In 1916, the company rebranded as Ediswan. In the 1920s it first became part of BTH, then subsequently part of AEI, although production continued under the Ediswan brand into the 1950s.<\/p>",
+            "image": "shopify:\/\/shop_images\/marque-eleco.webp",
+            "title": "Manufacturer: Eleco",
+            "copy": "<p>Eleco (The Engineering and Lighting Equipment Co) was founded in 1895 in St. Albans, Hertfordshire. Eleco quickly established themselves as specialists in providing complete street lighting layouts, with one of their most famous projects being the original lighting for the Victoria Embankment in London. Eleco street lanterns are easily recognisable with their distinctive branding and two part aluminium and prismatic glass enclosures.<\/p>",
             "link": "",
-            "link_text": "View all Ediswan Lights"
+            "link_text": "View all Eleco Lights"
           }
         }
       },
@@ -367,13 +379,14 @@
         "f9c72ccb-96ce-408e-b975-12645c57836f",
         "e6438c3c-66ef-4a6d-a0b2-09779f7c6c43",
         "32aa3006-dd69-41c0-8f5f-912eb1ef7acc",
+        "d4a510d2-72cd-4dd1-855a-cd3b35d9df27",
         "052e0a53-1776-46fe-a6fc-95e9edc89353",
         "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
         "241364da-ca26-48c0-8fdd-12c48bb329af",
         "d1870981-b76b-4455-a845-bd7526a220f9",
         "471332c3-15a0-4968-9030-f9f0db59f550",
         "7554683d-774c-4a01-a4a3-80f7bb734309",
-        "d4a510d2-72cd-4dd1-855a-cd3b35d9df27"
+        "84b96e02-a28e-4e20-aa44-c0f8e4c5f649"
       ],
       "settings": {
         "flush": true,
