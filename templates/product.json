@@ -399,6 +399,18 @@
             "link_text": "View all iGuzzini Lights"
           }
         },
+        "b1e02439-895d-4d42-8794-806dfe8846a0": {
+          "type": "filter",
+          "settings": {
+            "heading": "Kandem",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/marque-kandem.webp",
+            "title": "Manufacturer: Kandem",
+            "copy": "<p>German lamp manufacturer Kandem was founded in Leipzig in 1889. From its establishment in 1919 Kandem was always closely connected with the Bauhaus school, purchasing and manufacturing many of the students’ designs. Through that connection they encountered student and designer Marianne Brandt. Brandt designed many household items including what was to become a modern classic - The Kandem Desk Light. Although the Kandem- Bauhaus relationship ended in 1933 when the school was closed, production of the lamps continued and the designs are now widely considered to be benchmarks in design history.<\/p>",
+            "link": "",
+            "link_text": "View all Kandem Lights"
+          }
+        },
         "052e0a53-1776-46fe-a6fc-95e9edc89353": {
           "type": "meta_one",
           "settings": {
@@ -459,6 +471,7 @@
         "e0e88d32-6b6f-460f-b9c2-32338ffe562e",
         "b82e7029-cffd-4fdc-9f80-19e24a22ee1b",
         "bfd0ac35-73bd-452f-b3e1-52a17305fa28",
+        "b1e02439-895d-4d42-8794-806dfe8846a0",
         "052e0a53-1776-46fe-a6fc-95e9edc89353",
         "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
         "241364da-ca26-48c0-8fdd-12c48bb329af",
