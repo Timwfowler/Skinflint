@@ -426,12 +426,13 @@
         "b6fff42b-f9ee-4297-b5dd-3d2c8bf9697c": {
           "type": "filter",
           "settings": {
-            "heading": "",
+            "heading": "LFE",
             "flush_bottom": true,
-            "title": "",
-            "copy": "",
+            "image": "shopify:\/\/shop_images\/marque-lfe.webp",
+            "title": "Manufacturer: LFE",
+            "copy": "<p>Laboratory for Electronics (LFE) was founded in 1928 by Charles Adler Jr. and responsible for producing the first practical traffic light in the USA. By the 1950s LFE had become one of the most prolific manufacturers of traffic lights in the country, competing with other leading brands such as Eagle and Crouse Hinds. In the 1980s Mark IV Industries purchased LFE, who in turn sold the whole company to Siemens in 1997.<\/p>",
             "link": "",
-            "link_text": ""
+            "link_text": "View all LFE Lights"
           }
         },
         "052e0a53-1776-46fe-a6fc-95e9edc89353": {
