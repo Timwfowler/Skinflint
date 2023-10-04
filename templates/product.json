@@ -363,6 +363,42 @@
             "link_text": "View all Hanovia Lights"
           }
         },
+        "e0e88d32-6b6f-460f-b9c2-32338ffe562e": {
+          "type": "filter",
+          "settings": {
+            "heading": "Heyes",
+            "flush_bottom": false,
+            "image": "shopify:\/\/shop_images\/marque-hayes.webp",
+            "title": "Manufacturer: Heyes",
+            "copy": "<p>We can't be certain of the exact origins of Heyes and Co. of Water Heyes Electrical Works, Wigan, but we think the company was established in the early part of the 20th century with the first records we’ve uncovered being dated 1922. For over 50 years Heyes specialised in the design and manufacture of industrial and explosion proof lighting intended for use in extreme locations such as oil refineries and the mining industry. Then, in 1986 the company was acquired by Petrel Ltd and the Heyes name disappeared.<\/p>",
+            "link": "",
+            "link_text": "View all Heyes Lights"
+          }
+        },
+        "b82e7029-cffd-4fdc-9f80-19e24a22ee1b": {
+          "type": "filter",
+          "settings": {
+            "heading": "Holophane",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/marque-holophane.webp",
+            "title": "Manufacturer: Holophane",
+            "copy": "<p>Holophane was founded in London in 1896. The name is derived from the Greek ‘Holos’ meaning whole and ‘phanos’ meaning light. The hallmark of all Holophane lights are their borosilicate pressed glass refractors - these are prisms built into the glass giving it a ribbed appearance that produces a combination of uplight and downlight. It's this spreading or refracting of light, illuminating spaces evenly, that accounts for their popularity. The Holophane ribbed glass refractor is a true vintage icon, and as Holophane is still in existence, continues to be used by the lighting industry today.<\/p>",
+            "link": "",
+            "link_text": "View all Holophane Lights"
+          }
+        },
+        "bfd0ac35-73bd-452f-b3e1-52a17305fa28": {
+          "type": "filter",
+          "settings": {
+            "heading": "iGuzzini",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/marque-iguzini.webp",
+            "title": "Manufacturer: iGuzzini",
+            "copy": "<p>Unlike the majority of Italian production which is based in the north, iGuzzini is an established lighting manufacturer based centrally on the Adriatic coast. iGuzzini was founded by the six Guzzini brothers - Raimondo, Giovanni, Virgilio, Giuseppe, Adolfo and Giannunzio in the 1960s. The Guzzini company rebranded many times in the 20th century, going by, at various points - Harvey Creazioni, Harvey Guzzini, Guzzini, iGuzzini, and Illuminazione Guzzini. In the 1970s the company rebranded once more as iGuzzini—adding 'Illuminazione' in 1981. The company still exists today.<\/p>",
+            "link": "",
+            "link_text": "View all iGuzzini Lights"
+          }
+        },
         "052e0a53-1776-46fe-a6fc-95e9edc89353": {
           "type": "meta_one",
           "settings": {
@@ -420,6 +456,9 @@
         "1de8d150-6cd3-4e76-8dbf-446ceb7f3839",
         "030b5f6d-4a74-46a2-b148-dfa7526572d0",
         "8010201f-c719-44d6-9827-c7cc37057903",
+        "e0e88d32-6b6f-460f-b9c2-32338ffe562e",
+        "b82e7029-cffd-4fdc-9f80-19e24a22ee1b",
+        "bfd0ac35-73bd-452f-b3e1-52a17305fa28",
         "052e0a53-1776-46fe-a6fc-95e9edc89353",
         "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
         "241364da-ca26-48c0-8fdd-12c48bb329af",
