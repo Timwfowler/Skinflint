@@ -531,6 +531,18 @@
             "link_text": "View all Philips Lights"
           }
         },
+        "fb188370-62b8-4cd9-9e50-8939a04c7a40": {
+          "type": "filter",
+          "settings": {
+            "heading": "Pifco",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/marque-pifco.webp",
+            "title": "Manufacturer: Pifco",
+            "copy": "<p>Pifco (Provincial Incandescent Fittings Co. Ltd) of Failsworth, Manchester were established in 1900 as manufacturers of lighting appliances and accessories. The company went on to purchase many smaller companies, and manufactured a wide range of electrical items including cookers, heaters and cycle lamps. Pifco is most remembered for its distinctive range of heat therapy lamps, predominantly for use within the home - heat therapy was a popular treatment for many ailments in the early to mid 20th century and, when converted, the beautifully designed lamps make wonderful modern desk lights.<\/p>",
+            "link": "",
+            "link_text": "View all Pifco Lights"
+          }
+        },
         "052e0a53-1776-46fe-a6fc-95e9edc89353": {
           "type": "meta_one",
           "settings": {
@@ -559,6 +571,18 @@
         "7554683d-774c-4a01-a4a3-80f7bb734309": {
           "type": "meta_five",
           "settings": {
+          }
+        },
+        "2a15dc1a-1ca3-4a8f-8b39-273845183d55": {
+          "type": "filter",
+          "settings": {
+            "heading": "Prometheus Electric Corporation",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/marque-prometheus.webp",
+            "title": "Manufacturer: Prometheus Electric Corporation",
+            "copy": "<p>Prometheus Electric Corporation was founded in 1904, spearheaded by President David T Davis in New York. Specialising in the manufacture of household electrics, the team focused their efforts on stoves and irons, as well as innovative technologies for medical lights used in infrared therapy. Ceasing production by 1920, Prometheus pieces are now considered collectible items.<\/p>",
+            "link": "",
+            "link_text": "View all Prometheus Electric Corporation Lights"
           }
         }
       },
@@ -602,12 +626,14 @@
         "5ca49151-319e-4c96-8cff-9ca83476110a",
         "10bc7878-53f7-4fb0-9398-f40c486b17e5",
         "2812773a-587b-4183-adbe-0e2edbc7ebad",
+        "fb188370-62b8-4cd9-9e50-8939a04c7a40",
         "052e0a53-1776-46fe-a6fc-95e9edc89353",
         "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
         "241364da-ca26-48c0-8fdd-12c48bb329af",
         "d1870981-b76b-4455-a845-bd7526a220f9",
         "471332c3-15a0-4968-9030-f9f0db59f550",
-        "7554683d-774c-4a01-a4a3-80f7bb734309"
+        "7554683d-774c-4a01-a4a3-80f7bb734309",
+        "2a15dc1a-1ca3-4a8f-8b39-273845183d55"
       ],
       "settings": {
         "flush": true,
