@@ -351,6 +351,18 @@
             "link_text": "View all G.E.C Lights"
           }
         },
+        "8010201f-c719-44d6-9827-c7cc37057903": {
+          "type": "filter",
+          "settings": {
+            "heading": "Hanovia",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/marque-hanovia.webp",
+            "title": "Manufacturer: Hanovia",
+            "copy": "<p>Established in 1924 and based on Bath Road, Slough, Buckinghamshire, Hanovia were industry experts in developing UV and heat lamp technology. Many floor and table-mounted versions were developed over a 50 year period for home and professional use. The success of the designs is clear - similar models remained in production for many years with only very small adjustments to tweak the design efficiency of the lights. Although the business activities have diversified, the company still specialises in UV technology over 90 years later, from the same west London site.<\/p>",
+            "link": "",
+            "link_text": "View all Hanovia Lights"
+          }
+        },
         "052e0a53-1776-46fe-a6fc-95e9edc89353": {
           "type": "meta_one",
           "settings": {
@@ -407,6 +419,7 @@
         "84b96e02-a28e-4e20-aa44-c0f8e4c5f649",
         "1de8d150-6cd3-4e76-8dbf-446ceb7f3839",
         "030b5f6d-4a74-46a2-b148-dfa7526572d0",
+        "8010201f-c719-44d6-9827-c7cc37057903",
         "052e0a53-1776-46fe-a6fc-95e9edc89353",
         "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
         "241364da-ca26-48c0-8fdd-12c48bb329af",
