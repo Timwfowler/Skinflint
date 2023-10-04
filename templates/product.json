@@ -679,6 +679,30 @@
         "flush_bottom": true
       }
     },
+    "30e90bf6-011a-472f-9c6a-f7f5cfd8a132": {
+      "type": "product-metafield-details",
+      "blocks": {
+        "1dc1bed2-799f-4e91-a4a2-335fdd15f0eb": {
+          "type": "filter",
+          "settings": {
+            "heading": "Soltan",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/marque-soltan.webp",
+            "title": "Manufacturer: Soltan",
+            "copy": "<p>As with a number of the companies that emerged to satisfy the ever expanding home medical therapy lamp market in the 1950s, the origin of Soltan is currently unclear. Throughout the 1950s and 1960s the company produced numerous styles of table mounted heat lamps. Soltan Lamps all have a distinctive branded mark, for the lower priced basic models this was invariably a transfer - whereas the higher priced more exclusive lights featured an embossed plaque.<\/p>",
+            "link": "",
+            "link_text": "View all Soltan Lights"
+          }
+        }
+      },
+      "block_order": [
+        "1dc1bed2-799f-4e91-a4a2-335fdd15f0eb"
+      ],
+      "settings": {
+        "flush": true,
+        "flush_bottom": true
+      }
+    },
     "ee009aad-efa1-453e-a080-2be48216ae9f": {
       "type": "section-text-and-image",
       "settings": {
@@ -849,6 +873,7 @@
   "order": [
     "main",
     "1ef34e4a-a4e6-4be3-931f-5a87ad67a705",
+    "30e90bf6-011a-472f-9c6a-f7f5cfd8a132",
     "ee009aad-efa1-453e-a080-2be48216ae9f",
     "product-usps",
     "product-contact-form",
