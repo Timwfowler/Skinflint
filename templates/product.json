@@ -315,6 +315,42 @@
             "link_text": "View all Ediswan Lights"
           }
         },
+        "84b96e02-a28e-4e20-aa44-c0f8e4c5f649": {
+          "type": "filter",
+          "settings": {
+            "heading": "Eleco",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/marque-eleco.webp",
+            "title": "Manufacturer: Eleco",
+            "copy": "<p>Eleco (The Engineering and Lighting Equipment Co) was founded in 1895 in St. Albans, Hertfordshire. Eleco quickly established themselves as specialists in providing complete street lighting layouts, with one of their most famous projects being the original lighting for the Victoria Embankment in London. Eleco street lanterns are easily recognisable with their distinctive branding and two part aluminium and prismatic glass enclosures.<\/p>",
+            "link": "",
+            "link_text": "View all Eleco Lights"
+          }
+        },
+        "1de8d150-6cd3-4e76-8dbf-446ceb7f3839": {
+          "type": "filter",
+          "settings": {
+            "heading": "Falks",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/marque-falks.webp",
+            "title": "Manufacturer: Falks",
+            "copy": "<p>Established in 1881, ‘Falk, Stadelmann and Co. Ltd’ of 91 Farringdon Road, London, were originally importers of, amongst other products, gas fittings and paraffin lamps. In 1962, Falk, Stadelmann and Co changed its name to Falks Ltd - but sadly after poor trading years in the late 1960s the company was taken over by Jessel Investments, who sold off all property and ceased manufacturing activities. We regularly come across lighting by Falks - their prismatic wall lights were particularly well made and remain a timeless industrial classic.<\/p>",
+            "link": "",
+            "link_text": "View all Falks Lights"
+          }
+        },
+        "030b5f6d-4a74-46a2-b148-dfa7526572d0": {
+          "type": "filter",
+          "settings": {
+            "heading": "G.E.C",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/marque-gec.webp",
+            "title": "Manufacturer: G.E.C",
+            "copy": "<p>Established in London, in 1886 the General Electric Company were to become the largest electrical manufacturing organisation in the British Empire and lived up to their description of ‘Manufacturers of everything electrical’ throughout their 100 year history. During the mass industrialisation of the 1950s, GEC were often the supplier of choice for lighting the factories, workshops and mills of Britain with their huge range of light fixtures for every application.<\/p>",
+            "link": "",
+            "link_text": "View all G.E.C Lights"
+          }
+        },
         "052e0a53-1776-46fe-a6fc-95e9edc89353": {
           "type": "meta_one",
           "settings": {
@@ -344,18 +380,6 @@
           "type": "meta_five",
           "settings": {
           }
-        },
-        "84b96e02-a28e-4e20-aa44-c0f8e4c5f649": {
-          "type": "filter",
-          "settings": {
-            "heading": "Eleco",
-            "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/marque-eleco.webp",
-            "title": "Manufacturer: Eleco",
-            "copy": "<p>Eleco (The Engineering and Lighting Equipment Co) was founded in 1895 in St. Albans, Hertfordshire. Eleco quickly established themselves as specialists in providing complete street lighting layouts, with one of their most famous projects being the original lighting for the Victoria Embankment in London. Eleco street lanterns are easily recognisable with their distinctive branding and two part aluminium and prismatic glass enclosures.<\/p>",
-            "link": "",
-            "link_text": "View all Eleco Lights"
-          }
         }
       },
       "block_order": [
@@ -380,13 +404,15 @@
         "e6438c3c-66ef-4a6d-a0b2-09779f7c6c43",
         "32aa3006-dd69-41c0-8f5f-912eb1ef7acc",
         "d4a510d2-72cd-4dd1-855a-cd3b35d9df27",
+        "84b96e02-a28e-4e20-aa44-c0f8e4c5f649",
+        "1de8d150-6cd3-4e76-8dbf-446ceb7f3839",
+        "030b5f6d-4a74-46a2-b148-dfa7526572d0",
         "052e0a53-1776-46fe-a6fc-95e9edc89353",
         "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
         "241364da-ca26-48c0-8fdd-12c48bb329af",
         "d1870981-b76b-4455-a845-bd7526a220f9",
         "471332c3-15a0-4968-9030-f9f0db59f550",
-        "7554683d-774c-4a01-a4a3-80f7bb734309",
-        "84b96e02-a28e-4e20-aa44-c0f8e4c5f649"
+        "7554683d-774c-4a01-a4a3-80f7bb734309"
       ],
       "settings": {
         "flush": true,
