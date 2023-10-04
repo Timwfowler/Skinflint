@@ -471,6 +471,30 @@
             "link_text": "View all Maxlume Lights"
           }
         },
+        "b41be3c8-cb7b-4b1e-8be1-1df98ebf3e03": {
+          "type": "filter",
+          "settings": {
+            "heading": "Mazdalux",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/skinflint-maxdalux.webp",
+            "title": "Manufacturer: Mazdalux",
+            "copy": "<p>Mazdalux was the trade name for the industrial lighting section of British Thomson-Houston, with Mazda being the brand applied to its filament lamps. In the main, Mazdalux focused on the production of steel enamelled reflector lighting from its central UK production plant in Rugby, Warwickshire. In comparison to other manufacturers of the time, production was relatively modest, making these quite rare examples of industrial lighting from the early 1930s through to the 1950s.<\/p>",
+            "link": "",
+            "link_text": "View all Mazdalux Lights"
+          }
+        },
+        "a5431c39-e0ad-4287-b0e0-e7c7fe927224": {
+          "type": "filter",
+          "settings": {
+            "heading": "MEK ELEK Engineering",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/mekelek.webp",
+            "title": "Manufacturer: MEK ELEK Engineering",
+            "copy": "<p>Founded during 1931 in London, UK, MEK ELEK specialised in the manufacture of the Mekelite lathe light, primarily for use within the aircraft industry. Pathé newsreels of the 1940s clearly show row upon row of munitions machinists, labouring away under the illumination of Mek Elek lights. Mekelite lights were available in a wide range of types and sizes for floor, bench, wall and ceiling applications - all versions being based around a similar family of components. It is not known what became of the company, but their designs have stood the test of time and remain one of our favourite brands of early industrial lighting.<\/p>",
+            "link": "",
+            "link_text": "View all MEK ELEK Engineering Lights"
+          }
+        },
         "052e0a53-1776-46fe-a6fc-95e9edc89353": {
           "type": "meta_one",
           "settings": {
@@ -537,6 +561,8 @@
         "34b6899d-60ab-4993-8352-4448b0c89b6c",
         "245e7e95-c3a8-47eb-9af9-ca20c715dc1a",
         "8c85ac9e-1776-4187-aa7b-d722a6ca0dff",
+        "b41be3c8-cb7b-4b1e-8be1-1df98ebf3e03",
+        "a5431c39-e0ad-4287-b0e0-e7c7fe927224",
         "052e0a53-1776-46fe-a6fc-95e9edc89353",
         "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
         "241364da-ca26-48c0-8fdd-12c48bb329af",
