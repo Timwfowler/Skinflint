@@ -693,10 +693,36 @@
             "link": "",
             "link_text": "View all Soltan Lights"
           }
+        },
+        "41d4cbe3-b529-4fc5-901a-5bcf4305bbba": {
+          "type": "filter",
+          "settings": {
+            "heading": "Strand Electric",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/marque-strand-electric.webp",
+            "title": "Manufacturer: Strand Electric",
+            "copy": "<p>Strand Electric was founded in 1914 by theatre electricians Arthur Earnshaw and Phillip Sheridan at 19-24 Floral Street, London. Over the next 50 years Strand became the UK and Europe's principal manufacturers of stage lighting and theatre equipment. In 1968, Strand was purchased by the famous Rank Film Corporation and became Rank Strand. Strand was eventually bought from Rank by a venture capitalist group in the late 1990s. Today, Strand Lighting is still run as a separate, independent company within Royal Philips Lighting, and continues as a leading name in stage, television and motion picture lighting.<\/p>",
+            "link": "",
+            "link_text": "View all Strand Electric Lights"
+          }
+        },
+        "2c8c4414-3d93-445f-bc09-a73b918e6cb3": {
+          "type": "filter",
+          "settings": {
+            "heading": "Thorlux",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/marque-thorlux-1_1.webp",
+            "title": "Manufacturer: Thorlux",
+            "copy": "<p>Thorlux was founded by Frederick William Thorpe in 1936 in Small Heath, Birmingham. The company produced vitreous enamelled shades for lighting factories, workshops, mills and farm buildings during the progressive industrialisation of the 1930s through to the 1950s. Thorlux is still in existence over 75 years later, manufacturing a comprehensive range of professional lighting and control systems for architectural and industrial applications. The classic enamel shades from the 1950s with the distinctive Thorlux branding are one of our firm favourites.<\/p>",
+            "link": "",
+            "link_text": "View all Thorlux Lights"
+          }
         }
       },
       "block_order": [
-        "1dc1bed2-799f-4e91-a4a2-335fdd15f0eb"
+        "1dc1bed2-799f-4e91-a4a2-335fdd15f0eb",
+        "41d4cbe3-b529-4fc5-901a-5bcf4305bbba",
+        "2c8c4414-3d93-445f-bc09-a73b918e6cb3"
       ],
       "settings": {
         "flush": true,
