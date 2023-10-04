@@ -753,6 +753,18 @@
             "link": "",
             "link_text": "View all Walsall Lights"
           }
+        },
+        "ee8a8f93-ac6c-4e73-b8ce-6a352b5142b1": {
+          "type": "filter",
+          "settings": {
+            "heading": "Wardle",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/marque-wardle.webp",
+            "title": "Manufacturer: Wardle",
+            "copy": "<p>The Wardle Engineering Company Limited was founded by Walter and Arthur Wardle during the 1890s in Manchester. The firm was sold to Chamen and Wilkinson in 1910, but the name was retained. Despite an early foothold in the market, Wardle never gained the success of the larger manufacturers, and their products were rarely installed far from their Manchester manufacturing base. Trading ceased in the 1980s. The Prismalux Art Deco glass bulkheads, originally developed by Wardle in the 1930s, remain one of our firm favourites.<\/p>",
+            "link": "",
+            "link_text": "View all Wardle Lights"
+          }
         }
       },
       "block_order": [
@@ -761,7 +773,8 @@
         "2c8c4414-3d93-445f-bc09-a73b918e6cb3",
         "402bf3d1-6b7b-43c8-88e2-76d678ae3f1d",
         "e6419d20-c823-4c38-9c90-8f9caab6319d",
-        "55c7ad5a-2dda-4851-a9d3-a0ce570ce273"
+        "55c7ad5a-2dda-4851-a9d3-a0ce570ce273",
+        "ee8a8f93-ac6c-4e73-b8ce-6a352b5142b1"
       ],
       "settings": {
         "flush": true,
