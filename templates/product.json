@@ -567,6 +567,30 @@
             "link_text": "View all R.E.A.L Lights"
           }
         },
+        "a4d44678-28c0-45ea-8467-1f00df080801": {
+          "type": "filter",
+          "settings": {
+            "heading": "REVO",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/marque-revo-3.webp",
+            "title": "Manufacturer: REVO",
+            "copy": "<p>REVO was founded in the early 20th century and became a household name in the 1930s, when electric street lighting was widely introduced throughout the UK. Based in Tipton, Staffordshire, REVO engineers were famed for their creativity, often developing styles of lighting individual to the towns for which they were designed. This means that whilst there are a wealth of classic REVO styles, from prismatics and enamels to machinist lights and bulkheads, there are also some incredible individual rarities to be found.<\/p>",
+            "link": "",
+            "link_text": "View all REVO Lights"
+          }
+        },
+        "1c686942-8c10-4c08-ad5c-15971e14fac5": {
+          "type": "filter",
+          "settings": {
+            "heading": "Simplex Electric Co",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/marque-simplex.webp",
+            "title": "Manufacturer: Simplex Electric Co",
+            "copy": "<p>Simplex Electric Co was formed in 1932 when Credenda Conduit Co and Simplex Conduits Ltd of Garrison Lane, Birmingham, merged. In addition to lighting equipment and conduits, the company began to manufacture Creda domestic cooking appliances. Between 1932 and 1965 Simplex Electric Co produced a wide range of lighting products but is primarily recognised for its early elegant prismatic street lanterns, bulkheads and latterly for linear industrial fluorescent fixtures. Then as the mass mergers of the 1960s unfolded, the company was bought by General Electric of the U.S.A. and production as Simplex stopped.<\/p>",
+            "link": "",
+            "link_text": "View all Simplex Electric Co Lights"
+          }
+        },
         "052e0a53-1776-46fe-a6fc-95e9edc89353": {
           "type": "meta_one",
           "settings": {
@@ -595,18 +619,6 @@
         "7554683d-774c-4a01-a4a3-80f7bb734309": {
           "type": "meta_five",
           "settings": {
-          }
-        },
-        "a4d44678-28c0-45ea-8467-1f00df080801": {
-          "type": "filter",
-          "settings": {
-            "heading": "REVO",
-            "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/marque-revo-3.webp",
-            "title": "Manufacturer: REVO",
-            "copy": "<p>REVO was founded in the early 20th century and became a household name in the 1930s, when electric street lighting was widely introduced throughout the UK. Based in Tipton, Staffordshire, REVO engineers were famed for their creativity, often developing styles of lighting individual to the towns for which they were designed. This means that whilst there are a wealth of classic REVO styles, from prismatics and enamels to machinist lights and bulkheads, there are also some incredible individual rarities to be found.<\/p>",
-            "link": "",
-            "link_text": "View all REVO Lights"
           }
         }
       },
@@ -653,13 +665,14 @@
         "fb188370-62b8-4cd9-9e50-8939a04c7a40",
         "2a15dc1a-1ca3-4a8f-8b39-273845183d55",
         "bec5a70d-6681-4580-8963-faf68a7dc975",
+        "a4d44678-28c0-45ea-8467-1f00df080801",
+        "1c686942-8c10-4c08-ad5c-15971e14fac5",
         "052e0a53-1776-46fe-a6fc-95e9edc89353",
         "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
         "241364da-ca26-48c0-8fdd-12c48bb329af",
         "d1870981-b76b-4455-a845-bd7526a220f9",
         "471332c3-15a0-4968-9030-f9f0db59f550",
-        "7554683d-774c-4a01-a4a3-80f7bb734309",
-        "a4d44678-28c0-45ea-8467-1f00df080801"
+        "7554683d-774c-4a01-a4a3-80f7bb734309"
       ],
       "settings": {
         "flush": true,
