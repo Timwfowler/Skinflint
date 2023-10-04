@@ -243,6 +243,30 @@
             "link_text": "View all Coolicon Lights"
           }
         },
+        "965b9024-3036-426c-9e8c-3866b41e64b7": {
+          "type": "filter",
+          "settings": {
+            "heading": "Coughtrie",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/marque-coughtrie.webp",
+            "title": "Manufacturer: Coughtrie",
+            "copy": "<p>Established in 1941 on Montrose Avenue, Hillington Estate, Glasgow, Scotland, Coughtrie is one of the few companies from this period still in operation. Their name continues to be associated with reliable industrial wall or ceiling mounted bulkhead fittings. Over the years we have salvaged many beautiful lights made by Coughtrie, with their classic castings; lights that have in most cases, outlasted the buildings for which they were originally designed.<\/p>",
+            "link": "",
+            "link_text": "View all Coughtrie Lights"
+          }
+        },
+        "f4ddb2c5-48fe-47cb-8f19-7850862d3674": {
+          "type": "filter",
+          "settings": {
+            "heading": "Crouse Hinds",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/marque-crouse-hinds.webp",
+            "title": "Manufacturer: Crouse Hinds",
+            "copy": "<p>Crouse Hinds is one of the oldest light manufacturers in the U.S. and were founded during 1897 in Syracuse, New York. Initially producing a patented tram car headlight, the firm grew to produce (amongst other items) switches, electrical conduits, traffic lights, airport lighting and even the lighting for Panama Canal. The company name is still in use today as a subsidiary of Cooper Industries, however the traffic signal production ended in 1981.<\/p>",
+            "link": "",
+            "link_text": "View all Crouse Hinds Lights"
+          }
+        },
         "052e0a53-1776-46fe-a6fc-95e9edc89353": {
           "type": "meta_one",
           "settings": {
@@ -272,18 +296,6 @@
           "type": "meta_five",
           "settings": {
           }
-        },
-        "965b9024-3036-426c-9e8c-3866b41e64b7": {
-          "type": "filter",
-          "settings": {
-            "heading": "Coughtrie",
-            "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/marque-coughtrie.webp",
-            "title": "Manufacturer: Coughtrie",
-            "copy": "<p>Established in 1941 on Montrose Avenue, Hillington Estate, Glasgow, Scotland, Coughtrie is one of the few companies from this period still in operation. Their name continues to be associated with reliable industrial wall or ceiling mounted bulkhead fittings. Over the years we have salvaged many beautiful lights made by Coughtrie, with their classic castings; lights that have in most cases, outlasted the buildings for which they were originally designed.<\/p>",
-            "link": "",
-            "link_text": "View all Coughtrie Lights"
-          }
         }
       },
       "block_order": [
@@ -302,13 +314,14 @@
         "e149d46f-ce1a-4108-b49e-fa1c018b3bf0",
         "5d14cae6-0f53-458b-8856-57da8894bfe4",
         "b7eafbd5-46ae-48ad-ab26-63a077fa3f2a",
+        "965b9024-3036-426c-9e8c-3866b41e64b7",
+        "f4ddb2c5-48fe-47cb-8f19-7850862d3674",
         "052e0a53-1776-46fe-a6fc-95e9edc89353",
         "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
         "241364da-ca26-48c0-8fdd-12c48bb329af",
         "d1870981-b76b-4455-a845-bd7526a220f9",
         "471332c3-15a0-4968-9030-f9f0db59f550",
-        "7554683d-774c-4a01-a4a3-80f7bb734309",
-        "965b9024-3036-426c-9e8c-3866b41e64b7"
+        "7554683d-774c-4a01-a4a3-80f7bb734309"
       ],
       "settings": {
         "flush": true,
