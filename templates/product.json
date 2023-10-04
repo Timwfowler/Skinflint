@@ -272,6 +272,18 @@
           "type": "meta_five",
           "settings": {
           }
+        },
+        "965b9024-3036-426c-9e8c-3866b41e64b7": {
+          "type": "filter",
+          "settings": {
+            "heading": "Coughtrie",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/marque-coughtrie.webp",
+            "title": "Manufacturer: Coughtrie",
+            "copy": "<p>Established in 1941 on Montrose Avenue, Hillington Estate, Glasgow, Scotland, Coughtrie is one of the few companies from this period still in operation. Their name continues to be associated with reliable industrial wall or ceiling mounted bulkhead fittings. Over the years we have salvaged many beautiful lights made by Coughtrie, with their classic castings; lights that have in most cases, outlasted the buildings for which they were originally designed.<\/p>",
+            "link": "",
+            "link_text": "View all Coughtrie Lights"
+          }
         }
       },
       "block_order": [
@@ -295,7 +307,8 @@
         "241364da-ca26-48c0-8fdd-12c48bb329af",
         "d1870981-b76b-4455-a845-bd7526a220f9",
         "471332c3-15a0-4968-9030-f9f0db59f550",
-        "7554683d-774c-4a01-a4a3-80f7bb734309"
+        "7554683d-774c-4a01-a4a3-80f7bb734309",
+        "965b9024-3036-426c-9e8c-3866b41e64b7"
       ],
       "settings": {
         "flush": true,
