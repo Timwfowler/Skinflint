@@ -495,6 +495,30 @@
             "link_text": "View all MEK ELEK Engineering Lights"
           }
         },
+        "5ca49151-319e-4c96-8cff-9ca83476110a": {
+          "type": "filter",
+          "settings": {
+            "heading": "NAPAKO",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/skinflint-marques-napako.webp",
+            "title": "Manufacturer: NAPAKO",
+            "copy": "<p>NAPAKO is a lighting manufacturer founded in 1919 in Prague, former Czechoslovakia. Considered a collective NAPAKO worked alongside various designers in the early twentieth century, most notably with highly acclaimed designer Josef Hurka. Hurka began his career designing electrical appliances before specialising in household lighting, including ceiling and floor lamps. Napako pieces designed by Hurka are considered collectibles and are to this day, highly sought after and awarded in the lighting design industry.<\/p>",
+            "link": "",
+            "link_text": "View all NAPAKO Lights"
+          }
+        },
+        "10bc7878-53f7-4fb0-9398-f40c486b17e5": {
+          "type": "filter",
+          "settings": {
+            "heading": "Perihel",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/marque-perihel.webp",
+            "title": "Manufacturer: Perihel",
+            "copy": "<p>Perihel was a highly successful manufacturer of light therapy lamps for both professional and home use, manufacturing elegant light therapy lamps for the clinic and the home. We are unsure of their exact origins but from advertising literature we have in our own archive we can be sure that in the 1930s the company was based in Germany with production in Prague. Then, again based on its product pamphlets, by the 1940s and 1950s it had bases in the UK at Edge Street and Rabbit Row in London.<\/p>",
+            "link": "",
+            "link_text": "View all Perihel Lights"
+          }
+        },
         "052e0a53-1776-46fe-a6fc-95e9edc89353": {
           "type": "meta_one",
           "settings": {
@@ -563,6 +587,8 @@
         "8c85ac9e-1776-4187-aa7b-d722a6ca0dff",
         "b41be3c8-cb7b-4b1e-8be1-1df98ebf3e03",
         "a5431c39-e0ad-4287-b0e0-e7c7fe927224",
+        "5ca49151-319e-4c96-8cff-9ca83476110a",
+        "10bc7878-53f7-4fb0-9398-f40c486b17e5",
         "052e0a53-1776-46fe-a6fc-95e9edc89353",
         "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
         "241364da-ca26-48c0-8fdd-12c48bb329af",
