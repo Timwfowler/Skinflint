@@ -435,6 +435,42 @@
             "link_text": "View all LFE Lights"
           }
         },
+        "34b6899d-60ab-4993-8352-4448b0c89b6c": {
+          "type": "filter",
+          "settings": {
+            "heading": "Lustry Kamenicky Senov",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/2_skinflint-marques-lustry.webp",
+            "title": "Manufacturer: Lustry Kamenicky Senov",
+            "copy": "<p>Following WWII, all chandelier companies based in the Kamenicky Senov region of former Czechoslovakia (an area with a rich history of decorative glasswork) were put under joint administration by the state under a new name - Lustry Kamenicky Senov. In the 1960s, this new company primarily specialised in producing glass lighting and chandeliers for domestic use and the USSR. Though they later expanded into pendants and floor lights, their most iconic creation was the elegant crystal glass chandeliers known as the ‘Theresians’, which were inspired by 18th-century Bohemian chandeliers made for Empress Maria Theresa.<\/p>",
+            "link": "",
+            "link_text": "View all Lustry Kamenicky Senov Lights"
+          }
+        },
+        "245e7e95-c3a8-47eb-9af9-ca20c715dc1a": {
+          "type": "filter",
+          "settings": {
+            "heading": "Marbalite",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/marque-marbelite.webp",
+            "title": "Manufacturer: Marbalite",
+            "copy": "<p>Marbalite of New York were founded in 1923. By the 1950s they had grown into one of the foremost traffic light manufacturers in the country, competing with other leading brands such as Eagle and Crouse Hinds. Marbalite provided most of the traffic lights for New York City from the 1950s through to the 1970s. They are still fairly common in the metropolitan area of NYC although their numbers are steadily dwindling as newer models replace them.<\/p>",
+            "link": "",
+            "link_text": "View all Marbalite Lights"
+          }
+        },
+        "8c85ac9e-1776-4187-aa7b-d722a6ca0dff": {
+          "type": "filter",
+          "settings": {
+            "heading": "Maxlume",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/marque-maxlume.webp",
+            "title": "Manufacturer: Maxlume",
+            "copy": "<p>Maxlume were established during the early 1920s in Birmingham and manufactured a substantial range of fixtures of both an industrial and decorative style. The earliest catalogue we hold within our own internal manufacturer's archive is the 11th edition which is dated 1929 - during that year the company had actually doubled its manufacturing space and storage accommodation to cope with an ever increasing demand for its products. By the mid 1950s the company had been taken over by Verity’s, although the lights were still manufactured under the registered Maxlume mark.<\/p>",
+            "link": "",
+            "link_text": "View all Maxlume Lights"
+          }
+        },
         "052e0a53-1776-46fe-a6fc-95e9edc89353": {
           "type": "meta_one",
           "settings": {
@@ -498,6 +534,9 @@
         "b1e02439-895d-4d42-8794-806dfe8846a0",
         "74189e08-4e30-4390-b1c1-050836c4c684",
         "b6fff42b-f9ee-4297-b5dd-3d2c8bf9697c",
+        "34b6899d-60ab-4993-8352-4448b0c89b6c",
+        "245e7e95-c3a8-47eb-9af9-ca20c715dc1a",
+        "8c85ac9e-1776-4187-aa7b-d722a6ca0dff",
         "052e0a53-1776-46fe-a6fc-95e9edc89353",
         "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
         "241364da-ca26-48c0-8fdd-12c48bb329af",
