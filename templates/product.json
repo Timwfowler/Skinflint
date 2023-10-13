@@ -60,108 +60,6 @@
         "product_video_style": "muted"
       }
     },
-    "30e90bf6-011a-472f-9c6a-f7f5cfd8a132": {
-      "type": "product-metafield-details",
-      "blocks": {
-        "1dc1bed2-799f-4e91-a4a2-335fdd15f0eb": {
-          "type": "filter",
-          "settings": {
-            "heading": "Soltan",
-            "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/Group_42.png",
-            "title": "Manufacturer: Soltan",
-            "copy": "<p>As with a number of the companies that emerged to satisfy the ever expanding home medical therapy lamp market in the 1950s, the origin of Soltan is currently unclear. Throughout the 1950s and 1960s the company produced numerous styles of table mounted heat lamps. Soltan Lamps all have a distinctive branded mark, for the lower priced basic models this was invariably a transfer - whereas the higher priced more exclusive lights featured an embossed plaque.<\/p>",
-            "link": "",
-            "link_text": "View all Soltan Lights"
-          }
-        },
-        "41d4cbe3-b529-4fc5-901a-5bcf4305bbba": {
-          "type": "filter",
-          "settings": {
-            "heading": "Strand Electric",
-            "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/Group_43.png",
-            "title": "Manufacturer: Strand Electric",
-            "copy": "<p>Strand Electric was founded in 1914 by theatre electricians Arthur Earnshaw and Phillip Sheridan at 19-24 Floral Street, London. Over the next 50 years Strand became the UK and Europe's principal manufacturers of stage lighting and theatre equipment. In 1968, Strand was purchased by the famous Rank Film Corporation and became Rank Strand. Strand was eventually bought from Rank by a venture capitalist group in the late 1990s. Today, Strand Lighting is still run as a separate, independent company within Royal Philips Lighting, and continues as a leading name in stage, television and motion picture lighting.<\/p>",
-            "link": "",
-            "link_text": "View all Strand Electric Lights"
-          }
-        },
-        "2c8c4414-3d93-445f-bc09-a73b918e6cb3": {
-          "type": "filter",
-          "settings": {
-            "heading": "Thorlux",
-            "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/Group_44_1.png",
-            "title": "Manufacturer: Thorlux",
-            "copy": "<p>Thorlux was founded by Frederick William Thorpe in 1936 in Small Heath, Birmingham. The company produced vitreous enamelled shades for lighting factories, workshops, mills and farm buildings during the progressive industrialisation of the 1930s through to the 1950s. Thorlux is still in existence over 75 years later, manufacturing a comprehensive range of professional lighting and control systems for architectural and industrial applications. The classic enamel shades from the 1950s with the distinctive Thorlux branding are one of our firm favourites.<\/p>",
-            "link": "",
-            "link_text": "View all Thorlux Lights"
-          }
-        },
-        "402bf3d1-6b7b-43c8-88e2-76d678ae3f1d": {
-          "type": "filter",
-          "settings": {
-            "heading": "Victor",
-            "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/Group_45_1.png",
-            "title": "Manufacturer: Victor",
-            "copy": "<p>Victor Products Ltd were founded during 1929 in Newcastle-upon-Tyne. The company was established to specialise in the design and manufacture of industrial and explosion proof light fittings, intended for use by the mining industry and in extreme locations such as oil refineries. Over 75 years later the company are still operating from their location in the northeast of England.<\/p>",
-            "link": "",
-            "link_text": "View all Victor Lights"
-          }
-        },
-        "e6419d20-c823-4c38-9c90-8f9caab6319d": {
-          "type": "filter",
-          "settings": {
-            "heading": "Walligraph",
-            "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/Group_46.png",
-            "title": "Manufacturer: Walligraph",
-            "copy": "<p>From the 1930s Walligraph produced some of the finest examples of early industrial lighting in Britain, comparable, yet widely overlooked in relation to the designs emanating from the Bauhaus during the same period. The company were known for their innovative scissor wall lights entitled the ‘Radialite’ the mechanism allowing people to use the light at their desk then fold it away when they had finished. Along with the wall lights the company also produced the elegant ‘Localite’ desk lights. As the 1930s printed marketing literature proclaimed 'Save your site with Localite.'<\/p>",
-            "link": "",
-            "link_text": "View all Walligraph Lights"
-          }
-        },
-        "55c7ad5a-2dda-4851-a9d3-a0ce570ce273": {
-          "type": "filter",
-          "settings": {
-            "heading": "Walsall",
-            "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/Group_47.png",
-            "title": "Manufacturer: Walsall",
-            "copy": "<p>Walsall Conduits Ltd of Excelsior Works, West Bromwich, Birmingham, UK was founded in 1890. The foundations of the business were built on the manufacture and supply of steel electrical conduit and accessories. Walsall went onto manufacture a wide array of electrical elements and lighting fixtures for the industrial market with the products’ glass or cast enclosures being branded with the distinctive Walsall mark. By 1961 the company was employing 2,000 people. In the mass mergers of the late 1960s, Walsall was eventually bought out by another of our favourite iconic British lighting brands, General Electric Company (G.E.C).<\/p>",
-            "link": "",
-            "link_text": "View all Walsall Lights"
-          }
-        },
-        "ee8a8f93-ac6c-4e73-b8ce-6a352b5142b1": {
-          "type": "filter",
-          "settings": {
-            "heading": "Wardle",
-            "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/Group_48_1.png",
-            "title": "Manufacturer: Wardle",
-            "copy": "<p>The Wardle Engineering Company Limited was founded by Walter and Arthur Wardle during the 1890s in Manchester. The firm was sold to Chamen and Wilkinson in 1910, but the name was retained. Despite an early foothold in the market, Wardle never gained the success of the larger manufacturers, and their products were rarely installed far from their Manchester manufacturing base. Trading ceased in the 1980s. The Prismalux Art Deco glass bulkheads, originally developed by Wardle in the 1930s, remain one of our firm favourites.<\/p>",
-            "link": "",
-            "link_text": "View all Wardle Lights"
-          }
-        }
-      },
-      "block_order": [
-        "1dc1bed2-799f-4e91-a4a2-335fdd15f0eb",
-        "41d4cbe3-b529-4fc5-901a-5bcf4305bbba",
-        "2c8c4414-3d93-445f-bc09-a73b918e6cb3",
-        "402bf3d1-6b7b-43c8-88e2-76d678ae3f1d",
-        "e6419d20-c823-4c38-9c90-8f9caab6319d",
-        "55c7ad5a-2dda-4851-a9d3-a0ce570ce273",
-        "ee8a8f93-ac6c-4e73-b8ce-6a352b5142b1"
-      ],
-      "settings": {
-        "flush": true,
-        "flush_bottom": true
-      }
-    },
     "1ef34e4a-a4e6-4be3-931f-5a87ad67a705": {
       "type": "product-metafield-details",
       "blocks": {
@@ -237,6 +135,18 @@
             "link_text": "View all lights from Japan"
           }
         },
+        "7f7dbebb-6100-4fa9-b1df-aa29385d816f": {
+          "type": "filter",
+          "settings": {
+            "heading": "UK",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/700x700_cv_united-kingdom-origin-country-map_6aff0b49-69b2-4c31-a1b0-a2a790806be9.webp",
+            "title": "Origin: UK",
+            "copy": "<p>Lighting design in the UK benefitted from a free market. Different companies were working at the same time, designing and producing similar products for the same market. Often with only slight differences in their style, they constantly upgraded and improved their original designs. The products we salvage come from the old industrial heartland of England. This area of the UK was once the boiler room of the British economy - from the potteries of Stoke, through the engineering works of Birmingham, to the wool, textile and cotton mills of Oldham and Manchester.<\/p>",
+            "link": "",
+            "link_text": "View all lights from UK"
+          }
+        },
         "a2330632-993f-4579-b847-6107bf482c26": {
           "type": "filter",
           "settings": {
@@ -271,18 +181,6 @@
             "copy": "<p>Many of the products we salvage and restore from the former Eastern Bloc were produced in the former U.S.S.R. and are defined by a clean industrial aesthetic. As with other Communist countries, the same design was often manufactured in three scaled versions to cater for varying bulb wattage. Lights from this region are often defined by their distinctive light green, two-tone colour ways.<\/p>",
             "link": "",
             "link_text": "View all lights from U.S.S.R (former)"
-          }
-        },
-        "7f7dbebb-6100-4fa9-b1df-aa29385d816f": {
-          "type": "filter",
-          "settings": {
-            "heading": "UK",
-            "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/700x700_cv_united-kingdom-origin-country-map_6aff0b49-69b2-4c31-a1b0-a2a790806be9.webp",
-            "title": "Origin: UK",
-            "copy": "<p>Lighting design in the UK benefitted from a free market. Different companies were working at the same time, designing and producing similar products for the same market. Often with only slight differences in their style, they constantly upgraded and improved their original designs. The products we salvage come from the old industrial heartland of England. This area of the UK was once the boiler room of the British economy - from the potteries of Stoke, through the engineering works of Birmingham, to the wool, textile and cotton mills of Oldham and Manchester.<\/p>",
-            "link": "",
-            "link_text": "View all lights from UK"
           }
         },
         "670b8665-2ca2-40e4-95fd-ac85cb9f45ca": {
@@ -731,10 +629,10 @@
         "a57098d3-5fef-49e4-83cd-4e4e27e0695c",
         "4264ca96-e5bf-41b6-b855-598ac57b2019",
         "eb6e1178-8def-4826-a76f-78529c492e9c",
+        "7f7dbebb-6100-4fa9-b1df-aa29385d816f",
         "a2330632-993f-4579-b847-6107bf482c26",
         "91adb453-ecbf-478c-b840-eeea1d2b3b6a",
         "b8f4f725-e525-49db-9bcf-65a9f0395954",
-        "7f7dbebb-6100-4fa9-b1df-aa29385d816f",
         "670b8665-2ca2-40e4-95fd-ac85cb9f45ca",
         "579486ba-f638-4b06-b48e-7046da30bc7d",
         "e149d46f-ce1a-4108-b49e-fa1c018b3bf0",
@@ -775,6 +673,108 @@
         "d1870981-b76b-4455-a845-bd7526a220f9",
         "471332c3-15a0-4968-9030-f9f0db59f550",
         "7554683d-774c-4a01-a4a3-80f7bb734309"
+      ],
+      "settings": {
+        "flush": true,
+        "flush_bottom": true
+      }
+    },
+    "30e90bf6-011a-472f-9c6a-f7f5cfd8a132": {
+      "type": "product-metafield-details",
+      "blocks": {
+        "1dc1bed2-799f-4e91-a4a2-335fdd15f0eb": {
+          "type": "filter",
+          "settings": {
+            "heading": "Soltan",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/Group_42.png",
+            "title": "Manufacturer: Soltan",
+            "copy": "<p>As with a number of the companies that emerged to satisfy the ever expanding home medical therapy lamp market in the 1950s, the origin of Soltan is currently unclear. Throughout the 1950s and 1960s the company produced numerous styles of table mounted heat lamps. Soltan Lamps all have a distinctive branded mark, for the lower priced basic models this was invariably a transfer - whereas the higher priced more exclusive lights featured an embossed plaque.<\/p>",
+            "link": "",
+            "link_text": "View all Soltan Lights"
+          }
+        },
+        "41d4cbe3-b529-4fc5-901a-5bcf4305bbba": {
+          "type": "filter",
+          "settings": {
+            "heading": "Strand Electric",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/Group_43.png",
+            "title": "Manufacturer: Strand Electric",
+            "copy": "<p>Strand Electric was founded in 1914 by theatre electricians Arthur Earnshaw and Phillip Sheridan at 19-24 Floral Street, London. Over the next 50 years Strand became the UK and Europe's principal manufacturers of stage lighting and theatre equipment. In 1968, Strand was purchased by the famous Rank Film Corporation and became Rank Strand. Strand was eventually bought from Rank by a venture capitalist group in the late 1990s. Today, Strand Lighting is still run as a separate, independent company within Royal Philips Lighting, and continues as a leading name in stage, television and motion picture lighting.<\/p>",
+            "link": "",
+            "link_text": "View all Strand Electric Lights"
+          }
+        },
+        "2c8c4414-3d93-445f-bc09-a73b918e6cb3": {
+          "type": "filter",
+          "settings": {
+            "heading": "Thorlux",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/Group_44_1.png",
+            "title": "Manufacturer: Thorlux",
+            "copy": "<p>Thorlux was founded by Frederick William Thorpe in 1936 in Small Heath, Birmingham. The company produced vitreous enamelled shades for lighting factories, workshops, mills and farm buildings during the progressive industrialisation of the 1930s through to the 1950s. Thorlux is still in existence over 75 years later, manufacturing a comprehensive range of professional lighting and control systems for architectural and industrial applications. The classic enamel shades from the 1950s with the distinctive Thorlux branding are one of our firm favourites.<\/p>",
+            "link": "",
+            "link_text": "View all Thorlux Lights"
+          }
+        },
+        "402bf3d1-6b7b-43c8-88e2-76d678ae3f1d": {
+          "type": "filter",
+          "settings": {
+            "heading": "Victor",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/Group_45_1.png",
+            "title": "Manufacturer: Victor",
+            "copy": "<p>Victor Products Ltd were founded during 1929 in Newcastle-upon-Tyne. The company was established to specialise in the design and manufacture of industrial and explosion proof light fittings, intended for use by the mining industry and in extreme locations such as oil refineries. Over 75 years later the company are still operating from their location in the northeast of England.<\/p>",
+            "link": "",
+            "link_text": "View all Victor Lights"
+          }
+        },
+        "e6419d20-c823-4c38-9c90-8f9caab6319d": {
+          "type": "filter",
+          "settings": {
+            "heading": "Walligraph",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/Group_46.png",
+            "title": "Manufacturer: Walligraph",
+            "copy": "<p>From the 1930s Walligraph produced some of the finest examples of early industrial lighting in Britain, comparable, yet widely overlooked in relation to the designs emanating from the Bauhaus during the same period. The company were known for their innovative scissor wall lights entitled the ‘Radialite’ the mechanism allowing people to use the light at their desk then fold it away when they had finished. Along with the wall lights the company also produced the elegant ‘Localite’ desk lights. As the 1930s printed marketing literature proclaimed 'Save your site with Localite.'<\/p>",
+            "link": "",
+            "link_text": "View all Walligraph Lights"
+          }
+        },
+        "55c7ad5a-2dda-4851-a9d3-a0ce570ce273": {
+          "type": "filter",
+          "settings": {
+            "heading": "Walsall",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/Group_47.png",
+            "title": "Manufacturer: Walsall",
+            "copy": "<p>Walsall Conduits Ltd of Excelsior Works, West Bromwich, Birmingham, UK was founded in 1890. The foundations of the business were built on the manufacture and supply of steel electrical conduit and accessories. Walsall went onto manufacture a wide array of electrical elements and lighting fixtures for the industrial market with the products’ glass or cast enclosures being branded with the distinctive Walsall mark. By 1961 the company was employing 2,000 people. In the mass mergers of the late 1960s, Walsall was eventually bought out by another of our favourite iconic British lighting brands, General Electric Company (G.E.C).<\/p>",
+            "link": "",
+            "link_text": "View all Walsall Lights"
+          }
+        },
+        "ee8a8f93-ac6c-4e73-b8ce-6a352b5142b1": {
+          "type": "filter",
+          "settings": {
+            "heading": "Wardle",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/Group_48_1.png",
+            "title": "Manufacturer: Wardle",
+            "copy": "<p>The Wardle Engineering Company Limited was founded by Walter and Arthur Wardle during the 1890s in Manchester. The firm was sold to Chamen and Wilkinson in 1910, but the name was retained. Despite an early foothold in the market, Wardle never gained the success of the larger manufacturers, and their products were rarely installed far from their Manchester manufacturing base. Trading ceased in the 1980s. The Prismalux Art Deco glass bulkheads, originally developed by Wardle in the 1930s, remain one of our firm favourites.<\/p>",
+            "link": "",
+            "link_text": "View all Wardle Lights"
+          }
+        }
+      },
+      "block_order": [
+        "1dc1bed2-799f-4e91-a4a2-335fdd15f0eb",
+        "41d4cbe3-b529-4fc5-901a-5bcf4305bbba",
+        "2c8c4414-3d93-445f-bc09-a73b918e6cb3",
+        "402bf3d1-6b7b-43c8-88e2-76d678ae3f1d",
+        "e6419d20-c823-4c38-9c90-8f9caab6319d",
+        "55c7ad5a-2dda-4851-a9d3-a0ce570ce273",
+        "ee8a8f93-ac6c-4e73-b8ce-6a352b5142b1"
       ],
       "settings": {
         "flush": true,
@@ -950,8 +950,8 @@
   },
   "order": [
     "main",
-    "30e90bf6-011a-472f-9c6a-f7f5cfd8a132",
     "1ef34e4a-a4e6-4be3-931f-5a87ad67a705",
+    "30e90bf6-011a-472f-9c6a-f7f5cfd8a132",
     "ee009aad-efa1-453e-a080-2be48216ae9f",
     "product-usps",
     "product-contact-form",
