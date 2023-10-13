@@ -183,6 +183,63 @@
             "link_text": "View all lights from U.S.S.R (former)"
           }
         },
+       
+        "052e0a53-1776-46fe-a6fc-95e9edc89353": {
+          "type": "meta_one",
+          "settings": {
+          }
+        },
+        "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08": {
+          "type": "pdf",
+          "settings": {
+          }
+        },
+        "241364da-ca26-48c0-8fdd-12c48bb329af": {
+          "type": "meta_two",
+          "settings": {
+          }
+        },
+        "d1870981-b76b-4455-a845-bd7526a220f9": {
+          "type": "meta_three",
+          "settings": {
+          }
+        },
+        "471332c3-15a0-4968-9030-f9f0db59f550": {
+          "type": "meta_four",
+          "settings": {
+          }
+        },
+        "7554683d-774c-4a01-a4a3-80f7bb734309": {
+          "type": "meta_five",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "0c7a4ad1-214d-4bfa-acb4-c3fd43649a7c",
+        "cfbf9ed8-7f51-4972-bb2b-309151b65af4",
+        "558bc971-aa7d-4e2d-ab1b-49a64b44085d",
+        "a57098d3-5fef-49e4-83cd-4e4e27e0695c",
+        "4264ca96-e5bf-41b6-b855-598ac57b2019",
+        "eb6e1178-8def-4826-a76f-78529c492e9c",
+        "7f7dbebb-6100-4fa9-b1df-aa29385d816f",
+        "a2330632-993f-4579-b847-6107bf482c26",
+        "91adb453-ecbf-478c-b840-eeea1d2b3b6a",
+        "052e0a53-1776-46fe-a6fc-95e9edc89353",
+        "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
+        "241364da-ca26-48c0-8fdd-12c48bb329af",
+        "d1870981-b76b-4455-a845-bd7526a220f9",
+        "471332c3-15a0-4968-9030-f9f0db59f550",
+        "7554683d-774c-4a01-a4a3-80f7bb734309"
+      ],
+      "settings": {
+        "flush": true,
+        "flush_bottom": true
+      }
+    },
+    "30e90bf6-011a-472f-9c6a-f7f5cfd8a132": {
+      "type": "product-metafield-details",
+      "blocks": {
         "670b8665-2ca2-40e4-95fd-ac85cb9f45ca": {
           "type": "filter",
           "settings": {
@@ -591,97 +648,6 @@
             "link_text": "View all Simplex Electric Co Lights"
           }
         },
-        "052e0a53-1776-46fe-a6fc-95e9edc89353": {
-          "type": "meta_one",
-          "settings": {
-          }
-        },
-        "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08": {
-          "type": "pdf",
-          "settings": {
-          }
-        },
-        "241364da-ca26-48c0-8fdd-12c48bb329af": {
-          "type": "meta_two",
-          "settings": {
-          }
-        },
-        "d1870981-b76b-4455-a845-bd7526a220f9": {
-          "type": "meta_three",
-          "settings": {
-          }
-        },
-        "471332c3-15a0-4968-9030-f9f0db59f550": {
-          "type": "meta_four",
-          "settings": {
-          }
-        },
-        "7554683d-774c-4a01-a4a3-80f7bb734309": {
-          "type": "meta_five",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "0c7a4ad1-214d-4bfa-acb4-c3fd43649a7c",
-        "cfbf9ed8-7f51-4972-bb2b-309151b65af4",
-        "558bc971-aa7d-4e2d-ab1b-49a64b44085d",
-        "a57098d3-5fef-49e4-83cd-4e4e27e0695c",
-        "4264ca96-e5bf-41b6-b855-598ac57b2019",
-        "eb6e1178-8def-4826-a76f-78529c492e9c",
-        "7f7dbebb-6100-4fa9-b1df-aa29385d816f",
-        "a2330632-993f-4579-b847-6107bf482c26",
-        "91adb453-ecbf-478c-b840-eeea1d2b3b6a",
-        "b8f4f725-e525-49db-9bcf-65a9f0395954",
-        "670b8665-2ca2-40e4-95fd-ac85cb9f45ca",
-        "579486ba-f638-4b06-b48e-7046da30bc7d",
-        "e149d46f-ce1a-4108-b49e-fa1c018b3bf0",
-        "5d14cae6-0f53-458b-8856-57da8894bfe4",
-        "b7eafbd5-46ae-48ad-ab26-63a077fa3f2a",
-        "965b9024-3036-426c-9e8c-3866b41e64b7",
-        "f4ddb2c5-48fe-47cb-8f19-7850862d3674",
-        "f9c72ccb-96ce-408e-b975-12645c57836f",
-        "e6438c3c-66ef-4a6d-a0b2-09779f7c6c43",
-        "32aa3006-dd69-41c0-8f5f-912eb1ef7acc",
-        "d4a510d2-72cd-4dd1-855a-cd3b35d9df27",
-        "84b96e02-a28e-4e20-aa44-c0f8e4c5f649",
-        "1de8d150-6cd3-4e76-8dbf-446ceb7f3839",
-        "030b5f6d-4a74-46a2-b148-dfa7526572d0",
-        "8010201f-c719-44d6-9827-c7cc37057903",
-        "e0e88d32-6b6f-460f-b9c2-32338ffe562e",
-        "b82e7029-cffd-4fdc-9f80-19e24a22ee1b",
-        "bfd0ac35-73bd-452f-b3e1-52a17305fa28",
-        "b1e02439-895d-4d42-8794-806dfe8846a0",
-        "74189e08-4e30-4390-b1c1-050836c4c684",
-        "b6fff42b-f9ee-4297-b5dd-3d2c8bf9697c",
-        "34b6899d-60ab-4993-8352-4448b0c89b6c",
-        "245e7e95-c3a8-47eb-9af9-ca20c715dc1a",
-        "8c85ac9e-1776-4187-aa7b-d722a6ca0dff",
-        "b41be3c8-cb7b-4b1e-8be1-1df98ebf3e03",
-        "a5431c39-e0ad-4287-b0e0-e7c7fe927224",
-        "5ca49151-319e-4c96-8cff-9ca83476110a",
-        "10bc7878-53f7-4fb0-9398-f40c486b17e5",
-        "2812773a-587b-4183-adbe-0e2edbc7ebad",
-        "fb188370-62b8-4cd9-9e50-8939a04c7a40",
-        "2a15dc1a-1ca3-4a8f-8b39-273845183d55",
-        "bec5a70d-6681-4580-8963-faf68a7dc975",
-        "a4d44678-28c0-45ea-8467-1f00df080801",
-        "1c686942-8c10-4c08-ad5c-15971e14fac5",
-        "052e0a53-1776-46fe-a6fc-95e9edc89353",
-        "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
-        "241364da-ca26-48c0-8fdd-12c48bb329af",
-        "d1870981-b76b-4455-a845-bd7526a220f9",
-        "471332c3-15a0-4968-9030-f9f0db59f550",
-        "7554683d-774c-4a01-a4a3-80f7bb734309"
-      ],
-      "settings": {
-        "flush": true,
-        "flush_bottom": true
-      }
-    },
-    "30e90bf6-011a-472f-9c6a-f7f5cfd8a132": {
-      "type": "product-metafield-details",
-      "blocks": {
         "1dc1bed2-799f-4e91-a4a2-335fdd15f0eb": {
           "type": "filter",
           "settings": {
@@ -774,7 +740,42 @@
         "402bf3d1-6b7b-43c8-88e2-76d678ae3f1d",
         "e6419d20-c823-4c38-9c90-8f9caab6319d",
         "55c7ad5a-2dda-4851-a9d3-a0ce570ce273",
-        "ee8a8f93-ac6c-4e73-b8ce-6a352b5142b1"
+        "ee8a8f93-ac6c-4e73-b8ce-6a352b5142b1",
+        "b8f4f725-e525-49db-9bcf-65a9f0395954",
+        "670b8665-2ca2-40e4-95fd-ac85cb9f45ca",
+        "579486ba-f638-4b06-b48e-7046da30bc7d",
+        "e149d46f-ce1a-4108-b49e-fa1c018b3bf0",
+        "5d14cae6-0f53-458b-8856-57da8894bfe4",
+        "b7eafbd5-46ae-48ad-ab26-63a077fa3f2a",
+        "965b9024-3036-426c-9e8c-3866b41e64b7",
+        "f4ddb2c5-48fe-47cb-8f19-7850862d3674",
+        "f9c72ccb-96ce-408e-b975-12645c57836f",
+        "e6438c3c-66ef-4a6d-a0b2-09779f7c6c43",
+        "32aa3006-dd69-41c0-8f5f-912eb1ef7acc",
+        "d4a510d2-72cd-4dd1-855a-cd3b35d9df27",
+        "84b96e02-a28e-4e20-aa44-c0f8e4c5f649",
+        "1de8d150-6cd3-4e76-8dbf-446ceb7f3839",
+        "030b5f6d-4a74-46a2-b148-dfa7526572d0",
+        "8010201f-c719-44d6-9827-c7cc37057903",
+        "e0e88d32-6b6f-460f-b9c2-32338ffe562e",
+        "b82e7029-cffd-4fdc-9f80-19e24a22ee1b",
+        "bfd0ac35-73bd-452f-b3e1-52a17305fa28",
+        "b1e02439-895d-4d42-8794-806dfe8846a0",
+        "74189e08-4e30-4390-b1c1-050836c4c684",
+        "b6fff42b-f9ee-4297-b5dd-3d2c8bf9697c",
+        "34b6899d-60ab-4993-8352-4448b0c89b6c",
+        "245e7e95-c3a8-47eb-9af9-ca20c715dc1a",
+        "8c85ac9e-1776-4187-aa7b-d722a6ca0dff",
+        "b41be3c8-cb7b-4b1e-8be1-1df98ebf3e03",
+        "a5431c39-e0ad-4287-b0e0-e7c7fe927224",
+        "5ca49151-319e-4c96-8cff-9ca83476110a",
+        "10bc7878-53f7-4fb0-9398-f40c486b17e5",
+        "2812773a-587b-4183-adbe-0e2edbc7ebad",
+        "fb188370-62b8-4cd9-9e50-8939a04c7a40",
+        "2a15dc1a-1ca3-4a8f-8b39-273845183d55",
+        "bec5a70d-6681-4580-8963-faf68a7dc975",
+        "a4d44678-28c0-45ea-8467-1f00df080801",
+        "1c686942-8c10-4c08-ad5c-15971e14fac5"
       ],
       "settings": {
         "flush": true,
