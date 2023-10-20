@@ -856,9 +856,10 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
+            "image": "shopify:\/\/shop_images\/sustainability_f3a36b7f-112e-4746-96e6-01965ab75258.webp",
             "title": "Sustainability",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.<\/p>",
-            "button_label": "Optional button",
+            "text": "<p>Our carbon-neutral business policy and our commitment to looking after the planet.<\/p>",
+            "button_label": "See more",
             "button_link": ""
           }
         },
