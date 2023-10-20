@@ -802,10 +802,11 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
+            "image": "shopify:\/\/shop_images\/1_returnsfaq_1.webp",
             "title": "Returns",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.<\/p>",
-            "button_label": "Optional button",
-            "button_link": ""
+            "text": "<p>All you need to know about our no quibble returns policy.<\/p>",
+            "button_label": "Read more",
+            "button_link": "shopify:\/\/policies\/refund-policy"
           }
         },
         "91e3b375-909a-4075-9924-91ef87090921": {
