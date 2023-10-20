@@ -877,9 +877,10 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
+            "image": "shopify:\/\/shop_images\/fullcirclefaq_5c97d3ff-8fbc-443e-b3a9-a7fcf69acc25.webp",
             "title": "Full Circle",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.<\/p>",
-            "button_label": "Optional button",
+            "text": "<p>How our product buy-back scheme is keeping vintage lights in use forever.<\/p>",
+            "button_label": "See more",
             "button_link": ""
           }
         },
