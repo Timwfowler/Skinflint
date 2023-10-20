@@ -787,17 +787,6 @@
     "product-usps": {
       "type": "product-usps",
       "blocks": {
-        "21aebdb9-c123-471d-843e-3ccad2f4bfa8": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/1_lightbulbsfaq_1.webp",
-            "title": "Light Bulbs",
-            "text": "<p>Why we recommend using energy-saving LED light bulbs in all of our vintage lights.<\/p>",
-            "button_label": "Read more",
-            "button_link": "#"
-          }
-        },
         "94a8a4ac-6bb8-4523-97c9-71ac3109801d": {
           "type": "text_block",
           "settings": {
@@ -805,6 +794,38 @@
             "image": "shopify:\/\/shop_images\/2_shippingfastdelivery_1.webp",
             "title": "Shipping",
             "text": "<p>Our UK and international shipping and our no quibble return options explained.<\/p>",
+            "button_label": "Read more",
+            "button_link": "#"
+          }
+        },
+        "237d716b-274a-437e-8b8e-3dc1c548cc7b": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "title": "Returns",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "91e3b375-909a-4075-9924-91ef87090921": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/2_wetroomsfaq_4613fbbf-066c-4776-91d5-136376da6c23.webp",
+            "title": "Applications",
+            "text": "<p>Where our lights can be used internally and externally, including bathrooms and IP ratings.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "21aebdb9-c123-471d-843e-3ccad2f4bfa8": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/1_lightbulbsfaq_1.webp",
+            "title": "Light Bulbs",
+            "text": "<p>Why we recommend using energy-saving LED light bulbs in all of our vintage lights.<\/p>",
             "button_label": "Read more",
             "button_link": "#"
           }
@@ -820,6 +841,26 @@
             "button_link": "#"
           }
         },
+        "9cccf7be-8994-49df-9c4e-9646fc1172ac": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "title": "Wet Rooms",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "07e9922c-4222-47d6-aea6-61dcee3e9a5e": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "title": "Sustainability",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
         "6c4045ce-acac-4a8d-be55-5dd29778e7dc": {
           "type": "text_block",
           "settings": {
@@ -829,6 +870,16 @@
             "text": "<p>Our UK Lighting Industry Association (LIA), British Standards and UL certifications.<\/p>",
             "button_label": "Read more",
             "button_link": "#"
+          }
+        },
+        "3ab45124-f7aa-4388-a4a3-c75bbdd62de0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "title": "Full Circle",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
           }
         },
         "2ece7aaf-2318-457b-9a95-5533602c51bb": {
@@ -841,26 +892,19 @@
             "button_label": "Read more",
             "button_link": "#"
           }
-        },
-        "91e3b375-909a-4075-9924-91ef87090921": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/2_wetroomsfaq_4613fbbf-066c-4776-91d5-136376da6c23.webp",
-            "title": "Applications",
-            "text": "<p>Where our lights can be used internally and externally, including bathrooms and IP ratings.<\/p>",
-            "button_label": "Optional button",
-            "button_link": ""
-          }
         }
       },
       "block_order": [
-        "21aebdb9-c123-471d-843e-3ccad2f4bfa8",
         "94a8a4ac-6bb8-4523-97c9-71ac3109801d",
+        "237d716b-274a-437e-8b8e-3dc1c548cc7b",
+        "91e3b375-909a-4075-9924-91ef87090921",
+        "21aebdb9-c123-471d-843e-3ccad2f4bfa8",
         "f5676427-85e8-42c5-bc18-dae4e881a94d",
+        "9cccf7be-8994-49df-9c4e-9646fc1172ac",
+        "07e9922c-4222-47d6-aea6-61dcee3e9a5e",
         "6c4045ce-acac-4a8d-be55-5dd29778e7dc",
-        "2ece7aaf-2318-457b-9a95-5533602c51bb",
-        "91e3b375-909a-4075-9924-91ef87090921"
+        "3ab45124-f7aa-4388-a4a3-c75bbdd62de0",
+        "2ece7aaf-2318-457b-9a95-5533602c51bb"
       ],
       "settings": {
         "flush": false,
