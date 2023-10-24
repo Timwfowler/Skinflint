@@ -831,19 +831,9 @@
             "button_link": "#"
           }
         },
-        "f5676427-85e8-42c5-bc18-dae4e881a94d": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/2_wetroomsfaq_1.webp",
-            "title": "Applications",
-            "text": "<p>Where our lights can be used internally and externally, including bathrooms and IP ratings.<\/p>",
-            "button_label": "Read more",
-            "button_link": "#"
-          }
-        },
         "9cccf7be-8994-49df-9c4e-9646fc1172ac": {
           "type": "text_block",
+          "disabled": true,
           "settings": {
             "enable_image": true,
             "title": "Wet Rooms",
@@ -902,7 +892,6 @@
         "237d716b-274a-437e-8b8e-3dc1c548cc7b",
         "91e3b375-909a-4075-9924-91ef87090921",
         "21aebdb9-c123-471d-843e-3ccad2f4bfa8",
-        "f5676427-85e8-42c5-bc18-dae4e881a94d",
         "9cccf7be-8994-49df-9c4e-9646fc1172ac",
         "07e9922c-4222-47d6-aea6-61dcee3e9a5e",
         "6c4045ce-acac-4a8d-be55-5dd29778e7dc",
