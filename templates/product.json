@@ -45,6 +45,13 @@
             "man_image": "shopify:\/\/shop_images\/Group_13_1_62d311ca-427b-4437-8de8-d289e182f69e.png",
             "man_url": "shopify:\/\/collections\/cryselco-lighting"
           }
+        },
+        "91a41421-b5b5-4ac2-9849-2212b8ac8d47": {
+          "type": "manufacture",
+          "settings": {
+            "man_name": "E.D.L",
+            "man_url": "shopify:\/\/collections\/edl-lighting"
+          }
         }
       },
       "block_order": [
@@ -53,7 +60,8 @@
         "variant_picker",
         "buy_buttons",
         "fd0319f0-bd1f-4b28-9593-52764908cd5c",
-        "5bf08af0-7f8c-4131-acb4-eb47a6804e83"
+        "5bf08af0-7f8c-4131-acb4-eb47a6804e83",
+        "91a41421-b5b5-4ac2-9849-2212b8ac8d47"
       ],
       "settings": {
         "sku_enable": false,
