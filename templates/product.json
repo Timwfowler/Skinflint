@@ -61,6 +61,14 @@
             "man_image": "shopify:\/\/shop_images\/marque-eagle-signal_061e8e99-e0ad-40ff-9817-0e0cb9cc9346.webp",
             "man_url": "shopify:\/\/collections\/eagle-lighing"
           }
+        },
+        "67e77536-4e4e-460b-87f0-84d925c410a6": {
+          "type": "manufacture",
+          "settings": {
+            "man_name": "G.E.C",
+            "man_image": "shopify:\/\/shop_images\/marque-gec_05af4364-395c-4576-92c0-5c1f705af6a6.webp",
+            "man_url": "shopify:\/\/collections\/gec-lights"
+          }
         }
       },
       "block_order": [
@@ -71,7 +79,8 @@
         "fd0319f0-bd1f-4b28-9593-52764908cd5c",
         "5bf08af0-7f8c-4131-acb4-eb47a6804e83",
         "91a41421-b5b5-4ac2-9849-2212b8ac8d47",
-        "f9ae61be-2eec-4c76-bc61-d4177310eb8d"
+        "f9ae61be-2eec-4c76-bc61-d4177310eb8d",
+        "67e77536-4e4e-460b-87f0-84d925c410a6"
       ],
       "settings": {
         "sku_enable": false,
