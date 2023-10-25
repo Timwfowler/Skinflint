@@ -50,6 +50,7 @@
           "type": "manufacture",
           "settings": {
             "man_name": "E.D.L",
+            "man_image": "shopify:\/\/shop_images\/marque-edl_2ce9e606-87d6-4839-99b3-eedf5bd34780.webp",
             "man_url": "shopify:\/\/collections\/edl-lighting"
           }
         }
