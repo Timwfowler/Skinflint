@@ -37,6 +37,14 @@
             "man_image": "shopify:\/\/shop_images\/2_marque-benjamin.webp",
             "man_url": "shopify:\/\/collections\/benzamin"
           }
+        },
+        "5bf08af0-7f8c-4131-acb4-eb47a6804e83": {
+          "type": "manufacture",
+          "settings": {
+            "man_name": "Cryselco Lighting",
+            "man_image": "shopify:\/\/shop_images\/Group_13_1_62d311ca-427b-4437-8de8-d289e182f69e.png",
+            "man_url": "shopify:\/\/collections\/cryselco-lighting"
+          }
         }
       },
       "block_order": [
@@ -44,7 +52,8 @@
         "price",
         "variant_picker",
         "buy_buttons",
-        "fd0319f0-bd1f-4b28-9593-52764908cd5c"
+        "fd0319f0-bd1f-4b28-9593-52764908cd5c",
+        "5bf08af0-7f8c-4131-acb4-eb47a6804e83"
       ],
       "settings": {
         "sku_enable": false,
