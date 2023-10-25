@@ -58,6 +58,7 @@
           "type": "manufacture",
           "settings": {
             "man_name": "Eagle",
+            "man_image": "shopify:\/\/shop_images\/marque-eagle-signal_061e8e99-e0ad-40ff-9817-0e0cb9cc9346.webp",
             "man_url": "shopify:\/\/collections\/eagle-lighing"
           }
         }
