@@ -53,6 +53,13 @@
             "man_image": "shopify:\/\/shop_images\/marque-edl_2ce9e606-87d6-4839-99b3-eedf5bd34780.webp",
             "man_url": "shopify:\/\/collections\/edl-lighting"
           }
+        },
+        "f9ae61be-2eec-4c76-bc61-d4177310eb8d": {
+          "type": "manufacture",
+          "settings": {
+            "man_name": "Eagle",
+            "man_url": "shopify:\/\/collections\/eagle-lighing"
+          }
         }
       },
       "block_order": [
@@ -62,7 +69,8 @@
         "buy_buttons",
         "fd0319f0-bd1f-4b28-9593-52764908cd5c",
         "5bf08af0-7f8c-4131-acb4-eb47a6804e83",
-        "91a41421-b5b5-4ac2-9849-2212b8ac8d47"
+        "91a41421-b5b5-4ac2-9849-2212b8ac8d47",
+        "f9ae61be-2eec-4c76-bc61-d4177310eb8d"
       ],
       "settings": {
         "sku_enable": false,
