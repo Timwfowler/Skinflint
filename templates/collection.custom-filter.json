@@ -48,6 +48,13 @@
             "filter_label": "Floor Lights",
             "filter_link": "shopify:\/\/collections\/vintage-and-industrial-floor-lamps"
           }
+        },
+        "beb3e78e-4ade-4cbf-8e74-0f2f92345daf": {
+          "type": "CustomFilter",
+          "settings": {
+            "filter_label": "Accessories",
+            "filter_link": "shopify:\/\/collections\/braided-lighting-cable-accessories"
+          }
         }
       },
       "block_order": [
@@ -56,7 +63,8 @@
         "06044c65-0974-4a01-bce2-9a05d49fa327",
         "4c57ca09-5ce7-4bfd-9c03-5675985efd82",
         "8fc26acf-62be-40fd-9d19-bf4d9f80a9d7",
-        "60c415f8-f685-478c-a99b-d099e4f44a5f"
+        "60c415f8-f685-478c-a99b-d099e4f44a5f",
+        "beb3e78e-4ade-4cbf-8e74-0f2f92345daf"
       ],
       "settings": {
         "image_with_text_image": "shopify:\/\/shop_images\/470x470_cv_skinflint-vintage-opaline-pendant-lights-in-groucho-members-club-mayfair-london-cta-4882x4882.webp",
