@@ -5,12 +5,12 @@
 
 {% if product.metafields.custom.manufacture != blank %}
   {% for collection in product.collections %}
-    {% if collection.title contains product.metafields.custom.manufacture.value[0] %}
+    {% if collection.title contains product.metafields.custom.manufacture %}
       {% assign numOfProducts = collection.products | size %}
       {% assign showing = 0 %}
       {% if numOfProducts > 1  %}
         <div class="page-width more-products-from">
-          <h2>More from {{ product.metafields.custom.manufacture.value[0] }}</h2>    
+          <h2>More from {{ product.metafields.custom.manufacture }}</h2>    
           <div class="new-grid">
             {% for eraProduct in collection.products %}
               {%- unless eraProduct.title == product.title -%}
