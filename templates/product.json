@@ -961,11 +961,12 @@
       "settings": {
       }
     },
-    "more-products-vendor": {
-      "type": "more-products-vendor",
+    "more-from-manuf": {
+      "type": "more-from-manuf",
       "settings": {
       }
     },
+
     "1018a177-fdc7-4a54-9f7f-8f3611e1e80c": {
       "type": "section-split-text",
       "blocks": {
@@ -1028,7 +1029,7 @@
     "product-contact-form",
     "more-products-origin",
     "more-products-era",
-    "more-products-vendor",
+    "more-from-manuf",
     "1018a177-fdc7-4a54-9f7f-8f3611e1e80c"
   ]
 }
