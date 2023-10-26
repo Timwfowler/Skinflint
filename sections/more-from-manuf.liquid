@@ -1,11 +1,16 @@
-{% if product.metafields.custom.origin != blank %}
+
+
+
+
+
+{% if product.metafields.custom.manufacture != blank %}
   {% for collection in product.collections %}
-    {% if collection.title contains product.metafields.custom.origin.value[0] %}
+    {% if collection.title contains product.metafields.custom.manufacture.value[0] %}
       {% assign numOfProducts = collection.products | size %}
       {% assign showing = 0 %}
       {% if numOfProducts > 1  %}
         <div class="page-width more-products-from">
-          <h2>More from {{ product.metafields.custom.origin.value[0] }}</h2>    
+          <h2>More from {{ product.metafields.custom.manufacture.value[0] }}</h2>    
           <div class="new-grid">
             {% for eraProduct in collection.products %}
               {%- unless eraProduct.title == product.title -%}
