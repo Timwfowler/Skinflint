@@ -139,7 +139,9 @@
       display: block; } }
   .scrolling-nav-actions__inner {
     display: flex;
-    align-items: center; }
+    align-items: center; 
+    height: 20px;
+  }
   .scrolling-nav-actions__bread {
     opacity: 1; }
   .scrolling-nav-actions__share {

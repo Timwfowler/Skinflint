@@ -1,6 +1,9 @@
 
+
+{% assign priceWithoutVat = product.price | divided_by: 1.2  %}
+
 <div class="pdp-main-price">
-  <h2><span class="price-vat-done" data-price="{{ product.price }}">{{ product.price | money }}</span> <span class="vat-line"></span> </h2>
+  <h2><span class="price-vat-done" data-price="{{ product.price }}">{{ priceWithoutVat | money }}</span> <span class="vat-line"></span> </h2>
   <svg class="tax-pop-trig" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" role="img" aria-label="Tool Tip" class="vat-info__icon"><path d="M7.5,0A7.5,7.5,0,1,0,15,7.5,7.5,7.5,0,0,0,7.5,0Zm0,14A6.5,6.5,0,1,1,14,7.5,6.5,6.5,0,0,1,7.5,14Z"></path> <path d="M6.8,8.9c0-.8.6-1.3,1.2-1.9a2.6,2.6,0,0,0,.9-1.8A1.3,1.3,0,0,0,7.4,3.7a1.9,1.9,0,0,0-1.6.9L5,3.9A3,3,0,0,1,7.5,2.7,2.4,2.4,0,0,1,10,5.1,3.2,3.2,0,0,1,8.8,7.4c-.6.6-1.1,1-1.1,1.5v.6H6.8Zm-.2,2.7a.7.7,0,1,1,.7.7A.7.7,0,0,1,6.5,11.6Z"></path></svg>
 
   <div class="tax-info">

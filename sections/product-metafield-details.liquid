@@ -299,32 +299,38 @@
                   <tr>
                     {% if product.metafields.pdf.diameter != blank %}
                       <td>Diameter:</td>
-                      <td>{{ product.metafields.pdf.diameter }}</td>
+                      <td>{{ product.metafields.pdf.diameter }} mm</td>
                     {% endif %}
                   </tr>
                   <tr>
                     {% if product.metafields.pdf.length != blank %}
                       <td>Length:</td>
-                      <td>{{ product.metafields.pdf.length }}</td>
+                      <td>{{ product.metafields.pdf.length }} mm</td>
                     {% endif %}
                   </tr>
                   <tr>
                     {% if product.metafields.pdf.height != blank %}
                       <td>Height:</td>
-                      <td>{{ product.metafields.pdf.height }}</td>
+                      <td>{{ product.metafields.pdf.height }} mm</td>
                     {% endif %}
                   </tr>
                   <tr>
                     {% if product.metafields.pdf.width != blank %}
                       <td>Width:</td>
-                      <td>{{ product.metafields.pdf.width }}</td>
+                      <td>{{ product.metafields.pdf.width }} mm</td>
                     {% endif %}
                   </tr>
                   <tr>
                     {% if product.metafields.pdf.weight != blank %}
                       <td>Weight:</td>
-                      <td>{{ product.metafields.pdf.weight }}</td>
+                      <td>{{ product.metafields.pdf.weight }} kg</td>
                     {% endif %}
+                    <tr>
+                    {% if product.metafields.pdf.colour != blank %}
+                      <td>Colour:</td>
+                      <td>{{ product.metafields.pdf.colour }}</td>
+                    {% endif %}
+                    </tr>
                   </tr>      
                 </table>  
                 {% endif %}
