@@ -372,16 +372,23 @@
                           <div class="btn js-buy-btn" data-var-id="{{ product.variants[0].id }}" data-total="{{ total }}">
                             <span>Add to cart</span>
                           </div>
-                          {% for block in section.blocks %}                          
-                            {% if block.type == "manufacture" %}                            
-                              {% if block.settings.man_name == product.metafields.custom.manufacture %}
-                              <a href="{{ block.settings.man_url }}">
-                                <img style="margin-top: 20px" width="80px" src="{{ block.settings.man_image | img_url: 'medium' }}" alt="">
-                              </a>
-                              
+                          {% if product.metafields.custom.manufacture != blank %}                        
+                            {% for collection in product.collections %}
+                              {% if collection.title contains product.metafields.custom.manufacture %}            
+                                {% unless collection.metafields.custom.is_this_collection_archived_ %}            
+                                <a href="{{ collection.url }}">
+                                  {% if collection.metafields.custom.manufacture_logo != blank %}
+                                    <img style="margin-top: 20px" width="80px" src="{{ collection.metafields.custom.manufacture_logo | img_url: 'medium'  }}" alt="">
+                                  {% else %}
+                                    <h4>{{ collection.title }}</h4>
+                                  {% endif %}                                
+                                </a>
+                                {% endunless %}
                               {% endif %}
-                            {% endif %}
-                          {% endfor %}    
+                            {% endfor %}
+                          {% endif %}
+
+ 
                         </div>
 
 
