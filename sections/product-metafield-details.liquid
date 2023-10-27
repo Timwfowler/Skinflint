@@ -342,7 +342,15 @@
                 </div>
               </div>
 
+              {% if product.metafields.pdf.notes != blank %}
               <p>{{ product.metafields.pdf.notes }}</p>
+
+              {% else %}
+              <p>{{ block.settings.pdf_notes_backup }}</p>
+              {% endif %}
+
+
+              
    
             </div>
           </div>
@@ -432,6 +440,12 @@
           {
             "type": "paragraph",
             "content": "This will show the PDF metafield block"
+          },
+          {
+            "type": "textarea",
+            "id": "pdf_notes_backup",
+            "label": "Default PDF notes (will show if metafield empty)",
+            "default": "Supplied tested to BS EN60598. Converted for use in the US and worldwide. IP20 for internal use only."
           }
         ]
       },

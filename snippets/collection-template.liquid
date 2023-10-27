@@ -1,11 +1,14 @@
 {%- liquid
-  assign paginate_by = 40
+  assign paginate_by = 4000
 
   assign current_filter_size = 0
   for filter in collection.filters
     assign current_filter_size = current_filter_size | plus: filter.active_values.size
   endfor
 -%}
+
+
+
 
 {%- paginate collection.products by paginate_by -%}
 
