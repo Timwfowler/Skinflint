@@ -2,6 +2,8 @@
 {%- assign urlArray = article.url | split: "/" -%}
 {% assign featuredArticleBlog = blogs[ urlArray[2] ] %}   
 
+
+
 <div class="blog-landing-page">
   <div class="blog-landing-page__inner page-width">
     <div class="blog-landing-page__article">
@@ -31,22 +33,18 @@
       <div class="blog-landing-page__filter-list">
         <p>Browse by:</p>
         <ul>
-          {% if template.suffix  != blank %}
-          <li {% if template.name == "page" %} class="active" {% endif %}><a href="/pages/projects-landing-page">All</a></li>   
-          {%- else -%}
-          <li {% if template.name == "page" %} class="active" {% endif %}><a href="/pages/blog-landing-page">All</a></li>   
-          {% endif %}         
-          {% for block in section.blocks %}
-            {% assign blogFilter = blogs[ block.settings.blog ] %}    
+
  
 
+          <li><a href="{{ blog.url   }}">All</a></li>
+          
+          
+          {% for block in section.blocks %}
+            {% assign blogFilter = blogs[ block.settings.blog ] %}    
 
             {% assign urlTagged = block.settings.blog_tag  | downcase | replace: " ", "-" %}
-              <li  
-              {% if blogFilter.title == blog.title %}
-                class="active"
-              {% endif %}              
-              ><a href="{{ blog.url }}/tagged/{{ urlTagged }}">{{ block.settings.blog_tag }}</a></li>    
+              <li           
+              ><a data-tagged="{{ urlTagged }}" href="{{ blogFilter.url }}/tagged/{{ urlTagged }}">{{ block.settings.blog_tag }}</a></li>    
           {% endfor %}
         </ul>
 

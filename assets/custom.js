@@ -274,6 +274,34 @@ function initYoutubePlay(){
 function initBlogFiltersMobile(){
   const button = document.querySelector('.blog-landing-page__filter-list')
   const menu = document.querySelector('.blog-landing-page__filter-list ul')
+  const menuItems = menu.querySelectorAll('a')
+
+  console.log(menuItems);
+
+  // get last part of url after last "/"
+
+  const url = window.location.href
+  const lastPart = url.substring(url.lastIndexOf('/') + 1);
+  let foundActive = false
+
+
+
+  menuItems.forEach((item) => {
+    const taggedWith = item.getAttribute('data-tagged')
+    console.log(taggedWith);
+
+    if (taggedWith == lastPart) {
+      item.classList.add('active')
+      item.parentElement.classList.add('active')
+      foundActive = true
+    }
+
+  })
+
+  if (!foundActive) {
+    menuItems[0].classList.add('active')
+    menuItems[0].parentElement.classList.add('active')
+  }
 
 
   if (!button) {
