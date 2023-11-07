@@ -37,12 +37,16 @@
           <li {% if template.name == "page" %} class="active" {% endif %}><a href="/pages/blog-landing-page">All</a></li>   
           {% endif %}         
           {% for block in section.blocks %}
-            {% assign blogFilter = blogs[ block.settings.blog ] %}           
+            {% assign blogFilter = blogs[ block.settings.blog ] %}    
+ 
+
+
+            {% assign urlTagged = block.settings.blog_tag  | downcase | replace: " ", "-" %}
               <li  
               {% if blogFilter.title == blog.title %}
                 class="active"
               {% endif %}              
-              ><a href="{{ blogFilter.url }}">{{ blogFilter.title }}</a></li>    
+              ><a href="{{ blog.url }}/tagged/{{ urlTagged }}">{{ block.settings.blog_tag }}</a></li>    
           {% endfor %}
         </ul>
 
@@ -120,6 +124,11 @@
           "type": "blog",
           "id": "blog",
           "label": "Blog"
+        },
+        {
+          "type": "text",
+          "id": "blog_tag",
+          "label": "Blog tag"
         }
       ]
     }
