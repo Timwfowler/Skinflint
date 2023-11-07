@@ -20,8 +20,8 @@
         "1106cb27-6858-48cc-8bf7-2bf1fd4e8487": {
           "type": "blog_filter",
           "settings": {
-            "blog": "projects-prop-hire",
-            "blog_tag": ""
+            "blog": "all-projects",
+            "blog_tag": "Prop Hire Projects"
           }
         }
       },
