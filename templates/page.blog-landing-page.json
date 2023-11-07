@@ -55,36 +55,29 @@
         "f90ab740-6406-4f48-aa90-5b7f2a8690a0": {
           "type": "blog_filter",
           "settings": {
-            "blog": "news",
-            "blog_tag": ""
-          }
-        },
-        "c9b3a0b4-35a2-484e-8ff4-ebd8fc4575d9": {
-          "type": "blog_filter",
-          "settings": {
-            "blog": "prop-hire",
-            "blog_tag": ""
+            "blog": "all-posts",
+            "blog_tag": "News"
           }
         },
         "19c1afba-3a39-45af-a3e9-08b2c80b78be": {
           "type": "blog_filter",
           "settings": {
-            "blog": "skinflint-meets",
-            "blog_tag": ""
+            "blog": "all-posts",
+            "blog_tag": "skinflint Meets"
           }
         },
         "df5b3a64-a8f7-4d66-aa72-9544f8496046": {
           "type": "blog_filter",
           "settings": {
-            "blog": "stuff-we-love",
-            "blog_tag": ""
+            "blog": "all-posts",
+            "blog_tag": "Stuff We Love"
           }
         },
         "065c7a8e-f970-47f8-bb7c-5e7fc97b0d02": {
           "type": "blog_filter",
           "settings": {
-            "blog": "sustainability",
-            "blog_tag": ""
+            "blog": "all-posts",
+            "blog_tag": "Sustainability"
           }
         }
       },
@@ -97,7 +90,6 @@
         "e51ae12d-6d08-4812-92b9-0b94517d0178",
         "b5960bea-a243-4b58-ba08-2b8fd1f3bf6f",
         "f90ab740-6406-4f48-aa90-5b7f2a8690a0",
-        "c9b3a0b4-35a2-484e-8ff4-ebd8fc4575d9",
         "19c1afba-3a39-45af-a3e9-08b2c80b78be",
         "df5b3a64-a8f7-4d66-aa72-9544f8496046",
         "065c7a8e-f970-47f8-bb7c-5e7fc97b0d02"
