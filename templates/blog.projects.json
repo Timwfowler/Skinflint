@@ -6,19 +6,22 @@
         "dadefcee-74d4-49f4-953b-ba179e7013ca": {
           "type": "blog_filter",
           "settings": {
-            "blog": "projects-commercial"
+            "blog": "all-projects",
+            "blog_tag": "Commercial project"
           }
         },
         "4bd03a3b-da7f-42dc-9062-6b8c74cc7950": {
           "type": "blog_filter",
           "settings": {
-            "blog": "projects-residential"
+            "blog": "all-projects",
+            "blog_tag": "Residential  Projects"
           }
         },
         "1106cb27-6858-48cc-8bf7-2bf1fd4e8487": {
           "type": "blog_filter",
           "settings": {
-            "blog": "projects-prop-hire"
+            "blog": "projects-prop-hire",
+            "blog_tag": ""
           }
         }
       },
