@@ -13,43 +13,43 @@
         "0883a2ec-5d78-4a3e-aa76-5ec178601834": {
           "type": "blog_filter",
           "settings": {
-            "blog": "b-corp",
-            "blog_tag": ""
+            "blog": "all-posts",
+            "blog_tag": "B Corp"
           }
         },
         "3c2670f1-fe49-49f5-9500-4b2100ebe860": {
           "type": "blog_filter",
           "settings": {
-            "blog": "in-the-press",
-            "blog_tag": ""
+            "blog": "all-posts",
+            "blog_tag": "In the press"
           }
         },
         "f80cab2c-82b5-4121-8f3e-c9f54d3c0713": {
           "type": "blog_filter",
           "settings": {
-            "blog": "interiors",
-            "blog_tag": ""
+            "blog": "all-posts",
+            "blog_tag": "Interiors"
           }
         },
         "d36aea77-6b89-41bd-924e-667a3c897b28": {
           "type": "blog_filter",
           "settings": {
-            "blog": "lighting-advice",
-            "blog_tag": ""
+            "blog": "all-posts",
+            "blog_tag": "Lighting advice"
           }
         },
         "e51ae12d-6d08-4812-92b9-0b94517d0178": {
           "type": "blog_filter",
           "settings": {
-            "blog": "lighting-history",
-            "blog_tag": ""
+            "blog": "all-posts",
+            "blog_tag": "Lighting History"
           }
         },
         "b5960bea-a243-4b58-ba08-2b8fd1f3bf6f": {
           "type": "blog_filter",
           "settings": {
-            "blog": "lights-organised-neatly",
-            "blog_tag": ""
+            "blog": "all-posts",
+            "blog_tag": "Lights Organised Neatly"
           }
         },
         "f90ab740-6406-4f48-aa90-5b7f2a8690a0": {
