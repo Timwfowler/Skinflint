@@ -167,14 +167,19 @@
           "settings": {
           }
         },
+        "241364da-ca26-48c0-8fdd-12c48bb329af": {
+          "type": "meta_two",
+          "settings": {
+          }
+        },
         "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08": {
           "type": "pdf",
           "settings": {
             "pdf_notes_backup": "Supplied tested to BS EN60598. Converted for use in the US and worldwide. IP20 for internal use only."
           }
         },
-        "241364da-ca26-48c0-8fdd-12c48bb329af": {
-          "type": "meta_two",
+        "f9cebab4-f2ea-4d1e-a100-f8b549a30294": {
+          "type": "related_project",
           "settings": {
           }
         },
@@ -205,8 +210,9 @@
         "a2330632-993f-4579-b847-6107bf482c26",
         "91adb453-ecbf-478c-b840-eeea1d2b3b6a",
         "052e0a53-1776-46fe-a6fc-95e9edc89353",
-        "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
         "241364da-ca26-48c0-8fdd-12c48bb329af",
+        "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
+        "f9cebab4-f2ea-4d1e-a100-f8b549a30294",
         "d1870981-b76b-4455-a845-bd7526a220f9",
         "471332c3-15a0-4968-9030-f9f0db59f550",
         "7554683d-774c-4a01-a4a3-80f7bb734309"
@@ -755,6 +761,7 @@
         "a4d44678-28c0-45ea-8467-1f00df080801",
         "1c686942-8c10-4c08-ad5c-15971e14fac5"
       ],
+      "disabled": true,
       "settings": {
         "flush": true,
         "flush_bottom": true
