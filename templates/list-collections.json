@@ -3,6 +3,12 @@
     "main": {
       "type": "list-collections-template",
       "blocks": {
+        "b89d0d08-b6a8-44d8-8735-09cc1af023be": {
+          "type": "collection",
+          "settings": {
+            "collection": "retro-lighting"
+          }
+        },
         "9ffe5e07-0b90-4172-9f6a-05d72d774449": {
           "type": "collection",
           "settings": {
@@ -63,20 +69,21 @@
             "collection": "extra-large-vintage-lights"
           }
         },
-        "b89d0d08-b6a8-44d8-8735-09cc1af023be": {
-          "type": "collection",
-          "settings": {
-            "collection": "retro-lighting"
-          }
-        },
         "cc473ed3-8def-477a-9383-82a9eb39bdce": {
           "type": "collection",
           "settings": {
             "collection": "vintage-kitchen-lighting"
           }
+        },
+        "b2f9465a-816a-432c-a370-d45c613ac68e": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
         }
       },
       "block_order": [
+        "b89d0d08-b6a8-44d8-8735-09cc1af023be",
         "9ffe5e07-0b90-4172-9f6a-05d72d774449",
         "fed69d9d-f36c-4488-b862-fae46833d596",
         "6710d2ca-a5e7-45d6-946a-49fbd21dff67",
@@ -87,8 +94,8 @@
         "78486bb6-4b98-4742-9a8e-a6784de6cb9b",
         "6842eeaa-9c4e-4bde-b1fe-7004309a20c4",
         "84c26bbb-b56a-4be1-815e-5fc81a128615",
-        "b89d0d08-b6a8-44d8-8735-09cc1af023be",
-        "cc473ed3-8def-477a-9383-82a9eb39bdce"
+        "cc473ed3-8def-477a-9383-82a9eb39bdce",
+        "b2f9465a-816a-432c-a370-d45c613ac68e"
       ],
       "settings": {
         "collection": "the-retreat",
