@@ -31,7 +31,10 @@
             <img class="pdf-img-one" src="{{ product.media[0].src  | img_url: "master"}}" alt="">
           </div>
           <div class="pdp-pdf__image">
+            {% if product.media[1].src != blank %}
             <img src="{{ product.media[1].src  | img_url: "master"}}" alt="">  
+            {% endif %}
+            
           </div>
         </div>
         <div class="pdp-pdf__data">

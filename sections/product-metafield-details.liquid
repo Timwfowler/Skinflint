@@ -1,6 +1,46 @@
 
 
-<div class="wrap page-width {% if section.settings.flush %}section-flush {% endif %} {% if section.settings.flush_bottom %}section-padding--bottom {% endif %}">
+
+
+{% assign swap_row = false %}
+
+{% if product.images.size == 1 %}
+  
+
+
+{% assign my_number = product.images.size | modulo: 2 %} <!-- This is your number -->
+
+{% if product.metafields.custom['3d_model_images'] == blank %}
+  {% if my_number != 0 %}
+    <!-- If the condition is true, then the number is odd -->
+    {% assign swap_row = true %}
+
+  {% else %}
+    <!-- If the condition is false, then the number is even -->
+
+  {% endif %}
+
+  {% else %}
+
+  {% if my_number != 0 %}
+    <!-- If the condition is true, then the number is odd -->
+
+
+  {% else %}
+    <!-- If the condition is false, then the number is even -->
+
+    {% assign swap_row = true %}
+  {% endif %}
+    
+{% endif %}
+{% endif %}
+
+
+
+
+
+
+<div class="wrap page-width {% if swap_row %}swap-rows {% endif %} {% if section.settings.flush %}section-flush {% endif %} {% if section.settings.flush_bottom %}section-padding--bottom {% endif %}">
   {%- for block in section.blocks -%}
 
     {%- if block.type == "filter" -%}
@@ -115,8 +155,11 @@
           {% assign stacked = true %}
         {% endif %}
 
+        
 
-        <div class="product-metafield-details {% if stacked %} product-metafield-details--stacked{% endif %}">
+
+
+        <div class="product-metafield-details {% if stacked %} product-metafield-details--stacked {% else %} {% endif %}">
           <div class="product-metafield-details__inner  product-metafield-details__inner--left">
             <div class="product-metafield-details__image {% if product.metafields.product-block.image[1][1] != blank %}product-metafield-details__image--two {% endif %}  ">
               <div class="product-metafield-details__image-wrap">

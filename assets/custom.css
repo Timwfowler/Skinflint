@@ -3081,6 +3081,13 @@ a:hover {
 /*=============================================
 =            product-metafield-details            =
 =============================================*/
+.swap-rows .product-metafield-details:nth-of-type(even) .product-metafield-details__inner {
+  flex-direction: row;
+}
+.swap-rows .product-metafield-details:nth-of-type(odd) .product-metafield-details__inner {
+  flex-direction: row-reverse;
+}
+
 .product-metafield-details--related-article .image-wrap {
   padding-bottom: 100%;
   position: relative;
