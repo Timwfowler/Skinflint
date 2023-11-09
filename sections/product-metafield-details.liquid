@@ -98,61 +98,11 @@
       </div>      
     {% endif %}
 
-    {% if block.type == "related_project" %}
 
-    {% assign related_article = "" %}
-    {% paginate blogs['all-projects'].articles by 250 %}
-      {% for article in blogs['all-projects'].articles %}
-        {% for related_product in article.metafields.custom.products_used.value %}
-            {% if product == related_product %}
-              {% assign related_article = article %}
-            {% endif %}
-          {% endfor %}
-        {% endfor %}
-      {% endpaginate %}
-
-
-      {% if related_article.image != blank %}
-        {% assign stacked = false %}
-        {%- assign img_url = related_article.image | img_url: "1000x" -%}
-        {% assign title = related_article.title %}
-        {% assign copy =  related_article.excerpt %}
-        {% assign btnlink = related_article.url %}
-        {% assign btnCopy = "Read more .." %} 
-  
-        {% if product.metafields.accentuate.layout_centered_stacked[1] == "true" %}
-          {% assign stacked = true %}
-        {% endif %}    
-  
-        <div class="product-metafield-details product-metafield-details--related-article {% if stacked %} product-metafield-details--stacked{% endif %}">
-          <div class="product-metafield-details__inner  product-metafield-details__inner--left">
-            <div class="product-metafield-details__image {% if product.metafields.product-block.image[1][1] != blank %}product-metafield-details__image--two {% endif %}  ">
-              <div class="product-metafield-details__image-wrap">
-                <div class="image-wrap" style="">             
-                  <img class="lazyload" src="{{img_url}}" alt="">
-                  {% if product.metafields.product-block.image[1][1] != blank %}
-                    <img class="image-two" src="{{ product.metafields.product-block.image[1][1].src }}" alt="">
-                  {% endif %}                      
-                </div>
-              </div>
-            </div>
-            <div class="product-metafield-details__text">
-              <div class="product-metafield-details__text-wrap">
-                <h3>{{ title }}</h3>
-                <p>{{ copy }}</p>                
-                <a href="{{ btnlink }}">{{  btnCopy  }}</a>
-              </div>
-            </div>
-          </div>
-        </div>          
-      {% endif %}
-
-    {% endif %}
 
     {% if block.type == "meta_two" %}
-
-
       {% if product.metafields.product-block.image[1] != blank %}
+
         {% assign stacked = false %}
         {%- assign img_url = product.metafields.product-block.image[1][0].src -%}
         {% assign title = product.metafields.product-block.title[1] | newline_to_br %}
@@ -182,7 +132,7 @@
               <div class="product-metafield-details__text-wrap">
                 <h3>{{ title }}</h3>
                 {% if copy != blank %}
-                <p>{{ copy }}</p>   
+                <p>{{ copy }}</p> 
                 {% endif %}
                 {% if html_copy != blank %}
                   <div class="rte">{{ html_copy  }}</div>
@@ -315,7 +265,57 @@
         </div>   
 
       {% endif %}
-    {% endif %}      
+    {% endif %}   
+    
+    
+    {% if block.type == "related_project" %}
+
+    {% assign related_article = "" %}
+    {% paginate blogs['all-projects'].articles by 250 %}
+      {% for article in blogs['all-projects'].articles %}
+        {% for related_product in article.metafields.custom.products_used.value %}
+            {% if product == related_product %}
+              {% assign related_article = article %}
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      {% endpaginate %}
+
+
+      {% if related_article.image != blank %}
+        {% assign stacked = false %}
+        {%- assign img_url = related_article.image | img_url: "1000x" -%}
+        {% assign title = related_article.title %}
+        {% assign copy =  related_article.excerpt %}
+        {% assign btnlink = related_article.url %}
+        {% assign btnCopy = "Read more .." %} 
+  
+
+  
+        <div class="product-metafield-details product-metafield-details--related-article {% if stacked %} product-metafield-details--stacked{% endif %}">
+          <div class="product-metafield-details__inner  product-metafield-details__inner--left">
+            <div class="product-metafield-details__image {% if product.metafields.product-block.image[1][1] != blank %}product-metafield-details__image--two {% endif %}  ">
+              <div class="product-metafield-details__image-wrap">
+                <div class="image-wrap" style="">             
+                  <img class="lazyload" src="{{img_url}}" alt="">
+                  {% if product.metafields.product-block.image[1][1] != blank %}
+                    <img class="image-two" src="{{ product.metafields.product-block.image[1][1].src }}" alt="">
+                  {% endif %}                      
+                </div>
+              </div>
+            </div>
+            <div class="product-metafield-details__text">
+              <div class="product-metafield-details__text-wrap">
+                <h3>{{ title }}</h3>
+                <p>{{ copy }}</p>                
+                <a href="{{ btnlink }}">{{  btnCopy  }}</a>
+              </div>
+            </div>
+          </div>
+        </div>          
+      {% endif %}
+
+    {% endif %}
 
   
     {% if block.type == "pdf" %}        
