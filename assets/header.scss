@@ -226,6 +226,9 @@
   }
 }
 
+.header-item--icons{
+  z-index: 99;
+}
 
 [data-layout=left-center] .header-item--icons, [data-layout=left-center] .header-item--logo{
   flex: auto;
