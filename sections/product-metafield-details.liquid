@@ -59,6 +59,7 @@
       {%- assign img_url = product.metafields.product-block.image[0][0].src -%}
       {% assign title = product.metafields.product-block.title[0] | newline_to_br %}
       {% assign copy =  product.metafields.product-block.copy[0] %}
+      {% assign html_copy = product.metafields.accentuate.html_text[0] %}
       {% assign btnlink = product.metafields.product-block.link[0] %}
       {% assign btnCopy = product.metafields.product-block.link_text[0] %} 
 
@@ -156,6 +157,7 @@
         {%- assign img_url = product.metafields.product-block.image[1][0].src -%}
         {% assign title = product.metafields.product-block.title[1] | newline_to_br %}
         {% assign copy =  product.metafields.product-block.copy[1] %}
+        {% assign html_copy = product.metafields.accentuate.html_text[1] %}
         {% assign btnlink = product.metafields.product-block.link[1] %}
         {% assign btnCopy = product.metafields.product-block.link_text[1] %} 
 
@@ -179,7 +181,13 @@
             <div class="product-metafield-details__text">
               <div class="product-metafield-details__text-wrap">
                 <h3>{{ title }}</h3>
-                <p>{{ copy }}</p>                
+                {% if copy != blank %}
+                <p>{{ copy }}</p>   
+                {% endif %}
+                {% if html_copy != blank %}
+                  <div class="rte">{{ html_copy  }}</div>
+                {% endif %}
+             
                 <a href="{{ btnlink }}">{{  btnCopy  }}</a>
               </div>
             </div>
