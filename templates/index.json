@@ -39,14 +39,14 @@
         "0dd9a91e-af3e-4f76-afb0-07eb79935f96": {
           "type": "hero",
           "settings": {
-            "title": "New Bulkhead\nCollection",
+            "title": "Make an Entrance",
             "text_color": "#ffffff",
             "link": "shopify:\/\/collections\/bulkhead-lights",
-            "link_text": "Optional button",
+            "link_text": "Explore",
             "link_2": "",
             "link_text_2": "",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/skinflint-bulkhead-collection-homepage-banner-16-9.jpg",
+            "image": "shopify:\/\/shop_images\/skinflint-make-an-entrance-hp-banner-16-9.jpg",
             "image_mobile": "shopify:\/\/shop_images\/skinflint-bulkhead-collection-homepage-banner-1-1.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
@@ -217,6 +217,7 @@
         "layout": "left",
         "image": "shopify:\/\/shop_images\/SF_Full_Circle_Development_AW_SF_FC_Roundel_with_copy-1.jpg",
         "title": "Lights for life",
+        "small_title": false,
         "subheading": "<p>As well as offering a lifetime guarantee that includes repairs, our Full Circle buy-back scheme gives you the opportunity to trade-in your skinflint lights. It keeps vintage lights in use forever - helping you and our planet.<\/p>",
         "link": "shopify:\/\/pages\/about-the-lights",
         "link_text": "Trade in, get credit",
