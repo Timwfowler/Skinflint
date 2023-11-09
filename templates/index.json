@@ -110,7 +110,7 @@
         "full_width": false,
         "height": 790,
         "height_mobile": 400,
-        "style": "bars",
+        "style": "arrows",
         "autoplay": true,
         "autoplay_speed": 7
       }
