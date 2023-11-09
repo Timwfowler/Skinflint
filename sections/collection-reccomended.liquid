@@ -51,11 +51,15 @@
 {% assign collectionArray = '' | split: '' %}
 
 {% for collection in collections %}
-  {% if collection.metafields.custom.is_this_a_category_collection_ie_wall_lights_ != "true" or collection.metafields.custom.is_this_collection_archived_ != "true" %}
-    
-  {% endif %}
+  {% if collection.metafields.custom.is_this_a_category_collection_ie_wall_lights_ != "true" %}
+
+  {% if collection.metafields.custom.is_this_collection_archived_ != "true"  %}
   {% assign collectionName = collection.handle | split: 'aresdber' | first | split: 'srghhnaljh' %}
   {% assign collectionArray = collectionArray | concat: collectionName %}
+  {% endif %}
+
+  {% endif %}
+
 {% endfor %}
 
 {% assign min = 1 %}

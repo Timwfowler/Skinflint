@@ -159,7 +159,9 @@
 
 
   {% endif %}
+  
     {%- for item in items -%}
+    
 
 
       {% if forloop.index == card_one_pos %}
@@ -202,6 +204,7 @@
 
       {%- if item.object_type == 'product' -%}
         {%- render 'product-grid-item', product: item -%}
+        
 
         {%- if quick_shop_enable -%}
             {%- render 'quick-shop-modal', product: item -%}

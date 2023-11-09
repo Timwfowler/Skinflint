@@ -272,8 +272,11 @@ function initYoutubePlay(){
 }
 
 function initBlogFiltersMobile(){
+
+  return;
   const button = document.querySelector('.blog-landing-page__filter-list')
   const menu = document.querySelector('.blog-landing-page__filter-list ul')
+
   const menuItems = menu.querySelectorAll('a')
 
   console.log(menuItems);
@@ -345,6 +348,7 @@ function initWishlist(){
 
   wishlistBtns.forEach((btn) => {
     let productHandle = btn.getAttribute('data-product-handle')
+    console.log('button');
 
     wishlist.forEach((item) => {
 
@@ -357,6 +361,7 @@ function initWishlist(){
 
 
     btn.addEventListener('click', (e) => { 
+      console.log('clicked');
       if (btn.classList.contains('added')) {
         console.log('already addedc');
         btn.classList.remove('added')   
