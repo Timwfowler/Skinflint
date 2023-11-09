@@ -716,6 +716,18 @@
             "link": "",
             "link_text": "View all Simplex Electric Co Lights"
           }
+        },
+        "1bae711d-6a4a-475f-bb30-5cc8d59cad37": {
+          "type": "filter",
+          "settings": {
+            "heading": "Franta Anýž",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/1_franta-1.webp",
+            "title": "Manufacturer: Franta Anyz",
+            "copy": "<p>Leading Czech metal artist Franta Anýž (1876-1934) was famed for elevating everyday objects to high art status. Lighting became a prominent part of his business from 1910 with a range spanning decorative pendants to medical lamps. Following WW1 it was one of the most important metalworking enterprises in former Czechoslovakia, casting Prague’s most famed monuments. Franta’s son carried the business through WW2. Nationalised in 1948 under communist rule it became ‘Art Production Plant ZUKOV’.<\/p>",
+            "link": "shopify:\/\/collections\/franta-anyz",
+            "link_text": "View all Franta Anyz Lights"
+          }
         }
       },
       "block_order": [
@@ -759,7 +771,8 @@
         "2a15dc1a-1ca3-4a8f-8b39-273845183d55",
         "bec5a70d-6681-4580-8963-faf68a7dc975",
         "a4d44678-28c0-45ea-8467-1f00df080801",
-        "1c686942-8c10-4c08-ad5c-15971e14fac5"
+        "1c686942-8c10-4c08-ad5c-15971e14fac5",
+        "1bae711d-6a4a-475f-bb30-5cc8d59cad37"
       ],
       "disabled": true,
       "settings": {
