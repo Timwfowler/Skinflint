@@ -66,17 +66,19 @@
         {% assign stacked = true %}
       {% endif %}
 
+
+
       
 
 
-      <div class="product-metafield-details {% if stacked %} product-metafield-details--stacked{% endif %}">
+      <div class="product-metafield-details test {% if stacked %} product-metafield-details--stacked{% endif %}">
         <div class="product-metafield-details__inner  product-metafield-details__inner--left">
           <div class="product-metafield-details__image {% if product.metafields.product-block.image[0][1] != blank %}product-metafield-details__image--two {% endif %}  ">
             <div class="product-metafield-details__image-wrap">
               <div class="image-wrap" style="">             
                 <img class="lazyload" src="{{img_url}}" alt="">
-                {% if product.metafields.product-block.image[0][1] != blank %}
-                  <img class="image-two" src="{{ product.metafields.product-block.image[0][1].src }}" alt="">
+                {% if img_url != blank %}
+                  <img class="image-two" src="{{ img_url }}" alt="">
 
                   {% else %}
                     <img src="{{ settings.fallback | img_url: "master"   }}" alt="">
@@ -93,6 +95,57 @@
           </div>
         </div>
       </div>      
+    {% endif %}
+
+    {% if block.type == "related_project" %}
+
+    {% assign related_article = "" %}
+    {% paginate blogs['all-projects'].articles by 250 %}
+      {% for article in blogs['all-projects'].articles %}
+        {% for related_product in article.metafields.custom.products_used.value %}
+            {% if product == related_product %}
+              {% assign related_article = article %}
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      {% endpaginate %}
+
+
+      {% if related_article.image != blank %}
+        {% assign stacked = false %}
+        {%- assign img_url = related_article.image | img_url: "1000x" -%}
+        {% assign title = related_article.title %}
+        {% assign copy =  related_article.excerpt %}
+        {% assign btnlink = related_article.url %}
+        {% assign btnCopy = "Read more .." %} 
+  
+        {% if product.metafields.accentuate.layout_centered_stacked[1] == "true" %}
+          {% assign stacked = true %}
+        {% endif %}    
+  
+        <div class="product-metafield-details product-metafield-details--related-article {% if stacked %} product-metafield-details--stacked{% endif %}">
+          <div class="product-metafield-details__inner  product-metafield-details__inner--left">
+            <div class="product-metafield-details__image {% if product.metafields.product-block.image[1][1] != blank %}product-metafield-details__image--two {% endif %}  ">
+              <div class="product-metafield-details__image-wrap">
+                <div class="image-wrap" style="">             
+                  <img class="lazyload" src="{{img_url}}" alt="">
+                  {% if product.metafields.product-block.image[1][1] != blank %}
+                    <img class="image-two" src="{{ product.metafields.product-block.image[1][1].src }}" alt="">
+                  {% endif %}                      
+                </div>
+              </div>
+            </div>
+            <div class="product-metafield-details__text">
+              <div class="product-metafield-details__text-wrap">
+                <h3>{{ title }}</h3>
+                <p>{{ copy }}</p>                
+                <a href="{{ btnlink }}">{{  btnCopy  }}</a>
+              </div>
+            </div>
+          </div>
+        </div>          
+      {% endif %}
+
     {% endif %}
 
     {% if block.type == "meta_two" %}
@@ -447,6 +500,17 @@
             "label": "Default PDF notes (will show if metafield empty)",
             "default": "Supplied tested to BS EN60598. Converted for use in the US and worldwide. IP20 for internal use only."
           }
+        ]
+      },
+      {
+        "name": "Related project",
+        "type": "related_project",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "paragraph",
+            "content": "If a product is added to a project, this will show the project image and link"
+          }        
         ]
       },
       {

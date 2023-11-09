@@ -4045,6 +4045,21 @@ a:hover{
 =============================================*/
 
 .product-metafield-details{
+  
+  &--related-article{
+
+    .image-wrap{
+      padding-bottom: 100%;
+      position: relative;
+
+      img{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
 
   &:nth-of-type(odd){
     .product-metafield-details__inner{
