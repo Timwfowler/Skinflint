@@ -55,14 +55,14 @@
         "template--16727916118332__ab621580-b75a-4803-ae34-f20abc80d17d-1666667198a9ea7f44-1": {
           "type": "hero",
           "settings": {
-            "title": "We're a B Corp",
+            "title": "The Retreat",
             "text_color": "#ffffff",
-            "link": "#",
-            "link_text": "Optional button",
+            "link": "shopify:\/\/collections\/the-retreat",
+            "link_text": "Explore",
             "link_2": "",
             "link_text_2": "",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/skinflint-home-page-banner-b-corp-16-9-resize.jpg",
+            "image": "shopify:\/\/shop_images\/skinflint-hp-banner-16-9-1.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
