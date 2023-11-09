@@ -54,114 +54,6 @@
     "1ef34e4a-a4e6-4be3-931f-5a87ad67a705": {
       "type": "product-metafield-details",
       "blocks": {
-        "0c7a4ad1-214d-4bfa-acb4-c3fd43649a7c": {
-          "type": "filter",
-          "settings": {
-            "heading": "Czechoslovakia (former)",
-            "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/700x700_cv_czechoslovakia-origin-country-map_1.webp",
-            "title": "Origin: Czechoslovakia (former)",
-            "copy": "<p>Much of the lighting we salvage and restore from the former Eastern Bloc was produced in the manufacturing powerhouses of former Czechoslovakia. Under Communist rule the same design was often manufactured in three scaled versions to cater for varying bulb wattage. The country is also famed for its beautiful glassware, with both wall and ceiling opaline glass lights often being used in public and residential settings, such as housing blocks and schools.<\/p>",
-            "link": "",
-            "link_text": "View all lights from Czechoslovakia (former)"
-          }
-        },
-        "cfbf9ed8-7f51-4972-bb2b-309151b65af4": {
-          "type": "filter",
-          "settings": {
-            "heading": "France",
-            "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/700x700_cv_france-origin-country-map.webp",
-            "title": "Origin: France",
-            "copy": "<p>Vintage French lighting is often defined by the industrial lights of Jielde and Mapelec, but lighting companies throughout France have historically designed and manufactured lights for all applications. This variety is reflected in the styles of lights we salvage and restore - from the decorative Art Nouveau and Art Deco to the classic harder edged, clean-lined industrial aesthetic.<\/p>",
-            "link": "",
-            "link_text": "View all lights from France"
-          }
-        },
-        "558bc971-aa7d-4e2d-ab1b-49a64b44085d": {
-          "type": "filter",
-          "settings": {
-            "heading": "Germany",
-            "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/700x700_cv_germany-origin-country-map.webp",
-            "title": "Origin: Germany",
-            "copy": "<p>German designs are famed for their clean lined and well engineered approach. The Bauhaus School played a major role in combining design with engineering during the late 1920s and early 1930s. A number of lights we salvage were influenced by Bauhaus School design. From the mid to late 20th century, Communist East Germany produced a wide variety of lights for both industrial, commercial and residential applications, often manufactured in three scaled versions to cater for varying bulb wattage.<\/p>",
-            "link": "",
-            "link_text": "View all lights from Germany"
-          }
-        },
-        "a57098d3-5fef-49e4-83cd-4e4e27e0695c": {
-          "type": "filter",
-          "settings": {
-            "heading": "Holland",
-            "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/700x700_cv_holland-origin-country-map.webp",
-            "title": "Origin: Holland",
-            "copy": "<p>Holland’s lighting landscape has been illuminated by the Dutch powerhouse Philips since its creation in the the late 1800s. Philips and other lighting companies throughout Holland design and manufacture lights for all applications, and this variety is reflected in the styles of lights we salvage.<\/p>",
-            "link": "",
-            "link_text": "View all lights from Holland"
-          }
-        },
-        "4264ca96-e5bf-41b6-b855-598ac57b2019": {
-          "type": "filter",
-          "settings": {
-            "heading": "Hungary",
-            "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/700x700_cv_hungary-origin-country-map.webp",
-            "title": "Origin: Hungary",
-            "copy": "<p>We salvage high volumes of industrial and decorative lighting from this landlocked former Eastern Bloc country. Hungarian industrial enamel shades are often available in blue or white, whereas the decorative glassware has more of a clean line and timeless design. In the mid to late 20th century, the Communist east produced a wide variety of lights for both industrial, commercial and residential applications often manufactured in three scaled versions to cater for varying bulb wattage.<\/p>",
-            "link": "",
-            "link_text": "View all lights from Hungary"
-          }
-        },
-        "eb6e1178-8def-4826-a76f-78529c492e9c": {
-          "type": "filter",
-          "settings": {
-            "heading": "Japan",
-            "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/700x700_cv_japan-origin-country-map.webp",
-            "title": "Origin: Japan",
-            "copy": "<p>Due to the location we rarely have the opportunity to reclaim and restore light fixtures from Japan. The majority of the products we do reclaim and restore are salvaged from Japanese cargo ships which, after serving long lives at sea, are decommissioned and dismantled at the world’s ship breaking yards in India and Bangladesh. Often produced in Brass, Copper or Aluminium a single ship may contain many thousands of the same light fixture.<\/p>",
-            "link": "",
-            "link_text": "View all lights from Japan"
-          }
-        },
-        "7f7dbebb-6100-4fa9-b1df-aa29385d816f": {
-          "type": "filter",
-          "settings": {
-            "heading": "UK",
-            "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/700x700_cv_united-kingdom-origin-country-map_6aff0b49-69b2-4c31-a1b0-a2a790806be9.webp",
-            "title": "Origin: UK",
-            "copy": "<p>Lighting design in the UK benefitted from a free market. Different companies were working at the same time, designing and producing similar products for the same market. Often with only slight differences in their style, they constantly upgraded and improved their original designs. The products we salvage come from the old industrial heartland of England. This area of the UK was once the boiler room of the British economy - from the potteries of Stoke, through the engineering works of Birmingham, to the wool, textile and cotton mills of Oldham and Manchester.<\/p>",
-            "link": "",
-            "link_text": "View all lights from UK"
-          }
-        },
-        "a2330632-993f-4579-b847-6107bf482c26": {
-          "type": "filter",
-          "settings": {
-            "heading": "Poland",
-            "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/700x700_cv_poland-origin-country-map.webp",
-            "title": "Origin: Poland",
-            "copy": "<p>Many of the products we salvage and restore from the former Eastern Bloc were produced in Poland. As with the majority of lights designed and manufactured under Communist rule - during the period from the end of the Second World War to the fall of the Berlin wall - they are defined by a clean industrial aesthetic, with the same design often manufactured in three scaled versions to cater for varying bulb wattage.<\/p>",
-            "link": "",
-            "link_text": ""
-          }
-        },
-        "91adb453-ecbf-478c-b840-eeea1d2b3b6a": {
-          "type": "filter",
-          "settings": {
-            "heading": "U.S.A",
-            "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/700x700_cv_1_usa-origin-country-map.webp",
-            "title": "Origin: U.S.A",
-            "copy": "<p>Unlike the communist Eastern Bloc countries, lighting design in mid-century U.S.A. benefitted from a free market. Different companies were working at the same time designing and producing similar products for the same market, often with only slight differences in their style. Due to the location we rarely have the opportunity to reclaim and restore light fixtures from the U.S.A., but some of our perennial favourites are the old signal lights that adorned the highways of the midwest. We reconfigure and restore these timeless classics into functional pendant lights, for both residential and commercial use.<\/p>",
-            "link": "",
-            "link_text": "View all lights from U.S.A"
-          }
-        },
         "052e0a53-1776-46fe-a6fc-95e9edc89353": {
           "type": "meta_one",
           "settings": {
@@ -195,15 +87,6 @@
         }
       },
       "block_order": [
-        "0c7a4ad1-214d-4bfa-acb4-c3fd43649a7c",
-        "cfbf9ed8-7f51-4972-bb2b-309151b65af4",
-        "558bc971-aa7d-4e2d-ab1b-49a64b44085d",
-        "a57098d3-5fef-49e4-83cd-4e4e27e0695c",
-        "4264ca96-e5bf-41b6-b855-598ac57b2019",
-        "eb6e1178-8def-4826-a76f-78529c492e9c",
-        "7f7dbebb-6100-4fa9-b1df-aa29385d816f",
-        "a2330632-993f-4579-b847-6107bf482c26",
-        "91adb453-ecbf-478c-b840-eeea1d2b3b6a",
         "052e0a53-1776-46fe-a6fc-95e9edc89353",
         "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
         "241364da-ca26-48c0-8fdd-12c48bb329af",
