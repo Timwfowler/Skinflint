@@ -119,14 +119,7 @@
         "template--16727916118332__d0552a20-44ab-4477-a3af-bc7e8f308871-1666855107aab062ef-5": {
           "type": "collection",
           "settings": {
-            "collection": "ceiling-light-test",
-            "title": ""
-          }
-        },
-        "a64d8735-b831-4a36-9650-99f63ca63f85": {
-          "type": "collection",
-          "settings": {
-            "collection": "crystal-glassware-lights",
+            "collection": "industrial-lighting",
             "title": ""
           }
         }
@@ -134,8 +127,7 @@
       "block_order": [
         "template--16727916118332__d0552a20-44ab-4477-a3af-bc7e8f308871-1666855107aab062ef-0",
         "template--16727916118332__d0552a20-44ab-4477-a3af-bc7e8f308871-1666855107aab062ef-1",
-        "template--16727916118332__d0552a20-44ab-4477-a3af-bc7e8f308871-1666855107aab062ef-5",
-        "a64d8735-b831-4a36-9650-99f63ca63f85"
+        "template--16727916118332__d0552a20-44ab-4477-a3af-bc7e8f308871-1666855107aab062ef-5"
       ],
       "settings": {
         "flush": false,
