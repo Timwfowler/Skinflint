@@ -4783,7 +4783,7 @@ a:hover {
 }
 @media (min-width: 1024px) {
   .notice-banner__inner p {
-    margin-top: 9px;
+    margin-top: 1px;
   }
 }
 .notice-banner__inner a {

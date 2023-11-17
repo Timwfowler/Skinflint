@@ -14,7 +14,7 @@
   transition: 0.2s; }
   @media (min-width: 1024px) {
     .header-wrapper {
-      height: 220px; } }
+      height: 212px; } }
 
 .site-header__logo-link svg {
   width: 135px; }
