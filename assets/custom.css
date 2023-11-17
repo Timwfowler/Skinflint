@@ -390,6 +390,9 @@ a:hover {
   font-weight: 400;
 }
 
+.grid-item .collection-image--square {
+  padding-top: 100%;
+}
 .grid-item .collection-image img {
   padding: 0;
 }
@@ -1594,7 +1597,7 @@ a:hover {
   overflow: visible;
 }
 .slideshow-section [data-bars=true].hero .flickity-page-dots {
-  bottom: -65px;
+  bottom: -72px;
 }
 .slideshow-section .hero__text-shadow {
   padding: 30px;
@@ -1642,7 +1645,12 @@ a:hover {
 .slideshow-section .hero[data-arrows=true] .flickity-previous {
   right: auto;
   left: 0px;
-  bottom: -100px;
+  bottom: -111px;
+}
+@media (min-width: 1200px) {
+  .slideshow-section .hero[data-arrows=true] .flickity-previous {
+    margin-left: -5px;
+  }
 }
 .slideshow-section .hero[data-arrows=true] .flickity-previous svg path {
   stroke: white !important;
@@ -1651,13 +1659,13 @@ a:hover {
 .slideshow-section .hero[data-arrows=true] .flickity-previous::after {
   content: "";
   position: absolute;
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
   background-color: #fff;
-  border-top: 1.5px solid black;
+  border-top: 2px solid black;
   left: 35px;
   top: 41px;
-  border-right: 1.5px solid black;
+  border-right: 2px solid black;
   transform: rotate(225deg);
 }
 @media (min-width: 1024px) {
@@ -1668,7 +1676,13 @@ a:hover {
 .slideshow-section .hero[data-arrows=true] .flickity-next {
   right: 0px;
   left: auto;
-  bottom: -100px;
+  bottom: -111px;
+  margin-right: -5px;
+}
+@media (min-width: 1200px) {
+  .slideshow-section .hero[data-arrows=true] .flickity-next {
+    margin-right: -5px;
+  }
 }
 .slideshow-section .hero[data-arrows=true] .flickity-next svg path {
   stroke: white !important;
@@ -1677,13 +1691,13 @@ a:hover {
 .slideshow-section .hero[data-arrows=true] .flickity-next::after {
   content: "";
   position: absolute;
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
   background-color: white;
-  border-top: 1.5px solid black;
+  border-top: 2px solid black;
   left: 29px;
   top: 41px;
-  border-right: 1.5px solid black;
+  border-right: 2px solid black;
   transform: rotate(45deg);
 }
 @media (min-width: 1024px) {
