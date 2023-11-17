@@ -88,6 +88,9 @@
         "template--16727916118332__ab621580-b75a-4803-ae34-f20abc80d17d-1666667198a9ea7f44-0",
         "9dbcf259-7c3b-4526-b259-bb5dcd637484"
       ],
+      "custom_css": [
+        "@media (min-width: 1024px){.slideshow-section .slideshow-wrapper--bars {margin-bottom: -37px;}}"
+      ],
       "settings": {
         "flush": true,
         "flush_bottom": false,
