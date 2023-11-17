@@ -14,7 +14,7 @@
             "logo_image": "shopify:\/\/shop_images\/2_shippingfastdelivery_1.webp",
             "title": "Shipping",
             "paragraph": "Our UK and international shipping and our no quibble return options explained.",
-            "link": "shopify:\/\/policies\/shipping-policy",
+            "link": "shopify:\/\/pages\/shipping",
             "link_text": "Read more"
           }
         },
@@ -24,7 +24,7 @@
             "logo_image": "shopify:\/\/shop_images\/2_wetroomsfaq_1.webp",
             "title": "Returns",
             "paragraph": "All you need to know about our no quibble returns policy.",
-            "link": "shopify:\/\/policies\/refund-policy",
+            "link": "shopify:\/\/pages\/refund-and-returns-policy",
             "link_text": "Read more"
           }
         },
