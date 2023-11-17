@@ -89,7 +89,7 @@
         "9dbcf259-7c3b-4526-b259-bb5dcd637484"
       ],
       "custom_css": [
-        "@media (min-width: 1024px){.slideshow-section .slideshow-wrapper--bars {margin-bottom: -37px;}}"
+        "@media (min-width: 1024px) {.slideshow-section .slideshow-wrapper--bars {margin-bottom: -px; }}"
       ],
       "settings": {
         "flush": true,
