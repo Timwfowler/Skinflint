@@ -19,7 +19,7 @@
 
 
 
-  {%- if section.settings.blog_show_tags and article.tags.size > 0 -%}
+  {% comment %} {%- if section.settings.blog_show_tags and article.tags.size > 0 -%}
     <div class="article-tag__wrapper">
       {%- for tag in article.tags -%}
         {% if tag contains "_" %}
@@ -31,7 +31,7 @@
         <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="article-tag">{{ tag }}</a>
       {%- endfor -%}
     </div>
-  {%- endif -%}
+  {%- endif -%} {% endcomment %}
 
   <header class="section-header">
     <h1 class="section-header__title">{{ article.title }}</h1>
