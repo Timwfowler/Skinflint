@@ -5,97 +5,108 @@
     <a href="{{ routes.root_url }}" title="{{ 'general.breadcrumbs.home_link_title' | t }}">{{ 'general.breadcrumbs.home' | t }}</a>
 
     {% if template.name == 'product' %}
-
       {% if collection %}
         {% if settings.show_breadcrumbs_collection_link %}
-          <span class="breadcrumb__divider" aria-hidden="true">/</span>
-          <a href="{{ routes.collections_url }}">{{ 'general.search.collections' | t | replace: ':', ''}}</a>
+          {% if collection %}
+            {% if  collection.metafields.custom.breadcrumb_parent != blank %}
+            <a href="{{ collection.metafields.custom.breadcrumb_parent.value.url }}"><span class="breadcrumb__divider" aria-hidden="true">></span>{{ collection.metafields.custom.breadcrumb_parent.value.title }}</a>
+
+            {% else %}
+            <span class="breadcrumb__divider" aria-hidden="true">> </span>
+            <a href="{{ routes.collections_url }}">{{ 'general.search.collections' | t | replace: ':', ''}}</a>
+            {% endif %}
+
+          
+          
+          {% endif %}
+
         {% endif %}
-
-        <span class="breadcrumb__divider" aria-hidden="true">/</span>
-
+        <span class="breadcrumb__divider" aria-hidden="true">></span>
         {% if collection.handle %}
           {% capture url %}{{ routes.collections_url }}/{{ collection.handle }}{% endcapture %}
           {{ collection.title | link_to: url }}
         {% endif %}
       {% endif %}
-
-      <span class="breadcrumb__divider" aria-hidden="true">/</span>
+      <span class="breadcrumb__divider" aria-hidden="true">></span>
       <a href="{{ product.url }}"> {{ product.title }}</a>
-
-    {% elsif template.name == 'collection' and collection.handle %}
-
-      
-
+    {% elsif template.name == 'collection' and collection.handle %}    
       {% if collection.metafields.custom.breadcrumb_parent != blank %}
-      
-
-      
-
         <span class="breadcrumb__divider" aria-hidden="true">></span>
         <a href="{{ collection.metafields.custom.breadcrumb_parent.value.url }}">{{ collection.metafields.custom.breadcrumb_parent.value.title }}</a>
 
-
         {% else %}
-
-        
-{% comment %}           
-
-        <span class="breadcrumb__divider" aria-hidden="true">/</span>
-        <a href="{{ routes.collections_url }}">{{ 'general.search.collections' | t | replace: ':', ''}}</a> {% endcomment %}
-
+        <a href="/collections">&nbsp;>&nbsp; Colections</a>
       {% endif %}
-
-
-
-
-
-
       <span class="breadcrumb__divider" aria-hidden="true">></span>
 
       {% if current_tags %}
         {% capture url %}{{ routes.collections_url }}/{{ collection.handle }}{% endcapture %}
         {{ collection.title | link_to: url }} 
-
         <span class="breadcrumb__divider" aria-hidden="true">></span>
-
         {% for tag in current_tags %}
           {% if tag contains "_" %}{%- assign tag_starts_with = tag | slice: 0 -%}{% if tag_starts_with == "_" %}{% if tag_count %}{%- assign tag_count = tag_count | minus: 1 | at_least: 0 -%}{% endif %}{% continue %}{% endif %}{% endif %}
           {% assign tag_name = tag | strip %}
           {% assign tag_text = tag_name | capitalize %}
           <span>{{ tag_text }}</span>
-
           {% unless forloop.last %}
             <span class="breadcrumb__divider" aria-hidden="true">+</span>
           {% endunless %}
-
-
-
         {% endfor %}
-
         <span class="breadcrumb__divider" aria-hidden="true">></span>
-        <a href="">{{ collection.title }}</a>
-      
-      {% endif %}
+        <a href="">{{ collection.title }}</a>      
+      {% endif %}       
 
-
-      <a href="">{{ collection.title }}</a>
+      <a href="">{% if collection.title contains "Archive" %}Archive {% else %}{{ collection.title }}{% endif %}</a>
   
 
-    {% elsif template.name == 'blog' %}
+    {% elsif template.name == 'blog' %} 
 
       <span class="breadcrumb__divider" aria-hidden="true">></span>
       {% if current_tags %}
-        {{ blog.title | link_to: blog.url }}
+      {% if blog.title == "All posts" %}
+        <a href="{{ blog.url }}">Blog</a>
+        {% elsif blog.title == "All projects" %}
+          <a href="{{ blog.url }}">Projects</a>      
+      {% else %}
+      {{ blog.title | link_to: blog.url }}         
+      {% endif %}
         <span class="breadcrumb__divider" aria-hidden="true">></span>
         <span>{{ current_tags | join: " + " }}</span>
+
+        {% else %}
+        {% if blog.title == "All posts" %}
+        <a href="{{ blog.url }}">Blog</a>
+        {% elsif blog.title == "All projects" %}
+          <a href="{{ blog.url }}">Projects</a>      
+      {% else %}
+      {{ blog.title | link_to: blog.url }}         
+      {% endif %}
       {% endif %}
 
     {% elsif template.name == 'article' %}
 
+ 
+    
+      
+  
+      
       <span class="breadcrumb__divider" aria-hidden="true">></span>
-      {{ blog.title | link_to: blog.url }}
+      
+      {% if blog.title == "All posts" %}
+        <a href="{{ blog.url }}">Blog</a>
+        {% elsif blog.title == "All projects" %}
+          <a href="{{ blog.url }}">Projects</a>      
+      {% else %}
+      {{ blog.title | link_to: blog.url }}         
+      {% endif %}
       <span class="breadcrumb__divider" aria-hidden="true">></span>
+
+      {% if article.tags != blank %}
+      {% assign article_tag_url = article.tags[0] | downcase | replace: " ", "-"  %}
+      <span> <a href="{{ blog.url   }}/tagged/{{ article_tag_url }}">{{ article.tags[0] }}<span class="breadcrumb__divider" aria-hidden="true">&gt;</span></a> </span>
+      {% endif %}
+      
+      <span>{{ article.title }}</span>
 
     {% elsif template.name == 'page' %}
 
@@ -116,4 +127,9 @@
   </nav>
 {% endunless %}
 
+
+  
+
 {% endif %}
+
+

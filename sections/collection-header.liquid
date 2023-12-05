@@ -44,9 +44,12 @@
           <div class="page-width">
             <header class="section-header section-header--flush">
               
-              <h1 class="section-header__title">
-                {{ collection.title }}
-              </h1>
+            {% if collection.metafields.custom.collection_page_title != blank %}
+            <h1>{{ collection.metafields.custom.collection_page_title }}</h1>
+            {% else %}
+            <h1>{{ collection.title }}</h1>
+
+            {% endif %}
             </header>
           </div>
         </div>
@@ -61,10 +64,11 @@
     {%- assign disable_sticky_header = true -%}
     <div class="page-width page-content page-content--top collection-header">
       <header class="section-header section-header--flush">
-
-        <h1 class="section-header__title">
-          {{ collection.title }}
-        </h1>
+      {% if collection.metafields.custom.collection_page_title != blank %}
+      <h1>{{ collection.metafields.custom.collection_page_title }}</h1>
+      {% else %}
+      <h1>{{ collection.title }}</h1>
+      {% endif %}
         <p>{{ collection.description }}</p>
         {% render 'share' %}
       </header>
