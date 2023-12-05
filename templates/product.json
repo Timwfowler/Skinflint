@@ -939,13 +939,13 @@
         "tc_link": ""
       }
     },
-    "more-products-origin": {
-      "type": "more-products-origin",
+    "more-products-era": {
+      "type": "more-products-era",
       "settings": {
       }
     },
-    "more-products-era": {
-      "type": "more-products-era",
+    "more-products-origin": {
+      "type": "more-products-origin",
       "settings": {
       }
     },
@@ -1014,8 +1014,8 @@
     "ee009aad-efa1-453e-a080-2be48216ae9f",
     "product-usps",
     "product-contact-form",
-    "more-products-origin",
     "more-products-era",
+    "more-products-origin",
     "more-from-manuf",
     "1018a177-fdc7-4a54-9f7f-8f3611e1e80c"
   ]
