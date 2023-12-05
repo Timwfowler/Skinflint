@@ -46,6 +46,7 @@
     },
     "collection-reccomended": {
       "type": "collection-reccomended",
+      "disabled": true,
       "settings": {
       }
     }
