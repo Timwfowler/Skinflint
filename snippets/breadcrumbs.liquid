@@ -25,21 +25,24 @@
 
     {% elsif template.name == 'collection' and collection.handle %}
 
-
+      
 
       {% if collection.metafields.custom.breadcrumb_parent != blank %}
+      
 
       
 
-        <span class="breadcrumb__divider" aria-hidden="true">/</span>
+        <span class="breadcrumb__divider" aria-hidden="true">></span>
         <a href="{{ collection.metafields.custom.breadcrumb_parent.value.url }}">{{ collection.metafields.custom.breadcrumb_parent.value.title }}</a>
 
 
         {% else %}
-          
+
+        
+{% comment %}           
 
         <span class="breadcrumb__divider" aria-hidden="true">/</span>
-        <a href="{{ routes.collections_url }}">{{ 'general.search.collections' | t | replace: ':', ''}}</a>
+        <a href="{{ routes.collections_url }}">{{ 'general.search.collections' | t | replace: ':', ''}}</a> {% endcomment %}
 
       {% endif %}
 

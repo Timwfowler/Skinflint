@@ -44,9 +44,13 @@
         "enable_sort": true
       }
     },
+    "simple-collection-list": {
+      "type": "simple-collection-list",
+      "settings": {
+      }
+    },
     "collection-reccomended": {
       "type": "collection-reccomended",
-      "disabled": true,
       "settings": {
       }
     }
@@ -54,6 +58,8 @@
   "order": [
     "collection-header",
     "main-collection",
+    "simple-collection-list",
     "collection-reccomended"
+    
   ]
 }

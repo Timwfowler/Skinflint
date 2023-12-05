@@ -1,0 +1,86 @@
+<style>
+  .collection__archived-list {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+
+  @media (min-width: 601px){
+    .collection__archived-list ul {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+  }
+
+  @media (min-width: 901px){
+    .collection__archived-list ul {
+      -webkit-column-count: 4;
+      -moz-column-count: 4;
+      column-count: 4;
+    }
+  }
+
+
+  .collection__archived-list li:not(:last-of-type) {
+    margin-bottom: 5px;
+  }
+
+  .collection__archived-list li {
+    display: block;
+    text-align: center;
+  }
+</style>
+
+
+<section class="site-module collection__archived-list">
+  <ul>
+
+    {% for block in section.blocks %}
+      {% if block.settings.collection != blank %}
+      <li><a href="{{ block.settings.collection.url }}">
+      {% if block.settings.title != blank  %}
+        {{ block.settings.title }}
+
+        {% else %}
+        {{ block.settings.collection.title }}
+      {% endif %}
+      </a></li> 
+      {% endif %}
+      
+      
+    {% endfor %}
+    <li><a href="https://www.skinflintdesign.com/lights/type/ceiling-lights/archive">Ceiling lights</a></li> 
+    <li><a href="https://www.skinflintdesign.com/lights/type/wall-lights/archive">Wall lights</a></li> 
+    <li><a href="https://www.skinflintdesign.com/lights/type/table-lights/archive">Table lights</a></li> 
+    <li><a href="https://www.skinflintdesign.com/lights/type/floor-lights/archive">Floor lights</a></li> 
+    <li><a href="https://www.skinflintdesign.com/lights/type/accessories/archive">Accessories</a></li>
+  </ul>
+</section>
+
+{% schema %}
+  {
+    "name": "Simple collection list",
+    "class": "simple-collection-list",
+    "blocks": [
+      {
+        "type": "text_block",
+        "name": "Column",
+        "settings": [
+          {
+            "type": "collection",
+            "id": "collection",
+            "label": "Collection"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Overide title"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
