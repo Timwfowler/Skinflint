@@ -121,6 +121,7 @@
                   <img class="image-two" src="{{ img_url }}" alt="">
 
                   {% else %}
+                  
                     <img src="{{ settings.fallback | img_url: "master"   }}" alt="">
                 {% endif %}                      
               </div>
@@ -141,9 +142,7 @@
 
     {% if block.type == "meta_two" %}
 
-      {% if product.metafields.product-block.copy[1] != blank or product.metafields.product-block.html_copy != blank %}
-
-
+      {% if product.metafields.product-block.copy[1] != blank or product.metafields.accentuate.html_text[1] != blank %}
         {% assign stacked = false %}
         {%- assign img_url = product.metafields.product-block.image[1][0].src -%}
         {% assign title = product.metafields.product-block.title[1] | newline_to_br %}
@@ -155,11 +154,6 @@
         {% if product.metafields.accentuate.layout_centered_stacked[1] == "true" %}
           {% assign stacked = true %}
         {% endif %}
-
-        
-
-
-
         <div class="product-metafield-details {% if stacked %} product-metafield-details--stacked {% else %} {% endif %}">
           <div class="product-metafield-details__inner  product-metafield-details__inner--left">
             {% if product.metafields.product-block.image[1] != blank %}
