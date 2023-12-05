@@ -69,11 +69,9 @@
         <div class="product-metafield-details">
           <div class="product-metafield-details__inner  product-metafield-details__inner--left">
             <div class="product-metafield-details__image">
-              <div class="product-metafield-details__image-wrap">
-                <div class="image-wrap" style="height: 0; padding-bottom: {{ 100 | divided_by: block.settings.image.aspect_ratio }}%;">
-             
+              <div class="product-metafield-details__image-wrap">                
+                <div class="image-wrap" style="height: 0; padding-bottom: {{ 100 | divided_by: block.settings.image.aspect_ratio }}%;">             
                   <img class="lazyload" data-src="{{ img_url }}" data-widths="[360, 540, 720, 900, 1080, 1600]" data-aspectratio="{{block.settings.image.aspect_ratio }}" data-sizes="auto" alt="{{block.settings.image.alt }}">
-
                 </div>
               </div>
             </div>
@@ -90,10 +88,11 @@
     {% endif %}    
 
     {% if block.type == "meta_one" %}
+    
       {%- assign show = false -%}
       {% assign stacked = false %}
 
-      {% if product.metafields.product-block.image[0] != blank %}
+      {% if product.metafields.product-block.copy[0] != blank %}
         {%- assign show = true -%}
       {% endif %}
       {%- assign img_url = product.metafields.product-block.image[0][0].src -%}
@@ -141,7 +140,9 @@
 
 
     {% if block.type == "meta_two" %}
-      {% if product.metafields.product-block.image[1] != blank %}
+
+      {% if product.metafields.product-block.copy[1] != blank or product.metafields.product-block.html_copy != blank %}
+
 
         {% assign stacked = false %}
         {%- assign img_url = product.metafields.product-block.image[1][0].src -%}
@@ -161,16 +162,19 @@
 
         <div class="product-metafield-details {% if stacked %} product-metafield-details--stacked {% else %} {% endif %}">
           <div class="product-metafield-details__inner  product-metafield-details__inner--left">
-            <div class="product-metafield-details__image {% if product.metafields.product-block.image[1][1] != blank %}product-metafield-details__image--two {% endif %}  ">
-              <div class="product-metafield-details__image-wrap">
-                <div class="image-wrap" style="">             
-                  <img class="lazyload" src="{{img_url}}" alt="">
-                  {% if product.metafields.product-block.image[1][1] != blank %}
-                    <img class="image-two" src="{{ product.metafields.product-block.image[1][1].src }}" alt="">
-                  {% endif %}                      
+            {% if product.metafields.product-block.image[1] != blank %}
+              <div class="product-metafield-details__image {% if product.metafields.product-block.image[1][1] != blank %}product-metafield-details__image--two {% endif %}  ">
+                <div class="product-metafield-details__image-wrap">
+                  <div class="image-wrap" style="">             
+                    <img class="lazyload" src="{{img_url}}" alt="">
+                    {% if product.metafields.product-block.image[1][1] != blank %}
+                      <img class="image-two" src="{{ product.metafields.product-block.image[1][1].src }}" alt="">
+                    {% endif %}                      
+                  </div>
                 </div>
               </div>
-            </div>
+            {% endif %}
+
             <div class="product-metafield-details__text">
               <div class="product-metafield-details__text-wrap">
                 <h3>{{ title }}</h3>
@@ -192,7 +196,9 @@
 
     {% if block.type == "meta_three" %}
 
-      {% if product.metafields.product-block.image[2] != blank %}
+
+
+      {% if product.metafields.product-block.copy[2] != blank %}
         {% assign stacked = false %}
         {%- assign img_url = product.metafields.product-block.image[2][0].src -%}
         {% assign title = product.metafields.product-block.title[2] | newline_to_br %}
@@ -232,7 +238,7 @@
     
     {% if block.type == "meta_four" %}
 
-      {% if product.metafields.product-block.image[3] != blank %}
+      {% if product.metafields.product-block.copy[3] != blank %}
         {% assign stacked = false %}
         {%- assign img_url = product.metafields.product-block.image[3][0].src -%}
         {% assign title = product.metafields.product-block.title[3] | newline_to_br %}

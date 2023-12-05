@@ -44,11 +44,22 @@
 <div class="collection-list__archived page-width">
   <h3>Archived collections</h3>
  <div class="collection-list__archived-grid">
+  {% paginate collections by 1200 %}
+
+
+
+
+
+  
   {% for archived in collections %}
     {% if archived.metafields.custom.is_this_collection_archived_ %}
-      <a href="{{ archived.url }}"><p>{{ archived.title }}</p></a> 
+     {% unless archived.metafields.custom.does_this_collection_have_an_archived_non_archived_equivalent_ %}
+     <a href="{{ archived.url }}"><p>{{ archived.title | replace: 'Archive', ''  }}</p></a> 
+     {% endunless %}
+      
     {% endif %}
   {% endfor %}
+{% endpaginate %}
  </div>
 </div>
 
