@@ -2,7 +2,6 @@
   "sections": {
     "collection-header": {
       "type": "collection-header",
-      "disabled": true,
       "settings": {
         "enable": true
       }
@@ -27,6 +26,7 @@
         "collection_description",
         "product_grid"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "button_label": "",
