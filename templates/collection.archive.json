@@ -46,6 +46,50 @@
     },
     "simple-collection-list": {
       "type": "simple-collection-list",
+      "blocks": {
+        "fdb1a194-5221-459f-9831-0330f4b4503b": {
+          "type": "text_block",
+          "settings": {
+            "collection": "vintage-and-industrial-pendant-and-ceiling-lights-archive",
+            "title": "Ceiling lights"
+          }
+        },
+        "4d6488b1-58ca-4f0d-8c25-a57459b94ebd": {
+          "type": "text_block",
+          "settings": {
+            "collection": "",
+            "title": ""
+          }
+        },
+        "8549b162-7753-4be9-8d0e-d58128c3b0fd": {
+          "type": "text_block",
+          "settings": {
+            "collection": "",
+            "title": ""
+          }
+        },
+        "8e9f8ecc-f681-49ff-a389-e083ec6b9146": {
+          "type": "text_block",
+          "settings": {
+            "collection": "",
+            "title": ""
+          }
+        },
+        "ee54046f-de83-486b-bd99-6751fe8c520c": {
+          "type": "text_block",
+          "settings": {
+            "collection": "",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "fdb1a194-5221-459f-9831-0330f4b4503b",
+        "4d6488b1-58ca-4f0d-8c25-a57459b94ebd",
+        "8549b162-7753-4be9-8d0e-d58128c3b0fd",
+        "8e9f8ecc-f681-49ff-a389-e083ec6b9146",
+        "ee54046f-de83-486b-bd99-6751fe8c520c"
+      ],
       "settings": {
       }
     },
@@ -60,6 +104,5 @@
     "main-collection",
     "simple-collection-list",
     "collection-reccomended"
-    
   ]
 }
