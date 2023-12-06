@@ -1,11 +1,19 @@
 {%- assign count = product.metafields.custom['3d_model_images'].value | split: "," | join: "" -%}
 {% assign countSize =  count | size %}
 
+{% assign newCount = 1 %}
+
+{% for image in product.metafields.custom['3d_model_images'].value %}
+  {% assign newCount = newCount | plus: 1 %}
+{% endfor %}
+
+{% assign newCount = newCount | divided_by: 2  %}
+
 
 
 {%- comment -%}Our card holder{%- endcomment -%}
 {% for image in product.metafields.custom['3d_model_images'].value  %}
-  {% if forloop.index == countSize %}
+  {% if forloop.index == newCount %}
     <div class="sf-product-grid__image js-open-3d-model">
       <img src="{{ image  | img_url: "1000x" }}" alt="">
       <div class="threeD-model-button">
