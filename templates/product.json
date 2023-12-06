@@ -754,6 +754,18 @@
             "link": "shopify:\/\/collections\/franta-anyz",
             "link_text": "View all Franta Anyz Lights"
           }
+        },
+        "394721f6-e9f0-4248-b678-1a2707159a47": {
+          "type": "filter",
+          "settings": {
+            "heading": "Dewsign",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/skinflint-make-an-entrance-hp-banner-16-9.jpg",
+            "title": "Dewsign info",
+            "copy": "<p>awrghaerghw<\/p>",
+            "link": "shopify:\/\/collections\/dewsign",
+            "link_text": "See more"
+          }
         }
       },
       "block_order": [
@@ -798,7 +810,8 @@
         "bec5a70d-6681-4580-8963-faf68a7dc975",
         "a4d44678-28c0-45ea-8467-1f00df080801",
         "1c686942-8c10-4c08-ad5c-15971e14fac5",
-        "1bae711d-6a4a-475f-bb30-5cc8d59cad37"
+        "1bae711d-6a4a-475f-bb30-5cc8d59cad37",
+        "394721f6-e9f0-4248-b678-1a2707159a47"
       ],
       "settings": {
         "flush": true,
