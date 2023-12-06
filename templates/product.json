@@ -174,18 +174,6 @@
             "link_text": "View all lights from U.S.S.R (former)"
           }
         },
-        "c4ebc9d7-77c5-4657-98de-1eec58d9f665": {
-          "type": "filter",
-          "settings": {
-            "heading": "Thailand",
-            "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/700x700_cv_22-3651-1940s-gec-floor-light-web-1_ef41b655-e104-4d66-a847-5b7c866e2b01.webp",
-            "title": "Thailand",
-            "copy": "<p>Copy<\/p>",
-            "link": "shopify:\/\/collections\/thailand",
-            "link_text": "See all"
-          }
-        },
         "052e0a53-1776-46fe-a6fc-95e9edc89353": {
           "type": "meta_one",
           "settings": {
@@ -221,18 +209,6 @@
           "type": "meta_five",
           "settings": {
           }
-        },
-        "d6319ec3-d393-4104-9e88-7ff1269e873c": {
-          "type": "filter",
-          "settings": {
-            "heading": "1980s",
-            "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/Group_614.png",
-            "title": "This is about the 80s",
-            "copy": "",
-            "link": "",
-            "link_text": ""
-          }
         }
       },
       "block_order": [
@@ -246,15 +222,13 @@
         "a2330632-993f-4579-b847-6107bf482c26",
         "91adb453-ecbf-478c-b840-eeea1d2b3b6a",
         "5cef1de8-1e5b-4bee-851b-1a9099d271c7",
-        "c4ebc9d7-77c5-4657-98de-1eec58d9f665",
         "052e0a53-1776-46fe-a6fc-95e9edc89353",
         "241364da-ca26-48c0-8fdd-12c48bb329af",
         "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
         "f9cebab4-f2ea-4d1e-a100-f8b549a30294",
         "d1870981-b76b-4455-a845-bd7526a220f9",
         "471332c3-15a0-4968-9030-f9f0db59f550",
-        "7554683d-774c-4a01-a4a3-80f7bb734309",
-        "d6319ec3-d393-4104-9e88-7ff1269e873c"
+        "7554683d-774c-4a01-a4a3-80f7bb734309"
       ],
       "settings": {
         "flush": true,
@@ -767,18 +741,6 @@
             "link": "shopify:\/\/collections\/franta-anyz",
             "link_text": "View all Franta Anyz Lights"
           }
-        },
-        "394721f6-e9f0-4248-b678-1a2707159a47": {
-          "type": "filter",
-          "settings": {
-            "heading": "Dewsign",
-            "flush_bottom": true,
-            "image": "shopify:\/\/shop_images\/700x700_cv_ussr-origin-country-map_8f1e8d9a-404a-478d-965c-bb827fcb4335.webp",
-            "title": "Dewsign info",
-            "copy": "<p>awrghaerghw<\/p>",
-            "link": "shopify:\/\/collections\/dewsign",
-            "link_text": "See more"
-          }
         }
       },
       "block_order": [
@@ -823,8 +785,7 @@
         "bec5a70d-6681-4580-8963-faf68a7dc975",
         "a4d44678-28c0-45ea-8467-1f00df080801",
         "1c686942-8c10-4c08-ad5c-15971e14fac5",
-        "1bae711d-6a4a-475f-bb30-5cc8d59cad37",
-        "394721f6-e9f0-4248-b678-1a2707159a47"
+        "1bae711d-6a4a-475f-bb30-5cc8d59cad37"
       ],
       "settings": {
         "flush": true,
