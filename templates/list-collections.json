@@ -3,12 +3,6 @@
     "main": {
       "type": "list-collections-template",
       "blocks": {
-        "48d43955-d71b-4e57-aebd-7ce6bdc11674": {
-          "type": "collection",
-          "settings": {
-            "collection": "the-retreat"
-          }
-        },
         "b89d0d08-b6a8-44d8-8735-09cc1af023be": {
           "type": "collection",
           "settings": {
@@ -83,7 +77,6 @@
         }
       },
       "block_order": [
-        "48d43955-d71b-4e57-aebd-7ce6bdc11674",
         "b89d0d08-b6a8-44d8-8735-09cc1af023be",
         "9ffe5e07-0b90-4172-9f6a-05d72d774449",
         "fed69d9d-f36c-4488-b862-fae46833d596",
@@ -98,7 +91,7 @@
         "cc473ed3-8def-477a-9383-82a9eb39bdce"
       ],
       "settings": {
-        "collection": "a-new-featured-collection",
+        "collection": "the-retreat",
         "title": "Collections",
         "copy": "<p>To help you choose the right light for your space, skinflint has curated a series of collections from our range of vintage lighting. From industrial lighting for your kitchen or opaline lights for your bedroom, retro lighting for your living room or antique lights for your hallway; we have inspiration for every project. And if you want to see more of our lights, you can view our <a href=\"\/collections\/vintage-industrial-lights-1\" title=\"Vintage Industrial Lights\">complete catalogue here.<\/a><\/p>",
         "display_type": "all",
