@@ -221,6 +221,18 @@
           "type": "meta_five",
           "settings": {
           }
+        },
+        "d6319ec3-d393-4104-9e88-7ff1269e873c": {
+          "type": "filter",
+          "settings": {
+            "heading": "1980s",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/Group_614.png",
+            "title": "This is about the 80s",
+            "copy": "",
+            "link": "",
+            "link_text": ""
+          }
         }
       },
       "block_order": [
@@ -241,7 +253,8 @@
         "f9cebab4-f2ea-4d1e-a100-f8b549a30294",
         "d1870981-b76b-4455-a845-bd7526a220f9",
         "471332c3-15a0-4968-9030-f9f0db59f550",
-        "7554683d-774c-4a01-a4a3-80f7bb734309"
+        "7554683d-774c-4a01-a4a3-80f7bb734309",
+        "d6319ec3-d393-4104-9e88-7ff1269e873c"
       ],
       "settings": {
         "flush": true,
