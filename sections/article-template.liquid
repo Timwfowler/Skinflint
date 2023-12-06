@@ -1,9 +1,15 @@
+
+
 {%- liquid
   assign number_of_comments = article.comments_count
   if comment.status == 'pending'
     assign number_of_comments = article.comments_count | plus: 1
   endif
 -%}
+
+{% comment %}
+  
+{% endcomment %}
 
 <div class="article-feat-img">
   <div class="article-feat-img__inner">
@@ -174,7 +180,21 @@
       <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-left" viewBox="0 0 50 15"><path d="M50 5.38v4.25H15V15L0 7.5 15 0v5.38z"/></svg>
       {{ 'blogs.article.back_to_blog' | t: title: blog.title }}</a>
   </div>
+
+  {% if article.metafields.custom.project_images != blank %}
+
+
+{% for image in article.metafields.custom.project_images.value %}
+  <img style="width: 100%; margin-bottom: 40px" src="{{ image | image_url }}" alt="">
+{% endfor %}
+
+{% endif %}
+
+
 </div>
+
+
+
 
 
 
@@ -188,6 +208,9 @@
   </div>
 
 {% endif %}
+
+
+
 
 {% if article.metafields.custom.products_used != blank %}
   <div class="article-associated-ps">
