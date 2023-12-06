@@ -54,6 +54,17 @@
     "1ef34e4a-a4e6-4be3-931f-5a87ad67a705": {
       "type": "product-metafield-details",
       "blocks": {
+        "f9cebab4-f2ea-4d1e-a100-f8b549a30294": {
+          "type": "related_project",
+          "settings": {
+          }
+        },
+        "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08": {
+          "type": "pdf",
+          "settings": {
+            "pdf_notes_backup": "Supplied tested to BS EN60598. Converted for use in the US and worldwide. IP20 for internal use only."
+          }
+        },
         "0c7a4ad1-214d-4bfa-acb4-c3fd43649a7c": {
           "type": "filter",
           "settings": {
@@ -184,17 +195,6 @@
           "settings": {
           }
         },
-        "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08": {
-          "type": "pdf",
-          "settings": {
-            "pdf_notes_backup": "Supplied tested to BS EN60598. Converted for use in the US and worldwide. IP20 for internal use only."
-          }
-        },
-        "f9cebab4-f2ea-4d1e-a100-f8b549a30294": {
-          "type": "related_project",
-          "settings": {
-          }
-        },
         "d1870981-b76b-4455-a845-bd7526a220f9": {
           "type": "meta_three",
           "settings": {
@@ -212,6 +212,8 @@
         }
       },
       "block_order": [
+        "f9cebab4-f2ea-4d1e-a100-f8b549a30294",
+        "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
         "0c7a4ad1-214d-4bfa-acb4-c3fd43649a7c",
         "cfbf9ed8-7f51-4972-bb2b-309151b65af4",
         "558bc971-aa7d-4e2d-ab1b-49a64b44085d",
@@ -224,8 +226,6 @@
         "5cef1de8-1e5b-4bee-851b-1a9099d271c7",
         "052e0a53-1776-46fe-a6fc-95e9edc89353",
         "241364da-ca26-48c0-8fdd-12c48bb329af",
-        "dc5e2cd0-5e9b-411a-8c8d-e9284b5c7f08",
-        "f9cebab4-f2ea-4d1e-a100-f8b549a30294",
         "d1870981-b76b-4455-a845-bd7526a220f9",
         "471332c3-15a0-4968-9030-f9f0db59f550",
         "7554683d-774c-4a01-a4a3-80f7bb734309"
@@ -792,22 +792,6 @@
         "flush_bottom": true
       }
     },
-    "ee009aad-efa1-453e-a080-2be48216ae9f": {
-      "type": "section-text-and-image",
-      "settings": {
-        "flush": true,
-        "flush_bottom": false,
-        "layout": "right",
-        "image": "shopify:\/\/shop_images\/SF_Full_Circle_Development_AW_SF_FC_Roundel_with_copy-1.jpg",
-        "title": "Lights for life",
-        "small_title": true,
-        "subheading": "<p>As well as offering a lifetime guarantee that includes repairs, our Full Circle buy-back scheme gives you the opportunity to trade-in your skinflint lights. It keeps vintage lights in use forever - helping you and our planet.<\/p><p><\/p><p><a href=\"https:\/\/www.skinflintdesign.com\/pages\/full-circle\"><strong>Trade in, get credit<\/strong><\/a><\/p>",
-        "link": "",
-        "link_text": "",
-        "link_2": "",
-        "link_text_2": ""
-      }
-    },
     "product-usps": {
       "type": "product-usps",
       "blocks": {
@@ -928,6 +912,22 @@
         "title": ""
       }
     },
+    "ee009aad-efa1-453e-a080-2be48216ae9f": {
+      "type": "section-text-and-image",
+      "settings": {
+        "flush": true,
+        "flush_bottom": false,
+        "layout": "right",
+        "image": "shopify:\/\/shop_images\/SF_Full_Circle_Development_AW_SF_FC_Roundel_with_copy-1.jpg",
+        "title": "Lights for life",
+        "small_title": true,
+        "subheading": "<p>As well as offering a lifetime guarantee that includes repairs, our Full Circle buy-back scheme gives you the opportunity to trade-in your skinflint lights. It keeps vintage lights in use forever - helping you and our planet.<\/p><p><\/p><p><a href=\"https:\/\/www.skinflintdesign.com\/pages\/full-circle\"><strong>Trade in, get credit<\/strong><\/a><\/p>",
+        "link": "",
+        "link_text": "",
+        "link_2": "",
+        "link_text_2": ""
+      }
+    },
     "product-contact-form": {
       "type": "product-contact-form",
       "settings": {
@@ -946,11 +946,13 @@
     },
     "more-products-origin": {
       "type": "more-products-origin",
+      "disabled": true,
       "settings": {
       }
     },
     "more-from-manuf": {
       "type": "more-from-manuf",
+      "disabled": true,
       "settings": {
       }
     },
@@ -1011,8 +1013,8 @@
     "main",
     "1ef34e4a-a4e6-4be3-931f-5a87ad67a705",
     "30e90bf6-011a-472f-9c6a-f7f5cfd8a132",
-    "ee009aad-efa1-453e-a080-2be48216ae9f",
     "product-usps",
+    "ee009aad-efa1-453e-a080-2be48216ae9f",
     "product-contact-form",
     "more-products-era",
     "more-products-origin",
