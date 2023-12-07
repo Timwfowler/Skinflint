@@ -118,6 +118,44 @@
         "link_text_2": ""
       }
     },
+    "d2600b57-dc2d-433f-9add-1925ce6dd943": {
+      "type": "section-featured-collections",
+      "blocks": {
+        "template--21780772258108__d2600b57-dc2d-433f-9add-1925ce6dd943-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "autumn-winter-2017",
+            "title": ""
+          }
+        },
+        "template--21780772258108__d2600b57-dc2d-433f-9add-1925ce6dd943-collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "autumn-winter-2018",
+            "title": ""
+          }
+        },
+        "ad135cad-a97c-4f3e-a949-bfe5a3b22fb4": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21780772258108__d2600b57-dc2d-433f-9add-1925ce6dd943-collection-1",
+        "template--21780772258108__d2600b57-dc2d-433f-9add-1925ce6dd943-collection-2",
+        "ad135cad-a97c-4f3e-a949-bfe5a3b22fb4"
+      ],
+      "settings": {
+        "flush": true,
+        "flush_bottom": false,
+        "title": "Featured Collection",
+        "link": "",
+        "button_link": ""
+      }
+    },
     "374d1259-fa58-4b40-b9b9-bcdba09e89cf": {
       "type": "section-featured-video",
       "settings": {
@@ -173,44 +211,6 @@
         "button_link_two": "https:\/\/cdn.shopify.com\/s\/files\/1\/0666\/1315\/0012\/files\/Full-Circle-Returns-Form-and-downloadable-PDF.pdf?v=1701848346",
         "show_link": false
       }
-    },
-    "d2600b57-dc2d-433f-9add-1925ce6dd943": {
-      "type": "section-featured-collections",
-      "blocks": {
-        "template--21780772258108__d2600b57-dc2d-433f-9add-1925ce6dd943-collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "autumn-winter-2017",
-            "title": ""
-          }
-        },
-        "template--21780772258108__d2600b57-dc2d-433f-9add-1925ce6dd943-collection-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "autumn-winter-2018",
-            "title": ""
-          }
-        },
-        "ad135cad-a97c-4f3e-a949-bfe5a3b22fb4": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "title": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--21780772258108__d2600b57-dc2d-433f-9add-1925ce6dd943-collection-1",
-        "template--21780772258108__d2600b57-dc2d-433f-9add-1925ce6dd943-collection-2",
-        "ad135cad-a97c-4f3e-a949-bfe5a3b22fb4"
-      ],
-      "settings": {
-        "flush": false,
-        "flush_bottom": false,
-        "title": "Featured Collection",
-        "link": "",
-        "button_link": ""
-      }
     }
   },
   "order": [
@@ -218,8 +218,8 @@
     "main",
     "6d6e9a85-1c60-4cfb-a0b5-fad4bb4a488a",
     "5d1129d7-f5f1-4fbd-ba15-0f75b63b9d71",
+    "d2600b57-dc2d-433f-9add-1925ce6dd943",
     "374d1259-fa58-4b40-b9b9-bcdba09e89cf",
-    "270b6052-c85a-4f98-8393-268f687e9a2e",
-    "d2600b57-dc2d-433f-9add-1925ce6dd943"
+    "270b6052-c85a-4f98-8393-268f687e9a2e"
   ]
 }
