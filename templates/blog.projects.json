@@ -3,13 +3,6 @@
     "main": {
       "type": "main-blog-landing",
       "blocks": {
-        "41bd3f73-c04d-4c14-873d-a86cb6ad82b6": {
-          "type": "blog_filter",
-          "settings": {
-            "blog": "all-projects",
-            "blog_tag": "A new category"
-          }
-        },
         "dadefcee-74d4-49f4-953b-ba179e7013ca": {
           "type": "blog_filter",
           "settings": {
@@ -33,7 +26,6 @@
         }
       },
       "block_order": [
-        "41bd3f73-c04d-4c14-873d-a86cb6ad82b6",
         "dadefcee-74d4-49f4-953b-ba179e7013ca",
         "4bd03a3b-da7f-42dc-9062-6b8c74cc7950",
         "1106cb27-6858-48cc-8bf7-2bf1fd4e8487"
