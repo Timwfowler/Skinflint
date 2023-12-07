@@ -89,7 +89,7 @@
     "6d6e9a85-1c60-4cfb-a0b5-fad4bb4a488a": {
       "type": "section-text-and-image",
       "settings": {
-        "flush": true,
+        "flush": false,
         "flush_bottom": false,
         "layout": "right",
         "image": "shopify:\/\/shop_images\/full-circle-868_1.jpg",
@@ -149,7 +149,7 @@
         "ad135cad-a97c-4f3e-a949-bfe5a3b22fb4"
       ],
       "settings": {
-        "flush": true,
+        "flush": false,
         "flush_bottom": false,
         "title": "Featured Collection",
         "link": "",
