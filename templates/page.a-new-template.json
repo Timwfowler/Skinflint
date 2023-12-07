@@ -6,6 +6,22 @@
       "settings": {
       }
     },
+    "6d6e9a85-1c60-4cfb-a0b5-fad4bb4a488a": {
+      "type": "section-text-and-image",
+      "settings": {
+        "flush": true,
+        "flush_bottom": true,
+        "layout": "left",
+        "image": "shopify:\/\/shop_images\/full-circle-868_1.jpg",
+        "title": "Keeping vintage lights in use forever",
+        "small_title": false,
+        "subheading": "<p>At skinflint, a vintage light is a light for life. So as well as offering a lifetime guarantee that includes repairs, our Full Circle buy-back scheme also gives you the opportunity to trade-in your skinflint lights in exchange for 50% credit towards a future purchase. Returned lights are then repaired, restored and recertified by our experts and placed back into the market. This is our commitment to sustainability, keeping lights out of landfill and in use forever.<\/p>",
+        "link": "",
+        "link_text": "",
+        "link_2": "",
+        "link_text_2": ""
+      }
+    },
     "374d1259-fa58-4b40-b9b9-bcdba09e89cf": {
       "type": "section-featured-video",
       "settings": {
@@ -16,22 +32,6 @@
         "placeholder": "shopify:\/\/shop_images\/skinflint-cognitive-animation-thumbnail-5120-2880.jpg",
         "play_title": "How does Full Circle work?",
         "play_bg": true
-      }
-    },
-    "6d6e9a85-1c60-4cfb-a0b5-fad4bb4a488a": {
-      "type": "section-text-and-image",
-      "settings": {
-        "flush": true,
-        "flush_bottom": false,
-        "layout": "right",
-        "image": "shopify:\/\/shop_images\/full-circle-868_1.jpg",
-        "title": "Keeping vintage lights in use forever",
-        "small_title": false,
-        "subheading": "<p>At skinflint, a vintage light is a light for life. So as well as offering a lifetime guarantee that includes repairs, our Full Circle buy-back scheme also gives you the opportunity to trade-in your skinflint lights in exchange for 50% credit towards a future purchase. Returned lights are then repaired, restored and recertified by our experts and placed back into the market. This is our commitment to sustainability, keeping lights out of landfill and in use forever.<\/p>",
-        "link": "",
-        "link_text": "",
-        "link_2": "",
-        "link_text_2": ""
       }
     },
     "5d1129d7-f5f1-4fbd-ba15-0f75b63b9d71": {
@@ -93,13 +93,23 @@
         "button_link_two": "https:\/\/cdn.shopify.com\/s\/files\/1\/0666\/1315\/0012\/files\/Full-Circle-Returns-Form-and-downloadable-PDF.pdf?v=1701848346",
         "show_link": false
       }
+    },
+    "09afa9b4-715f-4bf4-826b-89ed0ce98509": {
+      "type": "section-two-image-scrub",
+      "settings": {
+        "flush": true,
+        "flush_bottom": false,
+        "before_image": "shopify:\/\/shop_images\/700x700_cv_15-2259-15-2259-asymmetrical-benjamin-factory-shades-living-room-3.webp",
+        "after_image": "shopify:\/\/shop_images\/700x700_cv_15-2400-british-industrial-led-lights-by-revo-c.webp"
+      }
     }
   },
   "order": [
     "main",
-    "374d1259-fa58-4b40-b9b9-bcdba09e89cf",
     "6d6e9a85-1c60-4cfb-a0b5-fad4bb4a488a",
+    "374d1259-fa58-4b40-b9b9-bcdba09e89cf",
     "5d1129d7-f5f1-4fbd-ba15-0f75b63b9d71",
-    "270b6052-c85a-4f98-8393-268f687e9a2e"
+    "270b6052-c85a-4f98-8393-268f687e9a2e",
+    "09afa9b4-715f-4bf4-826b-89ed0ce98509"
   ]
 }
