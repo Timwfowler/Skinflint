@@ -1,21 +1,89 @@
 {
   "sections": {
+    "962df781-b510-4527-a9dc-ee6e14fd9a52": {
+      "type": "slideshow",
+      "blocks": {
+        "template--21780772258108__962df781-b510-4527-a9dc-ee6e14fd9a52-hero-1": {
+          "type": "hero",
+          "settings": {
+            "title": "New Bulkhead Collection",
+            "text_color": "#ffffff",
+            "link": "shopify:\/\/pages\/all-sections",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/skinflint-bulkhead-collection-homepage-banner-16-9.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "template--21780772258108__962df781-b510-4527-a9dc-ee6e14fd9a52-hero-2": {
+          "type": "hero",
+          "settings": {
+            "title": "We're a B Corp",
+            "text_color": "#ffffff",
+            "link": "#",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/skinflint-home-page-banner-b-corp-16-9-resize.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "template--21780772258108__962df781-b510-4527-a9dc-ee6e14fd9a52-hero-3": {
+          "type": "hero",
+          "settings": {
+            "title": "Vintage lighting \nprop hire",
+            "text_color": "#ffffff",
+            "link": "#",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/skinflint-prop-hire-home-page-banner-b-corp-16-9-resize.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "template--21780772258108__962df781-b510-4527-a9dc-ee6e14fd9a52-hero-4": {
+          "type": "hero",
+          "settings": {
+            "title": "Full Circle \nbuy-back \nscheme",
+            "text_color": "#ffffff",
+            "link": "shopify:\/\/blogs\/news",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/skinflint-full-circle-home-page-banner-b-corp-16-9-resize.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--21780772258108__962df781-b510-4527-a9dc-ee6e14fd9a52-hero-1",
+        "template--21780772258108__962df781-b510-4527-a9dc-ee6e14fd9a52-hero-2",
+        "template--21780772258108__962df781-b510-4527-a9dc-ee6e14fd9a52-hero-3",
+        "template--21780772258108__962df781-b510-4527-a9dc-ee6e14fd9a52-hero-4"
+      ],
+      "settings": {
+        "flush": true,
+        "full_width": false,
+        "height": 790,
+        "height_mobile": 400,
+        "style": "bars",
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
       "settings": {
-      }
-    },
-    "374d1259-fa58-4b40-b9b9-bcdba09e89cf": {
-      "type": "section-featured-video",
-      "settings": {
-        "flush": true,
-        "flush_bottom": false,
-        "title": "",
-        "video_url": "https:\/\/youtu.be\/aSoMvvs74n0",
-        "placeholder": "shopify:\/\/shop_images\/skinflint-cognitive-animation-thumbnail-5120-2880.jpg",
-        "play_title": "How does Full Circle work?",
-        "play_bg": true
       }
     },
     "6d6e9a85-1c60-4cfb-a0b5-fad4bb4a488a": {
@@ -48,6 +116,18 @@
         "link_text": "",
         "link_2": "",
         "link_text_2": ""
+      }
+    },
+    "374d1259-fa58-4b40-b9b9-bcdba09e89cf": {
+      "type": "section-featured-video",
+      "settings": {
+        "flush": true,
+        "flush_bottom": false,
+        "title": "",
+        "video_url": "https:\/\/youtu.be\/aSoMvvs74n0",
+        "placeholder": "shopify:\/\/shop_images\/skinflint-cognitive-animation-thumbnail-5120-2880.jpg",
+        "play_title": "How does Full Circle work?",
+        "play_bg": true
       }
     },
     "270b6052-c85a-4f98-8393-268f687e9a2e": {
@@ -93,13 +173,53 @@
         "button_link_two": "https:\/\/cdn.shopify.com\/s\/files\/1\/0666\/1315\/0012\/files\/Full-Circle-Returns-Form-and-downloadable-PDF.pdf?v=1701848346",
         "show_link": false
       }
+    },
+    "d2600b57-dc2d-433f-9add-1925ce6dd943": {
+      "type": "section-featured-collections",
+      "blocks": {
+        "template--21780772258108__d2600b57-dc2d-433f-9add-1925ce6dd943-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "autumn-winter-2017",
+            "title": ""
+          }
+        },
+        "template--21780772258108__d2600b57-dc2d-433f-9add-1925ce6dd943-collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "autumn-winter-2018",
+            "title": ""
+          }
+        },
+        "ad135cad-a97c-4f3e-a949-bfe5a3b22fb4": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21780772258108__d2600b57-dc2d-433f-9add-1925ce6dd943-collection-1",
+        "template--21780772258108__d2600b57-dc2d-433f-9add-1925ce6dd943-collection-2",
+        "ad135cad-a97c-4f3e-a949-bfe5a3b22fb4"
+      ],
+      "settings": {
+        "flush": false,
+        "flush_bottom": false,
+        "title": "Featured Collection",
+        "link": "",
+        "button_link": ""
+      }
     }
   },
   "order": [
+    "962df781-b510-4527-a9dc-ee6e14fd9a52",
     "main",
-    "374d1259-fa58-4b40-b9b9-bcdba09e89cf",
     "6d6e9a85-1c60-4cfb-a0b5-fad4bb4a488a",
     "5d1129d7-f5f1-4fbd-ba15-0f75b63b9d71",
-    "270b6052-c85a-4f98-8393-268f687e9a2e"
+    "374d1259-fa58-4b40-b9b9-bcdba09e89cf",
+    "270b6052-c85a-4f98-8393-268f687e9a2e",
+    "d2600b57-dc2d-433f-9add-1925ce6dd943"
   ]
 }
