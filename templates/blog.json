@@ -79,6 +79,13 @@
             "blog": "all-posts",
             "blog_tag": "Sustainability"
           }
+        },
+        "49ec53e3-0e37-490a-a96f-17d65f2c93a8": {
+          "type": "blog_filter",
+          "settings": {
+            "blog": "all-posts",
+            "blog_tag": "A new blog category"
+          }
         }
       },
       "block_order": [
@@ -92,7 +99,8 @@
         "f90ab740-6406-4f48-aa90-5b7f2a8690a0",
         "19c1afba-3a39-45af-a3e9-08b2c80b78be",
         "df5b3a64-a8f7-4d66-aa72-9544f8496046",
-        "065c7a8e-f970-47f8-bb7c-5e7fc97b0d02"
+        "065c7a8e-f970-47f8-bb7c-5e7fc97b0d02",
+        "49ec53e3-0e37-490a-a96f-17d65f2c93a8"
       ],
       "settings": {
         "article": "all-posts\/a-modern-lounge-creating-a-room-to-entertain",
