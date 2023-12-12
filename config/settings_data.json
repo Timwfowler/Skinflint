@@ -175,11 +175,11 @@
             "type": "image",
             "settings": {
               "logo_one": "shopify:\/\/shop_images\/download.png",
-              "link_one": "shopify:\/\/pages\/all-sections",
+              "link_one": "shopify:\/\/pages\/b-corp",
               "logo_two": "shopify:\/\/shop_images\/download_1.png",
-              "blink_two": "shopify:\/\/pages\/all-sections",
+              "blink_two": "shopify:\/\/blogs\/all-posts\/skinflint-joins-1-for-the-planet",
               "logo_three": "shopify:\/\/shop_images\/download_2.png",
-              "link_three": "shopify:\/\/pages\/all-sections"
+              "link_three": "shopify:\/\/pages\/certifications-1"
             }
           },
           "footer-0": {
