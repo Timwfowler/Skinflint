@@ -49,7 +49,7 @@
           <div class="collection-image{% if using_collection_image %} collection-image--is-collection{% endif %} image-wrap">
             {%- assign img_url = collection_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
-            <h1>tetttttt</h1>
+            
             {% if block.settings.image != blank %}
               <img src="{{ block.settings.image | img_url: "master"   }}" alt="">
             {% else %}
