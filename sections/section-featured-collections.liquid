@@ -19,10 +19,10 @@
       {%- for block in section.blocks -%}
 
         {% if block.type == "collection" %}
-        {%- liquid
-        assign collection = collections[block.settings.collection]
-        render 'collection-grid-item', collection: collection, block: block
-      -%}
+          {%- liquid
+          assign collection = collections[block.settings.collection]
+          render 'collection-grid-item', collection: collection, block: block
+        -%}
 
       {% else %}
 
@@ -34,15 +34,15 @@
 
       <div class="grid-item">
     <a href="{{ block.settings.article.url }}" class="collection-item"><div class="collection-image-wrap collection-image--square  ">
-      <div class="collection-image collection-image--is-collection image-wrap">
+      <div class="collection-image collection-image--is-collection image-wrap testtttt">
         
       
 
-    {% if block.settings.article.image != blank %}
-        <img class="lazyloaded"
-        src="{{ block.settings.article.image | img_url: '1000x' }}"
-        alt="Industrial Lighting">
-    {% endif %}
+      {% if block.settings.article.image != blank %}
+          <img class="lazyloaded"
+          src="{{ block.settings.article.image | img_url: '1000x' }}"
+          alt="Industrial Lighting">
+      {% endif %}
 
           </div></div>
       <span class="collection-item__title">{{ block.settings.article.title }}</span>
@@ -111,6 +111,12 @@
         "type": "collection",
         "name": "t:sections.featured-collections.blocks.collection.name",
         "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Featured image",
+            "info": "leave this blank and the collection image will display instead"
+          },
           {
             "id": "collection",
             "type": "collection",

@@ -48,20 +48,28 @@
         {%- else -%}
           <div class="collection-image{% if using_collection_image %} collection-image--is-collection{% endif %} image-wrap">
             {%- assign img_url = collection_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-            <img
-              class="lazyload"
-              src=""
-              data-src="{{ img_url }}"
-              data-aspectratio="{{ collection_image.aspect_ratio }}"
-              data-widths="[720, 900, 1080]"
-              data-sizes="auto"
-              alt="{{ collection_image.alt | escape }}">
 
-            <noscript>
-              <img class="lazyloaded"
-                src="{{ collection_image | img_url: '400x' }}"
-                alt="{{ collection_image.alt | escape }}">
-            </noscript>
+            <h1>tetttttt</h1>
+            {% if block.settings.image != blank %}
+              <img src="{{ block.settings.image | img_url: "master"   }}" alt="">
+            {% else %}
+            <img
+            class="lazyload"
+            src=""
+            data-src="{{ img_url }}"
+            data-aspectratio="{{ collection_image.aspect_ratio }}"
+            data-widths="[720, 900, 1080]"
+            data-sizes="auto"
+            alt="{{ collection_image.alt | escape }}">
+
+          <noscript>
+            <img class="lazyloaded"
+              src="{{ collection_image | img_url: '400x' }}"
+              alt="{{ collection_image.alt | escape }}">
+          </noscript>
+              
+            {% endif %}
+
           </div>
         {%- endif -%}
       </div>

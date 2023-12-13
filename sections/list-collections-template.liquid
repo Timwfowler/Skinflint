@@ -6,6 +6,8 @@
 
   <div class="new-grid" data-view="xsmall">
 
+ 
+
       {%- liquid
         case section.settings.sort
           when 'products_high' or 'products_low'
@@ -23,7 +25,17 @@
 
       <div class="collection-featured-image">
         {% assign fCollection  = collections[section.settings.collection] %}
-        {%- render 'collection-grid-item', collection: fCollection -%}
+        
+        {% if section.settings.image != blank %}
+
+        
+            <img src="{{ section.settings.image | img_url: "master"   }}" alt="">
+        {% else %}
+          
+
+        {%- render 'collection-grid-item', collection: fCollection, block: block -%}
+          
+        {% endif %}
       </div>
 
       {%- for block in section.blocks -%}
@@ -71,6 +83,12 @@
 {
   "name": "t:sections.list-collections-template.name",
   "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Featured image",
+      "info": "leave this blank and the collection image will display instead"
+    },
     {
       "type": "collection",
       "id": "collection",
@@ -145,6 +163,12 @@
       "type": "collection",
       "name": "t:sections.list-collections-template.blocks.collection.name",
       "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Featured image",
+            "info": "leave this blank and the collection image will display instead"
+          },
         {
           "label": "t:sections.list-collections-template.blocks.collection.settings.collection.label",
           "id": "collection",
