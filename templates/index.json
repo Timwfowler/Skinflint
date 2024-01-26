@@ -215,6 +215,9 @@
     },
     "897d93c1-0164-4d3d-b8bf-0b1efe22129e": {
       "type": "section-image-with-text-box",
+      "custom_css": [
+        "@media (max-width: 1024px) {.image-with-text-box {margin-top: 90px; }}"
+      ],
       "settings": {
         "flush": false,
         "flush_bottom": false,
