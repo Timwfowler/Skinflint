@@ -295,6 +295,9 @@
         "2fc4401d-c0dc-47e2-98c0-48af771331a9",
         "4ed78382-71bd-4973-91f8-c3cb6046f825"
       ],
+      "custom_css": [
+        "@media (max-width: 1024px) {.has-2-per-row {margin-bottom: 0px; }}"
+      ],
       "settings": {
         "flush": false,
         "flush_bottom": true,
