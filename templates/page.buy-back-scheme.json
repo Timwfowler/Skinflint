@@ -80,6 +80,9 @@
         "template--16769588560188__270b6052-c85a-4f98-8393-268f687e9a2e-16670063731b3797ed-1",
         "21fd0e64-f1dd-4cfc-907f-a3a7484dd6e7"
       ],
+      "custom_css": [
+        "@media (min-width: 1024px) {.text-with-icons__button {margin-bottom: 282px; }}"
+      ],
       "settings": {
         "flush": false,
         "flush_bottom": true,
