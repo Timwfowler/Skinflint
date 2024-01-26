@@ -194,7 +194,7 @@
     "3739c9e2-9b21-4677-8ff4-a0ddd44db337": {
       "type": "section-text-and-image",
       "custom_css": [
-        "@media (max-width: 1024px) {.image-with-text__inner {padding-top: 68px; }}"
+        "@media (max-width: 1024px) {.image-with-text__image {padding-top: 68px; }}"
       ],
       "settings": {
         "flush": false,
