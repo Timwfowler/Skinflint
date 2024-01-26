@@ -182,7 +182,7 @@
     "38ecbd97-e46c-4071-a13d-fdfe226affb7": {
       "type": "section-featured-video",
       "custom_css": [
-        "@media (max-width: 1024px) {.featured-video-section {margin-bottom: 104px; }}"
+
       ],
       "settings": {
         "flush": false,
@@ -197,7 +197,7 @@
     "3739c9e2-9b21-4677-8ff4-a0ddd44db337": {
       "type": "section-text-and-image",
       "custom_css": [
-
+        "@media (max-width: 1024px) {.image-with-text__text-wrap {padding-bottom: 64px; }}"
       ],
       "settings": {
         "flush": false,
