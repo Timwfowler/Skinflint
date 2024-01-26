@@ -3,10 +3,14 @@
     "main": {
       "type": "main-page",
       "disabled": true,
-      "settings": {}
+      "settings": {
+      }
     },
     "365a217e-3808-473a-b193-abca73fbeeaf": {
       "type": "section-two-image-scrub",
+      "custom_css": [
+        "@media (min-width: 1024px) {.section-padding--bottom {margin-bottom: 161px; }}"
+      ],
       "settings": {
         "flush": true,
         "flush_bottom": false,
@@ -22,6 +26,7 @@
         "layout": "right",
         "image": "shopify:\/\/shop_images\/about-lights_assembly.jpg",
         "title": "Vintage lighting, for modern use",
+        "small_title": false,
         "subheading": "<p>To us, reclaiming a vintage light means keeping the essence of the original light fitting intact, but that you can rely on it to work perfectly, and safely, every day. So we restore and use as many of the original components, except the bulb holders, wiring and suspension chains, as we can – and we often preserve the visible signs of age that hint at the light’s first story: where, when and how it was originally made and used.<\/p>",
         "link": "#",
         "link_text": "Shop all vintage lights",
@@ -37,6 +42,7 @@
         "layout": "left",
         "image": "shopify:\/\/shop_images\/about-lights_light-part.jpg",
         "title": "Salvaging",
+        "small_title": false,
         "subheading": "<p>At skinflint, we’re always searching for disused lighting with a classic, industrial quality. Often, we find lights on sourcing trips to former Eastern Bloc countries, but we also keep a watch for redevelopments and demolitions closer to home. Gaining access to the former Pirelli warehouse or Cockenzie Power Station, for example, meant we could salvage dozens of vintage lights that might otherwise have been lost.<\/p><p><\/p><p>Meanwhile, many of our maritime bulkhead lights are reclaimed from vast shipbreakers’ yards on the shores of the Arabian Sea.<\/p>",
         "link": "",
         "link_text": "",
@@ -52,6 +58,7 @@
         "layout": "right",
         "image": "shopify:\/\/shop_images\/about-lights_LIA.jpg",
         "title": "Restoring and rewiring",
+        "small_title": false,
         "subheading": "<p>With the reclaimed lights safely in our UK warehouse, the meticulous process of restoration begins. As a proud member of the <a href=\"https:\/\/www.skinflintdesign.com\/faqs\/certifications\">UK Lighting Industry Association (LIA)<\/a> we are independently audited, approved and verified at every stage to ensure that all of our lights are expertly restored to modern standards for faultless functionality.<\/p>",
         "link": "",
         "link_text": "",
@@ -277,9 +284,11 @@
       "type": "contact-form",
       "disabled": true,
       "settings": {
+        "heading": "",
         "paragraph": "<p><\/p>",
         "title": "Contact us",
         "text": "<p><\/p>",
+        "button_link": "",
         "show_phone": false,
         "narrow_column": true
       }
