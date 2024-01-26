@@ -21,7 +21,7 @@
     "d3e7f6e7-1f18-4e48-ab7f-6562895aec8d": {
       "type": "section-text-and-image",
       "custom_css": [
-        "@media (min-width: 1024px) {.index-section {margin-bottom: 1px; }}"
+        "@media (min-width: 1024px) {.section-padding--bottom {margin-bottom: 161px; }}"
       ],
       "settings": {
         "flush": true,
