@@ -245,7 +245,7 @@
     "a2e5fb6d-fe91-4155-b3a1-624fbd562b2e": {
       "type": "section-featured-collection",
       "custom_css": [
-        "@media (max-width: 1024px) {.featured-collection-section {margin-top: 19px; }}"
+        "@media (max-width: 1024px) {.featured-collection-section {margin-top: 19px; } .numb-of-products-6 {margin-bottom: 85px; }}"
       ],
       "settings": {
         "flush": false,
