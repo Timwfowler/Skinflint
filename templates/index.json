@@ -296,7 +296,7 @@
         "4ed78382-71bd-4973-91f8-c3cb6046f825"
       ],
       "custom_css": [
-        "@media (max-width: 1024px) {.has-2-per-row {margin-bottom: 0px; }}"
+        "@media (max-width: 1024px) {.has-2-per-row {margin-bottom: 75px; }}"
       ],
       "settings": {
         "flush": false,
