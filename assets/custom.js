@@ -248,6 +248,28 @@ function initYoutubePlay(){
     var div = document.querySelector(".video-wrapper");
     var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
 
+    var newIframe = div.querySelector('iframe').getAttribute('id')
+
+
+
+    var player;
+    function onYouTubeIframeAPIReady() {
+      console.log('ready');
+        player = new YT.Player(newIframe, {
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+      // Play video when player ready.
+      console.log(event);
+      event.target.playVideo();
+  }
+    
+
     document.querySelector('.dummy-hack-play').style.display = "none"
     document.querySelector('.video__placeholder').style.display = "none"
 
@@ -257,6 +279,7 @@ function initYoutubePlay(){
 
     setTimeout(function(){
       iframe.postMessage('{"event":"command","func":"' + 'unMute' + '","args":""}', '*');
+      
     }, 10);
 
   })
