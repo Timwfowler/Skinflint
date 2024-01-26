@@ -15,7 +15,8 @@
     "main": {
       "type": "main-page",
       "disabled": true,
-      "settings": {}
+      "settings": {
+      }
     },
     "d3e7f6e7-1f18-4e48-ab7f-6562895aec8d": {
       "type": "section-text-and-image",
@@ -25,6 +26,7 @@
         "layout": "right",
         "image": "shopify:\/\/shop_images\/story_lights_origin.jpg",
         "title": "We don’t make lights. We find them.",
+        "small_title": false,
         "subheading": "<p><\/p><p>At skinflint we salvage and restore vintage lights that would otherwise go to landfill - from iconic British factories and theatres to abandoned glassworks in former Czechoslovakia. We have three guiding principles:<\/p><p><\/p><p><strong>To salvage <\/strong>the best lighting from the 1920s to the 1970s.<\/p><p><\/p><p><strong>To restore <\/strong>every piece without compromising character.<\/p><p><\/p><p><strong>To refurbish <\/strong>every fixture to the highest modern standards.<\/p>",
         "link": "",
         "link_text": "",
@@ -40,6 +42,7 @@
         "layout": "left",
         "image": "shopify:\/\/shop_images\/Our_story_b_corp_ethos_2_1.jpg",
         "title": "Our ethos",
+        "small_title": false,
         "subheading": "<p><\/p><p><strong>We’re on a mission<\/strong> to stop vintage lighting going to landfill and make business a force for good.<\/p><p><\/p><p><strong>We’re a Certified B Corp<\/strong> so we put our people, planet and customers above profit and hold ourselves accountable to being the change we want to see in the world, donating 1% of our sales to the planet every year.<\/p><p><\/p><p><strong>We work sustainably<\/strong> and constantly evolve the way we operate through product circularity initiatives like Full Circle, our product buy-back scheme.<\/p><p><\/p><p><strong>We don’t make lights. We find them.<\/strong> We are skinflint.<\/p>",
         "link": "",
         "link_text": "",
@@ -90,6 +93,9 @@
       "block_order": [
         "template--16760212947260__e71a1c9a-c0f7-4eaf-a684-8839a0bd3a80-1666920806555b1a78-0",
         "template--16760212947260__e71a1c9a-c0f7-4eaf-a684-8839a0bd3a80-1666920806555b1a78-1"
+      ],
+      "custom_css": [
+        "@media (min-width: 1024px) {.richtext-section {margin-bottom: 314px; }}"
       ],
       "settings": {
         "flush": false,
