@@ -39,6 +39,9 @@
     },
     "d0ef7b1d-df04-4394-8054-1def31ed25da": {
       "type": "section-text-and-image",
+      "custom_css": [
+        "@media (min-width: 1024px) {.section-padding--bottom {margin-bottom: 161px; }}"
+      ],
       "settings": {
         "flush": true,
         "flush_bottom": true,
