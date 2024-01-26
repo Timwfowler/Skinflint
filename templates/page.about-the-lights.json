@@ -59,7 +59,7 @@
     "75c7aa17-1779-4377-a858-a7051e388cb4": {
       "type": "section-text-and-image",
       "custom_css": [
-        "@media (min-width: 1024px) {.section-flush {margin-top: -159px; }}"
+        "@media (min-width: 1024px) {.section-flush {margin-top: -159px; margin-bottom: 162px; }}"
       ],
       "settings": {
         "flush": true,
