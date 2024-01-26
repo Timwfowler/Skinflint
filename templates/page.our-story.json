@@ -20,6 +20,9 @@
     },
     "d3e7f6e7-1f18-4e48-ab7f-6562895aec8d": {
       "type": "section-text-and-image",
+      "custom_css": [
+        "@media (min-width: 1024px) {.index-section {margin-bottom: 314px; }}"
+      ],
       "settings": {
         "flush": true,
         "flush_bottom": true,
@@ -110,45 +113,21 @@
         "template--16760212947260__8839b835-e824-4646-a858-0d20b2345bb3-1666920796d7813966-0": {
           "type": "collection",
           "settings": {
-            "collection": "ceiling-light-test",
+            "collection": "polished-metal-lights",
             "title": ""
           }
         },
         "template--16760212947260__8839b835-e824-4646-a858-0d20b2345bb3-1666920796d7813966-1": {
           "type": "collection",
           "settings": {
-            "collection": "ceiling-light-test",
-            "title": ""
-          }
-        },
-        "template--16760212947260__8839b835-e824-4646-a858-0d20b2345bb3-1666920796d7813966-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "ceiling-light-test",
-            "title": ""
-          }
-        },
-        "template--16760212947260__8839b835-e824-4646-a858-0d20b2345bb3-1666920796d7813966-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "ceiling-light-test",
-            "title": ""
-          }
-        },
-        "template--16760212947260__8839b835-e824-4646-a858-0d20b2345bb3-1666920796d7813966-4": {
-          "type": "collection",
-          "settings": {
-            "collection": "ceiling-light-test",
+            "collection": "xl-collection",
             "title": ""
           }
         }
       },
       "block_order": [
         "template--16760212947260__8839b835-e824-4646-a858-0d20b2345bb3-1666920796d7813966-0",
-        "template--16760212947260__8839b835-e824-4646-a858-0d20b2345bb3-1666920796d7813966-1",
-        "template--16760212947260__8839b835-e824-4646-a858-0d20b2345bb3-1666920796d7813966-2",
-        "template--16760212947260__8839b835-e824-4646-a858-0d20b2345bb3-1666920796d7813966-3",
-        "template--16760212947260__8839b835-e824-4646-a858-0d20b2345bb3-1666920796d7813966-4"
+        "template--16760212947260__8839b835-e824-4646-a858-0d20b2345bb3-1666920796d7813966-1"
       ],
       "settings": {
         "flush": false,
