@@ -216,7 +216,7 @@
     "897d93c1-0164-4d3d-b8bf-0b1efe22129e": {
       "type": "section-image-with-text-box",
       "custom_css": [
-        "@media (max-width: 1024px) {.image-with-text-box {margin-top: 90px; }}"
+        "@media (max-width: 1024px) {.image-with-text-box {margin-top: 80px; }}"
       ],
       "settings": {
         "flush": false,
@@ -244,6 +244,9 @@
     },
     "a2e5fb6d-fe91-4155-b3a1-624fbd562b2e": {
       "type": "section-featured-collection",
+      "custom_css": [
+        "@media (max-width: 1024px) {.featured-collection-section {margin-top: 19px; }}"
+      ],
       "settings": {
         "flush": false,
         "flush_bottom": true,
