@@ -51,11 +51,57 @@
         </span>
       {%- endif -%}
       {%- if section.settings.blog_show_date -%}
-        <span class="article__sub-meta-date">{{ article.published_at | time_tag: format: 'month_day_year' }}</span>
+
+      
+
+      {% assign month = "now" | date: "%m" %}
+      {% assign monthNum = month | plus: 0 %} 
+      {% assign year = "now" | date: "%y" %}
+      {% assign yearNum = year | plus: 0 %}
+
+      {% assign articleMonth = article.published_at | date: "%m" %}
+      {% assign articleMonthNum = articleMonth | plus: 0 %}
+      {% assign articleYear = article.published_at | date: "%y" %}
+      {% assign articleYearNum = articleYear | plus: 0 %}
+      {% assign yearsAgo = yearNum | minus: articleYearNum %}
+      {% assign monthsAgo = articleMonth | minus: articleMonthNum %}
+
+
+
+
+
+
+
+
+
+
+        <span class="article__sub-meta-date">      {% if yearsAgo > 1 %}
+          {{ yearsAgo   }} years ago
+           {% elsif yearsAgo == 1 %}
+           {{ yearsAgo   }} year ago
+           {% elsif monthsAgo > 1 %}
+             {{ monthsAgo }} months ago
+           {% elsif monthsAgo == 1 %}
+             {{ monthsAgo }} month ago
+           {% endif %}</span>
       {%- endif -%}
       {%- if section.settings.blog_show_author -%}
         <span>by {{ article.author }}</span>
       {%- endif -%}
+
+      
+
+      {% if blog.title == "All posts" %}
+      <span>Posted by: skinflint</span>
+        
+      {% endif %}
+
+      {% for tag in article.tags %}
+        {% assign urlTagged = tag  | downcase | replace: " ", "-" %}
+        <a style="text-decoration: none; border: none" class="a-link" href="{{ blog.url }}/tagged/{{ urlTagged }}">{{ tag | replace: 'project', '' | replace: 'Projects', '' }}{% unless forloop.last %}| {% endunless %}</a>
+        
+
+      {% endfor %}
     </div>
   </header>
 

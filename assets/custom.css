@@ -3505,6 +3505,9 @@ a:hover {
 .article-wrap .rte > :not(:last-child) {
   margin-bottom: 40px;
 }
+.article-wrap img {
+  margin-top: 30px;
+}
 .article-wrap .rte > h1, .article-wrap .rte > h2, .article-wrap .rte > h3, .article-wrap .rte > h4, .article-wrap .rte > h5, .article-wrap .rte > h6, .article-wrap .rte > p {
   padding: 0 20px;
 }
@@ -5027,7 +5030,7 @@ a:hover {
   display: block;
   padding: 10px 20px;
   background-color: #fff;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid white;
   margin: 0;
   color: #2d2926;
   font-size: 15px;

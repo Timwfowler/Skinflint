@@ -1,6 +1,12 @@
-{% assign article = articles[section.settings.article ] %}
+{% assign article = blog.articles[0] %}
+
+
+
 {%- assign urlArray = article.url | split: "/" -%}
 {% assign featuredArticleBlog = blogs[ urlArray[2] ] %}   
+
+
+
 
 
 
@@ -21,7 +27,10 @@
               </a>
               <p>{{ article.excerpt }}</p>
               <div class="image-with-text-box__link-wrap">
-                <a href="{{ featuredArticleBlog.url }}">{{ featuredArticleBlog.title }}</a>
+                {% for tag in article.tags %}
+                  {% assign urlTagged = tag  | downcase | replace: " ", "-" %}
+                  <a class="a-link" href="{{ blog.url }}/tagged/{{ urlTagged }}">{{ tag | replace: 'project', '' | replace: 'Projects', '' }}{% unless forloop.last %}| {% endunless %}</a>
+                {% endfor %}
               </div>
             </div>
           </div>
@@ -30,18 +39,12 @@
     </div>
     <div class="blog-landing-page__filter">
       <h1>{{ section.settings.title }}</h1>
-      <div class="blog-landing-page__filter-list">
-        <p>Browse by:</p>
+      <div class="blog-landing-page__filter-list">  
+        <p>Browse by: </p>
         <ul>
-
- 
-
-          <li><a href="{{ blog.url   }}">All</a></li>
-          
-          
+          <li><a href="{{ blog.url   }}">All</a></li>         
           {% for block in section.blocks %}
-            {% assign blogFilter = blogs[ block.settings.blog ] %}    
-
+            {% assign blogFilter = blogs[ block.settings.blog ] %}  
             {% assign urlTagged = block.settings.blog_tag  | downcase | replace: " ", "-" %}
               <li           
               ><a data-tagged="{{ urlTagged }}" href="{{ blogFilter.url }}/tagged/{{ urlTagged }}">{{ block.settings.blog_tag | replace: 'project', '' | replace: 'Projects', '' }}</a></li>    
@@ -84,7 +87,10 @@
   <div class="article-grid">
     <div class="article-grid__inner page-width">                
         {% for article in blog.articles %}
-          {% render 'article-card', article: article, blog: blog %}        
+          {% unless forloop.index == 1 %}
+          {% render 'article-card', article: article, blog: blog %}     
+          {% endunless %}
+             
         {% endfor %} 
     </div>
   </div>

@@ -349,10 +349,15 @@ iframe.contentWindow.postMessage(message, 'https://www.youtube.com');
 }
 
 function initBlogFiltersMobile(){
+  
 
-  return;
+  
   const button = document.querySelector('.blog-landing-page__filter-list')
   const menu = document.querySelector('.blog-landing-page__filter-list ul')
+
+  if (!button) {
+    return;
+  }
 
   const menuItems = menu.querySelectorAll('a')
 
@@ -363,6 +368,12 @@ function initBlogFiltersMobile(){
   const url = window.location.href
   const lastPart = url.substring(url.lastIndexOf('/') + 1);
   let foundActive = false
+
+  // if url contains "all-posts?customer_posted=true"
+
+  if (url.includes('all-posts?customer_posted=true')) {
+    document.querySelector('.newsletter-modal').classList.add('active')
+  }
 
 
 

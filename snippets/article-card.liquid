@@ -16,7 +16,15 @@
         <p>{{ article.content |  strip_html  | truncate: 100  }}</p>
       {% endif %}
 
-      <a class="a-link" href="{{ blog.url }}">{{ blog.title }}</a>
+      
+
+      {% for tag in article.tags %}
+        {% assign urlTagged = tag  | downcase | replace: " ", "-" %}
+        <a class="a-link" href="{{ blog.url }}/tagged/{{ urlTagged }}">{{ tag | replace: 'project', '' | replace: 'Projects', '' }}{% unless forloop.last %}| {% endunless %}</a>
+        
+
+      {% endfor %}
+      <p></p>
     </div>
   </div>
 </div>
