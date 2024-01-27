@@ -235,46 +235,42 @@ function init3dModelPDP(){
   }
 }
 
+function initYoutubePlay(){
 
+  var tag = document.createElement('script');
 
-var tag = document.createElement('script');
-
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 
 
 
 
   var player;
-function onYouTubeIframeAPIReady() {
+  function onYouTubeIframeAPIReady() {
 
-  console.log('ready');
+    console.log('ready');
 
-  player = new YT.Player('existing_youtube_player', {
-    height: '390',
-    width: '640',
-    videoId: 'aSoMvvs74n0',
-    playerVars: {
-      'playsinline': 1
-    },
-    events: {
-      'onReady': onPlayerReady,
-      'onStateChange': onPlayerStateChange
-    }
-  });
-}
+    player = new YT.Player('existing_youtube_player', {
+      height: '390',
+      width: '640',
+      videoId: 'aSoMvvs74n0',
+      playerVars: {
+        'playsinline': 1
+      },
+      events: {
+        'onReady': onPlayerReady,
+        'onStateChange': onPlayerStateChange
+      }
+    });
+  }
 
-// 4. The API will call this function when the video player is ready.
-function onPlayerReady(event) {
-  console.log('play');
-  event.target.playVideo();
-}
-
-function initYoutubePlay(){
-
-
+  // 4. The API will call this function when the video player is ready.
+  function onPlayerReady(event) {
+    console.log('play');
+    event.target.playVideo();
+  }
 
   if (!document.querySelector('.dummy-hack-play')) {
     return;
