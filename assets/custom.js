@@ -248,39 +248,32 @@ function initYoutubePlay(){
     var div = document.querySelector(".video-wrapper");
     var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
 
-    var newIframe = div.querySelector('iframe').getAttribute('id')
+    var newIframe = div.querySelector('iframe')
 
 
 
-    var player;
-    function onYouTubeIframeAPIReady() {
-      console.log('ready');
-        player = new YT.Player(newIframe, {
-            events: {
-                'onReady': onPlayerReady,
-                'onStateChange': onPlayerStateChange
-            }
-        });
-    }
+    setTimeout(function(){
+      
+    console.log(newIframe);
+    var iframe = newIframe;
+    var message = JSON.stringify({
+        event: 'command',
+        func: 'playVideo',
+        args: []
+    });
+    iframe.contentWindow.postMessage(message, 'https://www.youtube.com');
+      
+    }, 2000);
 
-    function onPlayerReady(event) {
-      // Play video when player ready.
-      console.log(event);
-      event.target.playVideo();
-  }
-    
 
     document.querySelector('.dummy-hack-play').style.display = "none"
     document.querySelector('.video__placeholder').style.display = "none"
 
     
-    iframe.postMessage('{"event":"command","func":"' + 'mute' + '","args":""}', '*');
+    // iframe.postMessage('{"event":"command","func":"' + 'mute' + '","args":""}', '*');
     // iframe.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
 
-    setTimeout(function(){
-      iframe.postMessage('{"event":"command","func":"' + 'unMute' + '","args":""}', '*');
-      
-    }, 10);
+
 
   })
 

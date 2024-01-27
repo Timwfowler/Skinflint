@@ -28,7 +28,7 @@
           {%- endif -%}
 
           <label for="ContactFormMessage-{{ id }}">{{ 'contact.form.message' | t }}</label>
-          <textarea rows="5" id="ContactFormMessage-{{ id }}" class="input-full" name="contact[body]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+          <textarea rows="5" id="ContactFormMessage-{{ id }}" class="input-full" name="contact[body]"></textarea>
 
           <label for="tab-contact-submit-{{ id }}" class="hidden-label">{{ 'contact.form.send' | t }}</label>
           <button type="submit" id="tab-contact-submit-{{ id }}" class="btn">

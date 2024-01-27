@@ -27,6 +27,8 @@
 
         {{ form.errors | default_errors }}
 
+        {% unless form.posted_successfully? %}
+
         <div class="product-contact-form-main__inner">
           <div class="product-contact-form-main__left">
             <div class="grid grid--small">
@@ -63,18 +65,12 @@
        
             <div class="">
               <label for="ContactFormMessage-{{ section.id }}">Comments</label>
-              <textarea rows="5" id="ContactFormMessage-{{ section.id }}" class="input-full" name="contact[body]">
-                {% if form.body %}
-                  {{ form.body }}{% endif %}
-              </textarea>
+              <textarea rows="5" id="ContactFormMessage-{{ section.id }}" class="input-full" name="contact[body]"></textarea>
             </div>
 
             <div class="">
               <label for="ContactFormMessage-international">For international clients requiring a quotation please state the delivery address</label>
-              <textarea rows="5" id="ContactFormMessage-international" class="input-full" name="contact[body]">
-                {% if form.body %}
-                  {{ form.body }}{% endif %}
-              </textarea>
+              <textarea rows="5" id="ContactFormMessage-international" class="input-full" name="contact[body]"></textarea>
             </div>
           </div>
         </div>
@@ -115,6 +111,10 @@
           bottom right corner of the page.
         {% endcomment %}
         <div class="captcha">{{ 'shopify.online_store.spam_detection.disclaimer_html' | t }}</div>
+
+        
+          
+        {% endunless %}
 
       {%- endform -%}
     </div>

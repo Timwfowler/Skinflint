@@ -25,6 +25,10 @@
 
         {{ form.errors | default_errors }}
 
+        {% unless form.posted_successfully? %}
+          
+        
+
         <div class="grid grid--small">
           <div class="grid__item medium-up--one-half first-name">
             <label for="ContactFormName-{{ section.id }}">First Name *</label>
@@ -53,10 +57,7 @@
         {%- endif -%}
 
         <label for="ContactFormMessage-{{ section.id }}">{{ 'contact.form.message' | t }}</label>
-        <textarea rows="5" id="ContactFormMessage-{{ section.id }}" class="input-full" name="contact[body]">
-          {% if form.body %}
-            {{ form.body }}{% endif %}
-        </textarea>
+        <textarea rows="5" id="ContactFormMessage-{{ section.id }}" class="input-full" name="contact[body]"></textarea>
 
         <div class="section-header text-center">
           {%- if section.settings.text != blank -%}
@@ -76,6 +77,8 @@
           bottom right corner of the page.
         {% endcomment %}
         <div class="captcha">{{ 'shopify.online_store.spam_detection.disclaimer_html' | t }}</div>
+
+      {% endunless %}
 
       {%- endform -%}
     </div>
