@@ -249,10 +249,25 @@ function initYoutubePlay(){
 
     var newIframe = div.querySelector('iframe')
 
-    console.log(newIframe);
-    const newSRc = newIframe.getAttribute('src') + "&autoplay=1"
 
-    newIframe.setAttribute('src', newSRc)
+
+
+
+    setTimeout(function(){
+      
+    // console.log(newIframe);
+    // var iframe = newIframe;
+    // var message = JSON.stringify({
+    //     event: 'command',
+    //     func: 'playVideo',
+    //     args: []
+    // });
+    // iframe.contentWindow.postMessage(message, 'https://www.youtube.com');
+
+    console.log(newIframe);
+    // const newSRc = newIframe.getAttribute('src') + "&autoplay=1"
+
+    //newIframe.setAttribute('src', newSRc)
 
 
     var tag = document.createElement('script');
@@ -290,24 +305,32 @@ function initYoutubePlay(){
       event.target.playVideo();
     }
 
-
-
-    setTimeout(function(){
-      
-    // console.log(newIframe);
-    // var iframe = newIframe;
-    // var message = JSON.stringify({
-    //     event: 'command',
-    //     func: 'playVideo',
-    //     args: []
-    // });
-    // iframe.contentWindow.postMessage(message, 'https://www.youtube.com');
+    
       
     }, 2000);
+
+    setTimeout(function(){
+      console.log('clicked');
+      newIframe.click()
+      console.log('clickkeee');
+
+
+      var iframe = document.getElementById('existing_youtube_player');
+var message = JSON.stringify({
+    event: 'command',
+    func: 'playVideo',
+    args: []
+});
+iframe.contentWindow.postMessage(message, 'https://www.youtube.com');
+      
+    }, 3000);
+
+    console.log(newIframe.querySelector('.site-as-giant-card'));
 
 
     document.querySelector('.dummy-hack-play').style.display = "none"
     document.querySelector('.video__placeholder').style.display = "none"
+    
 
     
     // iframe.postMessage('{"event":"command","func":"' + 'mute' + '","args":""}', '*');

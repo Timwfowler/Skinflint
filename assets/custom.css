@@ -4445,6 +4445,7 @@ a:hover {
 @media (min-width: 1024px) {
   .cart__footer {
     display: flex;
+    margin-bottom: 180px;
   }
 }
 .cart__footer textarea {

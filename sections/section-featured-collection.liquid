@@ -10,6 +10,7 @@
 
 
 
+
   <div id="CollectionSection-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="collection-template" class=" numb-of-products-{{ section.settings.count }} {% if section.settings.flush %}section-flush {% endif %}
                                                                   {% if section.settings.flush_bottom %}section-padding--bottom {% endif %}">
     {%- if section.settings.title != blank -%}
@@ -43,24 +44,35 @@
         -%}
 
         {%- else -%}
-
+        {% assign product_count = 0 %}
           {%- liquid
-          for product in collections[section.settings.home_featured_products].products limit: product_limit
+          for product in collections[section.settings.home_featured_products].products 
+            if product.available and product_count < product_limit
+
+            assign product_count = product_count | plus: 1
             assign item_classes = ''
             unless section.settings.mobile_scrollable
               if forloop.index > section.settings.count
                 assign item_classes = 'hide'
                 assign mod = forloop.index | modulo: 2
+              
                 if mod == 0
                   assign item_classes = 'medium-up--hide'
                 endif
               endif
             endunless
 
+
+
             render 'product-grid-item', product: product, collection: collection, classes: item_classes
+
+            if product_count >= product_limit 
+              break 
+            endif 
 
             if settings.quick_shop_enable
               render 'quick-shop-modal', product: product
+            endif
             endif
           endfor
         -%}

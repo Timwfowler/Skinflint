@@ -5760,6 +5760,7 @@ a:hover{
 
     @include breakpoint(md){
       display: flex;
+      margin-bottom: 180px;
     }
 
     textarea{
