@@ -351,9 +351,14 @@ iframe.contentWindow.postMessage(message, 'https://www.youtube.com');
 function initBlogFiltersMobile(){
   
 
-  
+  const url = window.location.href
   const button = document.querySelector('.blog-landing-page__filter-list')
   const menu = document.querySelector('.blog-landing-page__filter-list ul')
+
+  if (url.includes('all-posts?customer_posted=true')) {
+    console.log('posted');
+    document.querySelector('.newsletter-modal').classList.add('active')
+  }
 
   if (!button) {
     return;
@@ -365,15 +370,13 @@ function initBlogFiltersMobile(){
 
   // get last part of url after last "/"
 
-  const url = window.location.href
+
   const lastPart = url.substring(url.lastIndexOf('/') + 1);
   let foundActive = false
 
   // if url contains "all-posts?customer_posted=true"
 
-  if (url.includes('all-posts?customer_posted=true')) {
-    document.querySelector('.newsletter-modal').classList.add('active')
-  }
+
 
 
 
