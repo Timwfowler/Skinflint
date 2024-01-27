@@ -81,6 +81,9 @@
         "template--18439249101116__300f92cb-dfd6-4868-b913-02267e508732-167997877410d2f46a-3",
         "template--18439249101116__300f92cb-dfd6-4868-b913-02267e508732-167997877410d2f46a-4"
       ],
+      "custom_css": [
+        "@media (min-width: 1024px) {.numb-of-products-5{margin-bottom: 140px }}"
+      ],
       "settings": {
         "flush": false,
         "flush_bottom": false,
