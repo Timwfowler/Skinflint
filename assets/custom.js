@@ -249,6 +249,11 @@ function initYoutubePlay(){
 
     var newIframe = div.querySelector('iframe')
 
+    console.log(newIframe);
+    const newSRc = newIframe.getAttribute('src') + "&autoplay=1"
+
+    newIframe.setAttribute('src', newSRc)
+
 
     var tag = document.createElement('script');
 
@@ -262,10 +267,13 @@ function initYoutubePlay(){
 
     var player;
     function onYouTubeIframeAPIReady() {
+
+      console.log('ready');
+
       player = new YT.Player('existing_youtube_player', {
         height: '390',
         width: '640',
-        videoId: 'M7lc1UVf-VE',
+        videoId: 'aSoMvvs74n0',
         playerVars: {
           'playsinline': 1
         },
