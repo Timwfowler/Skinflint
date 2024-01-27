@@ -38,8 +38,8 @@
   {% endunless %}
 
 
-<div class="dummy-hack-play" {% if section.settings.play_bg %}
-  style="background-color: white"
+<div class="dummy-hack-play"  {% if section.settings.play_bg %}
+  style="background-color: white; display: none"
 {% endif %}>
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -64,7 +64,7 @@
     </video>
   </div>
 
-  <div class="video__placeholder">
+  <div class="video__placeholder" style="display: none;">
     <img src="{{ section.settings.placeholder | img_url: "master" }}" alt="">
   </div>
   
