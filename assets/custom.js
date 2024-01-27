@@ -244,24 +244,56 @@ function initYoutubePlay(){
 
   document.querySelector('.dummy-hack-play').addEventListener('click', () => {
 
-
     var div = document.querySelector(".video-wrapper");
     var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
 
     var newIframe = div.querySelector('iframe')
 
 
+    var tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+
+
+
+
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('existing_youtube_player', {
+        height: '390',
+        width: '640',
+        videoId: 'M7lc1UVf-VE',
+        playerVars: {
+          'playsinline': 1
+        },
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
+    }
+
+    // 4. The API will call this function when the video player is ready.
+    function onPlayerReady(event) {
+      console.log('play');
+      event.target.playVideo();
+    }
+
+
 
     setTimeout(function(){
       
-    console.log(newIframe);
-    var iframe = newIframe;
-    var message = JSON.stringify({
-        event: 'command',
-        func: 'playVideo',
-        args: []
-    });
-    iframe.contentWindow.postMessage(message, 'https://www.youtube.com');
+    // console.log(newIframe);
+    // var iframe = newIframe;
+    // var message = JSON.stringify({
+    //     event: 'command',
+    //     func: 'playVideo',
+    //     args: []
+    // });
+    // iframe.contentWindow.postMessage(message, 'https://www.youtube.com');
       
     }, 2000);
 
