@@ -5109,4 +5109,10 @@ a:hover {
   width: 16px;
 }
 
+@media (min-width: 1024px) {
+  .js-address-form {
+    margin-bottom: 120px;
+  }
+}
+
 /*# sourceMappingURL=custom.css.map */
