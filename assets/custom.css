@@ -393,9 +393,6 @@ a:hover {
   font-weight: 400;
 }
 
-.grid-item .collection-image--square {
-  padding-top: 100%;
-}
 .grid-item .collection-image img {
   padding: 0;
 }
