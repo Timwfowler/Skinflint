@@ -5105,4 +5105,8 @@ a:hover {
   font-size: 16px;
 }
 
+.set-as-default input {
+  width: 16px;
+}
+
 /*# sourceMappingURL=custom.css.map */
