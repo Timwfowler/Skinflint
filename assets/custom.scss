@@ -6605,10 +6605,14 @@ margin-right: auto;
   } 
 }
 
-.js-address-form{
+.template-customers-addresses{
 
   @include breakpoint(md){
-    margin-bottom: 120px;
+
+    #shopify-section-footer{
+      margin-top: 120px;
+    }
+    
   }
 }
 
