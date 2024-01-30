@@ -170,15 +170,22 @@
           </div>
         </div>
 
-        <p>
-          {{ form.set_as_default_checkbox }}
-          <label for="address_default_address_{{form.id}}" class="inline">{{ 'customer.addresses.set_default' | t }}</label>
+        <p style="    display: flex; 
+        flex-direction: row;
+        width: 387px;
+        justify-content: flex-start;
+        align-items: baseline;">
+          <span class="set-as-default">
+            {{ form.set_as_default_checkbox }}
+          </span>
+          
+          <label for="address_default_address_new" class="inline">{{ 'customer.addresses.set_default' | t }}</label>
         </p>
 
         <p>
           <label for="addresses-add-submit" class="hidden-label">{{ 'customer.addresses.update' | t }}</label>
           <button type="submit" id="addresses-add-submit" class="btn">
-            {{ 'customer.addresses.update' | t }}
+            {{ 'customer.addresses.update' | t }}  
           </button>
         </p>
         <p>
