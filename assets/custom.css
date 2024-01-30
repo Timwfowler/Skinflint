@@ -5113,6 +5113,9 @@ a:hover {
   .template-customers-addresses #shopify-section-footer {
     margin-top: 120px;
   }
+  .template-customers-addresses .main-content {
+    min-height: 0px;
+  }
 }
 
 /*# sourceMappingURL=custom.css.map */
