@@ -63,7 +63,7 @@
                   <input type="text" placeholder="First name" name="customer[first_name]" id="FirstName" class="input-full"{% if form.first_name %} value="{{ form.first_name }}"{% endif %} autocapitalize="words" autofocus>
             
                   
-                  <input type="text" placeholder="Surnme" name="customer[last_name]" id="LastName" class="input-full"{% if form.last_name %} value="{{ form.last_name }}"{% endif %} autocapitalize="words">
+                  <input type="text" placeholder="Surname" name="customer[last_name]" id="LastName" class="input-full"{% if form.last_name %} value="{{ form.last_name }}"{% endif %} autocapitalize="words">
             
                   
                   <input type="email" placeholder="Email" name="customer[email]" id="Email" class="input-full{% if form.errors contains 'email' %} error{% endif %}"{% if form.email %} value="{{ form.email }}"{% endif %} autocorrect="off" autocapitalize="off">

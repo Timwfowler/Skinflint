@@ -110,6 +110,18 @@
 
     {% elsif template.name == 'page' %}
 
+
+
+
+
+      {% if page.metafields.custom.breadcrumb_parent != blank %}
+      <span class="breadcrumb__divider" aria-hidden="true">></span>
+      <a href="{{ page.metafields.custom.breadcrumb_parent.value.url }}">{{ page.metafields.custom.breadcrumb_parent.value.title }}</a>
+
+      {% else %}
+    
+    {% endif %}
+
       <span class="breadcrumb__divider" aria-hidden="true">></span>
       <span>{{ page.title }}</span>
 

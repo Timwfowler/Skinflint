@@ -1,0 +1,61 @@
+<style>
+  @media (min-width: 901px){
+    .user-heading {
+      width: calc(100% - 60px);
+  }
+  }
+
+  .user-heading {
+    max-width: 1023px;
+    width: 100%;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .user-heading__title--border {
+      border-bottom: 1px solid #e1e1e1;
+      margin-bottom: 80px;
+    }
+
+    .user-heading__title--border  h1{
+      margin: 0;
+      margin-bottom: 80px;
+    }
+
+    .rte-page{
+      border-bottom: 1px solid #e1e1e1;
+      padding-bottom: 60px;
+      margin-bottom: 20px;
+      max-width: 600px !important;
+      width: calc(100% - 60px) !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 160px !important;
+    }
+
+</style>
+
+
+<div class="page-width standard-page">
+
+<section class="user-heading"><div class="user-heading__title user-heading__title--border"><h1>{{ page.title | escape }}</h1></div></section>
+
+
+{% if page.content != blank %}
+<div class="rte rte--nomargin rte-page">
+  {{ page.content }}
+</div>
+{% endif %}
+
+
+</div>
+
+{% schema %}
+  {
+    "name": "t:sections.main-page.name",
+    "tag": "section"
+  }
+{% endschema %}

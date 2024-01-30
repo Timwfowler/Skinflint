@@ -4898,6 +4898,10 @@ a:hover {
   margin-right: auto;
 }
 
+.register-modal .contact-modal-wrap {
+  max-height: 100vh;
+}
+
 .login-modal, .register-modal {
   display: none;
 }
@@ -4960,8 +4964,11 @@ a:hover {
   display: none;
 }
 
+.page--projects-landing-page .mega-menu-hamburger, .template-blog .mega-menu-hamburger, .page--blog-landing-page .mega-menu-hamburger, .template-article .mega-menu-hamburger {
+  z-index: 99;
+}
 @media (min-width: 1024px) {
-  .page--projects-landing-page .shrink .scrolling-nav-actions__projects, .template-blog .shrink .scrolling-nav-actions__projects, .page--blog-landing-page .shrink .scrolling-nav-actions__projects {
+  .page--projects-landing-page .shrink .scrolling-nav-actions__projects, .template-blog .shrink .scrolling-nav-actions__projects, .page--blog-landing-page .shrink .scrolling-nav-actions__projects, .template-article .shrink .scrolling-nav-actions__projects {
     width: 211px;
     right: 165px;
     margin-right: 0;
@@ -4970,10 +4977,10 @@ a:hover {
     top: 8px;
     position: absolute;
   }
-  .page--projects-landing-page .shrink .site-nav__wishlist, .page--projects-landing-page .shrink #HeaderCartTrigger, .template-blog .shrink .site-nav__wishlist, .template-blog .shrink #HeaderCartTrigger, .page--blog-landing-page .shrink .site-nav__wishlist, .page--blog-landing-page .shrink #HeaderCartTrigger {
+  .page--projects-landing-page .shrink .site-nav__wishlist, .page--projects-landing-page .shrink #HeaderCartTrigger, .template-blog .shrink .site-nav__wishlist, .template-blog .shrink #HeaderCartTrigger, .page--blog-landing-page .shrink .site-nav__wishlist, .page--blog-landing-page .shrink #HeaderCartTrigger, .template-article .shrink .site-nav__wishlist, .template-article .shrink #HeaderCartTrigger {
     display: none;
   }
-  .page--projects-landing-page .shrink .scrolling-nav-actions__project, .template-blog .shrink .scrolling-nav-actions__project, .page--blog-landing-page .shrink .scrolling-nav-actions__project {
+  .page--projects-landing-page .shrink .scrolling-nav-actions__project, .template-blog .shrink .scrolling-nav-actions__project, .page--blog-landing-page .shrink .scrolling-nav-actions__project, .template-article .shrink .scrolling-nav-actions__project {
     display: block;
   }
 }
@@ -5050,6 +5057,43 @@ a:hover {
 
 .rte__content > ol li:not(:last-of-type), .rte__content > ul li:not(:last-of-type) {
   margin-bottom: 5px;
+}
+
+.standard-page {
+  max-width: 950px;
+  margin: 0 auto;
+}
+.standard-page .user-heading__title--border {
+  border: none;
+}
+@media (min-width: 1024px) {
+  .standard-page .user-heading__title--border {
+    padding: 80px;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .standard-page .user-heading {
+    padding: 0;
+  }
+}
+.standard-page .user-heading h1 {
+  margin-bottom: 0;
+}
+.standard-page .rte-page {
+  max-width: none !important;
+}
+@media (min-width: 1024px) {
+  .standard-page .rte-page {
+    padding-left: 52px !important;
+    padding-right: 52px !important;
+  }
+}
+.standard-page .rte-page h3:first-of-type {
+  margin-top: 0;
+}
+.standard-page .rte-page img:first-of-type {
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=custom.css.map */
