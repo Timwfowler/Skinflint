@@ -2,7 +2,11 @@
   "sections": {
     "main-wishlist": {
       "type": "main-wishlist",
-      "settings": {}
+      "custom_css": [
+        "@media (min-width: 1024px) {.wishlist__inner {margin-bottom: 143px; }}"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
