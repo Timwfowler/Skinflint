@@ -26,6 +26,8 @@
         {{ form.errors | default_errors }}
 
         {% unless form.posted_successfully? %}
+
+        <h1>test</h1>
           
         
 
@@ -46,8 +48,8 @@
           </div>
 
           <div class="grid__item">
-            <label for="ContactFormEmail-{{ section.id }}">Subject</label>
-            <input type="text" id="ContactFormEmail-{{ section.id }}" class="input-full" name="contact[subject]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+            <label for="ContactFormSubject-{{ section.id }}">Subject</label>
+            <input type="text" id="ContactFormSubject-{{ section.id }}" class="input-full" name="contact[subject]" autocorrect="off" autocapitalize="off" value="">
           </div>
         </div>
 

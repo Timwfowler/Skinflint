@@ -43,8 +43,8 @@
               </div>
 
               <div class="grid__item">
-                <label for="ContactFormEmail-{{ section.id }}">Company</label>
-                <input type="text" id="ContactFormEmail-{{ section.id }}" class="input-full" name="contact[subject]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+                <label for="ContactFormComapany-{{ section.id }}">Company</label>
+                <input type="text" id="ContactFormComapany-{{ section.id }}" class="input-full" name="contact[company]" autocorrect="off" autocapitalize="off" value="">
               </div>
     
               <div class="grid__item">
