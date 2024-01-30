@@ -2794,6 +2794,8 @@ a:hover{
         position: absolute;
         z-index: 5;
         width: 100%;
+        max-height: 270px;
+        overflow: scroll;
       }
 
     }
@@ -3718,6 +3720,16 @@ a:hover{
 =            Sticky Buy            =
 =============================================*/
 
+.more-products-from{
+
+  h2{
+    @include breakpoint(md){
+      margin-bottom: 160px;
+    }
+  }
+
+}
+
 .sticky-buy{
   opacity: 0;
   margin-right: 35px;
@@ -3726,6 +3738,7 @@ a:hover{
     opacity: 1;
     position: absolute;
     right: 45px;
+    z-index: 999;
 
     @include breakpoint(md){
       position: relative;

@@ -2077,6 +2077,8 @@ a:hover {
     position: absolute;
     z-index: 5;
     width: 100%;
+    max-height: 270px;
+    overflow: scroll;
   }
 }
 .collection-card-filters .collection-sidebar {
@@ -2808,6 +2810,12 @@ a:hover {
 /*=============================================
 =            Sticky Buy            =
 =============================================*/
+@media (min-width: 1024px) {
+  .more-products-from h2 {
+    margin-bottom: 160px;
+  }
+}
+
 .sticky-buy {
   opacity: 0;
   margin-right: 35px;
@@ -2816,6 +2824,7 @@ a:hover {
   opacity: 1;
   position: absolute;
   right: 45px;
+  z-index: 999;
 }
 @media (min-width: 1024px) {
   .sticky-buy.active {
