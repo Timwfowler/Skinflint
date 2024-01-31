@@ -1,4 +1,9 @@
-<div class="index-section newsletter-{{ section.id }}">
+<div class="index-section newsletter-{{ section.id }}" id="enquire">
+
+  <div class="note--success">
+    Sucsess!
+  </div>
+
   {%- if section.settings.color_scheme != 'none' -%}
     {%- render 'color-scheme-texture', color_scheme: section.settings.color_scheme -%}
   {%- endif -%}
@@ -49,12 +54,12 @@
     
               <div class="grid__item">
                 <label for="ContactFormEmail-{{ section.id }}">Email *</label>
-                <input type="email" id="ContactFormEmail-{{ section.id }}" class="input-full" name="contact[email]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+                <input required type="email" id="ContactFormEmail-{{ section.id }}" class="input-full" name="contact[email]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
               </div>  
   
               <div class="grid__item">
                 <label for="ContactFormPhone-{{ section.id }}">Telephone *</label>
-                <input type="tel" id="ContactFormPhone-{{ section.id }}" class="input-full" name="contact[phone]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+                <input required type="tel" id="ContactFormPhone-{{ section.id }}" class="input-full" name="contact[phone]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">
               </div>
   
 
@@ -130,5 +135,22 @@
     contactBtn.style.display = "none"
     document.querySelector('.product-contact-form-main form').style.display = 'block'
   })
+
+  //get window location and if location contains "contact_posted=true" then show success message
+  const urlParams = new URLSearchParams(window.location.search);
+  const myParam = urlParams.get('contact_posted');
+  if (myParam == 'true') {
+    document.querySelector('.product-contact-form-main form').style.display = 'none'
+    document.querySelector('.product-contact-form-main .note--success').style.display = 'block'
+
+    //scrole to #enquire
+
+    document.querySelector('#enquire').scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
+
+
+
 
 </script>

@@ -5142,4 +5142,8 @@ a:hover {
   }
 }
 
+.pdp-pdf__data-column td {
+  border: none !important;
+}
+
 /*# sourceMappingURL=custom.css.map */

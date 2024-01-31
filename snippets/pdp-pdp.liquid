@@ -48,18 +48,18 @@
             <p style="margin-top: 20px;">{{ product.metafields.pdf.additional_description }}</p>
           </div>
           <div class="pdp-pdf__data-column">
-            <h4>Dimentions</h4>    
+            <h4>Dimensions</h4>    
             <table>
               <tr>
                 {% if product.metafields.pdf.diameter != blank %}
-                  <td>Diameter:</td>
-                  <td>{{ product.metafields.pdf.diameter }} mm</td>
+                  <td style="border: none;">Diameter:</td>
+                  <td style="border: none;">{{ product.metafields.pdf.diameter }} mm</td>
                 {% endif %}
               </tr>
               <tr>
                 {% if product.metafields.pdf.length != blank %}
-                  <td>Length:</td>
-                  <td>{{ product.metafields.pdf.length }} mm</td>
+                  <td style="border: none;">Length:</td>
+                  <td style="border: none;">{{ product.metafields.pdf.length }} mm</td>
                 {% endif %}
               </tr>
               <tr>
@@ -91,11 +91,13 @@
             <div class="remove-branding">
             <h4>Unit Price</h4>
             <p>{{ product.price | money }} + VAT</p>      
-            {% if product.metafields.pdf.notes != blank %}
-              <h4>notes</h4>
-              <p>{{ product.metafields.pdf.notes }}</p>
-            {% endif %}
+  
             </div>
+
+            {% if product.metafields.pdf.notes != blank %}
+            <h4>notes</h4>
+            <p>{{ product.metafields.pdf.notes }}</p>
+          {% endif %}
 
 
           </div>
@@ -107,8 +109,8 @@
             Penryn, Cornwall, TR10 8AE</p>
         </div>
         <div class="pdp-pdf__footer-column">
-          <a href="mailto:studio@skinflintdesign.com">studio@skinflintdesign.com</a>     
-          <a href="{{ shop.url }}">{{ shop.url }}</a>            
+          <p>studio@skinflintdesign.com</p>     
+          <p>www.skinflintdesign.com</p>            
         </div>
         <div class="pdp-pdf__footer-column">
           <p>+44 (0)1326 565 227 <br>
