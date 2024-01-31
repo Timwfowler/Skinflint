@@ -330,6 +330,21 @@ a:hover {
   margin-left: 10px;
 }
 
+@media (max-width: 768px) {
+  .site-nav__link--icon svg {
+    transform: scale(1.01);
+  }
+}
+
+.mega-menu__column.mega-menu__column-first ul li:first-of-type, .mega-menu__column.mega-menu__column-second ul li:first-of-type {
+  display: block !important;
+  order: 60;
+}
+.mega-menu__column.mega-menu__column-first ul li:first-of-type a, .mega-menu__column.mega-menu__column-second ul li:first-of-type a {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
 /*=====  End of Buttons  ======*/
 /*=============================================
 =            Colour Scemes            =
@@ -2444,6 +2459,14 @@ a:hover {
 /*=============================================
 =            Page Template            =
 =============================================*/
+.template-page .main-content {
+  margin-bottom: 40px;
+}
+@media (min-width: 1024px) {
+  .template-page .main-content {
+    margin-bottom: 180px;
+  }
+}
 .template-page .rte, .template-page .section-header__title-page {
   padding-left: 20px;
   padding-right: 20px;
@@ -5144,6 +5167,14 @@ a:hover {
 
 .pdp-pdf__data-column td {
   border: none !important;
+}
+
+.qty-select-product-name {
+  background-color: #F5F5F5;
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 20px !important;
+  margin-bottom: 24px;
 }
 
 /*# sourceMappingURL=custom.css.map */

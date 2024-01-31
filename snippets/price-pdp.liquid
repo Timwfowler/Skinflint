@@ -1,6 +1,6 @@
 
 
-{% assign priceWithoutVat = product.price | divided_by: 1.2  %}
+{% assign priceWithoutVat = product.price   %}
 
 <div class="pdp-main-price">
   <h2><span class="price-vat-done" data-price="{{ product.price }}">{{ priceWithoutVat | money }}</span> <span class="vat-line"></span> </h2>
@@ -576,7 +576,14 @@
 
     prices.forEach((price) => {
       let incVat = parseInt(price.getAttribute('data-price'))
-      let excludeVat = (incVat / 100).toFixed(2)
+      let excludeVat = (incVat * 1.2) / 100
+
+
+      excludeVat = excludeVat.toLocaleString('en-GB', {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+      });
+
       price.innerHTML = "£" + excludeVat      
     })
   }
@@ -594,7 +601,13 @@
 
     prices.forEach((price) => {
       let incVat = parseInt(price.getAttribute('data-price'))
-      let excludeVat = ((incVat / 1.20)/100).toFixed(2)
+      let excludeVat = incVat / 100
+
+      excludeVat = excludeVat.toLocaleString('en-GB', {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+      });
+
       price.innerHTML = "£" + excludeVat      
     })
   }

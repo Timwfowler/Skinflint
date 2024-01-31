@@ -3,7 +3,7 @@
     <button type="button" aria-label="Close" class="btn-close"></button>
 
     <h3>Added to cart</h3>
-    <p>{{ product.title }}</p>
+    <p class="qty-select-product-name">{{ product.title }}</p>
     <div class="qty-select-modal__qty-wrap">
       <div class="qty-select-modal__qty">
         <span class="cart__mobile-title">Quantity</span> 
@@ -79,6 +79,7 @@
       //update price 
       let priceUI = document.querySelector('.js-quantity-price')
       let price = parseFloat(document.querySelector('.price-vat-done').innerHTML.substring(1))
+      
       priceUI.innerHTML = "£" + (price * parseInt(inputCartQty.innerHTML)).toFixed(2)
 
       let removeVat = localStorage.getItem('removeVat');
