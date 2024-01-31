@@ -5177,4 +5177,14 @@ a:hover {
   margin-bottom: 24px;
 }
 
+.cart-tax-wrap {
+  width: 100%;
+}
+.cart-tax-wrap p {
+  text-align: right;
+  font-weight: 800;
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
 /*# sourceMappingURL=custom.css.map */

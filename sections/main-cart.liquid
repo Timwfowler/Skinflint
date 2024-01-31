@@ -64,6 +64,16 @@
 
           {%- assign netTotal = cart.total_price | minus: taxPaid -%}
 
+
+
+          {% assign vatOnly = cart.total_price | times: 0.2 %}
+
+          {% assign withVat = vatOnly | plus: cart.total_price %}
+
+
+
+
+
           <div class="cart__item-sub cart__item-row cart__item--subtotal js-tax-show">
             <div>Net total</div>
             <div data-netTotal>
@@ -83,10 +93,12 @@
 
 
           <div class="cart__item-sub cart__item-row cart__item--subtotal">
-            <div>{{ 'cart.general.subtotal' | t }}</div>
-            <div data-subtotal>
-              {%- render 'price' with cart.total_price -%}
-            </div>
+
+          <div class="cart-tax-wrap">
+            <p >Net total: <span data-subtotal>{%- render 'price' with netTotal -%}</span> </p>
+            <p>VAT total: <span class="vat-on " data-tax-only>{{ vatOnly | money   }}</span> <span class="vat-off">N/A</span>  </p>
+            <p>Sub total: <span class="vat-on" data-with-tax>{{ withVat | money   }}</span></span> <span class="vat-off" data-without-tax>{%- render 'price' with netTotal -%}</span> </p>
+          </div>
           </div>
 
           <div data-discounts>
@@ -123,11 +135,11 @@
           <div class="cart__item-row cart__checkout-wrapper">
 
           <div class="cart__item-row text-center">
-            <small style="font-size: 15px;  text-align:left;   font-family: AvertaStd-Regular,sans-serif;">{{ 'cart.general.shipping_at_checkout' | t }}</small>
+            <small style="font-size: 15px;  text-align:right;   font-family: AvertaStd-Regular,sans-serif;">{{ 'cart.general.shipping_at_checkout' | t }}</small>
           </div>
 
           <div class="cart__item-row text-center">
-            <small style="font-size: 15px;  text-align:left;   font-family: AvertaStd-Regular,sans-serif;">By hitting checkout you agree to <a href="/pages/legal" style="    padding-bottom: 2px;
+            <small style="font-size: 15px;  text-align:right;   font-family: AvertaStd-Regular,sans-serif;">By hitting checkout you agree to <a href="/pages/legal" style="    padding-bottom: 2px;
             border-bottom: 1px solid #ffbf50;">our T&Cs</a> and the ways in which we process data.</small>
           </div>
 
@@ -163,12 +175,26 @@
       let removeVat = localStorage.getItem('removeVat');
       const elemnets = document.querySelectorAll('.js-tax-show')
       if (removeVat == "true") {
-       
-        elemnets.forEach((el) => {
-          el.style.display = "flex"
+
+        document.querySelectorAll('.vat-on').forEach((el) => {
+          el.style.display = "none"
         })
-      }else{
+
+        document.querySelectorAll('.vat-off').forEach((el) => {
+          el.style.display = "inline-block"
+        })
+
        
+  
+      }else{
+        document.querySelectorAll('.vat-on').forEach((el) => {
+          
+          el.style.display = "inline-block"
+        })
+
+        document.querySelectorAll('.vat-off').forEach((el) => {
+          el.style.display = "none"
+        })
 
       }
 </script>

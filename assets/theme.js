@@ -1668,6 +1668,7 @@ lazySizesConfig.expFactor = 4;
       taxPaid: '[data-taxPaid]',
 
       subTotal: '[data-subtotal]',
+      taxOnly: '[data-tax-nly]',
   
       cartBubble: '.cart-link__bubble',
       cartNote: '[name="note"]',
@@ -1774,8 +1775,29 @@ lazySizesConfig.expFactor = 4;
         var subtotal = items.dataset.cartSubtotal;
         var savings = items.dataset.cartSavings;
 
+        console.log(items.dataset.cartSubtotal);
 
-  
+        console.log('updating');
+
+        const vatOnly = items.dataset.cartSubtotal * 0.2
+
+
+ 
+
+        
+
+        console.log(document.querySelector('[data-tax-only]'));
+
+        console.log(document.querySelector('[data-with-tax]'));
+
+        
+
+        document.querySelector('[data-tax-only]').innerHTML = theme.Currency.formatMoney(vatOnly, theme.settings.moneyFormat);
+        document.querySelector('[data-with-tax]').innerHTML = theme.Currency.formatMoney((items.dataset.cartSubtotal * 1.2), theme.settings.moneyFormat);
+
+        document.querySelector('[data-without-tax]').innerHTML = theme.Currency.formatMoney((items.dataset.cartSubtotal), theme.settings.moneyFormat);
+
+   
         this.updateCartDiscounts(markup.discounts);
         this.updateSavings(savings);
   
