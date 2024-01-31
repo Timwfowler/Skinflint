@@ -125,12 +125,20 @@
             "collection": "industrial-lighting",
             "title": ""
           }
+        },
+        "collection_LRfdrn": {
+          "type": "collection",
+          "settings": {
+            "collection": "the-lounge",
+            "title": ""
+          }
         }
       },
       "block_order": [
         "template--16727916118332__d0552a20-44ab-4477-a3af-bc7e8f308871-1666855107aab062ef-0",
         "template--16727916118332__d0552a20-44ab-4477-a3af-bc7e8f308871-1666855107aab062ef-1",
-        "template--16727916118332__d0552a20-44ab-4477-a3af-bc7e8f308871-1666855107aab062ef-5"
+        "template--16727916118332__d0552a20-44ab-4477-a3af-bc7e8f308871-1666855107aab062ef-5",
+        "collection_LRfdrn"
       ],
       "settings": {
         "flush": false,
