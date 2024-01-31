@@ -143,11 +143,11 @@
     document.querySelector('.product-contact-form-main form').style.display = 'none'
     document.querySelector('.product-contact-form-main .note--success').style.display = 'block'
 
-    //scrole to #enquire
+    //scrole to #enquire after 2 seconds - no animation
 
-    document.querySelector('#enquire').scrollIntoView({
-      behavior: 'smooth'
-    });
+    setTimeout(() => {
+      document.querySelector('#enquire').scrollIntoView()
+    }, 2000);
   }
 
 
