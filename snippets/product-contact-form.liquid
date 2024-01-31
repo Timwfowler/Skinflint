@@ -149,11 +149,15 @@
     document.querySelector('.product-contact-form-main').style.display = 'none'
     document.querySelector('.product-contact-form-main .note--success').style.display = 'block'
 
-    //scrole to #enquire after 2 seconds - no animation
+    //scroll to 300px up from #enquire after 2 seconds - no animation
 
     setTimeout(() => {
-      document.querySelector('#enquire').scrollIntoView()
-    }, 2000);
+      window.scrollTo({
+        top: document.querySelector('#enquire').offsetTop - 300
+      })
+    }, 2000)
+
+
   }
 
 
