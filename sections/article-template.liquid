@@ -40,7 +40,16 @@
   {%- endif -%} {% endcomment %}
 
   <header class="section-header">
+    
+
+    {% if article.metafields.custom.custom_page_title != blank %}
+    <h1 class="section-header__title">{{ article.metafields.custom.custom_page_title }}</h1>
+    {% else %}
+      
     <h1 class="section-header__title">{{ article.title }}</h1>
+    {% endif %}
+
+
 
     <div class="article__sub-meta">
       {%- if section.settings.blog_show_comments and article.comments_count > 0 -%}

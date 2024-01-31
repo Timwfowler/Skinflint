@@ -340,9 +340,16 @@ a:hover {
   display: block !important;
   order: 60;
 }
-.mega-menu__column.mega-menu__column-first ul li:first-of-type a, .mega-menu__column.mega-menu__column-second ul li:first-of-type a {
-  font-weight: 700;
-  font-size: 1.6rem;
+@media (min-width: 1024px) {
+  .mega-menu__column.mega-menu__column-first ul li:first-of-type, .mega-menu__column.mega-menu__column-second ul li:first-of-type {
+    order: 0;
+  }
+}
+@media (max-width: 768px) {
+  .mega-menu__column.mega-menu__column-first ul li:first-of-type a, .mega-menu__column.mega-menu__column-second ul li:first-of-type a {
+    font-weight: 700;
+    font-size: 1.6rem;
+  }
 }
 
 /*=====  End of Buttons  ======*/
@@ -2834,6 +2841,14 @@ a:hover {
 /*=============================================
 =            Sticky Buy            =
 =============================================*/
+.more-products-from h2 {
+  margin-bottom: 70px;
+}
+@media (max-width: 768px) {
+  .more-products-from h2 {
+    margin-top: 70px;
+  }
+}
 @media (min-width: 1024px) {
   .more-products-from h2 {
     margin-bottom: 160px;
@@ -3271,11 +3286,24 @@ a:hover {
     font-size: 1.5rem;
   }
 }
-.product-metafield-details .product-pdf-table {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 0 20px;
-  align-items: flex-start;
+@media (min-width: 1024px) {
+  .product-metafield-details .product-pdf-table {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 20px;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 768px) {
+  .product-metafield-details .product-pdf-table .pdf-download-btn {
+    width: 100% !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px;
+    padding: 9px 20px 9px !important;
+  }
+  .product-metafield-details .product-pdf-table .pdf-download-btn svg {
+    display: none;
+  }
 }
 .product-metafield-details .product-pdf-table td {
   border: none;
@@ -3318,6 +3346,11 @@ a:hover {
 @media (min-width: 1024px) {
   .blog-landing-page__inner {
     flex-direction: row;
+  }
+}
+@media (max-width: 768px) {
+  .blog-landing-page .blog-landing-page__article .image-with-text-box__text-wrap {
+    padding-bottom: 90px;
   }
 }
 .blog-landing-page__filter-btn {
@@ -3525,6 +3558,12 @@ a:hover {
 /*=============================================
 =            article-wrap            =
 =============================================*/
+@media (max-width: 768px) {
+  .blog-layout {
+    padding-top: 0 !important;
+  }
+}
+
 .article-feat-img img {
   width: 100%;
 }
@@ -3539,7 +3578,12 @@ a:hover {
   }
 }
 .article-wrap .rte > :not(:last-child) {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  .article-wrap .rte > :not(:last-child) {
+    margin-bottom: 40px;
+  }
 }
 .article-wrap img {
   margin-top: 30px;
@@ -4637,6 +4681,11 @@ a:hover {
   display: flex;
   justify-content: center;
   margin-top: 10px;
+}
+@media (max-width: 768px) {
+  .wish-list-btn {
+    margin-top: 3px;
+  }
 }
 .wish-list-btn.added svg path {
   stroke: #F5C264 !important;

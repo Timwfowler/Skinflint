@@ -7,7 +7,9 @@
     </div>
     <div class="article-card__text">
       <h3>
-        <a href="{{ article.url }}">{{ article.title }}</a>
+        <a href="{{ article.url }}"> {% if article.metafields.custom.custom_page_title != blank %}{{ article.metafields.custom.custom_page_title }}{% else %}{{ article.title }}{% endif %}</a>
+
+       
       </h3>
 
       {% if article.excerpt != blank %}
