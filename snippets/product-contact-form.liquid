@@ -1,7 +1,13 @@
+<style>
+  .note--success h2{
+    text-align: center;
+  }
+</style>
+
 <div class="index-section newsletter-{{ section.id }}" id="enquire">
 
   <div class="note--success">
-    Sucsess!
+    <h2>Thanks for contacting us.</h2>
   </div>
 
   {%- if section.settings.color_scheme != 'none' -%}
@@ -140,7 +146,7 @@
   const urlParams = new URLSearchParams(window.location.search);
   const myParam = urlParams.get('contact_posted');
   if (myParam == 'true') {
-    document.querySelector('.product-contact-form-main form').style.display = 'none'
+    document.querySelector('.product-contact-form-main').style.display = 'none'
     document.querySelector('.product-contact-form-main .note--success').style.display = 'block'
 
     //scrole to #enquire after 2 seconds - no animation
