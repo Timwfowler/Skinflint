@@ -329,7 +329,7 @@ sup {
   margin-bottom: 40px;
 
   @include breakpoint(md){
-    margin-bottom: 160px;
+    margin-bottom: 161px;
   }
 }
 
@@ -2386,6 +2386,7 @@ a:hover{
         @include breakpoint(md){
           height: 57px;
           // max-width: 88px;
+          max-height: none;
           width: auto;
           top: 50%;
           left: 50%;
@@ -4273,6 +4274,10 @@ a:hover{
     padding: 10px 0 20px;
     align-items: flex-start;
 
+   td{
+    border: none;
+    }
+
     
     .pdf-download-btn{
       padding: 7px 20px 5px;
@@ -5781,6 +5786,8 @@ a:hover{
     @include breakpoint(md){
       display: flex;
       margin-bottom: 180px;
+      margin-top: 40px;
+      gap: 40px;
     }
 
     textarea{
