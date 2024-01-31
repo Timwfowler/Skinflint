@@ -819,7 +819,7 @@
             "title": "Shipping",
             "text": "<p>Our UK and international shipping and our no quibble return options explained.<\/p>",
             "button_label": "Read more",
-            "button_link": "#"
+            "button_link": "shopify:\/\/pages\/shipping"
           }
         },
         "237d716b-274a-437e-8b8e-3dc1c548cc7b": {
