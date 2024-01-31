@@ -154,6 +154,12 @@
     setTimeout(() => {
       console.log('scrolling')
       document.querySelector('#enquire').scrollIntoView()
+
+      //then scroll 200px up
+
+      setTimeout(() => {
+        window.scrollBy(0, -200)
+      }, 100);
     }, 2000);
   }
 
