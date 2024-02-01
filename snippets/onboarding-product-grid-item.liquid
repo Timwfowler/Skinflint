@@ -10,7 +10,7 @@
             </div>
           </div>
         {%- endif -%}
-        <div class="image-wrap">
+        <div class="image-wrap testtt" style="background-image: url{{  settings.fallback | img_url: "master" }};">
           {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
         </div>
       </div>

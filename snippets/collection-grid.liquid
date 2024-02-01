@@ -16,6 +16,10 @@
       assign count_label = 'general.search.result_count'
   endif
 
+  if template.suffix == "collection-no-filters"   
+    assign hideOFS = true
+  endif
+
   assign current_filter_size = 0
   for filter in filters
     assign current_filter_size = current_filter_size | plus: filter.active_values.size
@@ -65,6 +69,10 @@
   </div>
 
 <div class="collection-grid__wrapper">
+
+
+
+
 
   <div class="collection-filter">
     <div class="collection-filter__inner">
@@ -203,7 +211,17 @@
     {% endif %}
 
       {%- if item.object_type == 'product' -%}
+
+    {% if hideOFS %}
+      {% if item.available %}
+      {%- render 'product-grid-item', product: item -%}
+      {% endif %}
+    
+        {% else %}
+      
         {%- render 'product-grid-item', product: item -%}
+      {% endif %}
+        
         
 
         {%- if quick_shop_enable -%}

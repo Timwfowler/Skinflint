@@ -82,7 +82,7 @@
     -%}
 
 
-      <div class="grid-product__image-wrap">
+      <div class="grid-product__image-wrap" style="background-size: cover; background-image: url({{  settings.fallback | img_url: "master" }});">
         <a href="{{ product.url | within: collection }}" class="grid-item__link">
         <div class="grid-product__tags">
           {%- if has_custom_label -%}

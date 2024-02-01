@@ -202,6 +202,10 @@
                         {%- render 'product-description', id: id, product: product, is_tab: block.settings.is_tab -%}
                       </div>
                     {%- when 'price' -%}
+
+                      {% if product.available %}
+                        
+                      
                       <div class="product-block product-block--price" {{ block.shopify_attributes }}>
 
 
@@ -270,6 +274,15 @@
                           </span>/{{ unit_price_base_unit }}
                         </div>
                       </div>
+
+                      {% else %}
+                        <p style="    font-size: 1.9rem;
+                        line-height: 1.4;
+                        text-transform: uppercase;
+                        font-family: AvertaStd-Bold,sans-serif;
+                        padding-bottom: 20px; margin-top: 30px">PRODUCT SOLD</p>
+
+                    {% endif %}
                     {%- when 'quantity_selector' -%}
                       <div class="product-block" {{ block.shopify_attributes }}>
                         <div class="product__quantity">
@@ -394,9 +407,79 @@
 
                         {% render 'quantity-selector-modal' %}
 
+                        {% else %}
+
+           
+
+                        {% if product.metafields.custom.type.value[0] != blank %}
+                          {% assign productType = product.metafields.custom.type.value[0] | downcase %}
+                          {% if productType == "wall lights" %}
+                            {% assign linkCollection = "/collections/industrial-wall-lights" %}
+                            {% assign linkTitle = "View avalible wall lights" %}
+                          {% elsif productType == "ceiling lights"  %}
+                            {% assign linkCollection = "/collections/vintage-and-industrial-pendant-and-ceiling-lights" %}
+                            {% assign linkTitle = "View avalible ceiling lights" %}
+                          {% elsif productType == "table lights"  %}
+                            {% assign linkCollection = "/collections/vintage-and-industrial-table-lights" %}
+                            {% assign linkTitle = "View avalible table lights" %}
+                          {% elsif productType == "floor lights"  %}
+                            {% assign linkCollection = "/collections/vintage-and-industrial-floor-lamps" %}
+                            {% assign linkTitle = "View avalible floor lights" %}
+                          {% elsif productType == "accessories"  %}               
+                            {% assign linkCollection = "/collections/braided-lighting-cable-accessories" %}   
+                            {% assign linkTitle = "View avalible accessories" %}                            
+                          {% endif %}
+
+                          {% else %}
+                            {% if collection %}
+                              {% if settings.show_breadcrumbs_collection_link %}
+                                {% if collection %}
+                                  {% if  collection.metafields.custom.breadcrumb_parent != blank %}
+                                    {% assign linkCollection = collection.metafields.custom.breadcrumb_parent.value.url %} 
+                                    {% assign linkTitle = "View avalible " | append: collection.metafields.custom.breadcrumb_parent.value.title | downcase  %}                
+                                  {% else %}
+                                    {% assign linkCollection = routes.collections_url %}
+                                    <p>test</p>
+                                  {% endif %}                           
+                                {% endif %}                 
+                              {% endif %}      
+                            {% endif %}
+                            
+                          
+                        {% endif %}
+
+                        <a style="width: 100%; text-align: center;" href="{{ linkCollection }}" class="btn">{{ linkTitle   }}</a> 
+                        
+                        
+                        <div class="" style="width: 100%; display: flex; justify-content: center">
+                          <p style="" class="pdp-enquire-ofs">Equire about this product</p>
+                        </div>
+                      
+
+
+                      <script>
+                        const enquireBtn = document.querySelector('.pdp-enquire-ofs');
+
+                        enquireBtn.addEventListener('click', (e) => {
+                          e.preventDefault();
+                          const section = document.querySelector('#enquire');
+
+                          // get top of section in pixels
+                          const top = section.getBoundingClientRect().top + window.scrollY;
+
+                          //scrol to top - 100px
+                          window.scrollTo({
+                            top: top - 150
+                          });
+                        });
+                      </script>
+                   
                         
                  
+
                       {% endif %}
+
+                      
  
 
                       {%- comment -%}
@@ -484,6 +567,10 @@
                   </div>
                 {%- endfor -%}
 
+                {% if product.available %}
+                  
+                
+
                 <div class="product-main-footer">
                   <div class="product-main-footer__inner">
                     <div class="product-main-footer__wish">
@@ -520,6 +607,7 @@
                     </div>
                   </div>
                 </div>
+              {% endif %}
               </div>
   
               {%- unless product.empty? -%}
