@@ -173,7 +173,6 @@
 
 
       {% if forloop.index == card_one_pos %}
-
         {% if section.settings.image_with_text_image != blank %}
           <div class="promo-card" >
             <div class="promo-card__inner">
@@ -186,29 +185,90 @@
               </div>
             </div>
           </div>      
-        {% endif %}
-    
-        
+        {% endif %}       
       {% endif %}
 
       {% if forloop.index == card_one_pos_two %}
-
-      {% if section.settings.image_with_text_image_two != blank %}
-        <div class="promo-card" >
-          <div class="promo-card__inner">
-            <img src="{{ section.settings.image_with_text_image_two | img_url: "400x" }}" alt="">
-            <div class="promo-card__text">
-              <h2>{{ section.settings.title_two }}</h2>
-              <a href="{{ section.settings.button_link_two }}">
-                <div class="btn">{{ section.settings.button_label_two }}</div>
-              </a>
+        {% if section.settings.image_with_text_image_two != blank %}
+          <div class="promo-card" >
+            <div class="promo-card__inner">
+              <img src="{{ section.settings.image_with_text_image_two | img_url: "400x" }}" alt="">
+              <div class="promo-card__text">
+                <h2>{{ section.settings.title_two }}</h2>
+                <a href="{{ section.settings.button_link_two }}">
+                  <div class="btn">{{ section.settings.button_label_two }}</div>
+                </a>
+              </div>
             </div>
-          </div>
-        </div>      
+          </div>      
+        {% endif %}     
       {% endif %}
-  
+
+
+      {% if forloop.index == card_one_pos_three %}
+        {% if section.settings.image_with_text_image_three != blank %}
+          <div class="promo-card" >
+            <div class="promo-card__inner">
+              <img src="{{ section.settings.image_with_text_image_three | img_url: "400x" }}" alt="">
+              <div class="promo-card__text">
+                <h2>{{ section.settings.title_three }}</h2>
+                <a href="{{ section.settings.button_link_three }}">
+                  <div class="btn">{{ section.settings.button_label_three }}</div>
+                </a>
+              </div>
+            </div>
+          </div>      
+        {% endif %}     
+      {% endif %}        
+
+      {% if forloop.index == card_one_pos_four %}
+        {% if section.settings.image_with_text_image_four != blank %}
+          <div class="promo-card" >
+            <div class="promo-card__inner">
+              <img src="{{ section.settings.image_with_text_image_four | img_url: "400x" }}" alt="">
+              <div class="promo-card__text">
+                <h2>{{ section.settings.title_four }}</h2>
+                <a href="{{ section.settings.button_link_four }}">
+                  <div class="btn">{{ section.settings.button_label_four }}</div>
+                </a>
+              </div>
+            </div>
+          </div>      
+        {% endif %}     
+      {% endif %}       
+
+
+      {% if forloop.index == card_one_pos_five %}
+        {% if section.settings.image_with_text_image_five != blank %}
+          <div class="promo-card" >
+            <div class="promo-card__inner">
+              <img src="{{ section.settings.image_with_text_image_five | img_url: "400x" }}" alt="">
+              <div class="promo-card__text">
+                <h2>{{ section.settings.title_five }}</h2>
+                <a href="{{ section.settings.button_link_five }}">
+                  <div class="btn">{{ section.settings.button_label_five }}</div>
+                </a>
+              </div>
+            </div>
+          </div>      
+        {% endif %}     
+      {% endif %}    
       
-    {% endif %}
+      {% if forloop.index == card_one_pos_six %}
+        {% if section.settings.image_with_text_image_six != blank %}
+          <div class="promo-card" >
+            <div class="promo-card__inner">
+              <img src="{{ section.settings.image_with_text_image_six | img_url: "400x" }}" alt="">
+              <div class="promo-card__text">
+                <h2>{{ section.settings.title_six }}</h2>
+                <a href="{{ section.settings.button_link_six }}">
+                  <div class="btn">{{ section.settings.button_label_six }}</div>
+                </a>
+              </div>
+            </div>
+          </div>      
+        {% endif %}     
+      {% endif %}       
 
       {%- if item.object_type == 'product' -%}
 
