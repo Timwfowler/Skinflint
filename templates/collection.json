@@ -28,10 +28,11 @@
         "product_grid"
       ],
       "settings": {
-        "title": "",
-        "button_label": "",
-        "button_link": "",
-        "position": 6,
+        "image_with_text_image": "shopify:\/\/shop_images\/1111.webp",
+        "title": "Looking for larger quantities?",
+        "button_label": "Get in touch",
+        "button_link": "shopify:\/\/pages\/contact",
+        "position": 5,
         "title_two": "",
         "button_label_two": "",
         "button_link_two": "",
