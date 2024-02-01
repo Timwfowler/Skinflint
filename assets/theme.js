@@ -1794,7 +1794,7 @@ lazySizesConfig.expFactor = 4;
 
         document.querySelector('[data-tax-only]').innerHTML = theme.Currency.formatMoney(vatOnly, theme.settings.moneyFormat);
         document.querySelector('[data-with-tax]').innerHTML = theme.Currency.formatMoney((items.dataset.cartSubtotal * 1.2), theme.settings.moneyFormat);
-
+ 
         document.querySelector('[data-without-tax]').innerHTML = theme.Currency.formatMoney((items.dataset.cartSubtotal), theme.settings.moneyFormat);
 
    

@@ -417,6 +417,7 @@ a:hover {
 
 .grid-item .collection-image img {
   padding: 0;
+  opacity: 1;
 }
 .grid-item .grid-item__meta, .grid-item .collection-item__title {
   position: absolute;
