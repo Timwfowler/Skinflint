@@ -13,7 +13,7 @@
 {% assign productArray = '' | split: '' %}
 
 
-{% for product in collections['all'].products %}
+{% for product in collections['lights'].products %}
     {% if product.available %}
     {% assign controllerName = product.handle | split: 'aresdber' | first | split: 'srghhnaljh' %}
     {% assign productArray = productArray | concat: controllerName %}
@@ -48,19 +48,24 @@
 
 
 
+
+
 {% assign collectionArray = '' | split: '' %}
 
-{% for collection in collections %}
-  {% if collection.metafields.custom.is_this_a_category_collection_ie_wall_lights_ != "true" %}
 
-  {% if collection.metafields.custom.is_this_collection_archived_ != "true"  %}
-  {% assign collectionName = collection.handle | split: 'aresdber' | first | split: 'srghhnaljh' %}
-  {% assign collectionArray = collectionArray | concat: collectionName %}
-  {% endif %}
 
-  {% endif %}
+{% if linklists.shop-all-vintage-collections %}
+  {% for link in linklists.shop-all-vintage-collections.links %}
+    {% if link.type == "collection_link" %}
+      {% assign linkHandle  = link.url | split: "/" | last %}
+      {% assign collectionName = linkHandle | split: 'aresdber' | first | split: 'srghhnaljh' %}
+      {% assign collectionArray = collectionArray | concat: collectionName %}
+      
+    {% endif %}
+  {% endfor %}
+{% endif %}
 
-{% endfor %}
+
 
 {% assign min = 1 %}
 {% assign max = collectionArray | size %}
@@ -69,9 +74,32 @@
 {% assign diff = max | minus: min %}
 {% assign collectionOneNum = "now" | date: "%N" | modulo: diff | plus: min %}
 {% assign collectionTwoNum = "now" | date: "%N" | modulo: diff | plus: min %}
+{% assign plusOne = "now" | date: "%N" | modulo: diff | plus: min | plus : 1 %}
+{% assign plusTwo = "now" | date: "%N" | modulo: diff | plus: min | plus : 2 %}
+
+
+
+{% if collectionTwoNum == collectionOneNum %}
+  {% assign maxNum = max | minus: 1  %}
+
+  {% if collectionOneNum >= maxNum %}
+  {% assign collectionTwoNum = collectionOneNum | minus: 1 %}
+  
+  {% else %}
+  {% assign collectionTwoNum = collectionOneNum | plus: 1 %}
+  {% endif %}
+  
+   
+
+
+{% endif %}
 
 {% assign collectionOne = collections[collectionArray[collectionOneNum]] %}
 {% assign collectionTwo = collections[collectionArray[collectionTwoNum]] %} 
+
+
+
+<h1>{{    }}</h1>
 
 
   <div id="CollectionSection-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="collection-template" class="coll-ymal index-section featured-collections-section numb-of-products-5 {% if section.settings.flush %}section-flush {% endif %}
@@ -129,3 +157,16 @@
 
     </div>
   </div>
+
+  {% schema %}
+    {
+      "name": "Lights and Collections",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "This will show 2 random vintage collections, and 3 random lights"
+        }
+      ]
+    }
+    {% endschema %}
+    
