@@ -757,7 +757,7 @@ a:hover {
   }
 }
 .coll-ymal .collection-image-wrap {
-  padding-top: 100%;
+  padding-top: 100% !important;
 }
 @media (max-width: 768px) {
   .coll-ymal .grid-product:last-of-type {

@@ -1005,7 +1005,7 @@ a:hover{
   }
 
   .collection-image-wrap{
-    padding-top: 100%;
+    padding-top: 100% !important;
   }
 
   @include breakpoint(mobile-only){
