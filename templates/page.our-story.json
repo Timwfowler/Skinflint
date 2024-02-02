@@ -110,34 +110,9 @@
         "narrow_column": true
       }
     },
-    "8839b835-e824-4646-a858-0d20b2345bb3": {
-      "type": "section-featured-collections",
-      "blocks": {
-        "template--16760212947260__8839b835-e824-4646-a858-0d20b2345bb3-1666920796d7813966-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "polished-metal-lights",
-            "title": ""
-          }
-        },
-        "template--16760212947260__8839b835-e824-4646-a858-0d20b2345bb3-1666920796d7813966-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "xl-collection",
-            "title": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16760212947260__8839b835-e824-4646-a858-0d20b2345bb3-1666920796d7813966-0",
-        "template--16760212947260__8839b835-e824-4646-a858-0d20b2345bb3-1666920796d7813966-1"
-      ],
+    "collection_reccomended_AEq3DX": {
+      "type": "collection-reccomended",
       "settings": {
-        "flush": false,
-        "flush_bottom": false,
-        "title": "You might also like",
-        "link": "",
-        "button_link": ""
       }
     },
     "8ff241b8-baf2-4cf2-aa8e-665d36745dda": {
@@ -200,7 +175,7 @@
     "d0ef7b1d-df04-4394-8054-1def31ed25da",
     "a2ca83d2-dfa6-41d8-bc62-2b184ddf2f4b",
     "e71a1c9a-c0f7-4eaf-a684-8839a0bd3a80",
-    "8839b835-e824-4646-a858-0d20b2345bb3",
+    "collection_reccomended_AEq3DX",
     "8ff241b8-baf2-4cf2-aa8e-665d36745dda"
   ]
 }
