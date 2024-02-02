@@ -747,10 +747,25 @@ a:hover {
 .coll-ymal {
   margin-bottom: 80px;
 }
+.coll-ymal .grid-product__title, .coll-ymal .collection-item__title {
+  font-size: 1.9rem;
+  line-height: 1.4;
+}
 @media (min-width: 1024px) {
   .coll-ymal {
     margin-bottom: 160px;
   }
+}
+.coll-ymal .collection-image-wrap {
+  padding-top: 100%;
+}
+@media (max-width: 768px) {
+  .coll-ymal .grid-product:last-of-type {
+    display: none;
+  }
+}
+.coll-ymal .grid-item:nth-of-type(1), .coll-ymal .grid-item:nth-of-type(2) {
+  grid-column: span 2;
 }
 @media (min-width: 1024px) {
   .coll-ymal .grid-item:nth-of-type(1), .coll-ymal .grid-item:nth-of-type(2) {
