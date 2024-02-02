@@ -2,11 +2,23 @@
   "sections": {
     "main": {
       "type": "article-template",
-      "settings": {}
+      "settings": {
+        "blog_capitalize_first": true,
+        "blog_show_tags": true,
+        "blog_show_date": true,
+        "blog_show_comments": true,
+        "blog_show_author": false
+      }
+    },
+    "collection_reccomended_9kNPyM": {
+      "type": "collection-reccomended",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "collection_reccomended_9kNPyM"
   ],
   "wrapper": "div.page-width.page-content.blog-layout"
 }
