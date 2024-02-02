@@ -10,21 +10,21 @@
         "blog_show_author": false
       }
     },
-    "collection_reccomended_9kNPyM": {
-      "type": "collection-reccomended",
+    "three_randon_blog_posts_JUXE7y": {
+      "type": "three-randon-blog-posts",
       "settings": {
       }
     },
-    "three_randon_blog_posts_JUXE7y": {
-      "type": "three-randon-blog-posts",
+    "collection_reccomended_9kNPyM": {
+      "type": "collection-reccomended",
       "settings": {
       }
     }
   },
   "order": [
     "main",
-    "collection_reccomended_9kNPyM",
-    "three_randon_blog_posts_JUXE7y"
+    "three_randon_blog_posts_JUXE7y",
+    "collection_reccomended_9kNPyM"
   ],
   "wrapper": "div.page-width.page-content.blog-layout"
 }
