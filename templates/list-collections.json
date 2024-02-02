@@ -98,47 +98,14 @@
         "sort": "alphabetical"
       }
     },
-    "42a08016-9620-42e6-a4e7-98d87db4f66f": {
-      "type": "section-featured-collections",
-      "blocks": {
-        "template--16727916282172__42a08016-9620-42e6-a4e7-98d87db4f66f-1667551239e9010296-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "crystal-glassware-lights",
-            "title": ""
-          }
-        },
-        "template--16727916282172__42a08016-9620-42e6-a4e7-98d87db4f66f-1667551239e9010296-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "retro-lighting",
-            "title": ""
-          }
-        },
-        "template--16727916282172__42a08016-9620-42e6-a4e7-98d87db4f66f-1667551239e9010296-4": {
-          "type": "collection",
-          "settings": {
-            "collection": "industrial-lighting",
-            "title": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16727916282172__42a08016-9620-42e6-a4e7-98d87db4f66f-1667551239e9010296-0",
-        "template--16727916282172__42a08016-9620-42e6-a4e7-98d87db4f66f-1667551239e9010296-3",
-        "template--16727916282172__42a08016-9620-42e6-a4e7-98d87db4f66f-1667551239e9010296-4"
-      ],
+    "collection_reccomended_prRA86": {
+      "type": "collection-reccomended",
       "settings": {
-        "flush": false,
-        "flush_bottom": true,
-        "title": "You might also like",
-        "link": "",
-        "button_link": ""
       }
     }
   },
   "order": [
     "main",
-    "42a08016-9620-42e6-a4e7-98d87db4f66f"
+    "collection_reccomended_prRA86"
   ]
 }
