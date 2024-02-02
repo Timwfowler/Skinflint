@@ -28,6 +28,11 @@
 {% assign productOneNum = "now" | date: "%N" | modulo: diff | plus: min %}
 {% assign productTwoNum = "now" | date: "%N" | modulo: diff | plus: min %}
 {% assign productThreeNum = "now" | date: "%N" | modulo: diff | plus: min %}
+{% assign productFourNum = "now" | date: "%N" | modulo: diff | plus: min %}
+{% assign productFiveNum = "now" | date: "%N" | modulo: diff | plus: min %}
+{% assign productSixNum = "now" | date: "%N" | modulo: diff | plus: min %}
+
+
 
 
 {% if productTwoNum == productOneNum %}
@@ -38,10 +43,25 @@
 {% assign productThreeNum = "now" | date: "%N" | modulo: diff | plus: min %}
 {% endif %}
 
+{% if productFourNum == productOneNum or productFourNum == productTwoNum or productFourNum == productThreeNum %}
+{% assign productFourNum = "now" | date: "%N" | modulo: diff | plus: min %}
+{% endif %}
+
+{% if productFiveNum == productOneNum or productFiveNum == productTwoNum or productFiveNum == productThreeNum or productFiveNum == productFourNum %}
+{% assign productFiveNum = "now" | date: "%N" | modulo: diff | plus: min %}
+{% endif %}
+
+{% if productSixNum == productOneNum or productSixNum == productTwoNum or productSixNum == productThreeNum or productSixNum == productFourNum or productSixNum == productFiveNum %}
+{% assign productSixNum = "now" | date: "%N" | modulo: diff | plus: min %}
+{% endif %}
+
 
 {% assign productOne = all_products[productArray[productOneNum]] %}
 {% assign productTwo = all_products[productArray[productTwoNum]] %}
 {% assign productThree = all_products[productArray[productThreeNum]] %}
+{% assign productFour = all_products[productArray[productFourNum]] %}
+{% assign productFive = all_products[productArray[productFiveNum]] %}
+{% assign productSix = all_products[productArray[productSixNum]] %}
 
 
 
@@ -100,12 +120,12 @@
 
 
 
-  <div id="CollectionSection-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="collection-template" class="coll-ymal index-section featured-collections-section numb-of-products-5 {% if section.settings.flush %}section-flush {% endif %}
+  <div id="CollectionSection-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="collection-template" class="coll-ymalll index-section featured-collections-section numb-of-products-5 {% if section.settings.flush %}section-flush {% endif %}
                                                                   {% if section.settings.flush_bottom %}section-padding--bottom {% endif %}">
     <div class="page-width">
       <div class="section-header{% if section.settings.view_all %} section-header--with-link{% endif %}">
         <h2 class="section-header__title">
-          You might also like
+          Featured Products
         </h2>
       </div>
     </div>
@@ -114,13 +134,20 @@
     <div class="page-width featured-collections-section{% if section.settings.mobile_scrollable %} page-width--flush-small{% endif %}">
       <div class="new-grid product-grid{% if section.settings.mobile_scrollable %} scrollable-grid--small{% endif %}" data-view="6-3">
 
-
-        {% render 'collection-grid-item', collection: collectionOne %}
+{% comment %}
+          {% render 'collection-grid-item', collection: collectionOne %}
         {% render 'collection-grid-item', collection: collectionTwo, block: block %}
+{% endcomment %}
+
 
         {% render 'product-grid-item', product: productOne, collection: collection, classes: item_classes %}
         {% render 'product-grid-item', product: productTwo, collection: collection, classes: item_classes %}
         {% render 'product-grid-item', product: productThree, collection: collection, classes: item_classes %}
+        {% render 'product-grid-item', product: productFour, collection: collection, classes: item_classes %}
+        {% render 'product-grid-item', product: productFive, collection: collection, classes: item_classes %}
+        {% render 'product-grid-item', product: productSix, collection: collection, classes: item_classes %}
+
+
 
 
           {%- liquid
