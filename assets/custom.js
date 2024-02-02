@@ -591,6 +591,66 @@ function initPdpLightsOn(){
 
 }
 
+function initSortPdfBlock(){
+
+
+  const allItems = document.querySelectorAll('.product-metafield-details')
+
+  if (!allItems.length) {
+    return;
+  }
+
+  
+
+  if (window.innerWidth < 1000) {
+    return;
+  }
+
+  let changeOrder = false
+
+  allItems.forEach((item) => {
+    const inner = item.querySelector('.product-metafield-details__inner')
+
+    if (item.classList.contains('product-metafield-details--pdf-block')) {
+
+      const style = window.getComputedStyle(inner);
+      const flexDirection = style.getPropertyValue('flex-direction');
+
+
+      if (flexDirection == "row-reverse") {
+        console.log('row-reverse');
+        inner.style.flexDirection = "row"
+        changeOrder = true        
+      }
+    }
+
+    if (changeOrder) {     
+
+      if (!item.classList.contains('product-metafield-details--pdf-block')) {
+
+        if (inner) {
+          const style = window.getComputedStyle(inner);
+          const flexDirection = style.getPropertyValue('flex-direction');
+          if (flexDirection == "row") {        
+            inner.style.flexDirection = "row-reverse"           
+          }else{
+            inner.style.flexDirection = "row"
+          }
+        }
+      }
+    }
+  })
+
+  // get css style     flex-direction from pdfBlock
+
+
+
+
+
+
+
+}
+
 
 
 
@@ -602,6 +662,7 @@ initBlogFiltersMobile()
 initYoutubePlay()
 initWishlist()
 initAnnouncementBar()
+initSortPdfBlock()
 
 
 // once dom comnpletely loaded
