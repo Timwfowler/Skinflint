@@ -250,19 +250,9 @@
         "link": "#"
       }
     },
-    "a2e5fb6d-fe91-4155-b3a1-624fbd562b2e": {
-      "type": "section-featured-collection",
-      "custom_css": [
-        "@media (max-width: 1024px) {.featured-collection-section {margin-top: 19px; } .numb-of-products-6 {margin-bottom: 85px; }}"
-      ],
+    "six_random_lights_XKre9D": {
+      "type": "six-random-lights",
       "settings": {
-        "flush": false,
-        "flush_bottom": true,
-        "title": "Featured Products",
-        "home_featured_products": "lights",
-        "count": 6,
-        "mobile_scrollable": true,
-        "view_all": true
       }
     },
     "6dc84b42-672b-499b-8596-394b228d51b5": {
@@ -319,11 +309,6 @@
         "button_link_two": "",
         "show_link": true
       }
-    },
-    "six_random_lights_XKre9D": {
-      "type": "six-random-lights",
-      "settings": {
-      }
     }
   },
   "order": [
@@ -335,8 +320,7 @@
     "3739c9e2-9b21-4677-8ff4-a0ddd44db337",
     "897d93c1-0164-4d3d-b8bf-0b1efe22129e",
     "2ae13ef7-b0aa-4f69-933b-3d1d94734750",
-    "a2e5fb6d-fe91-4155-b3a1-624fbd562b2e",
-    "6dc84b42-672b-499b-8596-394b228d51b5",
-    "six_random_lights_XKre9D"
+    "six_random_lights_XKre9D",
+    "6dc84b42-672b-499b-8596-394b228d51b5"
   ]
 }
