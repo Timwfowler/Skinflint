@@ -277,18 +277,6 @@
         "show_link": true
       }
     },
-    "cff75a32-b43b-4283-8ccb-f3e051f37f5a": {
-      "type": "section-featured-collection",
-      "settings": {
-        "flush": false,
-        "flush_bottom": true,
-        "title": "You might also like",
-        "home_featured_products": "ceiling-light-test",
-        "count": 5,
-        "mobile_scrollable": true,
-        "view_all": false
-      }
-    },
     "603fb69b-db5e-4677-8446-513b1502c24f": {
       "type": "contact-form",
       "disabled": true,
@@ -300,6 +288,11 @@
         "button_link": "",
         "show_phone": false,
         "narrow_column": true
+      }
+    },
+    "collection_reccomended_hJAJyf": {
+      "type": "collection-reccomended",
+      "settings": {
       }
     }
   },
@@ -315,7 +308,7 @@
     "14e99d66-bace-4a05-bd64-0a1cc8871571",
     "d0a4753e-a731-43b6-bfd0-55647936c363",
     "1cf9c401-d4fd-4b1f-aa92-0b1b537a3a05",
-    "cff75a32-b43b-4283-8ccb-f3e051f37f5a",
-    "603fb69b-db5e-4677-8446-513b1502c24f"
+    "603fb69b-db5e-4677-8446-513b1502c24f",
+    "collection_reccomended_hJAJyf"
   ]
 }
