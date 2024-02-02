@@ -100,6 +100,9 @@
     },
     "collection_reccomended_prRA86": {
       "type": "collection-reccomended",
+      "custom_css": [
+        ".grid-item:not(.grid-product){display:none}"
+      ],
       "settings": {
       }
     }
