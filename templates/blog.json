@@ -98,9 +98,15 @@
         "article": "all-posts\/a-modern-lounge-creating-a-room-to-entertain",
         "title": "Vintage Lighting & Design Blog"
       }
+    },
+    "collection_reccomended_yqLtAp": {
+      "type": "collection-reccomended",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "collection_reccomended_yqLtAp"
   ]
 }
