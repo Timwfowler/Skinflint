@@ -10,14 +10,17 @@
 
 
 
+
+
 {% assign productArray = '' | split: '' %}
 
 
-{% for product in collections['lights'].products %}
-    {% if product.available %}
-    {% assign controllerName = product.handle | split: 'aresdber' | first | split: 'srghhnaljh' %}
+{% for article in blog.articles %}
+    
+
+    {% assign controllerName = article.handle | split: 'aresdber' | first | split: 'srghhnaljh' %}
     {% assign productArray = productArray | concat: controllerName %}
-    {% endif %}
+
 {% endfor %}
 
 {% assign min = 1 %}
@@ -56,12 +59,16 @@
 {% endif %}
 
 
-{% assign productOne = all_products[productArray[productOneNum]] %}
-{% assign productTwo = all_products[productArray[productTwoNum]] %}
-{% assign productThree = all_products[productArray[productThreeNum]] %}
-{% assign productFour = all_products[productArray[productFourNum]] %}
-{% assign productFive = all_products[productArray[productFiveNum]] %}
-{% assign productSix = all_products[productArray[productSixNum]] %}
+
+
+{% assign productOne = blog.articles[productOneNum] %}
+{% assign productTwo = blog.articles[productTwoNum] %}
+{% assign productThree = blog.articles[productThreeNum] %}
+{% assign productFour = blog.articles[productFourNum] %}
+{% assign productFive = blog.articles[productFiveNum] %}
+{% assign productSix = blog.articles[productSixNum] %}
+
+
 
 
 
@@ -125,28 +132,18 @@
     <div class="page-width">
       <div class="section-header{% if section.settings.view_all %} section-header--with-link{% endif %}">
         <h2 class="section-header__title">
-          Featured Products
+          You might also like
         </h2>
       </div>
     </div>
 
 
-    <div class="page-width featured-collections-section{% if section.settings.mobile_scrollable %} page-width--flush-small{% endif %}">
-      <div class="new-grid product-grid{% if section.settings.mobile_scrollable %} scrollable-grid--small{% endif %}" data-view="6-3">
+    <div class=" article-grid">
+      <div class="article-grid__inner page-width" data-view="6-3">
 
-{% comment %}
-          {% render 'collection-grid-item', collection: collectionOne %}
-        {% render 'collection-grid-item', collection: collectionTwo, block: block %}
-{% endcomment %}
-
-
-        {% render 'product-grid-item', product: productOne, collection: collection, classes: item_classes %}
-        {% render 'product-grid-item', product: productTwo, collection: collection, classes: item_classes %}
-        {% render 'product-grid-item', product: productThree, collection: collection, classes: item_classes %}
-        {% render 'product-grid-item', product: productFour, collection: collection, classes: item_classes %}
-        {% render 'product-grid-item', product: productFive, collection: collection, classes: item_classes %}
-        {% render 'product-grid-item', product: productSix, collection: collection, classes: item_classes %}
-
+          {% render 'article-card', article: productOne, blog: blog %}  
+          {% render 'article-card', article: productTwo, blog: blog %}
+          {% render 'article-card', article: productThree, blog: blog %}
 
 
 
