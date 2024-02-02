@@ -319,6 +319,11 @@
         "button_link_two": "",
         "show_link": true
       }
+    },
+    "six_random_lights_XKre9D": {
+      "type": "six-random-lights",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -331,6 +336,7 @@
     "897d93c1-0164-4d3d-b8bf-0b1efe22129e",
     "2ae13ef7-b0aa-4f69-933b-3d1d94734750",
     "a2e5fb6d-fe91-4155-b3a1-624fbd562b2e",
-    "6dc84b42-672b-499b-8596-394b228d51b5"
+    "6dc84b42-672b-499b-8596-394b228d51b5",
+    "six_random_lights_XKre9D"
   ]
 }
