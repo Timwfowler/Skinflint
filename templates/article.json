@@ -14,11 +14,17 @@
       "type": "collection-reccomended",
       "settings": {
       }
+    },
+    "three_randon_blog_posts_JUXE7y": {
+      "type": "three-randon-blog-posts",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "collection_reccomended_9kNPyM"
+    "collection_reccomended_9kNPyM",
+    "three_randon_blog_posts_JUXE7y"
   ],
   "wrapper": "div.page-width.page-content.blog-layout"
 }
