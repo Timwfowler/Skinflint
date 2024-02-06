@@ -830,7 +830,7 @@
             "title": "Returns",
             "text": "<p>All you need to know about our no quibble returns policy.<\/p>",
             "button_label": "Read more",
-            "button_link": "shopify:\/\/policies\/refund-policy"
+            "button_link": "shopify:\/\/pages\/refund-and-returns-policy"
           }
         },
         "91e3b375-909a-4075-9924-91ef87090921": {
@@ -840,7 +840,7 @@
             "image": "shopify:\/\/shop_images\/2_wetroomsfaq_4613fbbf-066c-4776-91d5-136376da6c23.webp",
             "title": "Applications",
             "text": "<p>Where our lights can be used internally and externally, including bathrooms and IP ratings.<\/p>",
-            "button_label": "Optional button",
+            "button_label": "Read more",
             "button_link": "shopify:\/\/pages\/applications"
           }
         },
