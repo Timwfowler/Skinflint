@@ -10,6 +10,13 @@
             "link": "shopify:\/\/pages\/shipping"
           }
         },
+        "icon_nTgPmB": {
+          "type": "icon",
+          "settings": {
+            "text": "",
+            "link": ""
+          }
+        },
         "91a50643-8dd1-4918-a791-dce911345727": {
           "type": "icon",
           "settings": {
@@ -27,6 +34,7 @@
       },
       "block_order": [
         "9b6709b0-05b0-4358-95e4-d3ae5ec364fe",
+        "icon_nTgPmB",
         "91a50643-8dd1-4918-a791-dce911345727",
         "fec31634-369a-439a-bdb4-232014a7faef"
       ],
