@@ -52,7 +52,7 @@
     "checkout_body_background_color": "#ffffff",
     "checkout_input_background_color_mode": "white",
     "checkout_sidebar_background_color": "#fafafa",
-    "checkout_accent_color": "#ffbf3f",
+    "checkout_accent_color": "#0f0f0f",
     "checkout_button_color": "#ffbf3f",
     "checkout_error_color": "#ff6d6d",
     "superscript_decimals": true,
