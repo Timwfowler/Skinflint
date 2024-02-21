@@ -355,7 +355,7 @@ function initBlogFiltersMobile(){
   const button = document.querySelector('.blog-landing-page__filter-list')
   const menu = document.querySelector('.blog-landing-page__filter-list ul')
 
-  if (url.includes('customer_posted=true')) {
+  if (url.includes('customer_posted=true') || url.includes("?contact%5Bcontext%5D")) {
     console.log('posted');
     document.querySelector('.newsletter-modal').classList.add('active')
   }

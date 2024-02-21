@@ -74,6 +74,9 @@
       {% assign articleYearNum = articleYear | plus: 0 %}
       {% assign yearsAgo = yearNum | minus: articleYearNum %}
       {% assign monthsAgo = articleMonth | minus: articleMonthNum %}
+      {% assign newMothsAgo = articleMonthNum | minus: monthNum   %}
+
+   
 
 
 
@@ -84,10 +87,69 @@
 
 
 
-        <span class="article__sub-meta-date">      {% if yearsAgo > 1 %}
+
+
+        <span class="article__sub-meta-date">      
+
+          {% if yearsAgo > 1 %}
           {{ yearsAgo   }} years ago
-           {% elsif yearsAgo == 1 %}
-           {{ yearsAgo   }} year ago
+           {% elsif yearsAgo == 1 and newMothsAgo > 0 %}
+            
+            {% assign monthCount = 0 %}
+            {% assign articleMonth = articleMonth | plus: 1 %}
+
+
+
+            {% if articleMonth  < 13 %}
+              {% assign monthCount = monthCount | plus: 1 %}
+              {% assign articleMonth = articleMonth | plus: 1 %}
+            {% endif %}
+
+            {% if articleMonth  < 13 %}
+              {% assign monthCount = monthCount | plus: 1 %}
+              {% assign articleMonth = articleMonth | plus: 1 %}
+            {% endif %}
+            {% if articleMonth  < 13 %}
+              {% assign monthCount = monthCount | plus: 1 %}
+              {% assign articleMonth = articleMonth | plus: 1 %}
+            {% endif %}
+            {% if articleMonth  < 13 %}
+              {% assign monthCount = monthCount | plus: 1 %}
+              {% assign articleMonth = articleMonth | plus: 1 %}
+            {% endif %}
+            {% if articleMonth  < 13 %}
+              {% assign monthCount = monthCount | plus: 1 %}
+              {% assign articleMonth = articleMonth | plus: 1 %}
+            {% endif %}
+            {% if articleMonth  < 13 %}
+              {% assign monthCount = monthCount | plus: 1 %}
+              {% assign articleMonth = articleMonth | plus: 1 %}
+            {% endif %}
+            {% if articleMonth  < 13 %}
+              {% assign monthCount = monthCount | plus: 1 %}
+              {% assign articleMonth = articleMonth | plus: 1 %}
+            {% endif %}
+            {% if articleMonth  < 13 %}
+              {% assign monthCount = monthCount | plus: 1 %}
+              {% assign articleMonth = articleMonth | plus: 1 %}
+            {% endif %}
+            {% if articleMonth  < 13 %}
+              {% assign monthCount = monthCount | plus: 1 %}
+              {% assign articleMonth = articleMonth | plus: 1 %}
+                {% endif %}
+                {% if articleMonth  < 13 %}
+                {% assign monthCount = monthCount | plus: 1 %}
+                {% assign articleMonth = articleMonth | plus: 1 %}
+              {% endif %}
+              {% if articleMonth  < 13 %}
+              {% assign monthCount = monthCount | plus: 1 %}
+              {% assign articleMonth = articleMonth | plus: 1 %}
+            {% endif %}                                                                                              
+
+          {{ monthCount | plus: monthNum  }} months ago
+
+
+           
            {% elsif monthsAgo > 1 %}
              {{ monthsAgo }} months ago
            {% elsif monthsAgo == 1 %}
