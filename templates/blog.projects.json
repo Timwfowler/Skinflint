@@ -7,25 +7,26 @@
           "type": "blog_filter",
           "settings": {
             "blog": "all-projects",
-            "blog_tag": "Commercial project"
+            "blog_tag": "Commercial"
           }
         },
         "4bd03a3b-da7f-42dc-9062-6b8c74cc7950": {
           "type": "blog_filter",
           "settings": {
             "blog": "all-projects",
-            "blog_tag": "Residential Projects"
+            "blog_tag": "Residential"
           }
         },
         "1106cb27-6858-48cc-8bf7-2bf1fd4e8487": {
           "type": "blog_filter",
           "settings": {
             "blog": "all-projects",
-            "blog_tag": "Prop Hire Projects"
+            "blog_tag": "Prop Hire"
           }
         },
         "blog_filter_iEnHPc": {
           "type": "blog_filter",
+          "disabled": true,
           "settings": {
             "blog": "all-projects",
             "blog_tag": "Residential"
