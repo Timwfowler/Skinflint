@@ -2,11 +2,92 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+      }
+    },
+    "section_hero_banner_LkdRtG": {
+      "type": "section-hero-banner",
+      "blocks": {
+        "hero_786w67": {
+          "type": "hero",
+          "settings": {
+            "title": "New Bulkhead Collection",
+            "text_color": "#ffffff",
+            "link": "shopify:\/\/pages\/all-sections",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/skinflint-bulkhead-collection-homepage-banner-16-9.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "hero_786w67"
+      ],
+      "settings": {
+        "flush": true,
+        "flush_bottom": false,
+        "full_width": false,
+        "height": 790,
+        "height_mobile": 400,
+        "style": "bars",
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "section_text_columns_MHqBwc": {
+      "type": "section-text-columns",
+      "blocks": {
+        "text_block_wHL98V": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "text_block_Fp7HC8": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "text_block_RyjLGj": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_wHL98V",
+        "text_block_Fp7HC8",
+        "text_block_RyjLGj"
+      ],
+      "settings": {
+        "flush": false,
+        "flush_bottom": false,
+        "title": ""
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "section_hero_banner_LkdRtG",
+    "section_text_columns_MHqBwc"
   ]
 }
