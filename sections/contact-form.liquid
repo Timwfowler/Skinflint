@@ -37,6 +37,22 @@
 </div>
 
 
+<script>
+
+//on document load vanilla js
+
+document.addEventListener("DOMContentLoaded", function() {
+  // if url containd '#contact-template--18439248675132__form' then scrol to top of page
+
+  if (window.location.href.indexOf("#contact-template--18439248675132__form") > -1) {
+    console.log('scroll to top');
+    window.scrollTo(0, 0);
+  }
+});
+
+</script>
+
+
 
 {% schema %}
   {

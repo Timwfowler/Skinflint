@@ -20,7 +20,7 @@
 
 <div class="image-split page-width {% if section.settings.flush %}section-flush {% endif %}
 {% if section.settings.flush_bottom %}section-padding--bottom {% endif %}">
-  <img draggable="false" src="{{ section.settings.before_image | img_url: "master" }}" alt="Original alt"> 
+  <img class="bg-image" draggable="false" src="{{ section.settings.before_image | img_url: "master" }}" alt="Original alt"> 
   <div class="image-split__overlay">
     <img draggable="false" src="{{ section.settings.after_image | img_url: "master" }}" alt="Overlay alt">
   </div> 
