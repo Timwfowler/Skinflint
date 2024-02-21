@@ -362,6 +362,7 @@ function initBlogFiltersMobile(){
 
   if (url.includes("?contact%5Bcontext%5D")) {
     document.querySelector('.newsletter-modal__inner .newsletter__input-group').style.display = "none"
+    document.querySelector('.newsletter-modal__inner #newsletter-').style.display = "none"
   }
 
   if (!button) {
