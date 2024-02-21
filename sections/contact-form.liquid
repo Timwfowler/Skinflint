@@ -43,7 +43,12 @@
 
 window.addEventListener("load", function() {
   if (window.location.href.indexOf("#contact-template--18439248675132__form") > -1) {
+
+    //body opacity = 0
+    document.body.style.opacity = 0;
+
     setTimeout(function() {
+      document.body.style.opacity = 1;
       window.scrollTo(0, 0);
       console.log('scroll to top');
     }, 400);
