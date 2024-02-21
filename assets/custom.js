@@ -426,7 +426,7 @@ function initBlogFiltersMobile(){
 
 //if url contains "challenge" then scroll to top of page
 
-if (url.includes('challenge')) {
+if (window.location.includes('challenge')) {
   console.log('challenge!!!');
   window.scrollTo(0, 0)
   
