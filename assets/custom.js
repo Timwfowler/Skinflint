@@ -360,6 +360,10 @@ function initBlogFiltersMobile(){
     document.querySelector('.newsletter-modal').classList.add('active')
   }
 
+  if (url.includes("?contact%5Bcontext%5D")) {
+    document.querySelector('.newsletter-modal__inner .newsletter__input-group').style.display = "none"
+  }
+
   if (!button) {
     return;
   }
