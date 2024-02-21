@@ -426,13 +426,17 @@ function initBlogFiltersMobile(){
 
 //if url contains "challenge" then scroll to top of page
 
-
+console.log(window.location.href);
+console.log('iniiiiiii');
 
 if (window.location.href.includes('challenge')) {
   console.log('challenge!!!');  
-  window.scrollTo(0, 0)
-  
+  window.scrollTo(0, 0) 
 }
+
+// if url contains "customer_posted=true" then show newsletter modal
+
+
 
 
 
