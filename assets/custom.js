@@ -696,8 +696,11 @@ console.log(window.location.href);
 console.log('iniiiiiii');
 
 if (window.location.href.includes('challenge')) {
-  console.log('challenge!!!');  
-  window.scrollTo(0, 0) 
+  setTimeout(function() {
+    console.log('challenge!!!');  
+    window.scrollTo(0, 0) 
+  }, 500);
+
 }
 
 // if url contains "customer_posted=true" then show newsletter modal
