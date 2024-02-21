@@ -429,7 +429,7 @@ function initBlogFiltersMobile(){
 
 
 if (window.location.href.includes('challenge')) {
-  console.log('challenge!!!');
+  console.log('challenge!!!');  
   window.scrollTo(0, 0)
   
 }
