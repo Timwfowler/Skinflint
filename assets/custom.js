@@ -363,6 +363,13 @@ function initBlogFiltersMobile(){
   if (url.includes("?contact%5Bcontext%5D")) {
     document.querySelector('.newsletter-modal__inner .newsletter__input-group').style.display = "none"
     document.querySelector('.newsletter-modal__inner #newsletter-').style.display = "none"
+
+    // ".newsletter-modal .newsletter-modal__inner h4" prepend p tag
+
+    const p = document.createElement('p')
+    p.innerHTML = "Thank you for signing up!"
+    document.querySelector('.newsletter-modal .newsletter-modal__inner h4').prepend(p)
+    
   }
 
   if (!button) {
