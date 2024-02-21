@@ -95,6 +95,10 @@ html {
   font-size: 10px
 }
 
+textarea{
+  resize: none;
+}
+
 li, a, p, ul, span, blockquote, input, textarea, label, tr, td{
   line-height: 1.7;
   font-family: AvertaStd-Regular,sans-serif;

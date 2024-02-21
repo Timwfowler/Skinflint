@@ -71,7 +71,7 @@
       {{ blog.title | link_to: blog.url }}         
       {% endif %}
         <span class="breadcrumb__divider" aria-hidden="true">></span>
-        <span>{{ current_tags | join: " + " }}</span>
+        <span>{{ current_tags  | join: " + " | replace: 'project', '' | replace: 'Projects', '' }}</span>
 
         {% else %}
         {% if blog.title == "All posts" %}
