@@ -10,7 +10,7 @@
     {{ shop.name }}
   {%- else -%}
     {%- unless page_title contains shop.name -%}
-      &ndash; {{ shop.name }}
+      | {{ shop.name }}
     {%- endunless -%}
   {%- endif -%}
 {%- endcapture -%}
