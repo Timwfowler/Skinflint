@@ -46,6 +46,13 @@ window.addEventListener("load", function() {
     window.scrollTo(0, 0);
     console.log('scroll to top');
   }
+
+  setTimeout(function() {
+    if (window.location.href.indexOf("#contact-template--18439248675132__form") > -1) {
+      window.scrollTo(0, 0);
+      console.log('scroll to top 2');
+    }
+  }, 2000); 
 });
 
 
