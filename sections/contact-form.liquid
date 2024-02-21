@@ -43,16 +43,14 @@
 
 window.addEventListener("load", function() {
   if (window.location.href.indexOf("#contact-template--18439248675132__form") > -1) {
-    window.scrollTo(0, 0);
-    console.log('scroll to top');
+    setTimeout(function() {
+      window.scrollTo(0, 0);
+      console.log('scroll to top');
+    }, 400);
+
   }
 
-  setTimeout(function() {
-    if (window.location.href.indexOf("#contact-template--18439248675132__form") > -1) {
-      window.scrollTo(0, 0);
-      console.log('scroll to top 2');
-    }
-  }, 2000); 
+
 });
 
 
