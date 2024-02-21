@@ -4,7 +4,7 @@
     {%- assign meta_tags = current_tags | join: ', ' %} | {{ 'general.meta.tags' | t: tags: meta_tags -}}
   {%- endif -%}
   {%- if current_page != 1 -%}
-    &ndash; {{ 'general.meta.page' | t: page: current_page }}
+    | {{ 'general.meta.page' | t: page: current_page }}
   {%- endif -%}
   {%- if template == 'password' -%}
     {{ shop.name }}
