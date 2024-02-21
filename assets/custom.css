@@ -5112,6 +5112,14 @@ a:hover {
   display: none;
 }
 
+.shrink .scrolling-nav-actions__bread {
+  display: none;
+}
+
+.shrink .scrolling-nav-actions__share {
+  width: 100% !important;
+}
+
 .page--projects-landing-page .mega-menu-hamburger, .template-blog .mega-menu-hamburger, .page--blog-landing-page .mega-menu-hamburger, .template-article .mega-menu-hamburger {
   z-index: 99;
 }

@@ -6593,7 +6593,16 @@ margin-right: auto;
 }
 
 
+.shrink{
 
+  .scrolling-nav-actions__bread{
+    display: none;
+  }
+}
+
+.shrink .scrolling-nav-actions__share{
+  width: 100% !important;
+}
 
 
 .page--projects-landing-page, .template-blog, .page--blog-landing-page, .template-article{
@@ -6606,7 +6615,12 @@ margin-right: auto;
 
   .shrink{
 
+
+
     @include breakpoint(md){
+
+
+
       .scrolling-nav-actions__projects{
         width: 211px;
         right: 165px;
