@@ -367,9 +367,9 @@ function initBlogFiltersMobile(){
     // ".newsletter-modal .newsletter-modal__inner h4" prepend p tag
 
     const p = document.createElement('p')
-    p.innerHTML = "Thank you for signing up!"
+    p.innerHTML = "Thanks for subscribing"
     document.querySelector('.newsletter-modal .newsletter-modal__inner h4').prepend(p)
-    
+
   }
 
   if (!button) {
@@ -422,6 +422,15 @@ function initBlogFiltersMobile(){
     }
   })
 }
+
+
+//if url contains "challenge" then scroll to top of page
+
+if (url.includes('challenge')) {
+  window.scrollTo(0, 0)
+  
+}
+
 
 
 
