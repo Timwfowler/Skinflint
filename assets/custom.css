@@ -5008,7 +5008,12 @@ a:hover {
 }
 .template-customers-register .user-heading__title--border, .template-customers-login .user-heading__title--border {
   border-bottom: 1px solid #e1e1e1;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+}
+@media (min-width: 1024px) {
+  .template-customers-register .user-heading__title--border, .template-customers-login .user-heading__title--border {
+    margin-bottom: 80px;
+  }
 }
 .template-customers-register .register, .template-customers-login .register {
   max-width: 1023px;
@@ -5230,6 +5235,12 @@ a:hover {
 
 .rte__content > ol li:not(:last-of-type), .rte__content > ul li:not(:last-of-type) {
   margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .user-heading__title {
+    margin-top: 30px;
+  }
 }
 
 .standard-page {

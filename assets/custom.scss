@@ -6471,7 +6471,11 @@ a:hover{
 
   .user-heading__title--border{
     border-bottom: 1px solid #e1e1e1;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+
+    @include breakpoint(md){
+      margin-bottom: 80px;
+    }
   }
 
   .register{
@@ -6762,6 +6766,11 @@ margin-right: auto;
 }
 
 
+.user-heading__title{
+  @include breakpoint(mobile-only){
+    margin-top: 30px;
+  }
+}
 
 .standard-page{
   max-width: 950px;
