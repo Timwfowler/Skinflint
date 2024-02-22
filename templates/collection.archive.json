@@ -57,7 +57,7 @@
         "4d6488b1-58ca-4f0d-8c25-a57459b94ebd": {
           "type": "text_block",
           "settings": {
-            "collection": "vintage-and-industrial-table-lights-archive",
+            "collection": "table-lights-archive",
             "title": "Table lights"
           }
         },
@@ -78,7 +78,7 @@
         "ee54046f-de83-486b-bd99-6751fe8c520c": {
           "type": "text_block",
           "settings": {
-            "collection": "vintage-and-industrial-floor-lamps-archive",
+            "collection": "floor-lamps-archive",
             "title": "Floor lights"
           }
         }

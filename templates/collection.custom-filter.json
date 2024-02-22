@@ -25,21 +25,21 @@
           "type": "CustomFilter",
           "settings": {
             "filter_label": "Ceiling lights",
-            "filter_link": "shopify:\/\/collections\/vintage-and-industrial-table-lights"
+            "filter_link": "shopify:\/\/collections\/table-lights"
           }
         },
         "4c57ca09-5ce7-4bfd-9c03-5675985efd82": {
           "type": "CustomFilter",
           "settings": {
             "filter_label": "Wall Lights",
-            "filter_link": "shopify:\/\/collections\/industrial-wall-lights"
+            "filter_link": "shopify:\/\/collections\/wall-lights"
           }
         },
         "8fc26acf-62be-40fd-9d19-bf4d9f80a9d7": {
           "type": "CustomFilter",
           "settings": {
             "filter_label": "Table Lights",
-            "filter_link": "shopify:\/\/collections\/vintage-and-industrial-table-lights"
+            "filter_link": "shopify:\/\/collections\/table-lights"
           }
         },
         "60c415f8-f685-478c-a99b-d099e4f44a5f": {
@@ -53,7 +53,7 @@
           "type": "CustomFilter",
           "settings": {
             "filter_label": "Accessories",
-            "filter_link": "shopify:\/\/collections\/braided-lighting-cable-accessories"
+            "filter_link": "shopify:\/\/collections\/accessories"
           }
         }
       },
