@@ -35,6 +35,7 @@
         <a href="{{ collection.metafields.custom.breadcrumb_parent.value.url }}">{{ collection.metafields.custom.breadcrumb_parent.value.title }}</a>
 
         {% else %}
+        
         <a href="/collections">&nbsp;>&nbsp; Collections</a>
       {% endif %}
       <span class="breadcrumb__divider" aria-hidden="true">></span>
@@ -127,12 +128,12 @@
 
     {% elsif template.name == 'search' %}
 
-      <span class="breadcrumb__divider" aria-hidden="true">/</span>
+      <span class="breadcrumb__divider" aria-hidden="true">></span>
       <span>{{ page_title | replace: '*', '' }}</span>
 
     {% else %}
 
-      <span class="breadcrumb__divider" aria-hidden="true">/</span>
+      <span class="breadcrumb__divider" aria-hidden="true">></span>
       <span>{{ page_title }}</span>
 
     {% endif %}

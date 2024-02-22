@@ -41,7 +41,12 @@
 
 <div class="page-width standard-page">
 
-<section class="user-heading"><div class="user-heading__title user-heading__title--border"><h1>{{ page.title | escape }}</h1></div></section>
+
+
+
+
+
+<section class="user-heading"><div class="user-heading__title user-heading__title--border"><h1>{% if page.metafields.custom.h1_page_title != blank %}{{page.metafields.custom.h1_page_title}}{% else %}{{ page.title | escape }}{% endif %}</h1></div></section>
 
 
 {% if page.content != blank %}

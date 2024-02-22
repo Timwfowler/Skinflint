@@ -4746,6 +4746,7 @@ a:hover{
   }
 }
 .article-wrap{
+  
 
   @include breakpoint(md){
     max-width: 950px;
@@ -4768,7 +4769,7 @@ a:hover{
   }
 
   
-  .rte>h1, .rte>h2, .rte>h3, .rte>h4, .rte>h5, .rte>h6, .rte>p{
+  .rte>h1, .rte>h2, .rte>h3, .rte>h4, .rte>h5, .rte>h6, .rte>p, .rte p, .rte h1, .rte h2, .rte h3, .rte h4, .rte h5, .rte h6{
     padding: 0 20px;
 
     @include breakpoint(md){
@@ -4780,9 +4781,14 @@ a:hover{
     display: block;
     margin: 0 auto;
     padding: 20px 0;
-    margin-left: -80px;
-    width: calc(100% + 160px);
+    margin-left: -20px;
+    width: calc(100% + 40px);
     max-width: none;
+
+    @include breakpoint(md){
+      margin-left: -80px;
+      width: calc(100% + 160px);
+    }
   }
 
 
@@ -5732,7 +5738,25 @@ a:hover{
 
 }
 
+.template-search{
+  .article-card__text{
+    padding-bottom: 40px;
+  }
+
+  .article-grid{
+
+    @include breakpoint(md){
+      margin-top: 150px;
+    }
+  }
+}
+
 .search-content{
+  padding-bottom: 120px;
+
+  @include breakpoint(md){
+    padding-bottom: 180px;
+  }
 
   h2{
     padding-bottom: 80px;
@@ -5741,7 +5765,8 @@ a:hover{
     padding-right: 20px;
 
     @include breakpoint(md){
-      padding-bottom: 160px;
+      // padding-bottom: 160px;
+      
     }
   }
 }
@@ -6825,10 +6850,26 @@ margin-right: auto;
   }
 }
 
+.remove-sticky-buy{
+
+  .sticky-buy{
+    display: none !important;
+  }
+
+}
+
+.pdp-pdf__data{
+
+  table{
+    background: transparent;
+  }
+}
+
 .pdp-pdf__data-column{
 
-  td{
+  td, tr{
     border: none !important;
+    box-shadow: none !important;
   }
 }
 

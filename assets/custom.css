@@ -3649,11 +3649,11 @@ a:hover {
 .article-wrap img {
   margin-top: 30px;
 }
-.article-wrap .rte > h1, .article-wrap .rte > h2, .article-wrap .rte > h3, .article-wrap .rte > h4, .article-wrap .rte > h5, .article-wrap .rte > h6, .article-wrap .rte > p {
+.article-wrap .rte > h1, .article-wrap .rte > h2, .article-wrap .rte > h3, .article-wrap .rte > h4, .article-wrap .rte > h5, .article-wrap .rte > h6, .article-wrap .rte > p, .article-wrap .rte p, .article-wrap .rte h1, .article-wrap .rte h2, .article-wrap .rte h3, .article-wrap .rte h4, .article-wrap .rte h5, .article-wrap .rte h6 {
   padding: 0 20px;
 }
 @media (min-width: 1024px) {
-  .article-wrap .rte > h1, .article-wrap .rte > h2, .article-wrap .rte > h3, .article-wrap .rte > h4, .article-wrap .rte > h5, .article-wrap .rte > h6, .article-wrap .rte > p {
+  .article-wrap .rte > h1, .article-wrap .rte > h2, .article-wrap .rte > h3, .article-wrap .rte > h4, .article-wrap .rte > h5, .article-wrap .rte > h6, .article-wrap .rte > p, .article-wrap .rte p, .article-wrap .rte h1, .article-wrap .rte h2, .article-wrap .rte h3, .article-wrap .rte h4, .article-wrap .rte h5, .article-wrap .rte h6 {
     padding: 0 80px;
   }
 }
@@ -3661,9 +3661,15 @@ a:hover {
   display: block;
   margin: 0 auto;
   padding: 20px 0;
-  margin-left: -80px;
-  width: calc(100% + 160px);
+  margin-left: -20px;
+  width: calc(100% + 40px);
   max-width: none;
+}
+@media (min-width: 1024px) {
+  .article-wrap .rte img {
+    margin-left: -80px;
+    width: calc(100% + 160px);
+  }
 }
 .article-wrap .section-header {
   padding: 40px 20px;
@@ -4427,18 +4433,29 @@ a:hover {
   }
 }
 
+.template-search .article-card__text {
+  padding-bottom: 40px;
+}
+@media (min-width: 1024px) {
+  .template-search .article-grid {
+    margin-top: 150px;
+  }
+}
+
+.search-content {
+  padding-bottom: 120px;
+}
+@media (min-width: 1024px) {
+  .search-content {
+    padding-bottom: 180px;
+  }
+}
 .search-content h2 {
   padding-bottom: 80px;
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
 }
-@media (min-width: 1024px) {
-  .search-content h2 {
-    padding-bottom: 160px;
-  }
-}
-
 /*=====  End of Seacrh  ======*/
 /*=============================================
 =            Cart page            =
@@ -5283,8 +5300,17 @@ a:hover {
   }
 }
 
-.pdp-pdf__data-column td {
+.remove-sticky-buy .sticky-buy {
+  display: none !important;
+}
+
+.pdp-pdf__data table {
+  background: transparent;
+}
+
+.pdp-pdf__data-column td, .pdp-pdf__data-column tr {
   border: none !important;
+  box-shadow: none !important;
 }
 
 .qty-select-product-name {
