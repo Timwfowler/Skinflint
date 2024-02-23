@@ -26,6 +26,46 @@
           {% capture url %}{{ routes.collections_url }}/{{ collection.handle }}{% endcapture %}
           {{ collection.title | link_to: url }}
         {% endif %}
+
+        {% else %}
+
+        
+        <span class="breadcrumb__divider" aria-hidden="true">> </span>
+        <a href="/collections/lights">Lights</a>
+
+  
+          {% for collection in product.collections %}
+             
+             {% assign productType = collection.title | downcase %}
+
+             
+             {% if productType contains "wall lights" %}
+             {% assign linkCollection = "/collections/industrial-wall-lights" %}
+             {% assign linkTitle = "Wall lights" %}
+           {% elsif productType contains "ceiling lights"  %}
+             {% assign linkCollection = "/collections/vintage-and-industrial-pendant-and-ceiling-lights" %}
+             {% assign linkTitle = "Ceiling lights" %}
+           {% elsif productType contains "table lights"  %}
+             {% assign linkCollection = "/collections/vintage-and-industrial-table-lights" %}
+             {% assign linkTitle = "Table lights" %}
+           {% elsif productType contains "floor lights"  %}
+             {% assign linkCollection = "/collections/vintage-and-industrial-floor-lamps" %}
+             {% assign linkTitle = "Floor lights" %}
+           {% elsif productType contains "accessories"  %}               
+             {% assign linkCollection = "/collections/braided-lighting-cable-accessories" %}   
+             {% assign linkTitle = "Accessories" %}                            
+           {% endif %}
+            
+          {% endfor %}
+
+          {% if linkTitle != blank %}
+          <span class="breadcrumb__divider" aria-hidden="true">> </span>
+          <a href="{{ linkCollection   }}">{{ linkTitle  }}</a>
+          {% endif %}
+
+   
+
+
       {% endif %}
       <span class="breadcrumb__divider" aria-hidden="true">></span>
       <a href="{{ product.url }}"> {{ product.title }}</a>
@@ -57,7 +97,7 @@
         <a href="">{{ collection.title }}</a>      
       {% endif %}       
 
-      <a href="">{% if collection.title contains "Archive" %}Archive {% else %}{{ collection.title }}{% endif %}</a>
+      <a href="">{% if collection.title contains "Archive" %}{{ collection.title   }} {% else %}{{ collection.title }}{% endif %}</a>
   
 
     {% elsif template.name == 'blog' %} 
