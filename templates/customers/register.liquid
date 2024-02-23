@@ -15,7 +15,7 @@
                   <h3>Login to your account</h3>
                 </div>         
                 {%- form 'customer_login' -%}
-                  <input type="hidden" name="return_to" value="/account">
+                  <input type="hidden" name="return_to" value="/cart">
                   {{ form.errors | default_errors }}              
                   <input type="email" placeholder="Email" name="customer[email]" id="CustomerEmail" class="input-full{% if form.errors contains 'email' %} error{% endif %}" autocorrect="off" autocapitalize="off" autofocus>
                   {%- if form.password_needed -%}
