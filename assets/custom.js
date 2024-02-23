@@ -692,6 +692,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 //if url contains "challenge" then scroll to top of page
 
+// if window.location.href.includes("?return_url=%2Faccount")  then .login-modal active
+
+if (window.location.href.includes("?return_url=%2Faccount")) {
+  document.querySelector('.login-modal').classList.add('active')
+}
+
 console.log(window.location.href);
 console.log('iniiiiiii');
 
