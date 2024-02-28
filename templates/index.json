@@ -58,7 +58,7 @@
             "title": "Vintage lighting \nprop hire",
             "text_color": "#ffffff",
             "link": "#",
-            "link_text": "Optional button",
+            "link_text": "Talk to our prop team",
             "link_2": "",
             "link_text_2": "",
             "text_align": "vertical-bottom horizontal-left",
@@ -92,6 +92,21 @@
             "link_2": "",
             "link_text_2": "",
             "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/The-Retreat_homepage-banner-16-9-the-retreat.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "hero_WTHQRW": {
+          "type": "hero",
+          "settings": {
+            "title": "Retro",
+            "text_color": "#fff",
+            "link": "",
+            "link_text": "Shop now",
+            "link_2": "",
+            "link_text_2": "",
+            "text_align": "vertical-bottom horizontal-left",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -101,7 +116,8 @@
         "0dd9a91e-af3e-4f76-afb0-07eb79935f96",
         "template--16727916118332__ab621580-b75a-4803-ae34-f20abc80d17d-1666667198a9ea7f44-0",
         "9dbcf259-7c3b-4526-b259-bb5dcd637484",
-        "hero_TM8BMJ"
+        "hero_TM8BMJ",
+        "hero_WTHQRW"
       ],
       "custom_css": [
         "@media (min-width: 1024px) {.slideshow-section .slideshow-wrapper--bars {margin-bottom: -26px; }}"
