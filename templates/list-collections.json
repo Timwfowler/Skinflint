@@ -74,12 +74,6 @@
           "settings": {
             "collection": "vintage-kitchen-lighting"
           }
-        },
-        "collection_eRHnTj": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
         }
       },
       "block_order": [
@@ -94,8 +88,7 @@
         "78486bb6-4b98-4742-9a8e-a6784de6cb9b",
         "6842eeaa-9c4e-4bde-b1fe-7004309a20c4",
         "84c26bbb-b56a-4be1-815e-5fc81a128615",
-        "cc473ed3-8def-477a-9383-82a9eb39bdce",
-        "collection_eRHnTj"
+        "cc473ed3-8def-477a-9383-82a9eb39bdce"
       ],
       "settings": {
         "collection": "retro-lighting",
