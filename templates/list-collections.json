@@ -9,6 +9,12 @@
             "collection": "czech-creators"
           }
         },
+        "collection_PtteBV": {
+          "type": "collection",
+          "settings": {
+            "collection": "make-an-entrance"
+          }
+        },
         "9ffe5e07-0b90-4172-9f6a-05d72d774449": {
           "type": "collection",
           "settings": {
@@ -74,16 +80,11 @@
           "settings": {
             "collection": "vintage-kitchen-lighting"
           }
-        },
-        "collection_PtteBV": {
-          "type": "collection",
-          "settings": {
-            "collection": "make-an-entrance"
-          }
         }
       },
       "block_order": [
         "collection_DqWVxj",
+        "collection_PtteBV",
         "9ffe5e07-0b90-4172-9f6a-05d72d774449",
         "fed69d9d-f36c-4488-b862-fae46833d596",
         "6710d2ca-a5e7-45d6-946a-49fbd21dff67",
@@ -94,8 +95,7 @@
         "78486bb6-4b98-4742-9a8e-a6784de6cb9b",
         "6842eeaa-9c4e-4bde-b1fe-7004309a20c4",
         "84c26bbb-b56a-4be1-815e-5fc81a128615",
-        "cc473ed3-8def-477a-9383-82a9eb39bdce",
-        "collection_PtteBV"
+        "cc473ed3-8def-477a-9383-82a9eb39bdce"
       ],
       "settings": {
         "collection": "retro-lighting",
