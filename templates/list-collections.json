@@ -3,10 +3,10 @@
     "main": {
       "type": "list-collections-template",
       "blocks": {
-        "b89d0d08-b6a8-44d8-8735-09cc1af023be": {
+        "collection_DqWVxj": {
           "type": "collection",
           "settings": {
-            "collection": "retro-lighting"
+            "collection": "czech-creators"
           }
         },
         "9ffe5e07-0b90-4172-9f6a-05d72d774449": {
@@ -74,10 +74,16 @@
           "settings": {
             "collection": "vintage-kitchen-lighting"
           }
+        },
+        "collection_eRHnTj": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
         }
       },
       "block_order": [
-        "b89d0d08-b6a8-44d8-8735-09cc1af023be",
+        "collection_DqWVxj",
         "9ffe5e07-0b90-4172-9f6a-05d72d774449",
         "fed69d9d-f36c-4488-b862-fae46833d596",
         "6710d2ca-a5e7-45d6-946a-49fbd21dff67",
@@ -88,10 +94,11 @@
         "78486bb6-4b98-4742-9a8e-a6784de6cb9b",
         "6842eeaa-9c4e-4bde-b1fe-7004309a20c4",
         "84c26bbb-b56a-4be1-815e-5fc81a128615",
-        "cc473ed3-8def-477a-9383-82a9eb39bdce"
+        "cc473ed3-8def-477a-9383-82a9eb39bdce",
+        "collection_eRHnTj"
       ],
       "settings": {
-        "collection": "make-an-entrance",
+        "collection": "retro-lighting",
         "title": "Collections",
         "copy": "<p>To help you choose the right light for your space, skinflint has curated a series of collections from our range of vintage lighting. From industrial lighting for your kitchen or opaline lights for your bedroom, retro lighting for your living room or antique lights for your hallway; we have inspiration for every project. And if you want to see more of our lights, you can view our <a href=\"https:\/\/www.skinflintdesign.com\/lights\" title=\"Open all vintage lights page\">complete catalogue here.<\/a><\/p>",
         "display_type": "all",
