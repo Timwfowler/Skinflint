@@ -41,7 +41,7 @@
           "settings": {
             "title": "Retro",
             "text_color": "#ffffff",
-            "link": "",
+            "link": "shopify:\/\/collections\/retro-lighting",
             "link_text": "Shop now",
             "link_2": "",
             "link_text_2": "",
@@ -68,7 +68,7 @@
         "0dd9a91e-af3e-4f76-afb0-07eb79935f96": {
           "type": "hero",
           "settings": {
-            "title": "Make an Entrance",
+            "title": "We're a \nB Corp",
             "text_color": "#ffffff",
             "link": "shopify:\/\/collections\/bulkhead-lights",
             "link_text": "Explore",
@@ -77,21 +77,6 @@
             "text_align": "vertical-bottom horizontal-left",
             "image": "shopify:\/\/shop_images\/skinflint-make-an-entrance-hp-banner-16-9.jpg",
             "image_mobile": "shopify:\/\/shop_images\/skinflint-bulkhead-collection-homepage-banner-1-1.jpg",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        },
-        "template--16727916118332__ab621580-b75a-4803-ae34-f20abc80d17d-1666667198a9ea7f44-0": {
-          "type": "hero",
-          "settings": {
-            "title": "Vintage lighting \nprop hire",
-            "text_color": "#ffffff",
-            "link": "#",
-            "link_text": "Talk to our prop team",
-            "link_2": "",
-            "link_text_2": "",
-            "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/skinflint-prop-hire-home-page-banner-b-corp-16-9-resize.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -110,14 +95,29 @@
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
+        },
+        "template--16727916118332__ab621580-b75a-4803-ae34-f20abc80d17d-1666667198a9ea7f44-0": {
+          "type": "hero",
+          "settings": {
+            "title": "Vintage lighting \nprop hire",
+            "text_color": "#ffffff",
+            "link": "#",
+            "link_text": "Talk to our prop team",
+            "link_2": "",
+            "link_text_2": "",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/skinflint-prop-hire-home-page-banner-b-corp-16-9-resize.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
         }
       },
       "block_order": [
         "hero_WTHQRW",
         "hero_TM8BMJ",
         "0dd9a91e-af3e-4f76-afb0-07eb79935f96",
-        "template--16727916118332__ab621580-b75a-4803-ae34-f20abc80d17d-1666667198a9ea7f44-0",
-        "9dbcf259-7c3b-4526-b259-bb5dcd637484"
+        "9dbcf259-7c3b-4526-b259-bb5dcd637484",
+        "template--16727916118332__ab621580-b75a-4803-ae34-f20abc80d17d-1666667198a9ea7f44-0"
       ],
       "custom_css": [
         "@media (min-width: 1024px) {.slideshow-section .slideshow-wrapper--bars {margin-bottom: -26px; }}"
