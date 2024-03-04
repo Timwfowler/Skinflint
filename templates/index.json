@@ -70,13 +70,13 @@
           "settings": {
             "title": "We're a \nB Corp",
             "text_color": "#ffffff",
-            "link": "shopify:\/\/collections\/bulkhead-lights",
-            "link_text": "Explore",
+            "link": "shopify:\/\/blogs\/all-posts\/it-s-official-we-re-a-certified-b-corporation",
+            "link_text": "Read more",
             "link_2": "",
             "link_text_2": "",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/skinflint-make-an-entrance-hp-banner-16-9.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/skinflint-bulkhead-collection-homepage-banner-1-1.jpg",
+            "image": "shopify:\/\/shop_images\/skinflint-home-page-banner-b-corp-16-9-resize_e0ffd8b8-6691-4df7-aaea-d051d52d34a6.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/skinflint-home-page-banner-b-corp-1-resize.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
