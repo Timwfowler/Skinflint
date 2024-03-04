@@ -36,6 +36,35 @@
     "ab621580-b75a-4803-ae34-f20abc80d17d": {
       "type": "section-hero-banner",
       "blocks": {
+        "hero_WTHQRW": {
+          "type": "hero",
+          "settings": {
+            "title": "Retro",
+            "text_color": "#ffffff",
+            "link": "",
+            "link_text": "Shop now",
+            "link_2": "",
+            "link_text_2": "",
+            "text_align": "vertical-bottom horizontal-left",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "hero_TM8BMJ": {
+          "type": "hero",
+          "settings": {
+            "title": "The Retreat",
+            "text_color": "#ffffff",
+            "link": "https:\/\/www.skinflintdesign.com\/collections\/the-retreat",
+            "link_text": "Explore",
+            "link_2": "",
+            "link_text_2": "",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/The-Retreat_homepage-banner-16-9-the-retreat.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
         "0dd9a91e-af3e-4f76-afb0-07eb79935f96": {
           "type": "hero",
           "settings": {
@@ -81,43 +110,14 @@
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
-        },
-        "hero_TM8BMJ": {
-          "type": "hero",
-          "settings": {
-            "title": "The Retreat",
-            "text_color": "#fff",
-            "link": "https:\/\/www.skinflintdesign.com\/collections\/the-retreat",
-            "link_text": "Explore",
-            "link_2": "",
-            "link_text_2": "",
-            "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/The-Retreat_homepage-banner-16-9-the-retreat.jpg",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        },
-        "hero_WTHQRW": {
-          "type": "hero",
-          "settings": {
-            "title": "Retro",
-            "text_color": "#fff",
-            "link": "",
-            "link_text": "Shop now",
-            "link_2": "",
-            "link_text_2": "",
-            "text_align": "vertical-bottom horizontal-left",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
         }
       },
       "block_order": [
+        "hero_WTHQRW",
+        "hero_TM8BMJ",
         "0dd9a91e-af3e-4f76-afb0-07eb79935f96",
         "template--16727916118332__ab621580-b75a-4803-ae34-f20abc80d17d-1666667198a9ea7f44-0",
-        "9dbcf259-7c3b-4526-b259-bb5dcd637484",
-        "hero_TM8BMJ",
-        "hero_WTHQRW"
+        "9dbcf259-7c3b-4526-b259-bb5dcd637484"
       ],
       "custom_css": [
         "@media (min-width: 1024px) {.slideshow-section .slideshow-wrapper--bars {margin-bottom: -26px; }}"
