@@ -46,6 +46,8 @@
             "link_2": "",
             "link_text_2": "",
             "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/homepage-banner-16-9-retro.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/homepage-banner-1-1-retro.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -60,7 +62,8 @@
             "link_2": "",
             "link_text_2": "",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/The-Retreat_homepage-banner-16-9-the-retreat.jpg",
+            "image": "shopify:\/\/shop_images\/homepage-banner-16-9-retreat.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/homepage-banner-1-1-dodds.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
