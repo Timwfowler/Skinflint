@@ -280,12 +280,12 @@
       "settings": {
         "flush": false,
         "flush_bottom": false,
-        "image": "shopify:\/\/shop_images\/1400x788_cv_skinflint-verdant-brewery-project-main-image-16-9_1.webp",
-        "heading_link": "#",
-        "heading": "Verdant Taproom, Penryn",
-        "copy": "<p>skinflint lights can now be spotted at Verdant, the famed brewery that's shaking up the drinks industry.<\/p>",
-        "link_text": "View all projects",
-        "link": "#"
+        "image": "shopify:\/\/shop_images\/skinflint-equal-parts-project-header-entrance-16x9.jpg",
+        "heading_link": "shopify:\/\/blogs\/all-projects\/equal-parts-hackney",
+        "heading": "Equal Parts, Hackney",
+        "copy": "<p>Expect record players, vinyls and eclectic playlists alongside an array of skinflint vintage lights at the new trendy aperitivo bar.<\/p>",
+        "link_text": "View the project",
+        "link": "shopify:\/\/blogs\/all-projects\/equal-parts-hackney"
       }
     },
     "six_random_lights_XKre9D": {
