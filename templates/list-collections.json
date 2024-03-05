@@ -23,11 +23,11 @@
             "collection": "kitchen-lighting"
           }
         },
-        "collection_h6VdUc": {
+        "887eae69-bdca-4774-a7de-69fc74f65acf": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/the-retreat-collection-1x1-1.jpg",
-            "collection": "the-retreat"
+            "image": "shopify:\/\/shop_images\/retro-collection-1x1-1.jpg",
+            "collection": "retro-lighting"
           }
         },
         "collection_jJXtRf": {
@@ -42,6 +42,13 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/industrial-collectrion-1x1-1.jpg",
             "collection": "industrial-lighting"
+          }
+        },
+        "collection_h6VdUc": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/the-retreat-collection-1x1-1.jpg",
+            "collection": "the-retreat"
           }
         },
         "fed69d9d-f36c-4488-b862-fae46833d596": {
@@ -65,22 +72,17 @@
             "collection": "bedroom-lighting"
           }
         },
+        "159b4fa3-0533-43cd-b9b1-65098603047b": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/opaline-lighting-collection-1x1-1.jpg",
+            "collection": "opaline-glassware"
+          }
+        },
         "9ffe5e07-0b90-4172-9f6a-05d72d774449": {
           "type": "collection",
           "settings": {
             "collection": "neutral-interior-schemes"
-          }
-        },
-        "159b4fa3-0533-43cd-b9b1-65098603047b": {
-          "type": "collection",
-          "settings": {
-            "collection": "opaline-glassware"
-          }
-        },
-        "887eae69-bdca-4774-a7de-69fc74f65acf": {
-          "type": "collection",
-          "settings": {
-            "collection": "function-x-form"
           }
         }
       },
@@ -88,17 +90,18 @@
         "collection_DqWVxj",
         "collection_PtteBV",
         "collection_Hezn6L",
-        "collection_h6VdUc",
+        "887eae69-bdca-4774-a7de-69fc74f65acf",
         "collection_jJXtRf",
         "6710d2ca-a5e7-45d6-946a-49fbd21dff67",
+        "collection_h6VdUc",
         "fed69d9d-f36c-4488-b862-fae46833d596",
         "455941a1-a4ef-470e-8e4c-f6bd2fe0bb61",
         "03051b1c-b4d2-4bc8-a2af-21ef986bb2df",
-        "9ffe5e07-0b90-4172-9f6a-05d72d774449",
         "159b4fa3-0533-43cd-b9b1-65098603047b",
-        "887eae69-bdca-4774-a7de-69fc74f65acf"
+        "9ffe5e07-0b90-4172-9f6a-05d72d774449"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/retro-lighting-collection-6x4-web.jpg",
         "collection": "retro-lighting",
         "title": "Collections",
         "copy": "<p>To help you choose the right light for your space, skinflint has curated a series of collections from our range of vintage lighting. From industrial lighting for your kitchen or opaline lights for your bedroom, retro lighting for your living room or antique lights for your hallway; we have inspiration for every project. And if you want to see more of our lights, you can view our <a href=\"https:\/\/www.skinflintdesign.com\/lights\" title=\"Open all vintage lights page\">complete catalogue here.<\/a><\/p>",
