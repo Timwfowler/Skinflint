@@ -16,9 +16,17 @@
             "collection": "make-an-entrance"
           }
         },
+        "collection_Hezn6L": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/kitchen-lighting-collection-1x1-1.jpg",
+            "collection": "kitchen-lighting"
+          }
+        },
         "collection_h6VdUc": {
           "type": "collection",
           "settings": {
+            "image": "shopify:\/\/shop_images\/the-retreat-collection-1x1-1.jpg",
             "collection": "the-retreat"
           }
         },
@@ -69,18 +77,12 @@
           "settings": {
             "collection": "minimalism-meets-mid-century-modern"
           }
-        },
-        "collection_Hezn6L": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/kitchen-lighting-collection-1x1-1.jpg",
-            "collection": "kitchen-lighting"
-          }
         }
       },
       "block_order": [
         "collection_DqWVxj",
         "collection_PtteBV",
+        "collection_Hezn6L",
         "collection_h6VdUc",
         "9ffe5e07-0b90-4172-9f6a-05d72d774449",
         "fed69d9d-f36c-4488-b862-fae46833d596",
@@ -89,8 +91,7 @@
         "03051b1c-b4d2-4bc8-a2af-21ef986bb2df",
         "159b4fa3-0533-43cd-b9b1-65098603047b",
         "887eae69-bdca-4774-a7de-69fc74f65acf",
-        "78486bb6-4b98-4742-9a8e-a6784de6cb9b",
-        "collection_Hezn6L"
+        "78486bb6-4b98-4742-9a8e-a6784de6cb9b"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/retro-lighting-collection-6x4-web-3.jpg",
