@@ -12,6 +12,7 @@
         "collection_PtteBV": {
           "type": "collection",
           "settings": {
+            "image": "shopify:\/\/shop_images\/make-an-entrance-collection-1x1-1.jpg",
             "collection": "make-an-entrance"
           }
         },
