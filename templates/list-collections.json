@@ -82,12 +82,6 @@
           "settings": {
             "collection": "function-x-form"
           }
-        },
-        "78486bb6-4b98-4742-9a8e-a6784de6cb9b": {
-          "type": "collection",
-          "settings": {
-            "collection": "minimalism-meets-mid-century-modern"
-          }
         }
       },
       "block_order": [
@@ -102,8 +96,7 @@
         "03051b1c-b4d2-4bc8-a2af-21ef986bb2df",
         "9ffe5e07-0b90-4172-9f6a-05d72d774449",
         "159b4fa3-0533-43cd-b9b1-65098603047b",
-        "887eae69-bdca-4774-a7de-69fc74f65acf",
-        "78486bb6-4b98-4742-9a8e-a6784de6cb9b"
+        "887eae69-bdca-4774-a7de-69fc74f65acf"
       ],
       "settings": {
         "collection": "retro-lighting",
