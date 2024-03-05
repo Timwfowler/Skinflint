@@ -267,12 +267,12 @@
       "settings": {
         "flush": false,
         "flush_bottom": false,
-        "image": "shopify:\/\/shop_images\/1400x788_cv_the-cellar-kitchen-lighting-blog-main-crop_1.webp",
-        "heading_link": "#",
-        "heading": "Kitchen lighting design ideas",
-        "copy": "<p>Helpful ideas and tips for creating your own kitchen lighting scheme from the lighting designers at skinflint.<\/p>",
-        "link_text": "View our blog",
-        "link": "#"
+        "image": "shopify:\/\/shop_images\/Beyond-Retro-Blog-16x9-1.jpg",
+        "heading_link": "shopify:\/\/blogs\/all-posts\/beyond-retro-sixties-and-seventies-meet-modern-interiors",
+        "heading": "Beyond Retro: Bringing retro styles to modern interiors",
+        "copy": "<p>Modern Retro is in! Our experts cherry pick the best retro lighting trends, curating considered interiors that transcend design fads.<\/p>",
+        "link_text": "Read the blog",
+        "link": "shopify:\/\/blogs\/all-posts\/beyond-retro-sixties-and-seventies-meet-modern-interiors"
       }
     },
     "2ae13ef7-b0aa-4f69-933b-3d1d94734750": {
