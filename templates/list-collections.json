@@ -70,10 +70,11 @@
             "collection": "minimalism-meets-mid-century-modern"
           }
         },
-        "cc473ed3-8def-477a-9383-82a9eb39bdce": {
+        "collection_Hezn6L": {
           "type": "collection",
           "settings": {
-            "collection": "vintage-kitchen-lighting"
+            "image": "shopify:\/\/shop_images\/kitchen-lighting-collection-1x1-1.jpg",
+            "collection": "kitchen-lighting"
           }
         }
       },
@@ -89,7 +90,7 @@
         "159b4fa3-0533-43cd-b9b1-65098603047b",
         "887eae69-bdca-4774-a7de-69fc74f65acf",
         "78486bb6-4b98-4742-9a8e-a6784de6cb9b",
-        "cc473ed3-8def-477a-9383-82a9eb39bdce"
+        "collection_Hezn6L"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/retro-lighting-collection-6x4-web-3.jpg",
