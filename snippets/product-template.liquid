@@ -412,6 +412,8 @@
            
 
                         {% if product.metafields.custom.type.value[0] != blank %}
+                          {{ product.metafields.custom.type.value[0]   }}
+
                           {% assign productType = product.metafields.custom.type.value[0] | downcase %}
                           {% if productType == "wall lights" %}
                             {% assign linkCollection = "/collections/industrial-wall-lights" %}
