@@ -412,7 +412,7 @@
            
 
                         {% if product.metafields.custom.type.value[0] != blank %}
-                          {{ product.metafields.custom.type.value[0]   }}
+                     
 
                           {% assign productType = product.metafields.custom.type.value[0] | downcase %}
                           {% if productType == "wall lights" %}
@@ -420,7 +420,7 @@
                             {% assign linkTitle = "View avalible wall lights" %}
                           {% elsif productType == "ceiling lights"  %}
                             <p>celing</p>
-                            {% assign linkCollection = "/collections/vintage-and-industrial-pendant-and-ceiling-lights" %}
+                            {% assign linkCollection = "/collections/ceiling-lights" %}
                             {% assign linkTitle = "View avalible ceiling lights" %}
                           {% elsif productType == "table lights"  %}
                             {% assign linkCollection = "/collections/vintage-and-industrial-table-lights" %}
