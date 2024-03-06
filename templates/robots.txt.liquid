@@ -4,7 +4,7 @@
 {% endcomment %}
 {% for group in robots.default_groups %}
   {{- group.user_agent -}}
-
+  # this is mike's edit
   {% for rule in group.rules %}
     {{- rule -}}
   {% endfor %}
