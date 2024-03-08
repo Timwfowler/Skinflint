@@ -36,6 +36,22 @@
         "button_label_two": "",
         "button_link_two": "",
         "position_two": 2,
+        "title_three": "",
+        "button_label_three": "",
+        "button_link_three": "",
+        "position_three": 2,
+        "title_four": "",
+        "button_label_four": "",
+        "button_link_four": "",
+        "position_four": 2,
+        "title_five": "",
+        "button_label_five": "",
+        "button_link_five": "",
+        "position_five": 102,
+        "title_six": "",
+        "button_label_six": "",
+        "button_link_six": "",
+        "position_six": 102,
         "show_feat_img": false,
         "remove_description": false,
         "enable_sidebar": true,
@@ -50,8 +66,15 @@
         "fdb1a194-5221-459f-9831-0330f4b4503b": {
           "type": "text_block",
           "settings": {
-            "collection": "vintage-and-industrial-pendant-and-ceiling-lights-archive",
+            "collection": "ceiling-lights-archive",
             "title": "Ceiling lights"
+          }
+        },
+        "8e9f8ecc-f681-49ff-a389-e083ec6b9146": {
+          "type": "text_block",
+          "settings": {
+            "collection": "wall-lights-archive",
+            "title": "Wall lights"
           }
         },
         "4d6488b1-58ca-4f0d-8c25-a57459b94ebd": {
@@ -61,34 +84,37 @@
             "title": "Table lights"
           }
         },
-        "8549b162-7753-4be9-8d0e-d58128c3b0fd": {
-          "type": "text_block",
-          "settings": {
-            "collection": "braided-lighting-cable-accessories-archive",
-            "title": "Accessories"
-          }
-        },
-        "8e9f8ecc-f681-49ff-a389-e083ec6b9146": {
-          "type": "text_block",
-          "settings": {
-            "collection": "industrial-wall-lights-archive",
-            "title": "Wall lights"
-          }
-        },
         "ee54046f-de83-486b-bd99-6751fe8c520c": {
           "type": "text_block",
           "settings": {
             "collection": "floor-lamps-archive",
             "title": "Floor lights"
           }
+        },
+        "8549b162-7753-4be9-8d0e-d58128c3b0fd": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "collection": "braided-lighting-cable-accessories-archive",
+            "title": "Accessories"
+          }
+        },
+        "text_block_rYzPEF": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "collection": "",
+            "title": ""
+          }
         }
       },
       "block_order": [
         "fdb1a194-5221-459f-9831-0330f4b4503b",
-        "4d6488b1-58ca-4f0d-8c25-a57459b94ebd",
-        "8549b162-7753-4be9-8d0e-d58128c3b0fd",
         "8e9f8ecc-f681-49ff-a389-e083ec6b9146",
-        "ee54046f-de83-486b-bd99-6751fe8c520c"
+        "4d6488b1-58ca-4f0d-8c25-a57459b94ebd",
+        "ee54046f-de83-486b-bd99-6751fe8c520c",
+        "8549b162-7753-4be9-8d0e-d58128c3b0fd",
+        "text_block_rYzPEF"
       ],
       "settings": {
       }
