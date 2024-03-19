@@ -1,5 +1,8 @@
 {
   "current": {
+    "enable_popup": false,
+    "page": "popup",
+    "force_show": false,
     "fallback": "shopify:\/\/shop_images\/skinlogo.png",
     "color_body_bg": "#ffffff",
     "color_body_text": "#000000",
