@@ -251,6 +251,23 @@
       </div>
     </div>
 
+    {% if settings.enable_popup == true %}
+
+      
+        
+      
+
+    <div class="popup-modal {% if settings.force_show %}active{% endif %}">
+      <div class="popup-modal__inner">  
+      <button type="button" aria-label="Close" class="btn-close"></button>   
+        {% if settings.age_verification_image != blank %}
+          <img src="{{ settings.age_verification_image | img_url: "800x" }}" alt="">
+        {% endif %}
+        <h2>{{ settings.page.content }}</h2>
+      </div>
+    </div>
+  {% endif %}
+
     <script>
       //open modal
       const modalShareT = document.querySelector('.share-modal')
@@ -266,6 +283,56 @@
       closeButtonShareT.addEventListener('click', () => {
         modalShareT.classList.remove('active')
       })
+
+
+
+
+      const ageVerify = () => {
+        const verified = localStorage.getItem('popup-seen')
+        const closePopup = document.querySelector('.popup-modal .btn-close')
+        console.log('ffff')
+      
+        if (verified) {
+          console.log('age verified');
+          // return;
+        }else{
+          document.querySelector('.popup-modal').classList.add('show')
+          document.querySelector('body').classList.add('overflow-hidden')
+          console.log('age not verified');
+        }
+      
+      
+      
+        if (document.querySelector('.popup-modal').classList.contains('active')) {
+          document.querySelector('body').classList.add('overflow-hidden')
+          console.log('active');
+        }
+         
+      
+        const yesButton = document.querySelector('.age-verify__yes')
+        const noButton = document.querySelector('.age-verify__no')
+      
+        closePopup.addEventListener('click', () => {
+          localStorage.setItem('popup-seen', true)
+          document.querySelector('.popup-modal').classList.remove('show')
+          document.querySelector('.popup-modal').classList.remove('active')
+          document.querySelector('body').classList.remove('overflow-hidden')
+        })
+      
+        noButton.addEventListener('click', () => {
+         
+          const url = noButton.getAttribute('data-redivert')
+          window.location.href = url
+        })
+      
+        
+      }
+
+      {% if settings.enable_popup == true %}
+        ageVerify()
+          
+        {% endif %}
+      
     </script>
 
   </body>

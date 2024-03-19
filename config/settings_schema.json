@@ -8,6 +8,33 @@
     "theme_support_url": "https:\/\/archetypethemes.co\/pages\/support#expanse"
   },
   {
+    "name": "Popup",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Add a page to show the pages content"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_popup",
+        "label": "Enable popup",
+        "default": true
+      },
+      {
+        "type": "page",
+        "id": "page",
+        "label": "Page"
+      },
+      {
+        "type": "checkbox",
+        "id": "force_show",
+        "label": "Force show popup",
+        "info": "Force show popup now (IMPORTANT: For content editing only, uncheck this to enable popup, leaving this checked will display popup always)",
+        "default": true
+      }
+    ]
+  },
+  {
     "name": "Fallback image",
     "settings": [
       {
