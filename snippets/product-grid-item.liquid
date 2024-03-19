@@ -83,7 +83,7 @@
 
 
       <div class="grid-product__image-wrap" style="background-size: cover; background-image: url({{  settings.fallback | img_url: "master" }});">
-        <a href="{{ product.url  }}" class="grid-item__link">
+        <a href="{{ product.url  }}" class="grid-item__link" aria-label="{{ product.title }}">
         <div class="grid-product__tags">
           {%- if has_custom_label -%}
             {%- assign labels = custom_labels | split: ',' -%}
