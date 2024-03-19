@@ -29,7 +29,38 @@
         {% if section.settings.image != blank %}
 
         
-            <img src="{{ section.settings.image | img_url: "master"   }}" alt="">
+            
+      
+
+
+
+
+
+            <div class="grid-item">
+              <a href="{{ fCollection.url }}" class="collection-item"><div class="collection-image-wrap   "><div class="collection-image collection-image--is-collection image-wrap">
+                <img src="{{ section.settings.image | img_url: "master"   }}" alt="">
+  
+                        
+                      
+          
+                    </div></div>
+                <span class="collection-item__title">{{ fCollection.title }}</span>
+              </a>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {% else %}
           
 
