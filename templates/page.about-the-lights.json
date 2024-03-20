@@ -40,7 +40,7 @@
     "36911d92-4147-4ac5-8874-4f73baf536e1": {
       "type": "section-text-and-image",
       "custom_css": [
-
+        "@media (min-width: 1024px) {.section-flush {margin-top: -161px; }}"
       ],
       "settings": {
         "flush": true,
