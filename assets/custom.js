@@ -318,12 +318,14 @@ function initYoutubePlay(){
 
 
       var iframe = document.getElementById('existing_youtube_player');
+
+      console.log(iframe);
 var message = JSON.stringify({
     event: 'command',
     func: 'playVideo',
     args: []
 });
-iframe.contentWindow.postMessage(message, 'https://www.youtube.com');
+iframe.contentWindow.postMessage(message, 'https://www.skinflintdesign.com/');
       
     }, 3000);
 
