@@ -295,6 +295,8 @@
       const minus = document.querySelector('.qty-select-modal__qty .minus')
       const price = btn.getAttribute('data-price')
 
+      console.log('openinf');
+
 
 
 
@@ -321,6 +323,10 @@
         })
 
         let totalCart = parseInt(inputCartQty.innerHTML)
+
+        console.log(totalCart);
+        console.log('here?');
+        console.log(((totalCart + 1) * parseInt(price)).toFixed(2))
       document.querySelector('.js-quantity-price').innerHTML = "£" +  ((totalCart + 1) * parseInt(price)).toFixed(2)
       }
 
@@ -341,6 +347,7 @@
           totalBubler.innerText = parseInt(totalBubler.innerText) + 1
 
           console.log(parseInt(price));
+          console.log(totalCart);
 
           document.querySelector('.js-quantity-price').innerHTML = "£" +  ((totalCart + 1) * parseInt(price)/100).toFixed(2)
 
