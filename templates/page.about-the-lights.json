@@ -21,7 +21,7 @@
     "b11a81de-4b89-483d-8008-30271bda8c03": {
       "type": "section-text-and-image",
       "custom_css": [
-        "@media (min-width: 1024px) {.section-flush {margin-top: -159px; }}"
+        "@media (min-width: 1024px) {.section-flush {margin-top: -157px; }}"
       ],
       "settings": {
         "flush": true,
