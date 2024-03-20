@@ -52,12 +52,17 @@
 
   wishlist.forEach((item) => {
 
-    var url = "https://skin-flint.myshopify.com/collections/ceiling-lights" + '/products/' + `${item}` + '?view=wishlist';
+    var url = "https://www.skinflintdesign.com/collections/ceiling-lights" + '/products/' + `${item}` + '?view=wishlist';
 
     fetch(url).then(function(response) {
          return response.text();
        }).then(function(html) {
-        let data = JSON.parse(html.split("thisIsaUniqueStringToSplitTheFollowingJsonObject!DoNotDelete")[1].trim())
+        console.log(html)
+
+        let cleanedJsonString = html.replace(/[\x00-\x1F\x7F-\x9F]/g, "");
+
+
+        let data = JSON.parse(cleanedJsonString.split("thisIsaUniqueStringToSplitTheFollowingJsonObject!DoNotDelete")[1].trim())
         const card = document.createElement('div')
         const anchor = document.createElement('a')
         const imageWrap = document.createElement('div')

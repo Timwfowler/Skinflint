@@ -152,6 +152,13 @@
   const urlParams = new URLSearchParams(window.location.search);
   const myParam = urlParams.get('contact_posted');
   if (myParam == 'true') {
+    console.log('contact posted') 
+
+
+    // body.style.overflow = 'hidden'
+    document.body.style.opacity = '0'
+
+
     document.querySelector('.product-contact-form-main').style.display = 'none'
     document.querySelector('.sucsuess.note--success').style.display = 'block'
 
@@ -165,6 +172,7 @@
 
       setTimeout(() => {
         window.scrollBy(0, -200)
+        document.body.style.opacity = '1'
       }, 700);
     }, 1500);
   }

@@ -4781,13 +4781,13 @@ a:hover{
     display: block;
     margin: 0 auto;
     padding: 20px 0;
-    margin-left: -20px;
-    width: calc(100% + 40px);
+    // margin-left: -20px;
+    // width: calc(100% + 40px);
     max-width: none;
 
     @include breakpoint(md){
-      margin-left: -80px;
-      width: calc(100% + 160px);
+      // margin-left: -80px;
+      // width: calc(100% + 160px);
     }
   }
 
@@ -6898,6 +6898,10 @@ margin-right: auto;
     font-weight: 800;
     font-size: 2rem;
     margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 16px;
+    font-family: AvertaStd-Bold, sans-serif;
   }
 }
 
@@ -7003,6 +7007,12 @@ margin-right: auto;
     .button{
       width: 50%;
     }
+  }
+}
+
+@include breakpoint(md){
+  .scrolling-nav-actions__share p, .scrolling-nav-actions__share h3{
+    white-space:nowrap
   }
 }
 

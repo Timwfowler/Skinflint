@@ -3661,15 +3661,7 @@ a:hover {
   display: block;
   margin: 0 auto;
   padding: 20px 0;
-  margin-left: -20px;
-  width: calc(100% + 40px);
   max-width: none;
-}
-@media (min-width: 1024px) {
-  .article-wrap .rte img {
-    margin-left: -80px;
-    width: calc(100% + 160px);
-  }
 }
 .article-wrap .section-header {
   padding: 40px 20px;
@@ -5340,6 +5332,10 @@ a:hover {
   font-weight: 800;
   font-size: 2rem;
   margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 16px;
+  font-family: AvertaStd-Bold, sans-serif;
 }
 
 .popup-modal {
@@ -5426,6 +5422,12 @@ a:hover {
 }
 .popup-modal__buttons .button {
   width: 50%;
+}
+
+@media (min-width: 1024px) {
+  .scrolling-nav-actions__share p, .scrolling-nav-actions__share h3 {
+    white-space: nowrap;
+  }
 }
 
 /*# sourceMappingURL=custom.css.map */
