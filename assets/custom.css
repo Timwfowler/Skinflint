@@ -621,11 +621,6 @@ a:hover {
 .contact-form h1 {
   width: calc(100% - 40px);
 }
-@media (max-width: 768px) {
-  .contact-form__innerh1 {
-    width: 90%;
-  }
-}
 .contact-form h3 {
   padding-bottom: 20px;
   text-align: left;
@@ -3637,6 +3632,9 @@ a:hover {
   width: 100%;
 }
 
+.article-wrap strong a {
+  font-weight: 700;
+}
 @media (min-width: 1024px) {
   .article-wrap {
     max-width: 950px;

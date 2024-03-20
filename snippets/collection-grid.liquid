@@ -272,7 +272,97 @@
             </div>
           </div>      
         {% endif %}     
-      {% endif %}       
+      {% endif %}     
+      
+      {% if forloop.index == card_seven_pos %}
+        {% if section.settings.image_with_text_image_seven != blank %}
+          <div class="promo-card
+          " >
+            <div class="promo-card__inner">
+              <img src="{{ section.settings.image_with_text_image_seven | img_url: "400x" }}" alt="">
+              <div class="promo-card__text">
+                <h2>{{ section.settings.title_seven }}</h2>
+                <a href="{{ section.settings.button_link_seven }}">
+                  <div class="btn">{{ section.settings.button_label_seven }}</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endif %}
+
+      {% if forloop.index == card_eight_pos %}
+        {% if section.settings.image_with_text_image_eight != blank %}
+          <div class="promo-card
+          " >
+            <div class="promo-card__inner">
+              <img src="{{ section.settings.image_with_text_image_eight | img_url: "400x" }}" alt="">
+              <div class="promo-card__text">
+                <h2>{{ section.settings.title_eight }}</h2>
+                <a href="{{ section.settings.button_link_eight }}">
+                  <div class="btn">{{ section.settings.button_label_eight }}</div>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        {% endif %}
+      {% endif %}
+
+      {% if forloop.index == card_nine_pos %}
+        {% if section.settings.image_with_text_image_nine != blank %}
+          <div class="promo-card
+          " >
+            <div class="promo-card__inner">
+              <img src="{{ section.settings.image_with_text_image_nine | img_url: "400x" }}" alt="">
+              <div class="promo-card__text">
+                <h2>{{ section.settings.title_nine }}</h2>
+                <a href="{{ section.settings.button_link_nine }}">
+                  <div class="btn">{{ section.settings.button_label_nine }}</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endif %}
+
+      {% if forloop.index == card_ten_pos %}
+        {% if section.settings.image_with_text_image_ten != blank %}
+          <div class="promo-card
+          " >
+            <div class="promo-card__inner">
+              <img src="{{ section.settings.image_with_text_image_ten | img_url: "400x" }}" alt="">
+              <div class="promo-card__text">
+                <h2>{{ section.settings.title_ten }}</h2>
+                <a href="{{ section.settings.button_link_ten }}">
+                  <div class="btn">{{ section.settings.button_label_ten }}</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endif %}
+
+      {% if forloop.index == card_eleven_pos %}
+        {% if section.settings.image_with_text_image_eleven != blank %}
+          <div class="promo-card
+          " >
+            <div class="promo-card__inner">
+              <img src="{{ section.settings.image_with_text_image_eleven | img_url: "400x" }}" alt="">
+              <div class="promo-card__text">
+                <h2>{{ section.settings.title_eleven }}</h2>
+                <a href="{{ section.settings.button_link_eleven }}">
+                  <div class="btn">{{ section.settings.button_label_eleven }}</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endif %}
+
+
+
+
 
       {%- if item.object_type == 'product' -%}
 

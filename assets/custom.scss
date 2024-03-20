@@ -839,15 +839,6 @@ a:hover{
 
   &__inner{
 
-
-
-    @include breakpoint(mobile-only){
-
-      &h1{
-        width: 90%;
-      }
-      
-    }
   }
 
 
@@ -4763,6 +4754,10 @@ a:hover{
   }
 }
 .article-wrap{
+
+  strong a{
+    font-weight: 700;
+  }
   
 
   @include breakpoint(md){
