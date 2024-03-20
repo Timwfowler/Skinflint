@@ -618,6 +618,14 @@ a:hover {
 /*=============================================
 =            contact-form-section            =
 =============================================*/
+.contact-form h1 {
+  width: calc(100% - 40px);
+}
+@media (max-width: 768px) {
+  .contact-form__innerh1 {
+    width: 90%;
+  }
+}
 .contact-form h3 {
   padding-bottom: 20px;
   text-align: left;

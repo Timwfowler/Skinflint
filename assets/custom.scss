@@ -833,6 +833,23 @@ a:hover{
 
 .contact-form{
 
+  h1{
+    width: calc(100% - 40px);
+  }
+
+  &__inner{
+
+
+
+    @include breakpoint(mobile-only){
+
+      &h1{
+        width: 90%;
+      }
+      
+    }
+  }
+
 
   h3{
     padding-bottom: 20px;
