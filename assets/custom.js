@@ -281,7 +281,6 @@ function initYoutubePlay(){
 
     var div = document.querySelector(".video-wrapper");
     var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
-
     var newIframe = div.querySelector('iframe')
 
 
@@ -316,16 +315,15 @@ function initYoutubePlay(){
       newIframe.click()
       console.log('clickkeee');
 
-
       var iframe = document.getElementById('existing_youtube_player');
 
       console.log(iframe);
-var message = JSON.stringify({
-    event: 'command',
-    func: 'playVideo',
-    args: []
-});
-iframe.contentWindow.postMessage(message, 'https://www.skinflintdesign.com/');
+      var message = JSON.stringify({
+          event: 'command',
+          func: 'playVideo',
+          args: []
+      });
+      iframe.contentWindow.postMessage(message, 'https://www.skinflintdesign.com/');
       
     }, 3000);
 

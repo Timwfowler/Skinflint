@@ -14,7 +14,7 @@
     <iframe title="Vimeo Video" src="//www.youtube.com/embed/_9VUPq3SxOc?rel=0&showinfo=0&vq=720" width="850" height="480" frameborder="0" allowfullscreen></iframe>
   {%- else -%}
     {%- if section.settings.video_url.type == "youtube" -%}
-      <iframe id="existing_youtube_player"  title="Youtube Video" src="//www.youtube.com/embed/{{ section.settings.video_url.id }}?autoplay=1&modestbranding=1&showinfo=0&rel=0&enablejsapi=1&origin=https%3A%2F%2Fwww.skin-flint.myshopify.com&widgetid=1" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+      <iframe id="existing_youtube_player"  title="Youtube Video" src="//www.youtube.com/embed/{{ section.settings.video_url.id }}?autoplay=1&modestbranding=1&showinfo=0&rel=0&enablejsapi=1&widgetid=1" width="850" height="480" frameborder="0" allowfullscreen></iframe>
     {%- endif -%}
     {%- if section.settings.video_url.type == "vimeo" -%}
       <iframe title="Vimeo Video" src="//player.vimeo.com/video/{{ section.settings.video_url.id }}?color={{ settings.color_button | remove: "#" }}&byline=0&portrait=0&badge=0" width="850" height="480" frameborder="0" allowfullscreen></iframe>
