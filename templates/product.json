@@ -741,6 +741,18 @@
             "link": "shopify:\/\/collections\/franta-anyz",
             "link_text": "View all Franta Anyz Lights"
           }
+        },
+        "filter_ADKDCP": {
+          "type": "filter",
+          "settings": {
+            "heading": "Hadrill & Horstmann",
+            "flush_bottom": true,
+            "image": "shopify:\/\/shop_images\/Hortsmann_80f9ce0a-561d-4174-9dc5-a70fb2994d65.jpg",
+            "title": "Hadrill & Horstman",
+            "copy": "<p>Born in 1881 to a renowned clockmaker in Bath, England, Sidney Horstmann (OBE) was a pioneering engineer and businessman. Among his many inventions were the variable automotive speed gearbox, gas street lighting controls, and the ‘Horstmann Bogie’ suspension system; used on many Western tanks during WWII and for which he was awarded an OBE. Following the war, Horstmann joined forces to form Hadrill & Horstmann, famed for their Counterpoise lamps which are highly sought-after collector’s pieces. <\/p>",
+            "link": "shopify:\/\/collections\/hadrill-horstmann",
+            "link_text": ""
+          }
         }
       },
       "block_order": [
@@ -785,7 +797,8 @@
         "bec5a70d-6681-4580-8963-faf68a7dc975",
         "a4d44678-28c0-45ea-8467-1f00df080801",
         "1c686942-8c10-4c08-ad5c-15971e14fac5",
-        "1bae711d-6a4a-475f-bb30-5cc8d59cad37"
+        "1bae711d-6a4a-475f-bb30-5cc8d59cad37",
+        "filter_ADKDCP"
       ],
       "settings": {
         "flush": true,
