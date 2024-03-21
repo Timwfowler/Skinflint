@@ -237,40 +237,10 @@ function init3dModelPDP(){
 
 function initYoutubePlay(){
 
-  var tag = document.createElement('script');
-
-  tag.src = "https://www.youtube.com/iframe_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 
 
 
-
-  var player;
-  function onYouTubeIframeAPIReady() {
-
-    console.log('ready');
-
-    player = new YT.Player('existing_youtube_player', {
-      height: '390',
-      width: '640',
-      videoId: 'aSoMvvs74n0',
-      playerVars: {
-        'playsinline': 1
-      },
-      events: {
-        'onReady': onPlayerReady,
-        'onStateChange': onPlayerStateChange
-      }
-    });
-  }
-
-  // 4. The API will call this function when the video player is ready.
-  function onPlayerReady(event) {
-    console.log('play');
-    event.target.playVideo();
-  }
 
   if (!document.querySelector('.dummy-hack-play')) {
     return;
@@ -283,60 +253,13 @@ function initYoutubePlay(){
     var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
     var newIframe = div.querySelector('iframe')
 
+    let iiframe = document.querySelector('.video-wrapper iframe')
 
-
-
-
-    setTimeout(function(){
-      
-    // console.log(newIframe);
-    // var iframe = newIframe;
-    // var message = JSON.stringify({
-    //     event: 'command',
-    //     func: 'playVideo',
-    //     args: []
-    // });
-    // iframe.contentWindow.postMessage(message, 'https://www.youtube.com');
-
-    console.log(newIframe);
-    // const newSRc = newIframe.getAttribute('src') + "&autoplay=1"
-
-    //newIframe.setAttribute('src', newSRc)
-
-
-
-
-    
-      
-    }, 2000);
-
-    setTimeout(function(){
-      console.log('clicked');
-      newIframe.click()
-      console.log('clickkeee');
-
-      var iframe = document.getElementById('existing_youtube_player');
-
-      console.log(iframe);
-      var message = JSON.stringify({
-          event: 'command',
-          func: 'playVideo',
-          args: []
-      });
-      iframe.contentWindow.postMessage(message, 'https://www.skinflintdesign.com/');
-      
-    }, 3000);
-
-    console.log(newIframe.querySelector('.site-as-giant-card'));
-
-
+    iiframe.src += "?&modestbranding=1&showinfo=0&rel=0&autoplay=1"; 
     document.querySelector('.dummy-hack-play').style.display = "none"
     document.querySelector('.video__placeholder').style.display = "none"
     
 
-    
-    // iframe.postMessage('{"event":"command","func":"' + 'mute' + '","args":""}', '*');
-    // iframe.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
 
 
 
