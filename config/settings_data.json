@@ -1,6 +1,6 @@
 {
   "current": {
-    "enable_popup": false,
+    "enable_popup": true,
     "page": "popup",
     "force_show": false,
     "fallback": "shopify:\/\/shop_images\/skinlogo.png",
