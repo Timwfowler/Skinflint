@@ -3,6 +3,13 @@
     "4ea365e4-88e4-4ea3-b2cc-5d3982240a18": {
       "type": "section-banner",
       "blocks": {
+        "icon_AhTqEB": {
+          "type": "icon",
+          "settings": {
+            "text": "30% OFF WITH CODE: VINTAGE30",
+            "link": "https:\/\/www.skinflintdesign.com\/collections\/lights"
+          }
+        },
         "9b6709b0-05b0-4358-95e4-d3ae5ec364fe": {
           "type": "icon",
           "settings": {
@@ -26,6 +33,7 @@
         }
       },
       "block_order": [
+        "icon_AhTqEB",
         "9b6709b0-05b0-4358-95e4-d3ae5ec364fe",
         "91a50643-8dd1-4918-a791-dce911345727",
         "fec31634-369a-439a-bdb4-232014a7faef"
@@ -36,22 +44,6 @@
     "ab621580-b75a-4803-ae34-f20abc80d17d": {
       "type": "section-hero-banner",
       "blocks": {
-        "hero_WTHQRW": {
-          "type": "hero",
-          "settings": {
-            "title": "Retro \nLighting",
-            "text_color": "#ffffff",
-            "link": "shopify:\/\/collections\/retro-lighting",
-            "link_text": "Shop now",
-            "link_2": "",
-            "link_text_2": "",
-            "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/retro-collection-homepage-banner-16x9.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/retro-collection-homepage-banner-1x1-3.jpg",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        },
         "hero_TM8BMJ": {
           "type": "hero",
           "settings": {
@@ -64,6 +56,22 @@
             "text_align": "vertical-bottom horizontal-left",
             "image": "shopify:\/\/shop_images\/homepage-banner-16-9-spring-sale-lr.jpg",
             "image_mobile": "shopify:\/\/shop_images\/homepage-banner-1-1-spring-sale-lr.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "hero_WTHQRW": {
+          "type": "hero",
+          "settings": {
+            "title": "Retro \nLighting",
+            "text_color": "#ffffff",
+            "link": "shopify:\/\/collections\/retro-lighting",
+            "link_text": "Shop now",
+            "link_2": "",
+            "link_text_2": "",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/retro-collection-homepage-banner-16x9.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/retro-collection-homepage-banner-1x1-3.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -118,8 +126,8 @@
         }
       },
       "block_order": [
-        "hero_WTHQRW",
         "hero_TM8BMJ",
+        "hero_WTHQRW",
         "0dd9a91e-af3e-4f76-afb0-07eb79935f96",
         "9dbcf259-7c3b-4526-b259-bb5dcd637484",
         "template--16727916118332__ab621580-b75a-4803-ae34-f20abc80d17d-1666667198a9ea7f44-0"
