@@ -416,20 +416,20 @@
 
                           {% assign productType = product.metafields.custom.type.value[0] | downcase %}
                           {% if productType == "wall lights" %}
-                            {% assign linkCollection = "/collections/industrial-wall-lights" %}
+                            {% assign linkCollection = "/collections/wall-lights" %}
                             {% assign linkTitle = "View avalible wall lights" %}
                           {% elsif productType == "ceiling lights"  %}
                             
                             {% assign linkCollection = "/collections/ceiling-lights" %}
                             {% assign linkTitle = "View avalible ceiling lights" %}
                           {% elsif productType == "table lights"  %}
-                            {% assign linkCollection = "/collections/vintage-and-industrial-table-lights" %}
+                            {% assign linkCollection = "/collections/table-lights" %}
                             {% assign linkTitle = "View avalible table lights" %}
                           {% elsif productType == "floor lights"  %}
-                            {% assign linkCollection = "/collections/vintage-and-industrial-floor-lamps" %}
+                            {% assign linkCollection = "/collections/floor-lights" %}
                             {% assign linkTitle = "View avalible floor lights" %}
                           {% elsif productType == "accessories"  %}               
-                            {% assign linkCollection = "/collections/braided-lighting-cable-accessories" %}   
+                            {% assign linkCollection = "/collections/accessories" %}   
                             {% assign linkTitle = "View avalible accessories" %}                            
                           {% endif %}
 
