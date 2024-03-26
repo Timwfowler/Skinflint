@@ -78,6 +78,13 @@
           "settings": {
             "collection": "neutral-interior-schemes"
           }
+        },
+        "collection_AWxFaM": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/skinflint-XL-collection-cta.jpg",
+            "collection": "xl-collection"
+          }
         }
       },
       "block_order": [
@@ -91,7 +98,8 @@
         "455941a1-a4ef-470e-8e4c-f6bd2fe0bb61",
         "03051b1c-b4d2-4bc8-a2af-21ef986bb2df",
         "159b4fa3-0533-43cd-b9b1-65098603047b",
-        "9ffe5e07-0b90-4172-9f6a-05d72d774449"
+        "9ffe5e07-0b90-4172-9f6a-05d72d774449",
+        "collection_AWxFaM"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/retro-lighting-collection-6x4-web.jpg",
