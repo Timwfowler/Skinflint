@@ -3577,6 +3577,26 @@ a:hover {
 /*=============================================
 =            Article Card            =
 =============================================*/
+.btn-load-more {
+  display: flex;
+  /* width: 186px; */
+  align-items: center;
+  gap: 9px;
+  border-bottom: 1px solid #979797;
+  padding: 10px;
+  margin: 0 auto;
+  color: #979797;
+}
+.btn-load-more svg {
+  width: 10px;
+}
+.btn-load-more svg path {
+  fill: #979797;
+}
+
+.article-card.lazy-load {
+  display: none;
+}
 .article-card__image {
   padding-bottom: 100%;
   position: relative;

@@ -4680,7 +4680,30 @@ a:hover{
 =            Article Card            =
 =============================================*/
 
+.btn-load-more{
+  display: flex;
+  /* width: 186px; */
+  align-items: center;
+  gap: 9px;
+  border-bottom: 1px solid #979797;
+  padding: 10px;
+  margin: 0 auto;
+  color: #979797;
+
+  svg{
+    width: 10px;
+
+    path{
+      fill: #979797;
+    }
+  }
+}
+
 .article-card{
+
+  &.lazy-load{
+    display: none;
+  }
 
   &__inner{
 

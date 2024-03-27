@@ -1,4 +1,6 @@
-<div class="article-card">
+{% assign cutoff = threshold | plus: 1 %}
+
+<div class="article-card {% if index_num > cutoff %} lazy-load {% endif %}" >
   <div class="article-card__inner">
     <div class="article-card__image" style="background-size: cover; background-image: url({{  settings.fallback | img_url: "master" }});">
       <a href="{{ article.url }}">

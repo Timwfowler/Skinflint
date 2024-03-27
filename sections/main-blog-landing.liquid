@@ -85,13 +85,19 @@
   {% else %}
 
   <div class="article-grid">
-    <div class="article-grid__inner page-width">                
-        {% for article in blog.articles %}
-          {% unless forloop.index == 1 %}
-          {% render 'article-card', article: article, blog: blog %}     
-          {% endunless %}
-             
-        {% endfor %} 
+    {% assign article_count = 0 %}
+    <div class="article-grid__inner page-width">  
+    {% paginate blog.articles by 100000 %}
+    {% for article in blog.articles %}
+      {% assign article_count = article_count | plus: 1 %}
+      {% unless forloop.index == 1 %}
+      {% render 'article-card', article: article, blog: blog, index_num: forloop.index, threshold: section.settings.load_more %}     
+      {% endunless %}
+         
+    {% endfor %} 
+
+    {% endpaginate %}              
+
     </div>
   </div>
 {% endif %}
@@ -99,9 +105,54 @@
 
 
 
+{% if article_count > section.settings.load_more %}
+  
+
+
+<button type="button" class="btn-load-more">
+  <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.60002 6.30002C7.41309 6.11679 7.16176 6.01416 6.90001 6.01416C6.63826 6.01416 6.38693 6.11679 6.2 6.30002L4.90001 7.60001V1C4.90001 0.734784 4.79464 0.480444 4.6071 0.292908C4.41956 0.105371 4.16523 0 3.90001 0C3.63479 0 3.38045 0.105371 3.19292 0.292908C3.00538 0.480444 2.90001 0.734784 2.90001 1V7.60001L1.60002 6.30002C1.40745 6.15559 1.16923 6.08548 0.929122 6.10254C0.689013 6.1196 0.463103 6.2227 0.292892 6.39291C0.122681 6.56313 0.0195813 6.789 0.00251725 7.02911C-0.0145468 7.26922 0.0555674 7.50744 0.199997 7.70001L3.2 10.7L3.50001 10.9H3.90001C4.03152 10.9042 4.16237 10.8795 4.28331 10.8277C4.40425 10.7759 4.51237 10.6981 4.60002 10.6L7.60002 7.60001C7.75495 7.41887 7.84007 7.18837 7.84007 6.95001C7.84007 6.71166 7.75495 6.48115 7.60002 6.30002Z" fill="#979797"/>
+    </svg>
+    
+    
+
+  Load more        </button>
 
 
 
+<script>
+
+
+  const loadMore = document.querySelector('.btn-load-more');
+  
+
+  loadMore.addEventListener('click', () => {
+    const hiddenArticles = document.querySelectorAll('.lazy-load');
+
+    console.log('clicked');
+
+    //show 3 more articles
+    for (let i = 0; i < 3; i++) {
+      if (hiddenArticles[i]) {
+        hiddenArticles[i].classList.remove('lazy-load');
+        hiddenArticles[i].style.opacity = 0;
+        hiddenArticles[i].style.transition = 'opacity 0.3s';
+
+        //set time out
+        setTimeout(() => {
+          hiddenArticles[i].style.opacity = 1;
+        }, 300);
+      } else {
+        loadMore.style.display = 'none';
+        break;
+      }
+    }
+
+
+  });
+</script>
+
+{% endif %}
 
 
 
@@ -111,14 +162,13 @@
   "name": "t:sections.main-collection.name",
   "settings": [
     {
-      "type": "article",
-      "id": "article",
-      "label": "Featured Article"
-    },
-    {
-      "type": "text",
-      "id": "title",
-      "label": "Filter title"
+      "type": "range",
+      "id": "load_more",
+      "min": 3,
+      "max": 90,
+      "step": 3,
+      "label": "Show load more button after",
+      "default": 60
     }
   ],
   "blocks": [
