@@ -50,12 +50,12 @@
             "title": "Spring Sale",
             "text_color": "#ffffff",
             "link": "https:\/\/www.skinflintdesign.com\/collections\/lights",
-            "link_text": "With code: VINTAGE30",
+            "link_text": "With code: HALFPRICELIGHTS",
             "link_2": "",
             "link_text_2": "",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/homepage-banner-16-9-spring-sale-lr.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/homepage-banner-1-1-spring-sale-lr.jpg",
+            "image": "shopify:\/\/shop_images\/homepage-banner-16-9-spring-sale-50.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/homepage-banner-1-1-spring-sale-50.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
