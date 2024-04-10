@@ -3,10 +3,17 @@
     "4ea365e4-88e4-4ea3-b2cc-5d3982240a18": {
       "type": "section-banner",
       "blocks": {
+        "icon_8kbUfX": {
+          "type": "icon",
+          "settings": {
+            "text": "",
+            "link": ""
+          }
+        },
         "icon_AhTqEB": {
           "type": "icon",
           "settings": {
-            "text": "30% OFF WITH CODE: VINTAGE30",
+            "text": "50% OFF WITH CODE: HALFPRICELIGHTS",
             "link": "https:\/\/www.skinflintdesign.com\/collections\/lights"
           }
         },
@@ -33,6 +40,7 @@
         }
       },
       "block_order": [
+        "icon_8kbUfX",
         "icon_AhTqEB",
         "9b6709b0-05b0-4358-95e4-d3ae5ec364fe",
         "91a50643-8dd1-4918-a791-dce911345727",
