@@ -80,7 +80,11 @@
       let priceUI = document.querySelector('.js-quantity-price')
       let price = parseFloat(document.querySelector('.price-vat-done').innerHTML.replace(/[^0-9.]/g, ''))
       
-      priceUI.innerHTML = "£" + (price * parseInt(inputCartQty.innerHTML)).toFixed(2)
+      //priceUI.innerHTML = "£" + (price * parseInt(inputCartQty.innerHTML)).toFixed(2)
+
+      var totalPrice = price * parseInt(inputCartQty.innerHTML);
+      var formattedPrice = totalPrice.toFixed(2).replace(/\d{1,3}(?=(\d{3})+(?!\d))/g, "$&,");
+      priceUI.innerHTML = "£" + formattedPrice;
 
       let removeVat = localStorage.getItem('removeVat');
       if (removeVat == "true") {
@@ -108,7 +112,11 @@
       //update price 
       let priceUI = document.querySelector('.js-quantity-price')
       let price = parseFloat(document.querySelector('.price-vat-done').innerHTML.replace(/[^0-9.]/g, ''))
-      priceUI.innerHTML = "£" + (price * parseInt(inputCartQty.innerHTML)).toFixed(2)
+      //priceUI.innerHTML = "£" + (price * parseInt(inputCartQty.innerHTML)).toFixed(2)
+
+      var totalPrice = price * parseInt(inputCartQty.innerHTML);
+      var formattedPrice = totalPrice.toFixed(2).replace(/\d{1,3}(?=(\d{3})+(?!\d))/g, "$&,");
+      priceUI.innerHTML = "£" + formattedPrice;
 
       let removeVat = localStorage.getItem('removeVat');
       if (removeVat == "true") {
@@ -184,7 +192,11 @@
       //update price 
       let priceUI = document.querySelector('.js-quantity-price')
       let price = parseFloat(document.querySelector('.price-vat-done').innerHTML.replace(/[^0-9.]/g, ''))
-      priceUI.innerHTML = "£" + (price * parseInt(inputCartQty.innerHTML)).toFixed(2)
+       //priceUI.innerHTML = "£" + (price * parseInt(inputCartQty.innerHTML)).toFixed(2)
+
+       var totalPrice = price * parseInt(inputCartQty.innerHTML);
+       var formattedPrice = totalPrice.toFixed(2).replace(/\d{1,3}(?=(\d{3})+(?!\d))/g, "$&,");
+       priceUI.innerHTML = "£" + formattedPrice;
 
       console.log(price)
 
