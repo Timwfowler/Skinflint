@@ -296,45 +296,40 @@
 
 
       const ageVerify = () => {
-        const verified = localStorage.getItem('popup-seen')
-        const closePopup = document.querySelector('.popup-modal .btn-close')
-        console.log('ffff')
+        const verified = sessionStorage.getItem('popup-seen');
+        const closePopup = document.querySelector('.popup-modal .btn-close');
+        console.log('ffff');
       
         if (verified) {
           console.log('age verified');
           // return;
-        }else{
-          document.querySelector('.popup-modal').classList.add('show')
-          document.querySelector('body').classList.add('overflow-hidden')
+        } else {
+          document.querySelector('.popup-modal').classList.add('show');
+          document.querySelector('body').classList.add('overflow-hidden');
           console.log('age not verified');
         }
       
-      
-      
         if (document.querySelector('.popup-modal').classList.contains('active')) {
-          document.querySelector('body').classList.add('overflow-hidden')
+          document.querySelector('body').classList.add('overflow-hidden');
           console.log('active');
         }
-         
       
-        const yesButton = document.querySelector('.age-verify__yes')
-        const noButton = document.querySelector('.age-verify__no')
+        const yesButton = document.querySelector('.age-verify__yes');
+        const noButton = document.querySelector('.age-verify__no');
       
         closePopup.addEventListener('click', () => {
-          localStorage.setItem('popup-seen', true)
-          document.querySelector('.popup-modal').classList.remove('show')
-          document.querySelector('.popup-modal').classList.remove('active')
-          document.querySelector('body').classList.remove('overflow-hidden')
-        })
+          sessionStorage.setItem('popup-seen', true);
+          document.querySelector('.popup-modal').classList.remove('show');
+          document.querySelector('.popup-modal').classList.remove('active');
+          document.querySelector('body').classList.remove('overflow-hidden');
+        });
       
         noButton.addEventListener('click', () => {
-         
-          const url = noButton.getAttribute('data-redivert')
-          window.location.href = url
-        })
+          const url = noButton.getAttribute('data-redivert');
+          window.location.href = url;
+        });
+      };
       
-        
-      }
 
       {% if settings.enable_popup == true %}
         ageVerify()
