@@ -36,11 +36,13 @@
       {% assign found_products = false %}
 
       {% for item in search.results %}
-      {% unless item.url contains "project" %}     
+
+
+      {% comment %} {% unless item.url contains "project" %}      {% endcomment %}
         {% if item.object_type == "product" %}
         {% assign found_products = true %}
         {% endif %}
-      {% endunless %}
+      {% comment %} {% endunless %} {% endcomment %}
       {% endfor %}
 
       {% if found_products  %}
