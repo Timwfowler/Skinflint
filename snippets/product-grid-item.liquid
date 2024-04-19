@@ -328,6 +328,32 @@
 
       </div>
 
+      {% assign priceWithoutVat = product.price   %}
+
+      <div class="grid-price grid-price-product" style="    display: none;">
+      
+        <div class="pdp-main-price">
+          <h2><span style="color: white" class="price-vat-done" data-price="{{ product.price }}">{{ priceWithoutVat | money }}</span> <span class="vat-line"></span> </h2>
+         
+        
+          <div class="tax-info">
+            <p>VAT (Value Added Tax) is a UK tax on products that is not applicable to clients outside of the UK. If you are a VAT registered business based outside of the UK in the EU you will also be exempt from the UK tax.</p>
+           <div class="tax-info__btns">
+            <div class="btn js-remove-vat in-uk" data-remove="false">
+              Remove VAT
+            </div>
+        
+            <div class="btn-primary js-open-country-modal">
+              Change country
+            </div>
+        
+           </div>
+           
+        
+          </div>
+        </div>
+      </div>
+
       <div class="grid__quantity">
         
 

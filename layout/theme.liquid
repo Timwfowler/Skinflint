@@ -338,5 +338,25 @@
       
     </script>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        // Get the current URL
+        var urlParams = new URLSearchParams(window.location.search);
+
+        console.log(urlParams);
+        
+        // Check if the URL contains "price"
+        if (window.location.href.indexOf('price') !== -1) {
+          // If so, remove the "show" class from the element with id "content"
+
+          {% comment %} document.querySelector('.grid-price-product').style.display = 'block'; {% endcomment %}
+
+          document.querySelectorAll('.grid-price-product').forEach((el) => {
+            el.style.display = 'block';
+          });
+        }
+      });
+      </script>
+
   </body>
 </html>

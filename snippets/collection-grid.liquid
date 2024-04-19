@@ -420,24 +420,57 @@
 
   
   if (window.location.search.includes("?sort_by=quantity")) {
-    const cards = document.querySelectorAll('.grid-product')
-    SortData()
-
+    const cards = document.querySelectorAll('.grid-product');
+    const promoCards = document.querySelectorAll('.promo-card');
+  
+    // Store the original positions of promo cards
+    
+    promoCards.forEach((card, index) => {
+      // Add a data attribute to the card element to indicate its position
+      
+    
+      // Log the current position for debugging
+      console.log(`Promo card at position ${index + 1}`);
+    
+      // If you need to get the position within the parent element's children array:
+      const currentPosition = Array.from(card.parentElement.children).indexOf(card);
+      card.setAttribute('data-position', currentPosition - 2);
+      
+    });
+  
+    SortData();
+  
     function comparator(a, b) {
-      if ( parseInt(a.dataset.quantity)  > parseInt(b.dataset.quantity))
-          return -1;
-      if ( parseInt(a.dataset.quantity) < parseInt(b.dataset.quantity))
-          return 1;
+      if (parseInt(a.dataset.quantity) > parseInt(b.dataset.quantity))
+        return -1;
+      if (parseInt(a.dataset.quantity) < parseInt(b.dataset.quantity))
+        return 1;
       return 0;
-    }      
-
+    }
+  
     function SortData() {
-      var subjects =  document.querySelectorAll("[data-quantity]");
+      var subjects = document.querySelectorAll("[data-quantity]");
       var subjectsArray = Array.from(subjects);
       let sorted = subjectsArray.sort(comparator);
-      sorted.forEach(e =>  {
-        document.querySelector(".collection-grid").appendChild(e)
+      sorted.forEach(e => {
+        document.querySelector(".collection-grid").appendChild(e);
       });
     }
+
+    cards.forEach((card, index) => {
+
+
+      promoCards.forEach((promoCard) => {
+
+        console.log(promoCard.dataset.position, index);
+        
+
+        if (promoCard.dataset.position == index) {
+          document.querySelector(".collection-grid").insertBefore(promoCard, card);
+        }
+    });
+  
+
+
   }
 </script>
