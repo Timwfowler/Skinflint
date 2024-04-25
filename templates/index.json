@@ -3,13 +3,6 @@
     "4ea365e4-88e4-4ea3-b2cc-5d3982240a18": {
       "type": "section-banner",
       "blocks": {
-        "icon_AhTqEB": {
-          "type": "icon",
-          "settings": {
-            "text": "50% OFF WITH CODE: HALFPRICELIGHTS",
-            "link": "https:\/\/www.skinflintdesign.com\/collections\/lights"
-          }
-        },
         "9b6709b0-05b0-4358-95e4-d3ae5ec364fe": {
           "type": "icon",
           "settings": {
@@ -33,7 +26,6 @@
         }
       },
       "block_order": [
-        "icon_AhTqEB",
         "9b6709b0-05b0-4358-95e4-d3ae5ec364fe",
         "91a50643-8dd1-4918-a791-dce911345727",
         "fec31634-369a-439a-bdb4-232014a7faef"
