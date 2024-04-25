@@ -44,22 +44,6 @@
     "ab621580-b75a-4803-ae34-f20abc80d17d": {
       "type": "section-hero-banner",
       "blocks": {
-        "hero_TM8BMJ": {
-          "type": "hero",
-          "settings": {
-            "title": "Spring Sale",
-            "text_color": "#ffffff",
-            "link": "https:\/\/www.skinflintdesign.com\/collections\/lights",
-            "link_text": "Use code: HALFPRICELIGHTS",
-            "link_2": "",
-            "link_text_2": "",
-            "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/homepage-banner-16-9-spring-sale-50.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/homepage-banner-1-1-spring-sale-50.jpg",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        },
         "hero_WTHQRW": {
           "type": "hero",
           "settings": {
@@ -123,14 +107,30 @@
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
+        },
+        "hero_gT6FUF": {
+          "type": "hero",
+          "settings": {
+            "title": "Nuanced Neutrals",
+            "text_color": "#fff",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/nuanced-neturals-homepage-banner-1-16x9.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/nuanced-neturals-homepage-banner-1-1x1.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
         }
       },
       "block_order": [
-        "hero_TM8BMJ",
         "hero_WTHQRW",
         "0dd9a91e-af3e-4f76-afb0-07eb79935f96",
         "9dbcf259-7c3b-4526-b259-bb5dcd637484",
-        "template--16727916118332__ab621580-b75a-4803-ae34-f20abc80d17d-1666667198a9ea7f44-0"
+        "template--16727916118332__ab621580-b75a-4803-ae34-f20abc80d17d-1666667198a9ea7f44-0",
+        "hero_gT6FUF"
       ],
       "custom_css": [
         "@media (min-width: 1024px) {.slideshow-section .slideshow-wrapper--bars {margin-bottom: -26px; }}"
