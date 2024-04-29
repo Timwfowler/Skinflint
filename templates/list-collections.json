@@ -6,43 +6,50 @@
         "collection_DqWVxj": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/czech-creators-collection-1x1-2.jpg",
-            "collection": "czech-creators"
+            "image": "shopify:\/\/shop_images\/skinflint-plain-english-kitchen-blog.jpg",
+            "collection": "kitchen-lighting"
           }
         },
         "collection_PtteBV": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/make-an-entrance-collection-1x1-1.jpg",
-            "collection": "make-an-entrance"
+            "image": "shopify:\/\/shop_images\/skinflint-opaline-collection-cta.jpg",
+            "collection": "opaline-glassware"
           }
         },
         "collection_Hezn6L": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/kitchen-lighting-collection-1x1-1.jpg",
-            "collection": "kitchen-lighting"
+            "image": "shopify:\/\/shop_images\/skinflint-bedroom-collection.jpg",
+            "collection": "bedroom-lighting"
+          }
+        },
+        "6710d2ca-a5e7-45d6-946a-49fbd21dff67": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Inudstiral-lights-1x1-1.jpg",
+            "collection": "industrial-lighting"
           }
         },
         "887eae69-bdca-4774-a7de-69fc74f65acf": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/retro-collection-1x1-1.jpg",
+            "image": "shopify:\/\/shop_images\/Retro-1x1-1.jpg",
             "collection": "retro-lighting"
           }
         },
         "collection_jJXtRf": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/the-lounge-collection-1x1-1.jpg",
+            "image": "shopify:\/\/shop_images\/The-Lounge-1x1-1.jpg",
             "collection": "the-lounge"
           }
         },
-        "6710d2ca-a5e7-45d6-946a-49fbd21dff67": {
+        "collection_AWxFaM": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/industrial-collectrion-1x1-1.jpg",
-            "collection": "industrial-lighting"
+            "image": "shopify:\/\/shop_images\/XL-collection-1x1.jpg",
+            "collection": "xl-collection"
           }
         },
         "fed69d9d-f36c-4488-b862-fae46833d596": {
@@ -55,35 +62,29 @@
         "455941a1-a4ef-470e-8e4c-f6bd2fe0bb61": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/art-deco-collection-1x1-1.jpg",
+            "image": "shopify:\/\/shop_images\/skinflint-decorative-glass-collection-cta_copy.jpg",
             "collection": "art-deco-lighting"
           }
         },
         "03051b1c-b4d2-4bc8-a2af-21ef986bb2df": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bedroom-lighting-1x1-1.jpg",
-            "collection": "bedroom-lighting"
+            "image": "shopify:\/\/shop_images\/oti-pizza-edit-1x1-project-web-low.jpg",
+            "collection": "fluorescent-lights"
           }
         },
         "159b4fa3-0533-43cd-b9b1-65098603047b": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/opaline-lighting-collection-1x1-1.jpg",
-            "collection": "opaline-glassware"
+            "image": "shopify:\/\/shop_images\/skinflint-23_3785-1930s-antique-franta-anyz-copper-pendant-1-1-1.jpg",
+            "collection": "make-an-entrance"
           }
         },
         "9ffe5e07-0b90-4172-9f6a-05d72d774449": {
           "type": "collection",
           "settings": {
-            "collection": "neutral-interior-schemes"
-          }
-        },
-        "collection_AWxFaM": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/skinflint-XL-collection-cta.jpg",
-            "collection": "xl-collection"
+            "image": "shopify:\/\/shop_images\/skinflint-how-to-create-the-mid-century-modern-look-blog-2.jpg",
+            "collection": "minimalism-meets-mid-century-modern"
           }
         }
       },
@@ -91,15 +92,15 @@
         "collection_DqWVxj",
         "collection_PtteBV",
         "collection_Hezn6L",
+        "6710d2ca-a5e7-45d6-946a-49fbd21dff67",
         "887eae69-bdca-4774-a7de-69fc74f65acf",
         "collection_jJXtRf",
-        "6710d2ca-a5e7-45d6-946a-49fbd21dff67",
+        "collection_AWxFaM",
         "fed69d9d-f36c-4488-b862-fae46833d596",
         "455941a1-a4ef-470e-8e4c-f6bd2fe0bb61",
         "03051b1c-b4d2-4bc8-a2af-21ef986bb2df",
         "159b4fa3-0533-43cd-b9b1-65098603047b",
-        "9ffe5e07-0b90-4172-9f6a-05d72d774449",
-        "collection_AWxFaM"
+        "9ffe5e07-0b90-4172-9f6a-05d72d774449"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/nuanced-neturals-collection-image-1-6x4.jpg",
