@@ -145,23 +145,23 @@
         "template--16727916118332__d0552a20-44ab-4477-a3af-bc7e8f308871-1666855107aab062ef-0": {
           "type": "collection",
           "settings": {
-            "collection": "czech-creators",
+            "collection": "kitchen-lighting",
             "title": ""
           }
         },
         "template--16727916118332__d0552a20-44ab-4477-a3af-bc7e8f308871-1666855107aab062ef-1": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/make-an-entrance-collection-1x1-1.jpg",
-            "collection": "make-an-entrance",
+            "image": "shopify:\/\/shop_images\/skinflint-opaline-collection-cta.jpg",
+            "collection": "opaline-glassware",
             "title": ""
           }
         },
         "template--16727916118332__d0552a20-44ab-4477-a3af-bc7e8f308871-1666855107aab062ef-5": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/kitchen-lighting-collection-1x1-1.jpg",
-            "collection": "kitchen-lighting",
+            "image": "shopify:\/\/shop_images\/skinflint-bedroom-collection.jpg",
+            "collection": "bedroom-lighting",
             "title": ""
           }
         },
